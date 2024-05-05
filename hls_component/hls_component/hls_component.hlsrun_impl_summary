@@ -1,0 +1,186 @@
+<ENTRY>
+{
+ "thisFile": "/home/franz/workspace/hls_component/hls_component/hls_component.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun May  5 18:05:47 2024",
+ "timestampMillis": "1714925147164",
+ "buildStep": {
+  "cmdId": "f284ccaf-8d47-4aa6-bb7e-9784f8279026",
+  "name": "vitis-run",
+  "logFile": "/home/franz/workspace/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/franz/workspace/hls_component/hls_config.cfg --work_dir hls_component --hls.ide.compjson=0 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/home/franz/workspace/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component",
+   "--hls.ide.compjson=0"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/franz/workspace/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May  5 18:05:47 2024",
+ "timestampMillis": "1714925147164",
+ "status": {
+  "cmdId": "f284ccaf-8d47-4aa6-bb7e-9784f8279026",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun May  5 18:05:54 2024",
+ "timestampMillis": "1714925154320",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "add",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/franz/workspace/hls_component/add.cpp",
+     "/home/franz/workspace/hls_component/add.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun May  5 18:05:54 2024",
+ "timestampMillis": "1714925154324",
+ "buildStep": {
+  "cmdId": "a06a308c-39e1-4bc7-9fee-1cead662e3b7",
+  "name": "export_design",
+  "logFile": "/home/franz/workspace/hls_component/hls_component/hls/hls.log",
+  "commandLine": "export_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/franz/workspace/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May  5 18:05:54 2024",
+ "timestampMillis": "1714925154324",
+ "status": {
+  "cmdId": "a06a308c-39e1-4bc7-9fee-1cead662e3b7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May  5 18:05:54 2024",
+ "timestampMillis": "1714925154324",
+ "report": {
+  "path": "/home/franz/workspace/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May  5 18:05:54 2024",
+ "timestampMillis": "1714925154325",
+ "report": {
+  "path": "/home/franz/workspace/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May  5 18:09:08 2024",
+ "timestampMillis": "1714925348169",
+ "status": {
+  "cmdId": "a06a308c-39e1-4bc7-9fee-1cead662e3b7",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun May  5 18:09:08 2024",
+ "timestampMillis": "1714925348648",
+ "status": {
+  "cmdId": "f284ccaf-8d47-4aa6-bb7e-9784f8279026",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May  5 18:09:08 2024",
+ "timestampMillis": "1714925348653",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun May  5 18:09:08 2024",
+ "timestampMillis": "1714925348654",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

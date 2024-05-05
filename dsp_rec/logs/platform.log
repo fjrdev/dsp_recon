@@ -1,0 +1,925 @@
+TRACE::2024-05-05.10:55:48::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:48::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:48::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:48::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:48::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:48::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:48::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-05-05.10:55:54::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec"
+		}]
+}
+TRACE::2024-05-05.10:55:54::SCWPlatform::Boot application domains not present, creating them
+TRACE::2024-05-05.10:55:54::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec"
+		}]
+}
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:54::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-05.10:55:54::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/
+TRACE::2024-05-05.10:55:54::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt
+TRACE::2024-05-05.10:55:54::SCWDomain:: Using the PMCQEMU args from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:54::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:54::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:54::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-05-05.10:55:54::SCWMssOS::No sw design opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::mss does not exists at /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::Creating sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::Adding the swdes entry, created swdb /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss with des name /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::updating the scw layer changes to swdes at   /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::Writing mss at /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:54::SCWMssOS::Completed writing the mss file at /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2024-05-05.10:55:54::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-05-05.10:55:54::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-05-05.10:55:54::SCWMssOS::Completed writing the mss file at /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2024-05-05.10:55:54::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2024-05-05.10:55:57::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::Adding the swdes entry, mss present, able to open swdb /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-05-05.10:55:57::SCWMssOS::Writing the mss file completed /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"7e1199b88cae3f1b82ca07601f3a94ce",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-05-05.10:55:57::SCWPlatform::Started generating the artifacts platform dsp_rec
+TRACE::2024-05-05.10:55:57::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-05-05.10:55:57::SCWPlatform::Started generating the artifacts for system configuration dsp_rec
+LOG::2024-05-05.10:55:57::SCWSystem::Checking the domain standalone_domain
+LOG::2024-05-05.10:55:57::SCWSystem::Not a boot domain 
+LOG::2024-05-05.10:55:57::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-05-05.10:55:57::SCWDomain::Generating domain artifcats
+TRACE::2024-05-05.10:55:57::SCWMssOS::Generating standalone artifcats
+TRACE::2024-05-05.10:55:57::SCWMssOS::Copying the qemu file from  /home/franz/workspace/dsp_rec/resources/dsp_rec/standalone_domain/qemu_args.txt To /home/franz/workspace/dsp_rec/export/dsp_rec/sw/dsp_rec/qemu/
+TRACE::2024-05-05.10:55:57::SCWMssOS::Copying the qemu file from  /home/franz/workspace/dsp_rec/resources/dsp_rec/standalone_domain/qemu_args.txt To /home/franz/workspace/dsp_rec/export/dsp_rec/sw/dsp_rec/qemu/
+TRACE::2024-05-05.10:55:57::SCWMssOS::Copying the qemu file from  /home/franz/workspace/dsp_rec/resources/dsp_rec/standalone_domain/qemu_args.txt To /home/franz/workspace/dsp_rec/export/dsp_rec/sw/dsp_rec/standalone_domain/qemu/
+TRACE::2024-05-05.10:55:57::SCWMssOS::Copying the qemu file from  /home/franz/workspace/dsp_rec/resources/dsp_rec/standalone_domain/qemu_args.txt To /home/franz/workspace/dsp_rec/export/dsp_rec/sw/dsp_rec/standalone_domain/qemu/
+TRACE::2024-05-05.10:55:57::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::Completed writing the mss file at /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2024-05-05.10:55:57::SCWMssOS::Mss edits present, copying mssfile into export location /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-05-05.10:55:57::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-05-05.10:55:57::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-05-05.10:55:57::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-05-05.10:55:57::SCWMssOS::Copying to export directory.
+TRACE::2024-05-05.10:55:57::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-05-05.10:55:57::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2024-05-05.10:55:57::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2024-05-05.10:55:57::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-05-05.10:55:57::SCWSystem::Completed Processing the sysconfig dsp_rec
+LOG::2024-05-05.10:55:57::SCWPlatform::Completed generating the artifacts for system configuration dsp_rec
+TRACE::2024-05-05.10:55:57::SCWPlatform::Started preparing the platform 
+TRACE::2024-05-05.10:55:57::SCWSystem::Writing the bif file for system config dsp_rec
+TRACE::2024-05-05.10:55:57::SCWSystem::dir created 
+TRACE::2024-05-05.10:55:57::SCWSystem::Writing the bif 
+TRACE::2024-05-05.10:55:57::SCWPlatform::Started writing the spfm file 
+TRACE::2024-05-05.10:55:57::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-05-05.10:55:57::SCWPlatform::Completed generating the platform
+TRACE::2024-05-05.10:55:57::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-05.10:55:57::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-05.10:55:57::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:57::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:57::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:57::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:57::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"7e1199b88cae3f1b82ca07601f3a94ce",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-05-05.10:55:57::SCWPlatform::updated the xpfm file.
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-05.10:55:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-05.10:55:58::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"7e1199b88cae3f1b82ca07601f3a94ce",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-05.10:55:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-05.10:55:58::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"7e1199b88cae3f1b82ca07601f3a94ce",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-05-05.10:55:58::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-05.10:55:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-05.10:55:58::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-05-05.10:55:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:55:58::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:55:58::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWWriter::formatted JSON is {
+	"platformName":	"dsp_rec",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"dsp_rec",
+	"platHandOff":	"/tools/Xilinx/Vitis/2023.1/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dsp_rec",
+	"systems":	[{
+			"systemName":	"dsp_rec",
+			"systemDesc":	"dsp_rec",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dsp_rec",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"versal_cips_0_pspmc_0_psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dsp_rec/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dsp_rec/standalone_domain/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"8.1",
+					"mssFile":	"",
+					"md5Digest":	"7e1199b88cae3f1b82ca07601f3a94ce",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-05-05.10:55:58::SCWPlatform::Clearing the existing platform
+TRACE::2024-05-05.10:55:58::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-05-05.10:55:58::SCWMssOS::Removing the swdes entry for  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:55:58::SCWSystem::Clearing the domains completed.
+TRACE::2024-05-05.10:55:58::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform location is /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Removing the HwDB with name /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:55:58::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:55:58::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-05-05.10:56:05::SCWPlatform::Opened new HwDB with name design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWReader::Active system found as  dsp_rec
+TRACE::2024-05-05.10:56:05::SCWReader::Handling sysconfig dsp_rec
+TRACE::2024-05-05.10:56:05::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-05.10:56:05::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/
+TRACE::2024-05-05.10:56:05::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt
+TRACE::2024-05-05.10:56:05::SCWDomain:: Using the PMCQEMU args from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:56:05::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-05-05.10:56:05::SCWMssOS::No sw design opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::mss exists loading the mss file  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::Opened the sw design from mss  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::Adding the swdes entry /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-05-05.10:56:05::SCWMssOS::updating the scw layer about changes
+TRACE::2024-05-05.10:56:05::SCWMssOS::Opened the sw design.  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-05.10:56:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-05.10:56:05::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:56:05::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-05-05.10:56:05::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:56:05::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:56:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2024-05-05.10:56:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:56:05::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:56:05::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:56:05::SCWReader::No isolation master present  
+TRACE::2024-05-05.10:57:15::SCWPlatform::Clearing the existing platform
+TRACE::2024-05-05.10:57:15::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-05-05.10:57:15::SCWMssOS::Removing the swdes entry for  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:15::SCWSystem::Clearing the domains completed.
+TRACE::2024-05-05.10:57:15::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-05-05.10:57:15::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform:: Platform location is /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:15::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:15::SCWPlatform::Removing the HwDB with name /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:15::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:15::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:15::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-05-05.10:57:20::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWReader::Active system found as  dsp_rec
+TRACE::2024-05-05.10:57:20::SCWReader::Handling sysconfig dsp_rec
+TRACE::2024-05-05.10:57:20::SCWDomain::checking for install qemu data   : 
+TRACE::2024-05-05.10:57:20::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/
+TRACE::2024-05-05.10:57:20::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt
+TRACE::2024-05-05.10:57:20::SCWDomain:: Using the PMCQEMU args from install at  : /tools/Xilinx/Vitis/2023.1/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:57:20::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-05-05.10:57:20::SCWMssOS::No sw design opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::mss exists loading the mss file  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::Opened the sw design from mss  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::Adding the swdes entry /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-05-05.10:57:20::SCWMssOS::updating the scw layer about changes
+TRACE::2024-05-05.10:57:20::SCWMssOS::Opened the sw design.  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::Saving the mss changes /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-05-05.10:57:20::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-05-05.10:57:20::SCWMssOS::Commit changes completed.
+TRACE::2024-05-05.10:57:20::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-05-05.10:57:20::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to open the hw design at /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA given /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA absoulate path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform::DSA directory /home/franz/workspace/dsp_rec/hw
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Platform Path /home/franz/workspace/dsp_rec/hw/vck190.xsa
+TRACE::2024-05-05.10:57:20::SCWPlatform:: Unique name xilinx:vck190::0.0
+TRACE::2024-05-05.10:57:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2024-05-05.10:57:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-05-05.10:57:20::SCWMssOS::Checking the sw design at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWMssOS::DEBUG:  swdes dump  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-05-05.10:57:20::SCWMssOS::Sw design exists and opened at  /home/franz/workspace/dsp_rec/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2024-05-05.10:57:20::SCWReader::No isolation master present  

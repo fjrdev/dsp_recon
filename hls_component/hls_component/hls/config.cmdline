@@ -1,0 +1,5 @@
+relativeroot=/home/franz/workspace/hls_component
+
+[hls]
+ide.compjson=0
+

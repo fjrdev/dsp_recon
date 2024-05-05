@@ -1,0 +1,41 @@
+11:21:43 INFO  : updated workspace path: /home/franz/workspace/dsp_rec
+11:21:43 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:21:44 INFO  : Successfully created repository data at /tmp/rigel_lopper_franz2139461025122765340
+11:21:44 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz2139461025122765340 -r /tmp/rigel_lopper_franz2139461025122765340/.repo.yaml
+11:21:44 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:44 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz16037156245342262046 -r /home/franz/workspace/dsp_rec/.repo.yaml
+11:21:45 INFO  : Embedded Template List generated successfully
+11:21:45 INFO  : Embedded Template List generated successfully
+11:21:45 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:21:46 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:46 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz12061126300554266183 -r /home/franz/workspace/dsp_rec/.repo.yaml
+11:21:47 INFO  : Embedded Template List generated successfully
+11:21:47 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:21:48 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:48 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz9041164000915090608 -r /home/franz/workspace/dsp_rec/.repo.yaml
+11:21:48 INFO  : Embedded Template List generated successfully
+11:21:48 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec
+11:21:48 INFO  : updated workspace path: /home/franz/workspace/dsp_rec
+11:21:48 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:21:49 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:49 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz11647760374393193486 -r /home/franz/workspace/dsp_rec/.repo.yaml
+11:21:49 INFO  : Embedded Template List generated successfully
+11:21:49 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:21:50 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:50 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz12909067911942648956 -r /home/franz/workspace/dsp_rec/.repo.yaml
+11:21:51 INFO  : Embedded Template List generated successfully
+11:21:51 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:21:51 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:51 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz6351984452255535758 -r /home/franz/workspace/dsp_rec/.repo.yaml
+11:21:52 INFO  : Embedded Template List generated successfully
+11:21:52 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec
+11:22:00 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:22:01 ERROR : Failed to set workspace '/home/franz/workspace'. The path is already in use by another Vitis server
+11:22:01 ERROR : Failed to set workspace '/home/franz/workspace'. The path is already in use by another Vitis server
+11:22:01 INFO  : Successfully created repository data at /tmp/rigel_lopper_franz15942553576839718592
+11:22:01 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz15942553576839718592 -r /tmp/rigel_lopper_franz15942553576839718592/.repo.yaml
+11:22:02 INFO  : Embedded Template List generated successfully
+11:22:11 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+11:22:12 INFO  : Successfully created repository data at /home/franz/workspace
+11:22:12 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz13670728156156625160 -r /home/franz/workspace/.repo.yaml
+11:22:12 INFO  : Embedded Template List generated successfully

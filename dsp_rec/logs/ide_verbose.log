@@ -1,0 +1,926 @@
+2024-05-05 11:21:43 [debug] : Notification event posted from server - ON_DID_UPDATE_WORKSPACE. 
+2024-05-05 11:21:43 [debug] : --------------------------------------------------------------------------------- 
+2024-05-05 11:21:43 [debug] : /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:43 [debug] : --------------------------------------------------------------------------------- 
+2024-05-05 11:21:43 [debug] : [Logger] Previous user logs are stored in the file - /home/franz/.Xilinx/Vitis/2023.1/logs/ide.log 
+2024-05-05 11:21:43 [debug] : [Logger] Previous debug logs are stored in the file - /home/franz/.Xilinx/Vitis/2023.1/logs/ide_verbose.log 
+2024-05-05 11:21:43 [debug] : Trace: 2024-05-05T09:21:43.586Z ide TRACE [Logger] User logs will be redirected to the file - /home/franz/workspace/dsp_rec/logs/ide.log
+    at Object.log (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/logger-protocol.js:99:9)
+    at LoggerServer.showInfoOnConsole (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:209:41)
+    at LoggerServer.printLogDetails (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:175:14)
+    at LoggerServer.handleWorkspaceChange (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:103:14)
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:70:22
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:103:69
+    at CallbackList.invoke (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:109:26)
+    at Emitter.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:224:29)
+    at NotificationBackendClientImpl.handleEvent (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-backend-client.js:23:34)
+    at NotificationServerImpl.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:117:28)
+    at ClientReadableStreamImpl.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:66:22)
+    at ClientReadableStreamImpl.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at ClientReadableStreamImpl.Readable.push (node:internal/streams/readable:226:10)
+    at Object.onReceiveMessage (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:322:24) 
+2024-05-05 11:21:43 [debug] : Trace: 2024-05-05T09:21:43.586Z ide TRACE [Logger] Debug logs will be redirected to the file -  /home/franz/workspace/dsp_rec/logs/ide_verbose.log
+    at Object.log (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/logger-protocol.js:99:9)
+    at LoggerServer.showInfoOnConsole (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:209:41)
+    at LoggerServer.printLogDetails (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:177:14)
+    at LoggerServer.handleWorkspaceChange (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:103:14)
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:70:22
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:103:69
+    at CallbackList.invoke (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:109:26)
+    at Emitter.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:224:29)
+    at NotificationBackendClientImpl.handleEvent (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-backend-client.js:23:34)
+    at NotificationServerImpl.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:117:28)
+    at ClientReadableStreamImpl.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:66:22)
+    at ClientReadableStreamImpl.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at ClientReadableStreamImpl.Readable.push (node:internal/streams/readable:226:10)
+    at Object.onReceiveMessage (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:322:24) 
+2024-05-05 11:21:43 [debug] : [Logger] All the internal problems will be logged at debug level. 
+2024-05-05 11:21:43 [debug] : RIGEL SERVER 11:21:43 INFO  : updated workspace path: /home/franz/workspace/dsp_rec
+11:21:43 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:21:43 [debug] : Linked preference "workbench.colorCustomizations" not found. Source: "editor.bracketPairColorization.enabled" 
+2024-05-05 11:21:44 [debug] : [Application Examples Provider] Templates model update completed. 
+2024-05-05 11:21:44 [debug] : [Application Examples Provider] common calling method completed. 
+2024-05-05 11:21:44 [debug] : [Application Examples Provider] refresh completed. 
+2024-05-05 11:21:44 [debug] : Application UI init preferences 
+2024-05-05 11:21:44 [debug] : Frontend keybindings.onStart took longer than the expected maximum 100 milliseconds: 507.0 ms [Finished 2.520 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend menus.onStart: 7.3 ms [Finished 2.527 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Opening channel for service path '/services/search-in-workspace'. 
+2024-05-05 11:21:44 [debug] : Frontend c.onStart: 7.5 ms [Finished 2.535 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend h.onStart: 8.6 ms [Finished 2.544 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Opening channel for service path '/services/request-service'. 
+2024-05-05 11:21:44 [debug] : Could not start contribution {"0":"TypeError: t.registerToolbarItems is not a function\n    at h.onStart (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2008689)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1799844\n    at a.startAsync (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2310936)\n    at v.measure (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1800263)\n    at v.startContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1799799)\n    at async a.startAsync (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2310930)\n    at async v.start (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1795968)"}
+2024-05-05 11:21:44 [debug] : Frontend J.onStart: 0.1 ms [Finished 2.549 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend l.onStart: 0.5 ms [Finished 2.550 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend u.onStart: 5.9 ms [Finished 2.556 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend n.onStart: 0.2 ms [Finished 2.556 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend u.onStart: 1.3 ms [Finished 2.558 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Skipping menu item with missing command: "plugin.view-container.test.toggle". 
+2024-05-05 11:21:44 [debug] : Frontend m.onStart: 31.0 ms [Finished 2.589 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend p.onStart: 0.1 ms [Finished 2.589 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend h.onStart: 0.3 ms [Finished 2.590 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend u.onStart: 0.5 ms [Finished 2.591 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend m.onStart: 0.2 ms [Finished 2.591 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend n.onStart: 0.6 ms [Finished 2.592 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend v.onStart: 0.2 ms [Finished 2.592 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend L.onStart: 0.2 ms [Finished 2.593 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend c.onStart: 0.1 ms [Finished 2.593 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend b.onStart: 0.1 ms [Finished 2.594 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend g.onStart: 0.4 ms [Finished 2.594 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend f.onStart: 0.2 ms [Finished 2.595 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend b.onStart: 0.3 ms [Finished 2.595 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend h.onStart: 0.3 ms [Finished 2.596 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend K.onStart: 0.8 ms [Finished 2.597 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend $.onStart: 0.1 ms [Finished 2.597 s after frontend start] 
+2024-05-05 11:21:44 [debug] : [hosted-plugin: 7081] IPC started 
+2024-05-05 11:21:44 [debug] : Frontend y.onStart: 0.1 ms [Finished 2.597 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend Object.onStart: 0.2 ms [Finished 2.598 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend w.onStart: 23.6 ms [Finished 2.622 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend h.onStart: 0.3 ms [Finished 2.623 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend N.onStart: 0.1 ms [Finished 2.623 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend f.onStart: 0.5 ms [Finished 2.624 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend n.onStart: 0.3 ms [Finished 2.624 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend c.onStart: 0.3 ms [Finished 2.625 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend m.onStart: 0.2 ms [Finished 2.625 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Start frontend contributions: 1132.5 ms [Finished 2.626 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Changed application state from 'init' to 'started_contributions'. 
+2024-05-05 11:21:44 [debug] : Changed application state from 'started_contributions' to 'attached_shell'. 
+2024-05-05 11:21:44 [debug] : >>> Restoring the layout state... 
+2024-05-05 11:21:44 [debug] : Received event from notification service: ON_START_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:44 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["f3ea4dd8-adfd-49b5-9fcd-94cb97e74d0e",null,54,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:21:44 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:44 [debug] : [ProjectCache] fetching projects for project-cache 
+2024-05-05 11:21:44 [debug] : Received event from notification service: ON_DID_UPDATE_WORKSPACE. 
+2024-05-05 11:21:44 [debug] : [Logger Client] log levelchanged to  {"0":"Info"}
+2024-05-05 11:21:44 [debug] : [Logger UI]  Update Log Level  called 
+2024-05-05 11:21:44 [debug] : Skipping menu item with missing command: "plugin.view-container.test.toggle". 
+2024-05-05 11:21:44 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a] Waiting for backend deployment: 133.2 ms [Finished 2.731 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:44 [debug] : [Logger UI]  Update Log Level success {"0":{"success":true,"error":""}}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 2,
+        "startColumn": 47,
+        "endLineNumber": 2,
+        "endColumn": 52
+      },
+      "rangeLength": 5,
+      "text": "false",
+      "rangeOffset": 48,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 2,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 3,
+        "startColumn": 29,
+        "endLineNumber": 3,
+        "endColumn": 37
+      },
+      "rangeLength": 8,
+      "text": "\"custom\"",
+      "rangeOffset": 83,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 3,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a] Sync of 14 plugins: 173.5 ms [Finished 2.905 s after frontend start] 
+2024-05-05 11:21:44 [debug] : <<< Nothing to restore. 
+2024-05-05 11:21:44 [debug] : Frontend L.initializeLayout: 21.9 ms [Finished 2.928 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend b.initializeLayout: 11.3 ms [Finished 2.939 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend d.initializeLayout: 4.4 ms [Finished 2.944 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend K.initializeLayout: 3.1 ms [Finished 2.947 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend y.initializeLayout: 10.4 ms [Finished 2.958 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend w.initializeLayout: 5.3 ms [Finished 2.963 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend c.initializeLayout: 2.9 ms [Finished 2.966 s after frontend start] 
+2024-05-05 11:21:44 [debug] : [Repository Examples UI] in on initialize layout method. 
+2024-05-05 11:21:44 [debug] : Frontend M.initializeLayout: 9.7 ms [Finished 2.976 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend A.initializeLayout: 13.2 ms [Finished 2.989 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Opening channel for service path '/services/report-model'. 
+2024-05-05 11:21:44 [debug] : Frontend u.initializeLayout: 3.6 ms [Finished 2.993 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend N.initializeLayout: 10.8 ms [Finished 3.004 s after frontend start] 
+2024-05-05 11:21:44 [debug] : Frontend f.initializeLayout: 0.0 ms [Finished 3.004 s after frontend start] 
+2024-05-05 11:21:44 [debug] : RIGEL SERVER 11:21:44 INFO  : Successfully created repository data at /tmp/rigel_lopper_franz2139461025122765340 
+2024-05-05 11:21:44 [debug] : RIGEL SERVER 11:21:44 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz2139461025122765340 -r /tmp/rigel_lopper_franz2139461025122765340/.repo.yaml 
+2024-05-05 11:21:44 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081) starting instance 
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:21:44 [debug] : RIGEL SERVER 11:21:44 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:44 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz16037156245342262046 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-05 11:21:45 [debug] : RIGEL SERVER 11:21:45 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:45 [debug] : RIGEL SERVER 11:21:45 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:45 [debug] : RIGEL SERVER 11:21:45 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:21:45 [debug] : Initialize the workbench layout: 600.6 ms [Finished 3.249 s after frontend start] 
+2024-05-05 11:21:45 [debug] : Changed application state from 'attached_shell' to 'initialized_layout'. 
+2024-05-05 11:21:45 [debug] : Frontend I.onDidInitializeLayout: 0.2 ms [Finished 3.250 s after frontend start] 
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyRemoteFileUrlToClipboard","group":"1_gitlens@1","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyRemoteFileUrlFrom","group":"1_gitlens@2","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyRemoteCommitUrl","group":"1_gitlens@3","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyShaToClipboard","group":"2_gitlens@1","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyMessageToClipboard","group":"2_gitlens@2","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to extension/context {"0":{"command":"gitlens.showWelcomePage","group":"9_gitlens@1","when":"extension =~ /^eamodio.gitlens(-insiders)?$/ && extensionStatus == installed"},"1":"Error: Could not find submenu with id extension/context\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to extension/context {"0":{"command":"gitlens.showSettingsPage","group":"9_gitlens@2","when":"extension =~ /^eamodio.gitlens(-insiders)?$/ && extensionStatus == installed"},"1":"Error: Could not find submenu with id extension/context\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to git.commit {"0":{"command":"gitlens.addAuthors","group":"4_gitlens@1","when":"gitlens:enabled && !gitlens:readonly && config.gitlens.menus.scm.authors"},"1":"Error: Could not find submenu with id git.commit\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to menuBar/edit/copy {"0":{"command":"gitlens.copyRemoteFileUrlToClipboard","group":"1_gitlens@1","when":"gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id menuBar/edit/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to menuBar/edit/copy {"0":{"command":"gitlens.copyRemoteFileUrlFrom","group":"1_gitlens@2","when":"gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id menuBar/edit/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][eamodio.gitlens]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][xilinx.rigel-config-vscode]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][xilinx.rigel-hls-pragma]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin xilinx.tcf-debug contributed to editor/title/run {"0":{"command":"extension.tcf-debug.debugEditorContents","group":"navigation@2","when":"resourceLangId == cpp || resourceLangId == c"},"1":"Error: Could not find submenu with id editor/title/run\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][xilinx.tcf-debug]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][twxs.cmake]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.cpp]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.github]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.github-authentication]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.json]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : Preference name collision detected in the schema for property: [json] 
+2024-05-05 11:21:45 [debug] : Preference name collision detected in the schema for property: [jsonc] 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.json-language-features]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][llvm-vs-code-extensions.vscode-clangd]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][pkief.material-icon-theme]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][webfreak.debug]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin vscode.git contributed to scm/sourceControl {"0":{"command":"git.close","group":"navigation","when":"scmProvider == git"},"1":"Error: Could not find submenu with id scm/sourceControl\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin vscode.git contributed to scm/change/title {"0":{"command":"git.stageChange","when":"config.git.enabled && !git.missing && originalResourceScheme == git"},"1":"Error: Could not find submenu with id scm/change/title\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : Failed to register a menu item for plugin vscode.git contributed to scm/change/title {"0":{"command":"git.revertChange","when":"config.git.enabled && !git.missing && originalResourceScheme == git"},"1":"Error: Could not find submenu with id scm/change/title\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.git]: Loaded contributions. 
+2024-05-05 11:21:45 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a] Load contributions of 14 plugins: 446.8 ms [Finished 3.697 s after frontend start] 
+2024-05-05 11:21:45 [debug] : Frontend w.onDidInitializeLayout: 39.9 ms [Finished 3.743 s after frontend start] 
+2024-05-05 11:21:45 [debug] : Frontend N.onDidInitializeLayout: 15.5 ms [Finished 3.777 s after frontend start] 
+2024-05-05 11:21:45 [debug] : Frontend f.onDidInitializeLayout: 15.4 ms [Finished 3.798 s after frontend start] 
+2024-05-05 11:21:45 [debug] : Error: view container is disposed
+    at n.get containerLayout [as containerLayout] (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2163435)
+    at n.getParts (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2163193)
+    at n.getTrackableWidgets (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2166551)
+    at I.prepareViewContainer (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7229683)
+    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7231844
+    at async Promise.all (index 2)
+    at async I.initWidgets (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7232506)
+    at async U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961146)
+    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)
+    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468 
+2024-05-05 11:21:45 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:45 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:45 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:45 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:45 [debug] : 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope 
+2024-05-05 11:21:45 [debug] : a registered grammar configuration for 'cpp' language is overridden 
+2024-05-05 11:21:45 [debug] : [Application Examples Provider] Templates model update completed. 
+2024-05-05 11:21:45 [debug] : [Application Examples Provider] common calling method completed. 
+2024-05-05 11:21:45 [debug] : [Application Examples Provider] refresh completed. 
+2024-05-05 11:21:46 [debug] : Frontend application start: 3055.3 ms [Finished 90.607 s after backend start] 
+2024-05-05 11:21:46 [debug] : Replace loading indicator with ready workbench UI (animation): 1049.6 ms [Finished 4.856 s after frontend start] 
+2024-05-05 11:21:46 [debug] : Changed application state from 'initialized_layout' to 'ready'. 
+2024-05-05 11:21:46 [debug] : RIGEL SERVER 11:21:46 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:46 [debug] : RIGEL SERVER 11:21:46 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz12061126300554266183 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-05 11:21:46 [debug] : f.registerSchemas is taking more than 500.0 ms, new schemas are ignored. 
+2024-05-05 11:21:46 [debug] : Opening channel for service path '/services/keytar'. 
+2024-05-05 11:21:46 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:46 [debug] : getTasks(): about to return task information for 0 tasks 
+2024-05-05 11:21:46 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:46 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:46 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): PluginManagerExtImpl/init() 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(gitlens@11.7.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(rigel-config-vscode@0.0.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(rigel-hls-pragma@0.0.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(tcf-debug@0.0.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] Debugger contribution has been registered: tcf-debug 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(cmake@0.0.17 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(cpp@1.52.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(github@1.62.3 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(github-authentication@1.62.3 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(json@1.52.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(json-language-features@1.52.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+PLUGIN_HOST(7081): initializing(vscode-clangd@0.1.7 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+PLUGIN_HOST(7081): initializing(material-icon-theme@4.11.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): initializing(debug@0.25.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+Debugger contribution has been registered: gdb
+Debugger contribution has been registered: lldb-mi
+Debugger contribution has been registered: mago-mi
+PLUGIN_HOST(7081): initializing(git@1.62.3 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] Unsupported activation events: oncommand:gitlens.copyCurrentBranch, please open an issue: https://github.com/eclipse-theia/theia/issues/new 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode.git/extension/dist/main) 
+2024-05-05 11:21:46 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode-builtin-github/extension/dist/extension.js) 
+2024-05-05 11:21:47 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/node/jsonClientMain) 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][eamodio.gitlens]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][xilinx.rigel-config-vscode]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][xilinx.rigel-hls-pragma]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][xilinx.tcf-debug]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][twxs.cmake]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.cpp]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.github]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.github-authentication]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.json]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.json-language-features]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][llvm-vs-code-extensions.vscode-clangd]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][pkief.material-icon-theme]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][webfreak.debug]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a][vscode.git]: Started plugin. 
+2024-05-05 11:21:47 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode-material-icon-theme/extension/dist/extension) 
+2024-05-05 11:21:47 [debug] : [hosted-plugin: 7081] PLUGIN_HOST(7081): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/eamodio-gitlens/extension/dist/gitlens) 
+2024-05-05 11:21:47 [debug] : RIGEL SERVER 11:21:47 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:47 [debug] : RIGEL SERVER 11:21:47 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:21:47 [debug] : command 'gitlens.clearFileAnnotations' already registered 
+2024-05-05 11:21:47 [debug] : command 'gitlens.computingFileAnnotations' already registered 
+2024-05-05 11:21:47 [debug] : [cf1f1690-6584-4d01-abc9-ff3e533bdd2a] Start of 14 plugins: 2151.5 ms [Finished 6.005 s after frontend start] 
+2024-05-05 11:21:48 [debug] : RIGEL SERVER 11:21:48 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:48 [debug] : RIGEL SERVER 11:21:48 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz9041164000915090608 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-05 11:21:48 [debug] : RIGEL SERVER 11:21:48 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:48 [debug] : RIGEL SERVER 11:21:48 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:48 [debug] : Notification event posted from server - ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2024-05-05 11:21:48 [debug] : Notification event posted from server - ON_DID_UPDATE_WORKSPACE. 
+2024-05-05 11:21:48 [debug] : --------------------------------------------------------------------------------- 
+2024-05-05 11:21:48 [debug] : /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:48 [debug] : --------------------------------------------------------------------------------- 
+2024-05-05 11:21:48 [debug] : [Logger] Previous user logs are stored in the file - /home/franz/workspace/dsp_rec/logs/ide.log 
+2024-05-05 11:21:48 [debug] : [Logger] Previous debug logs are stored in the file - /home/franz/workspace/dsp_rec/logs/ide_verbose.log 
+2024-05-05 11:21:48 [debug] : Trace: 2024-05-05T09:21:48.691Z ide TRACE [Logger] User logs will be redirected to the file - /home/franz/workspace/dsp_rec/logs/ide.log
+    at Object.log (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/logger-protocol.js:99:9)
+    at LoggerServer.showInfoOnConsole (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:209:41)
+    at LoggerServer.printLogDetails (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:175:14)
+    at LoggerServer.handleWorkspaceChange (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:103:14)
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:70:22
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:103:69
+    at CallbackList.invoke (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:109:26)
+    at Emitter.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:224:29)
+    at NotificationBackendClientImpl.handleEvent (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-backend-client.js:23:34)
+    at NotificationServerImpl.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:117:28)
+    at ClientReadableStreamImpl.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:66:22)
+    at ClientReadableStreamImpl.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at ClientReadableStreamImpl.Readable.push (node:internal/streams/readable:226:10)
+    at Object.onReceiveMessage (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:322:24) 
+2024-05-05 11:21:48 [debug] : Trace: 2024-05-05T09:21:48.692Z ide TRACE [Logger] Debug logs will be redirected to the file -  /home/franz/workspace/dsp_rec/logs/ide_verbose.log
+    at Object.log (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/logger-protocol.js:99:9)
+    at LoggerServer.showInfoOnConsole (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:209:41)
+    at LoggerServer.printLogDetails (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:177:14)
+    at LoggerServer.handleWorkspaceChange (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:103:14)
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:70:22
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:103:69
+    at CallbackList.invoke (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:109:26)
+    at Emitter.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:224:29)
+    at NotificationBackendClientImpl.handleEvent (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-backend-client.js:23:34)
+    at NotificationServerImpl.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:117:28)
+    at ClientReadableStreamImpl.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:66:22)
+    at ClientReadableStreamImpl.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at ClientReadableStreamImpl.Readable.push (node:internal/streams/readable:226:10)
+    at Object.onReceiveMessage (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:322:24) 
+2024-05-05 11:21:48 [debug] : [Logger] All the internal problems will be logged at debug level. 
+2024-05-05 11:21:48 [debug] : Received event from notification service: ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2024-05-05 11:21:48 [debug] : [ProjectCache] fetching projects for project-cache 
+2024-05-05 11:21:48 [debug] : Received event from notification service: ON_DID_UPDATE_WORKSPACE. 
+2024-05-05 11:21:48 [debug] : [Logger Client] log levelchanged to  {"0":"Info"}
+2024-05-05 11:21:48 [debug] : [Logger UI]  Update Log Level  called 
+2024-05-05 11:21:48 [debug] : RIGEL SERVER 11:21:48 INFO  : updated workspace path: /home/franz/workspace/dsp_rec
+11:21:48 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:21:48 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["2ba042c7-f084-495f-b5d8-88917ef3b564",null,54,null,null,null,null,"refresh-summaries"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:21:48 [debug] : [ProjectDecorator] tree decoration updated 
+2024-05-05 11:21:48 [debug] : [ProjectCache] Project location updated to undefined 
+2024-05-05 11:21:48 [debug] : [ProjectDecorator] tree decoration updated 
+2024-05-05 11:21:48 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:48 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:48 [debug] : [Logger UI]  Update Log Level success {"0":{"success":true,"error":""}}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 1,
+        "startColumn": 1,
+        "endLineNumber": 1,
+        "endColumn": 1
+      },
+      "rangeLength": 0,
+      "text": "{\n    \"clangd.fallbackFlags\": []\n}",
+      "rangeOffset": 0,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 2,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.cancelSync {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.cancelSync {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:48 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:49 [debug] : RIGEL SERVER 11:21:49 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+11:21:49 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz11647760374393193486 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-05 11:21:49 [debug] : RIGEL SERVER 11:21:49 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:49 [debug] : RIGEL SERVER 11:21:49 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:21:50 [debug] : RIGEL SERVER 11:21:50 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:50 [debug] : RIGEL SERVER 11:21:50 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz12909067911942648956 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-05 11:21:51 [debug] : RIGEL SERVER 11:21:51 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:51 [debug] : RIGEL SERVER 11:21:51 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:21:51 [debug] : RIGEL SERVER 11:21:51 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:51 [debug] : RIGEL SERVER 11:21:51 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz6351984452255535758 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-05 11:21:52 [debug] : RIGEL SERVER 11:21:52 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:21:52 [debug] : RIGEL SERVER 11:21:52 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec 
+2024-05-05 11:21:52 [debug] : Notification event posted from server - ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2024-05-05 11:21:52 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["2a1c40d4-0565-40a5-bc22-0440b123070c",null,54,null,null,null,null,"refresh-summaries"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:21:52 [debug] : Received event from notification service: ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2024-05-05 11:21:52 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:52 [debug] : [ProjectDecorator] tree decoration updated 
+2024-05-05 11:21:52 [debug] : [ProjectCache] Project location updated to undefined 
+2024-05-05 11:21:52 [debug] : [ProjectDecorator] tree decoration updated 
+2024-05-05 11:21:52 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 2,
+        "startColumn": 29,
+        "endLineNumber": 2,
+        "endColumn": 31
+      },
+      "rangeLength": 2,
+      "text": "[]",
+      "rangeOffset": 30,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 3,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.cancelSync {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.cancelSync {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:52 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-05 11:21:59 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:59 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:21:59 [debug] : Shutting down because of Reload request. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/commands'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/keyboard'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/logger'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/messageService'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/startup-workspace'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/remote-filesystem'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/envs'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/workspace'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/stopwatch'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/application'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/i18n'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/hostedPlugin'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/debug'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/shell-terminal'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/task'. 
+2024-05-05 11:21:59 [debug] : a client has disconnected - removed from list: 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/quickPick'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/plugin-ext'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/plugin-paths'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/search'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/server'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/repository'. 
+2024-05-05 11:21:59 [debug] : [Repository Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/rigel-utils'. 
+2024-05-05 11:21:59 [debug] : [Rigel Utils Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/component'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/rigel-workspace'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/project'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/analysis'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/notification'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/recent-summaries'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/build'. 
+2024-05-05 11:21:59 [debug] : [Build Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path 'services/rigel-backend-helper'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/debugger'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/aie'. 
+2024-05-05 11:21:59 [debug] : [AIE Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/rigel_explorer'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/rigel-logger'. 
+2024-05-05 11:21:59 [debug] : [Logger Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/platform'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/vitis-hls'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/device'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/vcxx'. 
+2024-05-05 11:21:59 [debug] : [Rigel Vcxx Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/hls_flow'. 
+2024-05-05 11:21:59 [debug] : [Hls Flow Server] Disposing objects in backend. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/mini-browser-service'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/flow_navigator'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/hls/common/data/info'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/hls/report'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/hls/wave/open'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/search-in-workspace'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/request-service'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/report-model'. 
+2024-05-05 11:21:59 [debug] : Closing channel on service path '/services/keytar'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/commands'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/keyboard'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/logger'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/messageService'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/startup-workspace'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/remote-filesystem'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/envs'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/workspace'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/stopwatch'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/application'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/i18n'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/hostedPlugin'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/debug'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/shell-terminal'. 
+2024-05-05 11:22:00 [debug] : a client has connected - adding it to the list: 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/task'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/quickPick'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/plugin-ext'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/plugin-paths'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/search'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/server'. 
+2024-05-05 11:22:00 [debug] : [Repository Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/repository'. 
+2024-05-05 11:22:00 [debug] : [Rigel Utils Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/rigel-utils'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/component'. 
+2024-05-05 11:22:00 [debug] : [Workspace Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/rigel-workspace'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/project'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/analysis'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/notification'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/recent-summaries'. 
+2024-05-05 11:22:00 [debug] : [Build Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/build'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path 'services/rigel-backend-helper'. 
+2024-05-05 11:22:00 [debug] : [Debugger Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/debugger'. 
+2024-05-05 11:22:00 [debug] : [AIE Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/aie'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/rigel_explorer'. 
+2024-05-05 11:22:00 [debug] : [Logger Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/rigel-logger'. 
+2024-05-05 11:22:00 [debug] : [Platform Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/platform'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/vitis-hls'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/device'. 
+2024-05-05 11:22:00 [debug] : [Rigel Vcxx Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/vcxx'. 
+2024-05-05 11:22:00 [debug] : [Hls Flow Server] Connection established from backend to the frontend client. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/hls_flow'. 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/mini-browser-service'. 
+2024-05-05 11:22:00 [debug] : [Repository Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : [Rigel Utils Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : [Workspace Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : [Debugger Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : [Logger Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : [Rigel Vcxx Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : [Hls Flow Server] Initializing the frontend client. 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : getTasks(): about to return task information for 0 tasks 
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:listAppRepos with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:listAieExampleRepos with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:listHlsExampleRepos with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getEmbeddedExampleTemplateTree with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Rigel Vcxx Server] Executing method:vcxx.hasVcxx with connection:(object). {"0":"request:"}
+2024-05-05 11:22:00 [debug] : RIGEL SERVER 11:22:00 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:22:00 [debug] : [Repository Server] Executed method:listHlsExampleRepos. {"0":"result:","1":[{"id":"vitis_hls_examples","name":"Vitis HLS Introductory Examples","description":"Basic examples for Vitis HLS.","installDirectory":"/tools/Xilinx/Vitis/2023.1/vitis_hls_examples","localDirectory":"/home/franz/.Xilinx/Vitis/2023.1/vitis_hls_examples","gitUrl":"https://github.com/Xilinx/Vitis-HLS-Introductory-Examples.git","gitBranch":"2023.1","type":4}]}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executed method:listAppRepos. {"0":"result:","1":[{"id":"vitis_examples","name":"Vitis Accel Examples Repository","description":"This repository contains examples to showcase various features of the Vitis tools and platforms. The examples illustrate specific scenarios related to host code and kernel programming through small working examples.","installDirectory":"/tools/Xilinx/Vitis/2023.1/vitis_examples","localDirectory":"/home/franz/.Xilinx/Vitis/2023.1/vitis_examples","gitUrl":"https://github.com/Xilinx/Vitis_Accel_Examples.git","gitBranch":"2023.1","type":2},{"id":"installed_examples","name":"Installed Examples Repository","description":"This repository contains some simple examples.","installDirectory":"/tools/Xilinx/Vitis/2023.1/installed_examples","localDirectory":"/tools/Xilinx/Vitis/2023.1/samples","gitUrl":"","gitBranch":"","type":2},{"id":"vitis_libraries","name":"Vitis Accelerated Libraries Repository","description":"The Vitis software development platform includes an extensive set of open-source, performance-optimized libraries that offer out-of-the-box acceleration with minimal to zero-code changes to your existing applications.","installDirectory":"/tools/Xilinx/Vitis/2023.1/vitis_libraries","localDirectory":"/home/franz/.Xilinx/Vitis/2023.1/vitis_libraries","gitUrl":"https://github.com/Xilinx/Vitis_Libraries.git","gitBranch":"2023.1","type":1}]}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executed method:listAieExampleRepos. {"0":"result:","1":[{"id":"installed_aie_examples","name":"Installed AI Engine Examples","description":"This repository contains some simple AI Engine examples.","installDirectory":"/tools/Xilinx/Vitis/2023.1/installed_aie_examples","localDirectory":"/tools/Xilinx/Vitis/2023.1/samples","gitUrl":"","gitBranch":"","type":3}]}
+2024-05-05 11:22:00 [debug] : [Rigel Vcxx Server] Executed method:vcxx.hasVcxx. {"0":"result:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : Frontend l.initialize: 0.7 ms [Finished 1.513 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend m.initialize: 0.7 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend m.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend n.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend Object.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend v.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend h.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend E.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend f.initialize: 0.0 ms [Finished 1.515 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend _.initialize: 5.7 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend d.initialize: 0.0 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend d.initialize: 0.0 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend w.initialize: 0.0 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend n.initialize: 0.0 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend n.initialize: 0.0 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend h.initialize: 0.0 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : [Build Output] Adding listeners to build service. 
+2024-05-05 11:22:00 [debug] : Frontend L.initialize: 0.2 ms [Finished 1.521 s after frontend start] 
+2024-05-05 11:22:00 [debug] : [Launch Menu] Adding listeners to manage launch session. 
+2024-05-05 11:22:00 [debug] : [Debug Manager] A debug session listener is registered to receive launch events. 
+2024-05-05 11:22:00 [debug] : Frontend W.initialize: 0.2 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend d.initialize: 0.0 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend m.initialize: 0.0 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Adding listeners to preference service. 
+2024-05-05 11:22:00 [debug] : Frontend d.initialize: 0.0 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : [Platform Output] Adding listeners to build service. 
+2024-05-05 11:22:00 [debug] : Frontend x.initialize: 0.1 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : [Build Output] Adding listeners to build service. 
+2024-05-05 11:22:00 [debug] : Frontend m.initialize: 0.0 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : [HLS Output] Adding listeners to HLS service. 
+2024-05-05 11:22:00 [debug] : Frontend m.initialize: 0.0 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend d.initialize: 0.1 ms [Finished 1.522 s after frontend start] 
+2024-05-05 11:22:00 [debug] : [Build Client] Initializaton completed and build service is ready in the frontend to receive build logs. 
+2024-05-05 11:22:00 [debug] : [AIE Client] Initializaton completed and build service is ready in the frontend to receive build logs. 
+2024-05-05 11:22:00 [debug] : Initializaton completed and build service is ready in the frontend to receive build logs. 
+2024-05-05 11:22:00 [debug] : [Repository Client] Initializaton completed. 
+2024-05-05 11:22:00 [debug] : [Repository Client] Ready to accept calls from the UI widgets. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider]  updating the model on initialization. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] refresh requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] refresh requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] refresh requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] refresh requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] common calling method requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:listAppRepos from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] common calling method requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:listAieExampleRepos from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] common calling method requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:listHlsExampleRepos from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] common calling method requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update requested. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Templates model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getEmbeddedExampleTemplateTree from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : [Rigel Utils Client] Initializaton completed. 
+2024-05-05 11:22:00 [debug] : [Workspace Client] Initializaton completed. 
+2024-05-05 11:22:00 [debug] : [ProjectCache] fetching projects for project-cache 
+2024-05-05 11:22:00 [debug] : [Debugger Client] Initializaton completed. 
+2024-05-05 11:22:00 [debug] : [Logger Client] Initializaton completed. 
+2024-05-05 11:22:00 [debug] : [Rigel vcxx Client] Initializaton completed. 
+2024-05-05 11:22:00 [debug] : [HLS Flow Client] Initialization completed. 
+2024-05-05 11:22:00 [debug] : Frontend J.configure took longer than the expected maximum 100 milliseconds: 259.6 ms [Finished 1.782 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Frontend n.configure: 0.1 ms [Finished 1.782 s after frontend start] 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["3d551099-0d42-4a82-93a2-0ad23cd7a6cb",null,53,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getAppRepoState from frontend. {"0":"request:","1":{"repoId":"vitis_hls_examples","repoType":4}}
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getAppRepoState from frontend. {"0":"request:","1":{"repoId":"vitis_examples","repoType":2}}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] installed_aie_examples:true 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update completed. 
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getAppRepoState with connection:(object). {"0":"request:","1":{"repoId":"vitis_hls_examples","repoType":4}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getAppRepoState with connection:(object). {"0":"request:","1":{"repoId":"vitis_examples","repoType":2}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getAieExampleTemplateTree with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Templates model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getAieExampleTemplateTree from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : [ProjectCache] Project location updated to undefined 
+2024-05-05 11:22:00 [debug] : Notification event posted from server - ON_START_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:00 [debug] : [Repository Server] Executed method:getAppRepoState. {"0":"result:","1":{"repoId":"","status":2}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executed method:getAppRepoState. {"0":"result:","1":{"repoId":"","status":2}}
+2024-05-05 11:22:00 [debug] : Received event from notification service: ON_START_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:00 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["c2c71153-9e82-4490-a4a7-1a8287600c12",null,54,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider]  Application repository status:2 for id:vitis_hls_examples 
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getHlsExampleTemplateTree with connection:(object). {"0":"request:","1":{"wrappers_":null,"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] vitis_hls_examples:false 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Templates model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getHlsExampleTemplateTree from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getAppRepoState with connection:(object). {"0":"request:","1":{"repoId":"vitis_libraries","repoType":1}}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider]  Application repository status:2 for id:vitis_examples 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getAppRepoState from frontend. {"0":"request:","1":{"repoId":"vitis_libraries","repoType":1}}
+2024-05-05 11:22:00 [debug] : [Repository Server] Executed method:getAppRepoState. {"0":"result:","1":{"repoId":"","status":2}}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Templates model update completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] common calling method completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] refresh completed. 
+2024-05-05 11:22:00 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Templates model update completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] common calling method completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] refresh completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider]  Application repository status:2 for id:vitis_libraries 
+2024-05-05 11:22:00 [debug] : [Repository Server] Executing method:getAppTemplateTree with connection:(object). {"0":"request:","1":{"wrappers_":{},"arrayIndexOffset_":-1,"array":[],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] vitis_examples:false 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] installed_examples:true 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] vitis_libraries:false 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Repositories model update completed. 
+2024-05-05 11:22:00 [debug] : [Application Examples Provider] Templates model update requested. 
+2024-05-05 11:22:00 [debug] : [Repository Service] Executing method:getAppTemplateTree from frontend. {"0":"request:"}
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:00 [debug] : Opening channel for service path '/services/flow_navigator'. 
+2024-05-05 11:22:01 [debug] : Opening channel for service path '/services/hls/common/data/info'. 
+2024-05-05 11:22:01 [debug] : Opening channel for service path '/services/hls/report'. 
+2024-05-05 11:22:01 [debug] : Opening channel for service path '/services/hls/wave/open'. 
+2024-05-05 11:22:01 [debug] : Frontend v.configure took longer than the expected maximum 100 milliseconds: 111.0 ms [Finished 1.893 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend u.configure: 0.0 ms [Finished 1.893 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Application UI init preferences 
+2024-05-05 11:22:01 [debug] : Frontend commands.onStart: 29.2 ms [Finished 1.923 s after frontend start] 
+2024-05-05 11:22:01 [debug] : [Application Examples Provider] Templates model update completed. 
+2024-05-05 11:22:01 [debug] : [Application Examples Provider] common calling method completed. 
+2024-05-05 11:22:01 [debug] : [Application Examples Provider] refresh completed. 
+2024-05-05 11:22:01 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["3d6e61d5-c38d-4105-a1fd-d1bcaead1258",null,53,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:01 [debug] : [Workspace Service] Initializaton completed. Updating workspace '/home/franz/workspace' in the server from service. 
+2024-05-05 11:22:01 [debug] : [Workspace Server] In 'setWorkspace' with connection:[object Object] request:{"path":"/home/franz/workspace"} 
+2024-05-05 11:22:01 [debug] : [Workspace Service] Initializaton completed. Updating workspace '/home/franz/workspace' in the server from service. 
+2024-05-05 11:22:01 [debug] : [Workspace Server] In 'setWorkspace' with connection:[object Object] request:{"path":"/home/franz/workspace"} 
+2024-05-05 11:22:01 [debug] : Notification event posted from server - ON_START_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:01 [debug] : Request setWorkspace failed with error: 9 FAILED_PRECONDITION: The workspace '/home/franz/workspace' is already in use. {"0":"Error: 9 FAILED_PRECONDITION: The workspace '/home/franz/workspace' is already in use.\n    at Object.callErrorFromStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/call.js:31:26)\n    at Object.onReceiveStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:180:52)\n    at Object.onReceiveStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:336:141)\n    at Object.onReceiveStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:299:181)\n    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/call-stream.js:160:78\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)"}
+2024-05-05 11:22:01 [debug] : RIGEL SERVER 11:22:01 ERROR : Failed to set workspace '/home/franz/workspace'. The path is already in use by another Vitis server
+11:22:01 ERROR : Failed to set workspace '/home/franz/workspace'. The path is already in use by another Vitis server 
+2024-05-05 11:22:01 [debug] : Request setWorkspace failed with error: 9 FAILED_PRECONDITION: The workspace '/home/franz/workspace' is already in use. {"0":"Error: 9 FAILED_PRECONDITION: The workspace '/home/franz/workspace' is already in use.\n    at Object.callErrorFromStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/call.js:31:26)\n    at Object.onReceiveStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:180:52)\n    at Object.onReceiveStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:336:141)\n    at Object.onReceiveStatus (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:299:181)\n    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/call-stream.js:160:78\n    at processTicksAndRejections (node:internal/process/task_queues:78:11)"}
+2024-05-05 11:22:01 [debug] : Linked preference "workbench.colorCustomizations" not found. Source: "editor.bracketPairColorization.enabled" 
+2024-05-05 11:22:01 [debug] : Application UI init preferences 
+2024-05-05 11:22:01 [debug] : Frontend keybindings.onStart took longer than the expected maximum 100 milliseconds: 555.5 ms [Finished 2.479 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend menus.onStart: 7.7 ms [Finished 2.486 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Opening channel for service path '/services/search-in-workspace'. 
+2024-05-05 11:22:01 [debug] : Frontend c.onStart: 8.3 ms [Finished 2.495 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend h.onStart: 27.2 ms [Finished 2.522 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Opening channel for service path '/services/request-service'. 
+2024-05-05 11:22:01 [debug] : Could not start contribution {"0":"TypeError: t.registerToolbarItems is not a function\n    at h.onStart (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2008689)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1799844\n    at a.startAsync (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2310936)\n    at v.measure (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1800263)\n    at v.startContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1799799)\n    at async a.startAsync (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2310930)\n    at async v.start (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:1795968)"}
+2024-05-05 11:22:01 [debug] : Frontend J.onStart: 0.1 ms [Finished 2.529 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend l.onStart: 0.7 ms [Finished 2.530 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend u.onStart: 7.6 ms [Finished 2.538 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend n.onStart: 0.2 ms [Finished 2.538 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend u.onStart: 1.1 ms [Finished 2.540 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Skipping menu item with missing command: "plugin.view-container.test.toggle". 
+2024-05-05 11:22:01 [debug] : Frontend m.onStart: 25.5 ms [Finished 2.566 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend p.onStart: 0.0 ms [Finished 2.566 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend h.onStart: 0.0 ms [Finished 2.566 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend u.onStart: 0.3 ms [Finished 2.567 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend m.onStart: 0.1 ms [Finished 2.567 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend n.onStart: 0.6 ms [Finished 2.568 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend v.onStart: 0.2 ms [Finished 2.568 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend L.onStart: 0.1 ms [Finished 2.569 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend c.onStart: 0.1 ms [Finished 2.569 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend b.onStart: 0.1 ms [Finished 2.569 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend g.onStart: 0.4 ms [Finished 2.570 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend f.onStart: 0.1 ms [Finished 2.570 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend b.onStart: 0.2 ms [Finished 2.570 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend h.onStart: 0.3 ms [Finished 2.571 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend K.onStart: 0.6 ms [Finished 2.572 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend $.onStart: 0.1 ms [Finished 2.572 s after frontend start] 
+2024-05-05 11:22:01 [debug] : [hosted-plugin: 7153] IPC started 
+2024-05-05 11:22:01 [debug] : Frontend y.onStart: 0.0 ms [Finished 2.572 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend Object.onStart: 0.2 ms [Finished 2.572 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend w.onStart: 22.5 ms [Finished 2.595 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend h.onStart: 0.3 ms [Finished 2.596 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend N.onStart: 0.2 ms [Finished 2.596 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend f.onStart: 0.4 ms [Finished 2.597 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend n.onStart: 0.2 ms [Finished 2.597 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend c.onStart: 0.2 ms [Finished 2.598 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Frontend m.onStart: 0.1 ms [Finished 2.598 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Start frontend contributions: 1153.2 ms [Finished 2.598 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Changed application state from 'init' to 'started_contributions'. 
+2024-05-05 11:22:01 [debug] : Changed application state from 'started_contributions' to 'attached_shell'. 
+2024-05-05 11:22:01 [debug] : >>> Restoring the layout state... 
+2024-05-05 11:22:01 [debug] : Received event from notification service: ON_START_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:01 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["a6ae199f-4343-4f79-b6c0-51c98efa3c21",null,54,null,null,null,null,"list-reports"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-05 11:22:01 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:01 [debug] : Skipping menu item with missing command: "plugin.view-container.test.toggle". 
+2024-05-05 11:22:01 [debug] : [babb6189-0262-4827-b499-1899ff48400e] Waiting for backend deployment: 125.3 ms [Finished 2.698 s after frontend start] 
+2024-05-05 11:22:01 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 2,
+        "startColumn": 47,
+        "endLineNumber": 2,
+        "endColumn": 52
+      },
+      "rangeLength": 5,
+      "text": "false",
+      "rangeOffset": 48,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 2,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 3,
+        "startColumn": 29,
+        "endLineNumber": 3,
+        "endColumn": 37
+      },
+      "rangeLength": 8,
+      "text": "\"custom\"",
+      "rangeOffset": 83,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 3,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:01 [debug] : [babb6189-0262-4827-b499-1899ff48400e] Sync of 14 plugins: 187.2 ms [Finished 2.885 s after frontend start] 
+2024-05-05 11:22:01 [debug] : RIGEL SERVER 11:22:01 INFO  : Successfully created repository data at /tmp/rigel_lopper_franz15942553576839718592 
+2024-05-05 11:22:01 [debug] : RIGEL SERVER 11:22:01 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz15942553576839718592 -r /tmp/rigel_lopper_franz15942553576839718592/.repo.yaml 
+2024-05-05 11:22:01 [debug] : Opening channel for service path '/services/report-model'. 
+2024-05-05 11:22:02 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153) starting instance 
+2024-05-05 11:22:02 [debug] : <<< The layout has been successfully restored. 
+2024-05-05 11:22:02 [debug] : RIGEL SERVER 11:22:02 INFO  : Embedded Template List generated successfully 
+2024-05-05 11:22:02 [debug] : Initialize the workbench layout: 514.9 ms [Finished 3.132 s after frontend start] 
+2024-05-05 11:22:02 [debug] : Changed application state from 'attached_shell' to 'initialized_layout'. 
+2024-05-05 11:22:02 [debug] : Frontend I.onDidInitializeLayout: 0.1 ms [Finished 3.132 s after frontend start] 
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyRemoteFileUrlToClipboard","group":"1_gitlens@1","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyRemoteFileUrlFrom","group":"1_gitlens@2","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyRemoteCommitUrl","group":"1_gitlens@3","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyShaToClipboard","group":"2_gitlens@1","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to editor/context/copy {"0":{"command":"gitlens.copyMessageToClipboard","group":"2_gitlens@2","when":"editorTextFocus && gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id editor/context/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to extension/context {"0":{"command":"gitlens.showWelcomePage","group":"9_gitlens@1","when":"extension =~ /^eamodio.gitlens(-insiders)?$/ && extensionStatus == installed"},"1":"Error: Could not find submenu with id extension/context\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to extension/context {"0":{"command":"gitlens.showSettingsPage","group":"9_gitlens@2","when":"extension =~ /^eamodio.gitlens(-insiders)?$/ && extensionStatus == installed"},"1":"Error: Could not find submenu with id extension/context\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to git.commit {"0":{"command":"gitlens.addAuthors","group":"4_gitlens@1","when":"gitlens:enabled && !gitlens:readonly && config.gitlens.menus.scm.authors"},"1":"Error: Could not find submenu with id git.commit\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to menuBar/edit/copy {"0":{"command":"gitlens.copyRemoteFileUrlToClipboard","group":"1_gitlens@1","when":"gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id menuBar/edit/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin eamodio.gitlens contributed to menuBar/edit/copy {"0":{"command":"gitlens.copyRemoteFileUrlFrom","group":"1_gitlens@2","when":"gitlens:activeFileStatus =~ /blameable/ && config.gitlens.menus.editor.clipboard"},"1":"Error: Could not find submenu with id menuBar/edit/copy\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][eamodio.gitlens]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][xilinx.rigel-config-vscode]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][xilinx.rigel-hls-pragma]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin xilinx.tcf-debug contributed to editor/title/run {"0":{"command":"extension.tcf-debug.debugEditorContents","group":"navigation@2","when":"resourceLangId == cpp || resourceLangId == c"},"1":"Error: Could not find submenu with id editor/title/run\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][xilinx.tcf-debug]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][twxs.cmake]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.cpp]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.github]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.github-authentication]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.json]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : Preference name collision detected in the schema for property: [json] 
+2024-05-05 11:22:02 [debug] : Preference name collision detected in the schema for property: [jsonc] 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.json-language-features]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][llvm-vs-code-extensions.vscode-clangd]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][pkief.material-icon-theme]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][webfreak.debug]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin vscode.git contributed to scm/sourceControl {"0":{"command":"git.close","group":"navigation","when":"scmProvider == git"},"1":"Error: Could not find submenu with id scm/sourceControl\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin vscode.git contributed to scm/change/title {"0":{"command":"git.stageChange","when":"config.git.enabled && !git.missing && originalResourceScheme == git"},"1":"Error: Could not find submenu with id scm/change/title\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : Failed to register a menu item for plugin vscode.git contributed to scm/change/title {"0":{"command":"git.revertChange","when":"config.git.enabled && !git.missing && originalResourceScheme == git"},"1":"Error: Could not find submenu with id scm/change/title\n    at h.getMenuNode (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2275707)\n    at v.handle (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7116739)\n    at file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135745\n    at o (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7133406)\n    at x.handleContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:7135700)\n    at U.loadContributions (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6963033)\n    at U.doLoad (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6961125)\n    at async h.withProgress (file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:2315780)\n    at async file:///tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/lib/bundle.js:2:6958468"}
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.git]: Loaded contributions. 
+2024-05-05 11:22:02 [debug] : [babb6189-0262-4827-b499-1899ff48400e] Load contributions of 14 plugins: 340.7 ms [Finished 3.473 s after frontend start] 
+2024-05-05 11:22:02 [debug] : Frontend w.onDidInitializeLayout: 0.4 ms [Finished 3.474 s after frontend start] 
+2024-05-05 11:22:02 [debug] : Frontend N.onDidInitializeLayout: 1.0 ms [Finished 3.477 s after frontend start] 
+2024-05-05 11:22:02 [debug] : Frontend f.onDidInitializeLayout: 1.6 ms [Finished 3.483 s after frontend start] 
+2024-05-05 11:22:02 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:02 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:02 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:02 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:02 [debug] : 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope 
+2024-05-05 11:22:02 [debug] : a registered grammar configuration for 'cpp' language is overridden 
+2024-05-05 11:22:02 [debug] : [Application Examples Provider] Templates model update completed. 
+2024-05-05 11:22:02 [debug] : [Application Examples Provider] common calling method completed. 
+2024-05-05 11:22:02 [debug] : [Application Examples Provider] refresh completed. 
+2024-05-05 11:22:03 [debug] : MonacoEditorModel.cancelSync {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:03 [debug] : MonacoEditorModel.cancelSave {"0":"user-storage:/user/settings.json"}
+2024-05-05 11:22:03 [debug] : Opening channel for service path '/services/keytar'. 
+2024-05-05 11:22:03 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:03 [debug] : getTasks(): about to return task information for 0 tasks 
+2024-05-05 11:22:03 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:03 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:03 [debug] : Theia configuration directory file:///home/franz/.Xilinx/Vitis/2023.1/.vitisng' 
+2024-05-05 11:22:03 [debug] : Frontend application start: 2669.7 ms [Finished 107.713 s after backend start] 
+2024-05-05 11:22:03 [debug] : Replace loading indicator with ready workbench UI (animation): 917.1 ms [Finished 4.410 s after frontend start] 
+2024-05-05 11:22:03 [debug] : Changed application state from 'initialized_layout' to 'ready'. 
+2024-05-05 11:22:03 [debug] : f.registerSchemas is taking more than 500.0 ms, new schemas are ignored. 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/init() 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(gitlens@11.7.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(rigel-config-vscode@0.0.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(rigel-hls-pragma@0.0.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(tcf-debug@0.0.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init)
+Debugger contribution has been registered: tcf-debug 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(cmake@0.0.17 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(cpp@1.52.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(github@1.62.3 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(github-authentication@1.62.3 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(json@1.52.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(json-language-features@1.52.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(vscode-clangd@0.1.7 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(material-icon-theme@4.11.0 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(debug@0.25.1 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] Debugger contribution has been registered: gdb
+Debugger contribution has been registered: lldb-mi
+Debugger contribution has been registered: mago-mi 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): initializing(git@1.62.3 with /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/plugin-ext-vscode/lib/node/plugin-vscode-init) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] Unsupported activation events: oncommand:gitlens.copyCurrentBranch, please open an issue: https://github.com/eclipse-theia/theia/issues/new 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode.git/extension/dist/main) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode-builtin-github/extension/dist/extension.js) 
+2024-05-05 11:22:03 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/node/jsonClientMain) 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][eamodio.gitlens]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][xilinx.rigel-config-vscode]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][xilinx.rigel-hls-pragma]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][xilinx.tcf-debug]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][twxs.cmake]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.cpp]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.github]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.github-authentication]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.json]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.json-language-features]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][llvm-vs-code-extensions.vscode-clangd]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][pkief.material-icon-theme]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][webfreak.debug]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e][vscode.git]: Started plugin. 
+2024-05-05 11:22:04 [debug] : [hosted-plugin: 7153] ApplicationInsights:CorrelationIdManager [
+  Error: Failed to establish a socket connection to proxies: ["https://dc.services.visualstudio.com/api/profiles/AIF-d9b70cd4-b9f9-4d70-929b-a071c400b217/appId"]
+      at _PacProxyAgent.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/vscode-proxy-agent/out/agent.js:141:19)
+      at Generator.next (<anonymous>)
+      at fulfilled (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/vscode-proxy-agent/out/agent.js:5:58)
+] 
+2024-05-05 11:22:04 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/vscode-material-icon-theme/extension/dist/extension) 
+2024-05-05 11:22:04 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/loadPlugin(/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins/eamodio-gitlens/extension/dist/gitlens) 
+2024-05-05 11:22:04 [debug] : [hosted-plugin: 7153] PLUGIN_HOST(7153): PluginManagerExtImpl/loadPlugin(/tmp/franz-vscode-unpacked/rigel-config-vscode-0.0.0.vsix/extension/out/cfg-lsp-extension.js) 
+2024-05-05 11:22:04 [debug] : [hosted-plugin: 7153] ACTIVATE CONFIG LSP EXTENSION 
+2024-05-05 11:22:04 [debug] : command 'gitlens.clearFileAnnotations' already registered 
+2024-05-05 11:22:04 [debug] : command 'gitlens.computingFileAnnotations' already registered 
+2024-05-05 11:22:04 [debug] : [babb6189-0262-4827-b499-1899ff48400e] Start of 14 plugins: 1801.5 ms [Finished 5.316 s after frontend start] 
+2024-05-05 11:22:11 [debug] : [Workspace Server] In 'forceSetWorkspace' with connection:[object Object] request:{"path":"/home/franz/workspace"} 
+2024-05-05 11:22:11 [debug] : RIGEL SERVER 11:22:11 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-05 11:22:12 [debug] : RIGEL SERVER 11:22:12 INFO  : Successfully created repository data at /home/franz/workspace 
+2024-05-05 11:22:12 [debug] : RIGEL SERVER 11:22:12 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz13670728156156625160 -r /home/franz/workspace/.repo.yaml 
+2024-05-05 11:22:12 [debug] : RIGEL SERVER 11:22:12 INFO  : Embedded Template List generated successfully 
