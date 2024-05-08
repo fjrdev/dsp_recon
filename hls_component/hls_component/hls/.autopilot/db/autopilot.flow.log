@@ -1598,3 +1598,1625 @@ INFO-FLOW: Caught error in export_design:
 Command   export_design done; error code: 2; 193.86 sec.
 INFO: [HLS 200-111] Finished Command export_design CPU user time: 56.87 seconds. CPU system time: 17.72 seconds. Elapsed time: 193.86 seconds; current allocated memory: 7.188 MB.
 Execute   cleanup_all 
+INFO-FLOW: Workspace /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls opened at Sun May 05 18:44:28 CEST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 0.11 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+Execute     add_files -tb /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+Execute     set_top add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+Execute     create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /mnt/tmp/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /mnt/tmp/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 2.14 sec.
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 2.24 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+Execute     config_export -format=rtl 
+Command   apply_ini done; 2.25 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4) 
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+Execute   config_export -flow impl 
+INFO: [HLS 200-1510] Running: config_export -flow impl 
+Execute   export_design 
+INFO: [HLS 200-1510] Running: export_design 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format rtl -flow impl -rtl verilog
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=add xml_exists=1
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.compgen.dataonly.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=add
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/impl.sh
+Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
+ERROR: [HLS 200-478] vivado returned an error 
+INFO-FLOW: DBG:PUTS: auto_impl caught error 
+Caught error from vivado 
+    while executing
+"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
+    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
+    invoked from within
+"::AESL_AUTOIMPL::auto_impl {*}$args"
+INFO-FLOW: Caught error in export_design: 
+    while executing
+"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
+    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
+    invoked from within
+"::AESL_AUTOIMPL::export_design_wrap {*}$args"
+    (procedure "ap_internal_export_design" line 109)
+    invoked from within
+"ap_internal_export_design "
+Command   export_design done; error code: 2; 58.48 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 48.69 seconds. CPU system time: 3.11 seconds. Elapsed time: 58.48 seconds; current allocated memory: 7.551 MB.
+Execute   cleanup_all 
+INFO-FLOW: Workspace /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls opened at Sun May 05 18:48:59 CEST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+Execute     add_files -tb /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+Execute     set_top add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+Execute     create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /mnt/tmp/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /mnt/tmp/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 2.13 sec.
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 2.23 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+Execute     config_export -format=rtl 
+Command   apply_ini done; 2.38 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4) 
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+Execute   config_export -flow impl 
+INFO: [HLS 200-1510] Running: config_export -flow impl 
+Execute   export_design 
+INFO: [HLS 200-1510] Running: export_design 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format rtl -flow impl -rtl verilog
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=add xml_exists=1
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.compgen.dataonly.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=add
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/impl.sh
+Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
+ERROR: [HLS 200-478] vivado returned an error 
+INFO-FLOW: DBG:PUTS: auto_impl caught error 
+Caught error from vivado 
+    while executing
+"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
+    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
+    invoked from within
+"::AESL_AUTOIMPL::auto_impl {*}$args"
+INFO-FLOW: Caught error in export_design: 
+    while executing
+"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
+    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
+    invoked from within
+"::AESL_AUTOIMPL::export_design_wrap {*}$args"
+    (procedure "ap_internal_export_design" line 109)
+    invoked from within
+"ap_internal_export_design "
+Command   export_design done; error code: 2; 58.72 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 48.91 seconds. CPU system time: 3.02 seconds. Elapsed time: 58.72 seconds; current allocated memory: 7.523 MB.
+Execute   cleanup_all 
+INFO-FLOW: Workspace /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls opened at Sun May 05 21:34:07 CEST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+Execute     add_files -tb /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+Execute     set_top add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+Execute     create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /mnt/tmp/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /mnt/tmp/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 2.16 sec.
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 2.27 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+Execute     config_export -format=rtl 
+Command   apply_ini done; 2.28 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4) 
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+Execute   config_export -flow impl 
+INFO: [HLS 200-1510] Running: config_export -flow impl 
+Execute   export_design 
+INFO: [HLS 200-1510] Running: export_design 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format rtl -flow impl -rtl verilog
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=add xml_exists=1
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.compgen.dataonly.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=add
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/impl.sh
+Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
+ERROR: [HLS 200-478] vivado returned an error 
+INFO-FLOW: DBG:PUTS: auto_impl caught error 
+Caught error from vivado 
+    while executing
+"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
+    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
+    invoked from within
+"::AESL_AUTOIMPL::auto_impl {*}$args"
+INFO-FLOW: Caught error in export_design: 
+    while executing
+"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
+    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
+    invoked from within
+"::AESL_AUTOIMPL::export_design_wrap {*}$args"
+    (procedure "ap_internal_export_design" line 109)
+    invoked from within
+"ap_internal_export_design "
+Command   export_design done; error code: 2; 58.91 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 49.02 seconds. CPU system time: 3.14 seconds. Elapsed time: 58.91 seconds; current allocated memory: 7.523 MB.
+Execute   cleanup_all 
+INFO-FLOW: Workspace /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls opened at Sun May 05 21:38:58 CEST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+Execute     add_files -tb /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+Execute     set_top add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+Execute     create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /mnt/tmp/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /mnt/tmp/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 2.17 sec.
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 2.28 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+Execute     config_export -format=rtl 
+Command   apply_ini done; 2.3 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4) 
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+Execute   config_export -flow impl 
+INFO: [HLS 200-1510] Running: config_export -flow impl 
+Execute   export_design 
+INFO: [HLS 200-1510] Running: export_design 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format rtl -flow impl -rtl verilog
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=add xml_exists=1
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.compgen.dataonly.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=add
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/impl.sh
+Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
+ERROR: [HLS 200-478] vivado returned an error 
+INFO-FLOW: DBG:PUTS: auto_impl caught error 
+Caught error from vivado 
+    while executing
+"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
+    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
+    invoked from within
+"::AESL_AUTOIMPL::auto_impl {*}$args"
+INFO-FLOW: Caught error in export_design: 
+    while executing
+"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
+    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
+    invoked from within
+"::AESL_AUTOIMPL::export_design_wrap {*}$args"
+    (procedure "ap_internal_export_design" line 109)
+    invoked from within
+"ap_internal_export_design "
+Command   export_design done; error code: 2; 58.94 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 48.7 seconds. CPU system time: 3.24 seconds. Elapsed time: 58.94 seconds; current allocated memory: 7.551 MB.
+Execute   cleanup_all 
+INFO-FLOW: Workspace /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls opened at Sun May 05 22:07:10 CEST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+Execute     add_files -tb /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+Execute     set_top add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+Execute     create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /mnt/tmp/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /mnt/tmp/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 2.12 sec.
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 2.24 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+Execute     config_export -format=rtl 
+Command   apply_ini done; 2.25 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4) 
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+Execute   config_export -flow impl 
+INFO: [HLS 200-1510] Running: config_export -flow impl 
+Execute   export_design 
+INFO: [HLS 200-1510] Running: export_design 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format rtl -flow impl -rtl verilog
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=add xml_exists=1
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.compgen.dataonly.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=add
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/impl.sh
+Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
+ERROR: [HLS 200-478] vivado returned an error 
+INFO-FLOW: DBG:PUTS: auto_impl caught error 
+Caught error from vivado 
+    while executing
+"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
+    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
+    invoked from within
+"::AESL_AUTOIMPL::auto_impl {*}$args"
+INFO-FLOW: Caught error in export_design: 
+    while executing
+"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
+    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
+    invoked from within
+"::AESL_AUTOIMPL::export_design_wrap {*}$args"
+    (procedure "ap_internal_export_design" line 109)
+    invoked from within
+"ap_internal_export_design "
+Command   export_design done; error code: 2; 59.04 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 48.9 seconds. CPU system time: 3.1 seconds. Elapsed time: 59.04 seconds; current allocated memory: 7.551 MB.
+Execute   cleanup_all 
+INFO-FLOW: Workspace /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls opened at Sun May 05 22:21:31 CEST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+Execute     add_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+Execute     add_files -tb /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp 
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+Execute     set_top add 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+Execute     create_clock -period 10 
+Execute       ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+Execute     set_part xcvc1902-vsva2197-2MP-e-S 
+Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
+DBG:HLSDevice: Trying to load device library: /mnt/tmp/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /mnt/tmp/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+Command       create_platform done; 2.12 sec.
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
+Execute       config_compile -quiet -complex-mul-dsp=1 
+Command     set_part done; 2.22 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6) 
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+Execute     config_export -format=rtl 
+Command   apply_ini done; 2.23 sec.
+Execute   apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4) 
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+Execute   config_export -flow impl 
+INFO: [HLS 200-1510] Running: config_export -flow impl 
+Execute   export_design 
+INFO: [HLS 200-1510] Running: export_design 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format rtl -flow impl -rtl verilog
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=add xml_exists=1
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=1 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='add
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.compgen.dataonly.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to add
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=add
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.rtl_wrap.cfg.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.tbgen.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/add.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name versalprimees1 -data parts 
+Execute     source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source /mnt/tmp/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
+Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/impl.sh
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix add_ TopModuleNoPrefix add TopModuleWithPrefix add' export_design_flow='impl' impl_dir='/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute     ap_part_info -quiet -data family -name xcvc1902-vsva2197-2MP-e-S 
+Command     ap_part_info done; 0.16 sec.
+INFO-FLOW: DBG:PUTS:     writing export xml file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7f6ef4fe8ee8' export_design_flow='impl' export_rpt='/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xcvc1902-vsva2197-2MP-e-S 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7f6ef53e79b8' export_design_flow='syn' export_rpt='/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Command   export_design done; 443.84 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 190.51 seconds. CPU system time: 18.29 seconds. Elapsed time: 444.42 seconds; current allocated memory: 7.551 MB.
+Execute   cleanup_all 
+Command   cleanup_all done; 0.11 sec.

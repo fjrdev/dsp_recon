@@ -9,8 +9,7 @@ bool verify(int a, int b, int c) {
 
 int main() {
 
-    int a = 5;
-    int b = 5;
+    int a = 5; int b = 5;
     int c = add(a, b);
     
     if (verify(a, b, c)) return EXIT_SUCCESS;

@@ -1,0 +1,105 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>NA</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>NA</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>NA</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>NA</SLACK_FINAL>
+  <SLACK_ROUTE>NA</SLACK_ROUTE>
+  <SLACK_SYNTH>NA</SLACK_SYNTH>
+  <TIMING_MET>NA</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>9.312</WNS_FINAL>
+  <WNS_ROUTE>9.312</WNS_ROUTE>
+  <WNS_SYNTH>9.362</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>0</DSP>
+    <FF>0</FF>
+    <LATCH>0</LATCH>
+    <LUT>32</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>1934</BRAM>
+    <CLB>0</CLB>
+    <DSP>1968</DSP>
+    <FF>1799680</FF>
+    <LUT>899840</LUT>
+    <URAM>463</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="add" TOP_CELL="bd_0_i/hls_inst/inst">
+    <Resources LUT="32" LogicLUT="32"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="0.688" DATAPATH_LOGIC_DELAY="0.578" DATAPATH_NET_DELAY="0.110" ENDPOINT_PIN="ap_return[29]" LOGIC_LEVELS="7" MAX_FANOUT="3" SLACK="9.312" STARTPOINT_PIN="b[0]">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[28]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[29]_INST_0/LUTCY1_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.686" DATAPATH_LOGIC_DELAY="0.582" DATAPATH_NET_DELAY="0.104" ENDPOINT_PIN="ap_return[31]" LOGIC_LEVELS="7" MAX_FANOUT="3" SLACK="9.314" STARTPOINT_PIN="b[0]">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[30]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[31]_INST_0/LUTCY1_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.683" DATAPATH_LOGIC_DELAY="0.581" DATAPATH_NET_DELAY="0.102" ENDPOINT_PIN="ap_return[27]" LOGIC_LEVELS="7" MAX_FANOUT="3" SLACK="9.317" STARTPOINT_PIN="b[0]">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[26]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[27]_INST_0/LUTCY1_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.647" DATAPATH_LOGIC_DELAY="0.538" DATAPATH_NET_DELAY="0.109" ENDPOINT_PIN="ap_return[21]" LOGIC_LEVELS="6" MAX_FANOUT="3" SLACK="9.353" STARTPOINT_PIN="b[0]">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[20]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[21]_INST_0/LUTCY1_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.645" DATAPATH_LOGIC_DELAY="0.542" DATAPATH_NET_DELAY="0.103" ENDPOINT_PIN="ap_return[23]" LOGIC_LEVELS="6" MAX_FANOUT="3" SLACK="9.355" STARTPOINT_PIN="b[0]">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1" PRIMITIVE_TYPE="CLB.CARRY.LOOKAHEAD8" LINE_NUMBER="38"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[22]_INST_0/LUTCY2_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_return[23]_INST_0/LUTCY1_INST" PRIMITIVE_TYPE="CLB.LUT.LUT6CY" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/add_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/add_failfast_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/add_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/add_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/add_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/add_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/add_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

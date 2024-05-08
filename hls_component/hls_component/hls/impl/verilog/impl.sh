@@ -6,6 +6,6 @@
 # Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 # ==============================================================
-/tools/Xilinx/Vivado/2023.1/bin/vivado  -mode batch -source run_vivado.tcl || exit $?
+/mnt/tmp/Vivado/2023.1/bin/vivado  -mode batch -source run_vivado.tcl || exit $?
 
 

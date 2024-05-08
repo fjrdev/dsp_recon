@@ -1,0 +1,901 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date              : Sun May  5 22:28:33 2024
+| Host              : franz-MS-7C02 running 64-bit Ubuntu 20.04.5 LTS
+| Command           : report_timing_summary -max_paths 10 -report_unconstrained -file bd_0_wrapper_timing_summary_routed.rpt -pb bd_0_wrapper_timing_summary_routed.pb -rpx bd_0_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design            : bd_0_wrapper
+| Device            : xcvc1902-vsva2197
+| Speed File        : -2MP  PRODUCTION 2.11 2022-11-23
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule      Severity  Description                                 Violations  
+--------  --------  ------------------------------------------  ----------  
+AVAL-344  Warning   Design_needs_USER_RAM_AVERAGE_ACTIVITY_set  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (65)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (65)
+-------------------------------------
+ There are 65 input ports with partial input delay specified. (HIGH)
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      9.312        0.000                      0                   34          inf        0.000                      0                   34           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group        From Clock        To Clock              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------        ----------        --------              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**default**       input port clock                          9.312        0.000                      0                   34                                                                        
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **default**
+From Clock:  input port clock
+  To Clock:  
+
+Setup :            0  Failing Endpoints,  Worst Slack        9.312ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             9.312ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[29]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.688ns  (logic 0.578ns (84.012%)  route 0.110ns (15.988%))
+  Logic Levels:           7  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.483 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.484    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+    SLICE_X183Y139       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTD)
+                                                      0.042     0.526 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTD
+                         net (fo=2, routed)           0.014     0.540    bd_0_i/hls_inst/inst/ap_return[28]_INST_0/I4
+    SLICE_X183Y139       LUTCY2 (Prop_E6LUT_SLICEM_I4_O)
+                                                      0.058     0.598 r  bd_0_i/hls_inst/inst/ap_return[28]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.022     0.620    bd_0_i/hls_inst/inst/ap_return[29]_INST_0/I4
+    SLICE_X183Y139       LUTCY1 (Prop_F5LUT_SLICEM_I4_O)
+                                                      0.068     0.688 r  bd_0_i/hls_inst/inst/ap_return[29]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.688    ap_return[29]
+                                                                      r  ap_return[29] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.688    
+  -------------------------------------------------------------------
+                         slack                                  9.312    
+
+Slack (MET) :             9.314ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[31]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.686ns  (logic 0.582ns (84.840%)  route 0.104ns (15.160%))
+  Logic Levels:           7  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.483 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.484    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+    SLICE_X183Y139       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTF)
+                                                      0.053     0.537 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTF
+                         net (fo=2, routed)           0.013     0.550    bd_0_i/hls_inst/inst/ap_return[30]_INST_0/I4
+    SLICE_X183Y139       LUTCY2 (Prop_G6LUT_SLICEM_I4_O)
+                                                      0.053     0.603 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.017     0.620    bd_0_i/hls_inst/inst/ap_return[31]_INST_0/I4
+    SLICE_X183Y139       LUTCY1 (Prop_H5LUT_SLICEM_I4_O)
+                                                      0.066     0.686 r  bd_0_i/hls_inst/inst/ap_return[31]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.686    ap_return[31]
+                                                                      r  ap_return[31] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.686    
+  -------------------------------------------------------------------
+                         slack                                  9.314    
+
+Slack (MET) :             9.317ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[27]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.683ns  (logic 0.581ns (85.066%)  route 0.102ns (14.934%))
+  Logic Levels:           7  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.483 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.484    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+    SLICE_X183Y139       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTB)
+                                                      0.051     0.535 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTB
+                         net (fo=2, routed)           0.013     0.548    bd_0_i/hls_inst/inst/ap_return[26]_INST_0/I4
+    SLICE_X183Y139       LUTCY2 (Prop_C6LUT_SLICEM_I4_O)
+                                                      0.054     0.602 r  bd_0_i/hls_inst/inst/ap_return[26]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.015     0.617    bd_0_i/hls_inst/inst/ap_return[27]_INST_0/I4
+    SLICE_X183Y139       LUTCY1 (Prop_D5LUT_SLICEM_I4_O)
+                                                      0.066     0.683 r  bd_0_i/hls_inst/inst/ap_return[27]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.683    ap_return[27]
+                                                                      r  ap_return[27] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.683    
+  -------------------------------------------------------------------
+                         slack                                  9.317    
+
+Slack (MET) :             9.353ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[21]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.647ns  (logic 0.538ns (83.153%)  route 0.109ns (16.847%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTD)
+                                                      0.042     0.485 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTD
+                         net (fo=2, routed)           0.014     0.499    bd_0_i/hls_inst/inst/ap_return[20]_INST_0/I4
+    SLICE_X183Y138       LUTCY2 (Prop_E6LUT_SLICEM_I4_O)
+                                                      0.058     0.557 r  bd_0_i/hls_inst/inst/ap_return[20]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.022     0.579    bd_0_i/hls_inst/inst/ap_return[21]_INST_0/I4
+    SLICE_X183Y138       LUTCY1 (Prop_F5LUT_SLICEM_I4_O)
+                                                      0.068     0.647 r  bd_0_i/hls_inst/inst/ap_return[21]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.647    ap_return[21]
+                                                                      r  ap_return[21] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.647    
+  -------------------------------------------------------------------
+                         slack                                  9.353    
+
+Slack (MET) :             9.355ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[23]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.645ns  (logic 0.542ns (84.031%)  route 0.103ns (15.969%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTF)
+                                                      0.053     0.496 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTF
+                         net (fo=2, routed)           0.013     0.509    bd_0_i/hls_inst/inst/ap_return[22]_INST_0/I4
+    SLICE_X183Y138       LUTCY2 (Prop_G6LUT_SLICEM_I4_O)
+                                                      0.053     0.562 r  bd_0_i/hls_inst/inst/ap_return[22]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.017     0.579    bd_0_i/hls_inst/inst/ap_return[23]_INST_0/I4
+    SLICE_X183Y138       LUTCY1 (Prop_H5LUT_SLICEM_I4_O)
+                                                      0.066     0.645 r  bd_0_i/hls_inst/inst/ap_return[23]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.645    ap_return[23]
+                                                                      r  ap_return[23] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.645    
+  -------------------------------------------------------------------
+                         slack                                  9.355    
+
+Slack (MET) :             9.358ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[19]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.642ns  (logic 0.541ns (84.268%)  route 0.101ns (15.732%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTB)
+                                                      0.051     0.494 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTB
+                         net (fo=2, routed)           0.013     0.507    bd_0_i/hls_inst/inst/ap_return[18]_INST_0/I4
+    SLICE_X183Y138       LUTCY2 (Prop_C6LUT_SLICEM_I4_O)
+                                                      0.054     0.561 r  bd_0_i/hls_inst/inst/ap_return[18]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.015     0.576    bd_0_i/hls_inst/inst/ap_return[19]_INST_0/I4
+    SLICE_X183Y138       LUTCY1 (Prop_D5LUT_SLICEM_I4_O)
+                                                      0.066     0.642 r  bd_0_i/hls_inst/inst/ap_return[19]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.642    ap_return[19]
+                                                                      r  ap_return[19] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.642    
+  -------------------------------------------------------------------
+                         slack                                  9.358    
+
+Slack (MET) :             9.381ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[25]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.619ns  (logic 0.529ns (85.460%)  route 0.090ns (14.540%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.483 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.484    bd_0_i/hls_inst/inst/ap_return[24]_INST_0/I4
+    SLICE_X183Y139       LUTCY2 (Prop_A6LUT_SLICEM_I4_O)
+                                                      0.052     0.536 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.016     0.552    bd_0_i/hls_inst/inst/ap_return[25]_INST_0/I4
+    SLICE_X183Y139       LUTCY1 (Prop_B5LUT_SLICEM_I4_O)
+                                                      0.067     0.619 r  bd_0_i/hls_inst/inst/ap_return[25]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.619    ap_return[25]
+                                                                      r  ap_return[25] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.619    
+  -------------------------------------------------------------------
+                         slack                                  9.381    
+
+Slack (MET) :             9.389ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[30]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.611ns  (logic 0.524ns (85.761%)  route 0.087ns (14.239%))
+  Logic Levels:           6  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.483 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.484    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+    SLICE_X183Y139       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTF)
+                                                      0.053     0.537 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTF
+                         net (fo=2, routed)           0.013     0.550    bd_0_i/hls_inst/inst/ap_return[30]_INST_0/I4
+    SLICE_X183Y139       LUTCY1 (Prop_G5LUT_SLICEM_I4_O)
+                                                      0.061     0.611 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.611    ap_return[30]
+                                                                      r  ap_return[30] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.611    
+  -------------------------------------------------------------------
+                         slack                                  9.389    
+
+Slack (MET) :             9.391ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[26]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.609ns  (logic 0.522ns (85.714%)  route 0.087ns (14.286%))
+  Logic Levels:           6  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.442 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.443    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+    SLICE_X183Y138       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTH)
+                                                      0.040     0.483 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.484    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+    SLICE_X183Y139       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTB)
+                                                      0.051     0.535 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTB
+                         net (fo=2, routed)           0.013     0.548    bd_0_i/hls_inst/inst/ap_return[26]_INST_0/I4
+    SLICE_X183Y139       LUTCY1 (Prop_C5LUT_SLICEM_I4_O)
+                                                      0.061     0.609 r  bd_0_i/hls_inst/inst/ap_return[26]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.609    ap_return[26]
+                                                                      r  ap_return[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.609    
+  -------------------------------------------------------------------
+                         slack                                  9.391    
+
+Slack (MET) :             9.394ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[13]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.606ns  (logic 0.498ns (82.178%)  route 0.108ns (17.822%))
+  Logic Levels:           5  (LOOKAHEAD8=2 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.035     0.035    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+    SLICE_X183Y136       LUTCY2 (Prop_A6LUT_SLICEM_I2_GE)
+                                                      0.088     0.123 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, routed)           0.036     0.159    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+    SLICE_X183Y136       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_GEA_COUTH)
+                                                      0.242     0.401 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, routed)           0.001     0.402    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+    SLICE_X183Y137       LOOKAHEAD8 (Prop_LOOKAHEAD8_SLICEM_CIN_COUTD)
+                                                      0.042     0.444 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTD
+                         net (fo=2, routed)           0.014     0.458    bd_0_i/hls_inst/inst/ap_return[12]_INST_0/I4
+    SLICE_X183Y137       LUTCY2 (Prop_E6LUT_SLICEM_I4_O)
+                                                      0.058     0.516 r  bd_0_i/hls_inst/inst/ap_return[12]_INST_0/LUTCY2_INST/O
+                         net (fo=3, routed)           0.022     0.538    bd_0_i/hls_inst/inst/ap_return[13]_INST_0/I4
+    SLICE_X183Y137       LUTCY1 (Prop_F5LUT_SLICEM_I4_O)
+                                                      0.068     0.606 r  bd_0_i/hls_inst/inst/ap_return[13]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.606    ap_return[13]
+                                                                      r  ap_return[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.606    
+  -------------------------------------------------------------------
+                         slack                                  9.394    
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             0 Endpoints
+Min Delay            34 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            ap_ctrl_done
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.000     0.000    ap_ctrl_done
+                                                                      r  ap_ctrl_done (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            ap_ctrl_ready
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.000     0.000    ap_ctrl_ready
+                                                                      r  ap_ctrl_ready (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[0]
+                            (input port)
+  Destination:            ap_return[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.058ns  (logic 0.042ns (72.414%)  route 0.016ns (27.586%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[0] (IN)
+                         net (fo=1, unset)            0.016     0.016    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I3
+    SLICE_X183Y136       LUTCY1 (Prop_A5LUT_SLICEM_I3_O)
+                                                      0.042     0.058 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.058    ap_return[0]
+                                                                      r  ap_return[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[10]
+                            (input port)
+  Destination:            ap_return[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.066ns  (logic 0.045ns (68.182%)  route 0.021ns (31.818%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[10] (IN)
+                         net (fo=1, unset)            0.021     0.021    bd_0_i/hls_inst/inst/ap_return[10]_INST_0/I3
+    SLICE_X183Y137       LUTCY1 (Prop_C5LUT_SLICEM_I3_O)
+                                                      0.045     0.066 r  bd_0_i/hls_inst/inst/ap_return[10]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.066    ap_return[10]
+                                                                      r  ap_return[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[18]
+                            (input port)
+  Destination:            ap_return[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.066ns  (logic 0.045ns (68.182%)  route 0.021ns (31.818%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[18] (IN)
+                         net (fo=1, unset)            0.021     0.021    bd_0_i/hls_inst/inst/ap_return[18]_INST_0/I3
+    SLICE_X183Y138       LUTCY1 (Prop_C5LUT_SLICEM_I3_O)
+                                                      0.045     0.066 r  bd_0_i/hls_inst/inst/ap_return[18]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.066    ap_return[18]
+                                                                      r  ap_return[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[26]
+                            (input port)
+  Destination:            ap_return[26]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.066ns  (logic 0.045ns (68.182%)  route 0.021ns (31.818%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[26] (IN)
+                         net (fo=1, unset)            0.021     0.021    bd_0_i/hls_inst/inst/ap_return[26]_INST_0/I3
+    SLICE_X183Y139       LUTCY1 (Prop_C5LUT_SLICEM_I3_O)
+                                                      0.045     0.066 r  bd_0_i/hls_inst/inst/ap_return[26]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.066    ap_return[26]
+                                                                      r  ap_return[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[2]
+                            (input port)
+  Destination:            ap_return[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.066ns  (logic 0.045ns (68.182%)  route 0.021ns (31.818%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[2] (IN)
+                         net (fo=1, unset)            0.021     0.021    bd_0_i/hls_inst/inst/ap_return[2]_INST_0/I3
+    SLICE_X183Y136       LUTCY1 (Prop_C5LUT_SLICEM_I3_O)
+                                                      0.045     0.066 r  bd_0_i/hls_inst/inst/ap_return[2]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.066    ap_return[2]
+                                                                      r  ap_return[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[11]
+                            (input port)
+  Destination:            ap_return[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.067ns  (logic 0.045ns (67.164%)  route 0.022ns (32.836%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[11] (IN)
+                         net (fo=1, unset)            0.022     0.022    bd_0_i/hls_inst/inst/ap_return[11]_INST_0/I3
+    SLICE_X183Y137       LUTCY1 (Prop_D5LUT_SLICEM_I3_O)
+                                                      0.045     0.067 r  bd_0_i/hls_inst/inst/ap_return[11]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.067    ap_return[11]
+                                                                      r  ap_return[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[12]
+                            (input port)
+  Destination:            ap_return[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.067ns  (logic 0.045ns (67.164%)  route 0.022ns (32.836%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[12] (IN)
+                         net (fo=1, unset)            0.022     0.022    bd_0_i/hls_inst/inst/ap_return[12]_INST_0/I3
+    SLICE_X183Y137       LUTCY1 (Prop_E5LUT_SLICEM_I3_O)
+                                                      0.045     0.067 r  bd_0_i/hls_inst/inst/ap_return[12]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.067    ap_return[12]
+                                                                      r  ap_return[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 a[13]
+                            (input port)
+  Destination:            ap_return[13]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.067ns  (logic 0.046ns (68.657%)  route 0.021ns (31.343%))
+  Logic Levels:           1  (LUTCY1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  a[13] (IN)
+                         net (fo=1, unset)            0.021     0.021    bd_0_i/hls_inst/inst/ap_return[13]_INST_0/I3
+    SLICE_X183Y137       LUTCY1 (Prop_F5LUT_SLICEM_I3_O)
+                                                      0.046     0.067 r  bd_0_i/hls_inst/inst/ap_return[13]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.067    ap_return[13]
+                                                                      r  ap_return[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

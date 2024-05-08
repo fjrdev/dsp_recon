@@ -1,0 +1,466 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date              : Sun May  5 22:25:13 2024
+| Host              : franz-MS-7C02 running 64-bit Ubuntu 20.04.5 LTS
+| Command           : report_timing -max_paths 10 -file ./report/add_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xcvc1902-vsva2197
+| Speed File        : -2MP  PRODUCTION 2.11 2022-11-23
+| Design State      : Synthesized
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             9.362ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[31]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.638ns  (logic 0.566ns (88.715%)  route 0.072ns (11.285%))
+  Logic Levels:           7  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.450 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.452    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTF)
+                                                      0.053     0.505 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTF
+                         net (fo=2, unplaced)         0.013     0.518    bd_0_i/hls_inst/inst/ap_return[30]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.048     0.566 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.017     0.583    bd_0_i/hls_inst/inst/ap_return[31]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.055     0.638 r  bd_0_i/hls_inst/inst/ap_return[31]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.638    ap_return[31]
+                                                                      r  ap_return[31] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.638    
+  -------------------------------------------------------------------
+                         slack                                  9.362    
+
+Slack (MET) :             9.365ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[27]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.635ns  (logic 0.565ns (88.976%)  route 0.070ns (11.024%))
+  Logic Levels:           7  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.450 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.452    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTB)
+                                                      0.051     0.503 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTB
+                         net (fo=2, unplaced)         0.013     0.516    bd_0_i/hls_inst/inst/ap_return[26]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.049     0.565 r  bd_0_i/hls_inst/inst/ap_return[26]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.015     0.580    bd_0_i/hls_inst/inst/ap_return[27]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.055     0.635 r  bd_0_i/hls_inst/inst/ap_return[27]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.635    ap_return[27]
+                                                                      r  ap_return[27] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.635    
+  -------------------------------------------------------------------
+                         slack                                  9.365    
+
+Slack (MET) :             9.366ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[29]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.634ns  (logic 0.556ns (87.697%)  route 0.078ns (12.303%))
+  Logic Levels:           7  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.450 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.452    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTD)
+                                                      0.042     0.494 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTD
+                         net (fo=2, unplaced)         0.014     0.508    bd_0_i/hls_inst/inst/ap_return[28]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.048     0.556 r  bd_0_i/hls_inst/inst/ap_return[28]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.022     0.578    bd_0_i/hls_inst/inst/ap_return[29]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.056     0.634 r  bd_0_i/hls_inst/inst/ap_return[29]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.634    ap_return[29]
+                                                                      r  ap_return[29] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.634    
+  -------------------------------------------------------------------
+                         slack                                  9.366    
+
+Slack (MET) :             9.371ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[25]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.629ns  (logic 0.516ns (82.035%)  route 0.113ns (17.965%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.450 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.057     0.507    bd_0_i/hls_inst/inst/ap_return[24]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.051     0.558 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.016     0.574    bd_0_i/hls_inst/inst/ap_return[25]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.055     0.629 r  bd_0_i/hls_inst/inst/ap_return[25]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.629    ap_return[25]
+                                                                      r  ap_return[25] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.629    
+  -------------------------------------------------------------------
+                         slack                                  9.371    
+
+Slack (MET) :             9.404ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[23]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.596ns  (logic 0.526ns (88.255%)  route 0.070ns (11.745%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTF)
+                                                      0.053     0.463 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTF
+                         net (fo=2, unplaced)         0.013     0.476    bd_0_i/hls_inst/inst/ap_return[22]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.048     0.524 r  bd_0_i/hls_inst/inst/ap_return[22]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.017     0.541    bd_0_i/hls_inst/inst/ap_return[23]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.055     0.596 r  bd_0_i/hls_inst/inst/ap_return[23]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.596    ap_return[23]
+                                                                      r  ap_return[23] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.596    
+  -------------------------------------------------------------------
+                         slack                                  9.404    
+
+Slack (MET) :             9.407ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[19]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.593ns  (logic 0.525ns (88.533%)  route 0.068ns (11.467%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTB)
+                                                      0.051     0.461 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTB
+                         net (fo=2, unplaced)         0.013     0.474    bd_0_i/hls_inst/inst/ap_return[18]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.049     0.523 r  bd_0_i/hls_inst/inst/ap_return[18]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.015     0.538    bd_0_i/hls_inst/inst/ap_return[19]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.055     0.593 r  bd_0_i/hls_inst/inst/ap_return[19]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.593    ap_return[19]
+                                                                      r  ap_return[19] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.593    
+  -------------------------------------------------------------------
+                         slack                                  9.407    
+
+Slack (MET) :             9.408ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[21]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.592ns  (logic 0.516ns (87.162%)  route 0.076ns (12.838%))
+  Logic Levels:           6  (LOOKAHEAD8=3 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTD)
+                                                      0.042     0.452 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTD
+                         net (fo=2, unplaced)         0.014     0.466    bd_0_i/hls_inst/inst/ap_return[20]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.048     0.514 r  bd_0_i/hls_inst/inst/ap_return[20]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.022     0.536    bd_0_i/hls_inst/inst/ap_return[21]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.056     0.592 r  bd_0_i/hls_inst/inst/ap_return[21]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.592    ap_return[21]
+                                                                      r  ap_return[21] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.592    
+  -------------------------------------------------------------------
+                         slack                                  9.408    
+
+Slack (MET) :             9.413ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[17]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.587ns  (logic 0.476ns (81.090%)  route 0.111ns (18.910%))
+  Logic Levels:           5  (LOOKAHEAD8=2 LUTCY1=1 LUTCY2=2)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.057     0.465    bd_0_i/hls_inst/inst/ap_return[16]_INST_0/I4
+                         LUTCY2 (Prop_LUTCY2_I4_O)    0.051     0.516 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0/LUTCY2_INST/O
+                         net (fo=3, unplaced)         0.016     0.532    bd_0_i/hls_inst/inst/ap_return[17]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.055     0.587 r  bd_0_i/hls_inst/inst/ap_return[17]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.587    ap_return[17]
+                                                                      r  ap_return[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.587    
+  -------------------------------------------------------------------
+                         slack                                  9.413    
+
+Slack (MET) :             9.425ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[30]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.575ns  (logic 0.520ns (90.435%)  route 0.055ns (9.565%))
+  Logic Levels:           6  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.450 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.452    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTF)
+                                                      0.053     0.505 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTF
+                         net (fo=2, unplaced)         0.013     0.518    bd_0_i/hls_inst/inst/ap_return[30]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.057     0.575 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.575    ap_return[30]
+                                                                      r  ap_return[30] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.575    
+  -------------------------------------------------------------------
+                         slack                                  9.425    
+
+Slack (MET) :             9.427ns  (required time - arrival time)
+  Source:                 b[0]
+                            (input port)
+  Destination:            ap_return[26]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.573ns  (logic 0.518ns (90.401%)  route 0.055ns (9.599%))
+  Logic Levels:           6  (LOOKAHEAD8=4 LUTCY1=1 LUTCY2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  b[0] (IN)
+                         net (fo=1, unset)            0.000     0.000    bd_0_i/hls_inst/inst/ap_return[0]_INST_0/I2
+                         LUTCY2 (Prop_LUTCY2_I2_GE)
+                                                      0.088     0.088 r  bd_0_i/hls_inst/inst/ap_return[0]_INST_0/LUTCY2_INST/GE
+                         net (fo=1, unplaced)         0.036     0.124    bd_0_i/hls_inst/inst/ap_return[0]_INST_0_n_0
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_GEA_COUTH)
+                                                      0.242     0.366 r  bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.368    bd_0_i/hls_inst/inst/ap_return[8]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.408 r  bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.410    bd_0_i/hls_inst/inst/ap_return[16]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTH)
+                                                      0.040     0.450 r  bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1/COUTH
+                         net (fo=3, unplaced)         0.002     0.452    bd_0_i/hls_inst/inst/ap_return[24]_INST_0_i_1_n_3
+                         LOOKAHEAD8 (Prop_LOOKAHEAD8_CIN_COUTB)
+                                                      0.051     0.503 r  bd_0_i/hls_inst/inst/ap_return[30]_INST_0_i_1/COUTB
+                         net (fo=2, unplaced)         0.013     0.516    bd_0_i/hls_inst/inst/ap_return[26]_INST_0/I4
+                         LUTCY1 (Prop_LUTCY1_I4_O)    0.057     0.573 r  bd_0_i/hls_inst/inst/ap_return[26]_INST_0/LUTCY1_INST/O
+                         net (fo=0)                   0.000     0.573    ap_return[26]
+                                                                      r  ap_return[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.573    
+  -------------------------------------------------------------------
+                         slack                                  9.427    
+
+
+
+

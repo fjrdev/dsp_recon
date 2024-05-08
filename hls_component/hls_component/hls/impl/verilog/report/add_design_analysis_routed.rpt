@@ -1,0 +1,103 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Sun May  5 22:28:50 2024
+| Host         : franz-MS-7C02 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_design_analysis -file ./report/add_design_analysis_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xcvc1902
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Router Initial Congestion
+5. SLR Net Crossing Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+-----------------------------------------------------------------------------------------+
+|      Characteristics      |                                         Path #1                                         |
++---------------------------+-----------------------------------------------------------------------------------------+
+| Requirement               | 10.000                                                                                  |
+| Path Delay                | 0.688                                                                                   |
+| Logic Delay               | 0.578(85%)                                                                              |
+| Net Delay                 | 0.110(15%)                                                                              |
+| Clock Skew                | 0.000                                                                                   |
+| Slack                     | 9.312                                                                                   |
+| Clock Uncertainty         | 0.000                                                                                   |
+| Clock Relationship        | Safely Timed                                                                            |
+| Clock Delay Group         | Same Group                                                                              |
+| Logic Levels              | 7                                                                                       |
+| Routes                    | 3                                                                                       |
+| Logical Path              | LUTCY2/b[0]-(1)-LOOKAHEAD8-LOOKAHEAD8-LOOKAHEAD8-LOOKAHEAD8-LUTCY2-LUTCY1/ap_return[29] |
+| Start Point Clock         | input port clock                                                                        |
+| End Point Clock           |                                                                                         |
+| DSP Block                 | None                                                                                    |
+| RAM Registers             | None-None                                                                               |
+| LOOKAHEAD8                | 4                                                                                       |
+| LUT Cascades              | 2                                                                                       |
+| RAM Crossings             | 0                                                                                       |
+| DSP Crossings             | 0                                                                                       |
+| NOC Crossings             | 0                                                                                       |
+| MRMAC Crossings           | 0                                                                                       |
+| IO Crossings              | 0                                                                                       |
+| Config Crossings          | 0                                                                                       |
+| SLR Crossings             | 0                                                                                       |
+| PBlocks                   | 0                                                                                       |
+| High Fanout               | 1                                                                                       |
+| Dont Touch                | 0                                                                                       |
+| Mark Debug                | 0                                                                                       |
+| Start Point Pin Primitive | b[0]                                                                                    |
+| End Point Pin Primitive   | ap_return[29]                                                                           |
+| Start Point Pin           | b[0]                                                                                    |
+| End Point Pin             | ap_return[29]                                                                           |
++---------------------------+-----------------------------------------------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (8627, 27589)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+---+---+---+---+---+----+---+---+
+| End Point Clock | Requirement | 0 | 1 | 2 | 3 | 4 |  5 | 6 | 7 |
++-----------------+-------------+---+---+---+---+---+----+---+---+
+| (none)          | 10.000ns    | 2 | 1 | 1 | 1 | 8 | 11 | 7 | 3 |
++-----------------+-------------+---+---+---+---+---+----+---+---+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 34 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+-----+------------+-----+------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | RAMB | URAM | DSP | LOOKAHEAD8 | SRL | Cell Names |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+-----+------------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Router Initial Congestion
+----------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+-----+------------+-----+------------+-------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | RAMB | URAM | DSP | LOOKAHEAD8 | SRL | Cell Names | Sub Windows |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+-----+------------+-----+------------+-------------+
+* No effective congestion windows are found above level 5
+
+
+5. SLR Net Crossing Reporting
+-----------------------------
+
++------------+-----------------------------+
+| Cell Names | Number of Nets crossing SLR |
++------------+-----------------------------+
+* The current part is not an SSI device
+
+
