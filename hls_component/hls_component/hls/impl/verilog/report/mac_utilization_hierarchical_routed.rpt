@@ -1,0 +1,39 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Mon May 13 19:57:49 2024
+| Host         : franz-MS-7C02 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/mac_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xcvc1902-vsva2197-2MP-e-S
+| Speed File   : -2MP
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|                              Instance                             |                                 Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| bd_0_wrapper                                                      |                                                                 (top) |         48 |         48 |       0 |    0 |  43 |      0 |      0 |    0 |          1 |
+|   (bd_0_wrapper)                                                  |                                                                 (top) |          0 |          0 |       0 |    0 |   0 |      0 |      0 |    0 |          0 |
+|   bd_0_i                                                          |                                                                  bd_0 |         48 |         48 |       0 |    0 |  43 |      0 |      0 |    0 |          1 |
+|     hls_inst                                                      |                                                       bd_0_hls_inst_0 |         48 |         48 |       0 |    0 |  43 |      0 |      0 |    0 |          1 |
+|       (hls_inst)                                                  |                                                       bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |    0 |          0 |
+|       inst                                                        |                                                   bd_0_hls_inst_0_mac |         48 |         48 |       0 |    0 |  43 |      0 |      0 |    0 |          1 |
+|         (inst)                                                    |                                                   bd_0_hls_inst_0_mac |          0 |          0 |       0 |    0 |  15 |      0 |      0 |    0 |          0 |
+|         BUS_A_s_axi_U                                             |                                       bd_0_hls_inst_0_mac_BUS_A_s_axi |         23 |         23 |       0 |    0 |  27 |      0 |      0 |    0 |          0 |
+|         flow_control_loop_pipe_U                                  |                            bd_0_hls_inst_0_mac_flow_control_loop_pipe |         25 |         25 |       0 |    0 |   1 |      0 |      0 |    0 |          0 |
+|         fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1         |    bd_0_hls_inst_0_mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
+|           mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u | bd_0_hls_inst_0_mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip |          0 |          0 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
++-------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

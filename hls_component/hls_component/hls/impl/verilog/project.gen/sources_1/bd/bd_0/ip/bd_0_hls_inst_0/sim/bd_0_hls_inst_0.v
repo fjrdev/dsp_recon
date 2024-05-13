@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:mac:1.0
-// IP Revision: 2113556194
+// IP Revision: 2113556209
 
 `timescale 1ns/1ps
 

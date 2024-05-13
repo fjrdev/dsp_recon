@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon May 13 19:36:04 2024
-# Process ID: 65936
-# Current directory: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Start of session at: Mon May 13 19:51:26 2024
+# Process ID: 5006
+# Current directory: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
 # Command line: vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
-# Log file: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
-# Journal file: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
-# Running On: fjrdev, OS: Linux, CPU Frequency: 1800.000 MHz, CPU Physical cores: 4, Host memory: 8073 MB
+# Log file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+# Running On: franz-MS-7C02, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 12, Host memory: 16704 MB
 #-----------------------------------------------------------
 source bd_0_hls_inst_0.tcl -notrace

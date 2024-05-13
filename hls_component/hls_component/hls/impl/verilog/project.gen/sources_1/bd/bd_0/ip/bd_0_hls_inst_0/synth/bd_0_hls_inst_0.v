@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:mac:1.0
-// IP Revision: 2113556194
+// IP Revision: 2113556209
 
 (* X_CORE_INFO = "mac,Vivado 2023.1" *)
 (* CHECK_LICENSE_TYPE = "bd_0_hls_inst_0,mac,{}" *)
-(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,mac,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=mac,x_ipVersion=1.0,x_ipCoreRevision=2113556194,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_BUS_A_ADDR_WIDTH=4,C_S_AXI_BUS_A_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "bd_0_hls_inst_0,mac,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=mac,x_ipVersion=1.0,x_ipCoreRevision=2113556209,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_BUS_A_ADDR_WIDTH=4,C_S_AXI_BUS_A_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_0_hls_inst_0 (

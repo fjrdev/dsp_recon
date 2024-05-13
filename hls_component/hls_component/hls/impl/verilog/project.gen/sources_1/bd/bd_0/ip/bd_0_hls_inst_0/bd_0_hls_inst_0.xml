@@ -1099,8 +1099,12 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon May 13 17:52:38 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ac920d7</spirit:value>
+            <spirit:value>9:8dac4a08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1114,11 +1118,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 13 17:35:57 UTC 2024</spirit:value>
+            <spirit:value>Mon May 13 17:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ac920d7</spirit:value>
+            <spirit:value>9:8dac4a08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1129,7 +1133,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ac920d7</spirit:value>
+            <spirit:value>9:8dac4a08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1172,11 +1176,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 13 17:35:57 UTC 2024</spirit:value>
+            <spirit:value>Mon May 13 17:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:336bc3df</spirit:value>
+            <spirit:value>9:a40ea900</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1192,11 +1196,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 13 17:35:57 UTC 2024</spirit:value>
+            <spirit:value>Mon May 13 17:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:336bc3df</spirit:value>
+            <spirit:value>9:a40ea900</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1239,11 +1243,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 13 17:35:57 UTC 2024</spirit:value>
+            <spirit:value>Mon May 13 17:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ac920d7</spirit:value>
+            <spirit:value>9:8dac4a08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1259,11 +1263,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon May 13 17:35:57 UTC 2024</spirit:value>
+            <spirit:value>Mon May 13 17:51:21 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ac920d7</spirit:value>
+            <spirit:value>9:8dac4a08</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2012,27 +2016,27 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac_BUS_A_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac_BUS_A_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac_flow_control_loop_pipe.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac_flow_control_loop_pipe.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/ip/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/ip/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2188,7 +2192,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/ip/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/ip/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2197,19 +2201,19 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac_BUS_A_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac_BUS_A_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac_flow_control_loop_pipe.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac_flow_control_loop_pipe.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b534/hdl/verilog/mac.v</spirit:name>
+        <spirit:name>../../ipshared/d78f/hdl/verilog/mac.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2288,7 +2292,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Mac</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113556194</xilinx:coreRevision>
+      <xilinx:coreRevision>2113556209</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

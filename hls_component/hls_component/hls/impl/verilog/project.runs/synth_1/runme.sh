@@ -8,9 +8,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vivado/2023.1/bin
+  PATH=/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vivado/2023.1/bin
 else
-  PATH=/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vivado/2023.1/bin:$PATH
+  PATH=/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vivado/2023.1/bin:$PATH
 fi
 export PATH
 
@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1'
+HD_PWD='/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
