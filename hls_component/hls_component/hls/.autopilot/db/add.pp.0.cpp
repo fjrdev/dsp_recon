@@ -156,27 +156,27 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "/home/franz/workspace/hls_component/add.cpp" 2
-extern "C" {
-
-
 # 1 "/home/franz/workspace/hls_component/add.h" 1
 
-__attribute__((sdx_kernel("mac", 0))) void mac(float *a, float *b, float *c, int size);
-# 4 "/home/franz/workspace/hls_component/add.cpp" 2
 
-__attribute__((sdx_kernel("mac", 0))) void mac(float a[10], float b[10], float c[10], int size) {
+
+__attribute__((sdx_kernel("mac", 0))) void mac(float *a, float *b, float *c, int size);
+# 2 "/home/franz/workspace/hls_component/add.cpp" 2
+
+__attribute__((sdx_kernel("mac", 0))) void mac(float a[100], float b[100], float c[100], int size) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=mac
-# 5 "/home/franz/workspace/hls_component/add.cpp"
+# 3 "/home/franz/workspace/hls_component/add.cpp"
 
 
-#pragma HLS INTERFACE m_axi depth=10 port=a offset=slave
-#pragma HLS INTERFACE m_axi depth=10 port=b offset=slave
-#pragma HLS INTERFACE m_axi depth=10 port=c offset=slave
+#pragma HLS INTERFACE mode=s_axilite port=return bundle=BUS_A
+#pragma HLS INTERFACE mode=s_axilite depth=100 port=a bundle=BUS_A
+#pragma HLS INTERFACE mode=s_axilite depth=100 port=b bundle=BUS_A
+#pragma HLS INTERFACE mode=s_axilite depth=100 port=c bundle=BUS_A
+#pragma HLS INTERFACE mode=ap_vld port=b
 
  VITIS_LOOP_11_1: for (int i = 0; i < size; ++i) {
         c[i] += a[i] * b[i];
     }
 
-}
 }

@@ -1,1 +1,1 @@
-{"version":0,"data":[{"moduleName":"mac","isTimingViolation":false,"isIIViolation":true,"loopViolationInfos":[{"loopName":"VITIS_LOOP_11_1","isTimingViolation":false,"isIIViolation":true}]}]}
+{"version":0,"data":[{"moduleName":"mac","isTimingViolation":false,"isIIViolation":false,"loopViolationInfos":[{"loopName":"VITIS_LOOP_11_1","isTimingViolation":false,"isIIViolation":false}]}]}

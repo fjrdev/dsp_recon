@@ -2,6 +2,71 @@
 <AdditionalInfo>
   <CTypeInfo>
       <RtlPort>
+        <name>a_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>a_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>a_q0</name>
+        <type>Floating-point</type>
+        <fractionWidth>24</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>b_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>b_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>b_q0</name>
+        <type>Floating-point</type>
+        <fractionWidth>24</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_address0</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_address1</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_ce0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_ce1</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_d0</name>
+        <type>Floating-point</type>
+        <fractionWidth>24</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_q1</name>
+        <type>Floating-point</type>
+        <fractionWidth>24</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>c_we0</name>
+        <type>bool</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
         <name>size</name>
         <type>Signed</type>
         <fractionWidth>0</fractionWidth>

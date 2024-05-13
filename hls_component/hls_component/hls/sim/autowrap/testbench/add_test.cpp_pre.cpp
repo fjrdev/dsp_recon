@@ -6,6 +6,8 @@
 # 1 "/home/franz/workspace/hls_component/add_test.cpp"
 # 1 "/home/franz/workspace/hls_component/add.h" 1
 
+
+
 void mac(float *a, float *b, float *c, int size);
 # 2 "/home/franz/workspace/hls_component/add_test.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 1 3
@@ -47114,36 +47116,34 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 5 "/home/franz/workspace/hls_component/add_test.cpp" 2
 
 
-
-
-# 8 "/home/franz/workspace/hls_component/add_test.cpp"
+# 6 "/home/franz/workspace/hls_component/add_test.cpp"
 int main(int argc, char* argv[]) {
 
-    float a[10];
-    float b[10];
-    float c[10];
+    float a[100];
+    float b[100];
+    float c[100];
 
 
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 100; ++i) {
+        a[i] = static_cast<float> (rand()) / static_cast<float>(1);
+        b[i] = static_cast<float> (rand()) / static_cast<float>(1);
 
 
-        a[i] = 2.2f;
-        b[i] = 2.2f;
         c[i] = 0.0f;
     }
 
-    mac(a, b, c, 10);
+    mac(a, b, c, 100);
 
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 100; ++i) {
         if ((a[i] * b[i]) != c[i]) return 
-# 26 "/home/franz/workspace/hls_component/add_test.cpp" 3 4
+# 24 "/home/franz/workspace/hls_component/add_test.cpp" 3 4
                                          1
-# 26 "/home/franz/workspace/hls_component/add_test.cpp"
+# 24 "/home/franz/workspace/hls_component/add_test.cpp"
                                                      ;
     }
     return 
-# 28 "/home/franz/workspace/hls_component/add_test.cpp" 3 4
+# 26 "/home/franz/workspace/hls_component/add_test.cpp" 3 4
           0
-# 28 "/home/franz/workspace/hls_component/add_test.cpp"
+# 26 "/home/franz/workspace/hls_component/add_test.cpp"
                       ;
 }

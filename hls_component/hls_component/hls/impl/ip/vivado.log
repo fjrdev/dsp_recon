@@ -3,16 +3,16 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon May 13 13:41:13 2024
-# Process ID: 60245
+# Start of session at: Mon May 13 19:34:51 2024
+# Process ID: 65653
 # Current directory: /home/franz/workspace/hls_component/hls_component/hls/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/franz/workspace/hls_component/hls_component/hls/impl/ip/vivado.log
 # Journal file: /home/franz/workspace/hls_component/hls_component/hls/impl/ip/vivado.jou
-# Running On: fjrdev, OS: Linux, CPU Frequency: 2693.971 MHz, CPU Physical cores: 4, Host memory: 8073 MB
+# Running On: fjrdev, OS: Linux, CPU Frequency: 1800.000 MHz, CPU Physical cores: 4, Host memory: 8073 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.168 ; gain = 121.992 ; free physical = 134 ; free virtual = 2706
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2066.293 ; gain = 122.023 ; free physical = 155 ; free virtual = 2140
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
@@ -21,4 +21,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mac_fmadd_32ns_32
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon May 13 13:41:32 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 19:35:11 2024...

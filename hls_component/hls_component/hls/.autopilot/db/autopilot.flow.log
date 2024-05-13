@@ -1,7 +1,7 @@
-INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 10:26:06 CEST 2024
+INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 19:26:47 CEST 2024
 Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 0.11 sec.
+Command   open_solution done; 0.13 sec.
 Execute   apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_config.cfg 
@@ -38,7 +38,7 @@ DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.1/lib
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
-Command       create_platform done; 3.87 sec.
+Command       create_platform done; 4.68 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
@@ -51,14 +51,14 @@ Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.12 sec.
+Command       ap_source done; 0.14 sec.
 Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
 Execute       config_compile -quiet -complex-mul-dsp=1 
-Command     set_part done; 4.09 sec.
+Command     set_part done; 4.89 sec.
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6) 
 INFO: [HLS 200-1465] Applying ini 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6)
 Execute     config_export -format=ip 
-Command   apply_ini done; 4.12 sec.
+Command   apply_ini done; 4.93 sec.
 Execute   apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
@@ -70,7 +70,7 @@ INFO: [HLS 200-1510] Running: csynth_design
 Execute     AP::get_export_output_file
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.17 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.080 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.080 GB.
 Execute       set_directive_top mac -name=mac 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
@@ -81,11 +81,15 @@ Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang /home/franz/workspace/hls_component/add.cpp -foptimization-record-file=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP58_PRIMARY__ -I /usr/include/x86_64-linux-gnu -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S > /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.cpp.clang.out.log 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.cpp.clang.err.log
-INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Done: GCC PP 39 time: 0.4 seconds per iteration
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S > /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/clang.out.log 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/clang.err.log
+WARNING: [HLS 207-5558] unexpected pragma parameter 'depth' (/home/franz/workspace/hls_component/add.cpp:6:44)
+WARNING: [HLS 207-5558] unexpected pragma parameter 'depth' (/home/franz/workspace/hls_component/add.cpp:7:44)
+WARNING: [HLS 207-5558] unexpected pragma parameter 'depth' (/home/franz/workspace/hls_component/add.cpp:8:44)
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/.systemc_flag -fix-errors /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.15 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/all.directive.json -fix-errors /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
@@ -99,7 +103,7 @@ INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-
 Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot -I /tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP58_PRIMARY__ -g -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S > /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp.clang.out.log 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.68 seconds. CPU system time: 0.63 seconds. Elapsed time: 1.3 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.75 seconds. CPU system time: 0.63 seconds. Elapsed time: 1.56 seconds; current allocated memory: 1.082 GB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc -args  "/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.g.bc"  
@@ -110,17 +114,18 @@ INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-
 INFO-FLOW: 
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.13 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc -args /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsm_39.bc /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libhlsmc++_39.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc > /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
 INFO-FLOW: 
-Command       run_link_or_opt done; 2.64 sec.
+Command       run_link_or_opt done; 3.15 sec.
 Execute       run_link_or_opt -opt -out /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc -args /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mac -reflow-float-conversion 
 INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=mac -reflow-float-conversion -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc > /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: 
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 1.3 sec.
+Command       run_link_or_opt done; 1.25 sec.
 Execute       run_link_or_opt -out /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc -args /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /tools/Xilinx/Vitis_HLS/2023.1/lnx64/lib/libfloatconversion_39.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc > /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 INFO-FLOW: 
@@ -134,29 +139,30 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 INFO-FLOW: run_clang (background poll_ms 5000) exec: /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=mac -mllvm -hls-db-dir -mllvm /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1024 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=1024 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.5.gdce.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.lto.bc -hls-platform-db-name=/tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/platform.db -hls-platform-name=versal_medium -device-resource-info=BRAM_1934.000000_DSP_1968.000000_FF_1799680.000000_LUT_899840.000000_SLICE_112480.000000_URAM_463.000000 -device-name-info=xcvc1902-vsva2197-2MP-e-S 2> /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 25 Compile/Link /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 28 Unroll/Inline /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 30 Performance/Pipeline /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 40 Optimizations /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 40 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 24 Compile/Link /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 24 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 27 Unroll/Inline /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 27 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 21 Performance/Pipeline /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 21 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 34 Optimizations /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-414] Cannot apply interface mode 'ap_vld' on function argument 'b' since this interface mode only supports scalar types (/home/franz/workspace/hls_component/add.cpp:3:0)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.13 seconds. CPU system time: 0.67 seconds. Elapsed time: 9.39 seconds; current allocated memory: 1.083 GB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.083 GB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.48 seconds. CPU system time: 0.72 seconds. Elapsed time: 9.89 seconds; current allocated memory: 1.083 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.083 GB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top mac -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.0.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.084 GB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.083 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.1.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.2.prechk.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.084 GB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.083 GB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.g.1.bc to /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -164,14 +170,14 @@ Execute         transform -hls -tmp /home/franz/workspace/hls_component/hls_comp
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (/home/franz/workspace/hls_component/add.cpp:11) in function 'mac' automatically.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.o.1.tmp.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.104 GB.
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.o.2.bc -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute           auto_get_db
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.104 GB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.12 sec.
-Command     elaborate done; 10.84 sec.
+Command       opt_and_import_c done; 0.14 sec.
+Command     elaborate done; 11.61 sec.
 Execute     ap_eval exec zip -j /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
@@ -198,17 +204,14 @@ Execute       set_default_model mac
 Execute       schedule -model mac 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
-WARNING: [HLS 200-885] The II Violation in module 'mac' (loop 'VITIS_LOOP_11_1'): Unable to schedule bus request operation ('gmem_load_1_req', /home/franz/workspace/hls_component/add.cpp:12) on port 'gmem' (/home/franz/workspace/hls_component/add.cpp:12) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
-WARNING: [HLS 200-885] The II Violation in module 'mac' (loop 'VITIS_LOOP_11_1'): Unable to schedule bus request operation ('gmem_load_2_req', /home/franz/workspace/hls_component/add.cpp:12) on port 'gmem' (/home/franz/workspace/hls_component/add.cpp:12) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 19, loop 'VITIS_LOOP_11_1'
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_11_1'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.39 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.104 GB.
+Command       schedule done; 0.21 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.28 seconds; current allocated memory: 1.104 GB.
 Execute       syn_report -verbosereport -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.verbose.sched.rpt 
 Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
 Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
 Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
-Command       syn_report done; 0.31 sec.
 Execute       db_write -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.sched.adb -f 
 INFO-FLOW: Finish scheduling mac.
 Execute       set_default_model mac 
@@ -218,8 +221,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.18 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.47 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 1.104 GB.
 Execute       syn_report -verbosereport -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.verbose.bind.rpt 
 Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
 Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
@@ -235,19 +237,19 @@ INFO: [HLS 200-10] -- Generating RTL for module 'mac'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model mac -top_prefix  -sub_prefix mac_ -mg_file /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.tcl 
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'mac/gmem' to 'm_axi'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'mac/a' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'mac/b' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'mac/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/c' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'mac/size' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'mac' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'a', 'b' and 'c' to AXI-Lite port control.
+INFO: [RTGEN 206-500] Setting interface mode on function 'mac' to 's_axilite & ap_ctrl_hs'.
+WARNING: [HLS 200-2049] Adding the rewind optimization to the pipelined process 'VITIS_LOOP_11_1' with inout ports inside a dataflow region can result in the creation of loop-carried dependencies and errors. Use caution when adding the rewind optimization to such loops.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mac' pipeline 'VITIS_LOOP_11_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port BUS_A.
 INFO: [RTGEN 206-100] Generating core module 'fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'mac'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.104 GB.
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
 Execute       gen_rtl mac -istop -style xilinx -f -lang vhdl -o /home/franz/workspace/hls_component/hls_component/hls/syn/vhdl/mac 
-Command       gen_rtl done; 0.13 sec.
 Execute       gen_rtl mac -istop -style xilinx -f -lang vlog -o /home/franz/workspace/hls_component/hls_component/hls/syn/verilog/mac 
 Execute       syn_report -csynth -model mac -o /home/franz/workspace/hls_component/hls_component/hls/syn/report/mac_csynth.rpt 
 Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
@@ -261,13 +263,11 @@ Execute       syn_report -verbosereport -model mac -o /home/franz/workspace/hls_
 Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
 Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
 Execute           ap_part_info -quiet -name xcvc1902-vsva2197-2MP-e-S -data family 
-Command       syn_report done; 0.15 sec.
 Execute       db_write -model mac -f -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.adb 
 Execute       db_write -model mac -bindview -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info mac -p /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac 
 Execute       export_constraint_db -f -tool general -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.constraint.tcl 
 Execute       syn_report -designview -model mac -o /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.design.xml 
-Command       syn_report done; 0.13 sec.
 Execute       syn_report -csynthDesign -model mac -o /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth.rpt -MHOut /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/kernel_module_hierarchy.tcl 
 Execute         list_part -family xcvc1902-vsva2197-2MP-e-S 
 Execute           ap_family_info -name xcvc1902-vsva2197-2MP-e-S -data names 
@@ -281,17 +281,17 @@ INFO-FLOW: Handling components in module [mac] ...
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.tcl 
 INFO-FLOW: Found component mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.
 INFO-FLOW: Append model mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-INFO-FLOW: Found component mac_gmem_m_axi.
-INFO-FLOW: Append model mac_gmem_m_axi
-INFO-FLOW: Found component mac_control_s_axi.
-INFO-FLOW: Append model mac_control_s_axi
+INFO-FLOW: Found component mac_BUS_A_s_axi.
+INFO-FLOW: Append model mac_BUS_A_s_axi
+INFO-FLOW: Found component mac_flow_control_loop_pipe.
+INFO-FLOW: Append model mac_flow_control_loop_pipe
 INFO-FLOW: Append model mac
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 mac_gmem_m_axi mac_control_s_axi mac
+INFO-FLOW: All models in this session: mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 mac_BUS_A_s_axi mac_flow_control_loop_pipe mac
 INFO-FLOW: Generating /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.txt file...
 INFO-FLOW: To file: write model mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-INFO-FLOW: To file: write model mac_gmem_m_axi
-INFO-FLOW: To file: write model mac_control_s_axi
+INFO-FLOW: To file: write model mac_BUS_A_s_axi
+INFO-FLOW: To file: write model mac_flow_control_loop_pipe
 INFO-FLOW: To file: write model mac
 INFO-FLOW: Generating /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl file...
 INFO-FLOW: Finished generating RTL model list.
@@ -321,11 +321,11 @@ Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.11 sec.
+Command       ap_source done; 0.12 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/vhdl' dstVlogDir='/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/vlog' tclDir='/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db' modelList='mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-mac_gmem_m_axi
-mac_control_s_axi
+mac_BUS_A_s_axi
+mac_flow_control_loop_pipe
 mac
 ' expOnly='0'
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
@@ -334,8 +334,8 @@ Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.tcl 
-Execute         source ./control.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.93 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.97 seconds; current allocated memory: 1.104 GB.
+Execute         source ./BUS_A.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.54 seconds; current allocated memory: 1.104 GB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='mac_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -347,8 +347,8 @@ INFO-FLOW: Running: create_csynth_xml write xml
 INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=/home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth.xml
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-mac_gmem_m_axi
-mac_control_s_axi
+mac_BUS_A_s_axi
+mac_flow_control_loop_pipe
 mac
 ' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
@@ -367,21 +367,21 @@ Execute       source /home/franz/workspace/hls_component/hls_component/hls/.auto
 Execute       sc_get_clocks mac 
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute       source /home/franz/workspace/hls_component/hls_component/hls/impl/misc/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.tcl 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE mac LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME gmem_m_axi_U SOURCE {} VARIABLE {} MODULE mac LOOP {} BUNDLEDNAME gmem DSP 0 BRAM 2 URAM 0}} report_dict {TOPINST mac MODULE2INSTS {mac mac} INST2MODULE {mac mac} INSTDATA {mac {DEPTH 1 CHILDREN {}}} MODULEDATA {mac {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln11_fu_207_p2 SOURCE /home/franz/workspace/hls_component/add.cpp:11 VARIABLE add_ln11 LOOP VITIS_LOOP_11_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln12_fu_226_p2 SOURCE /home/franz/workspace/hls_component/add.cpp:12 VARIABLE add_ln12 LOOP VITIS_LOOP_11_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln12_1_fu_241_p2 SOURCE /home/franz/workspace/hls_component/add.cpp:12 VARIABLE add_ln12_1 LOOP VITIS_LOOP_11_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln12_2_fu_268_p2 SOURCE /home/franz/workspace/hls_component/add.cpp:12 VARIABLE add_ln12_2 LOOP VITIS_LOOP_11_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 1 BRAM 2 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME BUS_A_s_axi_U SOURCE {} VARIABLE {} MODULE mac LOOP {} BUNDLEDNAME BUS_A DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST mac MODULE2INSTS {mac mac} INST2MODULE {mac mac} INSTDATA {mac {DEPTH 1 CHILDREN {}}} MODULEDATA {mac {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln11_fu_118_p2 SOURCE /home/franz/workspace/hls_component/add.cpp:11 VARIABLE add_ln11 LOOP VITIS_LOOP_11_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 1 BRAM 0 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.59 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.6 seconds; current allocated memory: 1.105 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.48 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.53 seconds; current allocated memory: 1.104 GB.
 INFO: [VHDL 208-304] Generating VHDL RTL for mac.
 INFO: [VLOG 209-307] Generating Verilog RTL for mac.
 Execute       syn_report -model mac -printsummary 
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-Command     autosyn done; 2.64 sec.
-Command   csynth_design done; 13.72 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.6 seconds. CPU system time: 1.45 seconds. Elapsed time: 13.72 seconds; current allocated memory: 25.234 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 216.64 MHz
+Command     autosyn done; 1.51 sec.
+Command   csynth_design done; 13.34 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6.92 seconds. CPU system time: 1.49 seconds. Elapsed time: 13.34 seconds; current allocated memory: 24.711 MB.
 Execute   export_design -flow none 
 INFO: [HLS 200-1510] Running: export_design -flow none 
 Execute     AP::get_export_output_file
@@ -417,10 +417,10 @@ Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/int
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.17 sec.
+Command       ap_source done; 0.13 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.21 sec.
+Command     ap_source done; 0.17 sec.
 INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=mac xml_exists=0
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
@@ -430,11 +430,11 @@ Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopi
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
 INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to mac
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=5
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
 INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=4 #gSsdmPorts=0
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-mac_gmem_m_axi
-mac_control_s_axi
+mac_BUS_A_s_axi
+mac_flow_control_loop_pipe
 mac
 ' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
@@ -516,18 +516,18 @@ Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.12 sec.
+Command     ap_source done; 0.14 sec.
 INFO-FLOW: DBG:PUTS:     IP package: exec /home/franz/workspace/hls_component/hls_component/hls/impl/ip/pack.sh
 INFO-FLOW: DBG:PUTS:     IP package: success /home/franz/workspace/hls_component/hls_component/hls/impl/ip/pack.sh
 Execute     send_msg_by_id INFO @200-802@%s hls_component/mac.zip 
 INFO: [HLS 200-802] Generated output file hls_component/mac.zip
-Command   export_design done; 41.93 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 25.25 seconds. CPU system time: 8.66 seconds. Elapsed time: 41.93 seconds; current allocated memory: 6.340 MB.
+Command   export_design done; 28.34 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 24.24 seconds. CPU system time: 2.12 seconds. Elapsed time: 28.34 seconds; current allocated memory: 3.852 MB.
 Execute   cleanup_all 
-INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 10:29:23 CEST 2024
+INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 19:30:52 CEST 2024
 Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 0.11 sec.
+Command   open_solution done; 0.12 sec.
 Execute   apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_config.cfg 
@@ -564,7 +564,7 @@ DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.1/lib
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
-Command       create_platform done; 4.49 sec.
+Command       create_platform done; 4.32 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
@@ -575,17 +575,17 @@ Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.18 sec.
+Command         ap_source done; 0.12 sec.
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.26 sec.
+Command       ap_source done; 0.2 sec.
 Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
 Execute       config_compile -quiet -complex-mul-dsp=1 
-Command     set_part done; 4.84 sec.
+Command     set_part done; 4.62 sec.
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6) 
 INFO: [HLS 200-1465] Applying ini 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6)
 Execute     config_export -format=ip 
-Command   apply_ini done; 4.87 sec.
+Command   apply_ini done; 4.66 sec.
 Execute   apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
@@ -597,6 +597,8 @@ INFO: [HLS 200-1510] Running: cosim_design
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     send_msg_by_id WARNING @200-626@ 
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
 INFO-FLOW: DBG:PUTS: read_platform_lib /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
 Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
@@ -615,9 +617,10 @@ Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/int
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.13 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.12 sec.
+Command     ap_source done; 0.18 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
 Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
@@ -633,7 +636,7 @@ Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info
 INFO-FLOW: TB processing: /home/franz/workspace/hls_component/add_test.cpp /home/franz/workspace/hls_component/hls_component/hls/./sim/autowrap/testbench/add_test.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process /home/franz/workspace/hls_component/hls_component/hls/./sim/autowrap/testbench/add_test.cpp_pre.cpp.tb.cpp std=c++14 
 INFO-FLOW: exec /tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/franz/workspace/hls_component/hls_component/hls/./sim/autowrap/testbench/add_test.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
-Command     clang_tidy done; 0.9 sec.
+Command     clang_tidy done; 0.94 sec.
 Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
 INFO-FLOW: TB processing: /home/franz/workspace/hls_component/add.cpp /home/franz/workspace/hls_component/hls_component/hls/./sim/autowrap/testbench/add.cpp_pre.cpp
 Execute     clang_tidy xilinx-tb-process -desc tb-process /home/franz/workspace/hls_component/hls_component/hls/./sim/autowrap/testbench/add.cpp_pre.cpp.tb.cpp std=c++14 
@@ -648,7 +651,7 @@ Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopi
 Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Command     ap_source done; 0.2 sec.
+Command     ap_source done; 0.22 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 INFO: [COSIM 212-12] Generating RTL test bench ...
 Execute     source ../tv/cdatafile/ref.tcl 
@@ -680,16 +683,16 @@ Execute       source .sim.status.tcl
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
-Command     ap_source done; 25.64 sec.
+Command     ap_source done; 25.07 sec.
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-Command   cosim_design done; 65.78 sec.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 71.65 seconds. CPU system time: 8.37 seconds. Elapsed time: 65.78 seconds; current allocated memory: 9.152 MB.
+Command   cosim_design done; 61.72 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 70.61 seconds. CPU system time: 6.67 seconds. Elapsed time: 61.72 seconds; current allocated memory: 8.887 MB.
 Execute   cleanup_all 
-INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 10:34:15 CEST 2024
+INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 19:34:42 CEST 2024
 Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 0.12 sec.
+Command   open_solution done; 0.13 sec.
 Execute   apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_config.cfg 
@@ -726,7 +729,7 @@ DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.1/lib
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
-Command       create_platform done; 5.12 sec.
+Command       create_platform done; 4.97 sec.
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
@@ -737,17 +740,16 @@ Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/i
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.15 sec.
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.23 sec.
+Command       ap_source done; 0.16 sec.
 Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
 Execute       config_compile -quiet -complex-mul-dsp=1 
-Command     set_part done; 5.44 sec.
+Command     set_part done; 5.23 sec.
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6) 
 INFO: [HLS 200-1465] Applying ini 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6)
 Execute     config_export -format=ip 
-Command   apply_ini done; 5.47 sec.
+Command   apply_ini done; 5.28 sec.
 Execute   apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
@@ -791,7 +793,7 @@ Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.12 sec.
+Command     ap_source done; 0.13 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=mac xml_exists=1
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
@@ -802,11 +804,11 @@ Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopi
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
 INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to mac
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=5
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
 INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=4 #gSsdmPorts=0
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-mac_gmem_m_axi
-mac_control_s_axi
+mac_BUS_A_s_axi
+mac_flow_control_loop_pipe
 mac
 ' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
 Execute     source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
@@ -890,305 +892,7 @@ Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.15 sec.
-INFO-FLOW: DBG:PUTS:     IP package: exec /home/franz/workspace/hls_component/hls_component/hls/impl/ip/pack.sh
-INFO-FLOW: DBG:PUTS:     IP package: success /home/franz/workspace/hls_component/hls_component/hls/impl/ip/pack.sh
-INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
-INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
-INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
-INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: read_platform_lib /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_family_info -name versalprimees1 -data parts 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.12 sec.
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.16 sec.
-INFO-FLOW: DBG:PUTS:       generate_syn_sh
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_imp_constraints
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.constraint.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-INFO-FLOW: DBG:PUTS: read_platform_lib /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_family_info -name versalprimees1 -data parts 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.12 sec.
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.17 sec.
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/impl.sh
-Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
-ERROR: [HLS 200-478] vivado returned an error 
-INFO-FLOW: DBG:PUTS: auto_impl caught error 
-Caught error from vivado 
-    while executing
-"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
-    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
-    invoked from within
-"::AESL_AUTOIMPL::auto_impl {*}$args"
-INFO-FLOW: Caught error in export_design: 
-    while executing
-"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
-    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
-    invoked from within
-"::AESL_AUTOIMPL::export_design_wrap {*}$args"
-    (procedure "ap_internal_export_design" line 109)
-    invoked from within
-"ap_internal_export_design "
-Command   export_design done; error code: 2; 393.98 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 74.04 seconds. CPU system time: 111.19 seconds. Elapsed time: 393.98 seconds; current allocated memory: 8.930 MB.
-Execute   cleanup_all 
-INFO-FLOW: Workspace /home/franz/workspace/hls_component/hls_component/hls opened at Mon May 13 13:41:05 CEST 2024
-Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 0.12 sec.
-Execute   apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
-INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
-Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_config.cfg 
-INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_config.cfg
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(7) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(7)
-Execute     add_files /home/franz/workspace/hls_component/add.cpp 
-INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/add.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=add.h' at /home/franz/workspace/hls_component/hls_config.cfg(8) 
-INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /home/franz/workspace/hls_component/hls_config.cfg(8)
-Execute     add_files /home/franz/workspace/hls_component/add.h 
-INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/add.h' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=add_test.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(10) 
-INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(10)
-Execute     add_files -tb /home/franz/workspace/hls_component/add_test.cpp 
-INFO: [HLS 200-10] Adding test bench file '/home/franz/workspace/hls_component/add_test.cpp' to the project
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=mac' at /home/franz/workspace/hls_component/hls_config.cfg(9) 
-INFO: [HLS 200-1465] Applying ini 'syn.top=mac' at /home/franz/workspace/hls_component/hls_config.cfg(9)
-Execute     set_top mac 
-Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/franz/workspace/hls_component/hls_config.cfg(4) 
-INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/franz/workspace/hls_component/hls_config.cfg(4)
-Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
-INFO: [HLS 200-1505] Using flow_target 'vivado'
-Execute     send_msg_by_id INFO @200-1465@%s 'clock=10' at /home/franz/workspace/hls_component/hls_config.cfg(5) 
-INFO: [HLS 200-1465] Applying ini 'clock=10' at /home/franz/workspace/hls_component/hls_config.cfg(5)
-Execute     create_clock -period 10 
-Execute       ap_set_clock -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvc1902-vsva2197-2MP-e-S' at /home/franz/workspace/hls_component/hls_config.cfg(1) 
-INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/franz/workspace/hls_component/hls_config.cfg(1)
-Execute     set_part xcvc1902-vsva2197-2MP-e-S 
-Execute       create_platform xcvc1902-vsva2197-2MP-e-S -board  
-DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2023.1/lib/lnx64.o/libxv_hlsvwrap.so
-DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data/parts/arch.xml
-DBG:HLSDevice: init success
-INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
-Command       create_platform done; 4 sec.
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.13 sec.
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.17 sec.
-Execute       ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info 
-Execute       config_compile -quiet -complex-mul-dsp=1 
-Command     set_part done; 4.27 sec.
-Execute     send_msg_by_id INFO @200-1465@%s 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6) 
-INFO: [HLS 200-1465] Applying ini 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6)
-Execute     config_export -format=ip 
-Command   apply_ini done; 4.3 sec.
-Execute   apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
-INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
-Execute     send_msg_by_id INFO @200-1909@%s /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
-INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
-Execute     send_msg_by_id INFO @200-1465@%s 'ide.compjson=0' at /home/franz/workspace/hls_component/hls_component/hls/config.cmdline(4) 
-INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /home/franz/workspace/hls_component/hls_component/hls/config.cmdline(4)
-Execute   config_export -flow impl 
-INFO: [HLS 200-1510] Running: config_export -flow impl 
-Execute   export_design 
-INFO: [HLS 200-1510] Running: export_design 
-INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip -flow impl -rtl verilog
-Execute     send_msg_by_id WARNING @200-483@%s%s config_export -format ip config_export -format ip_catalog 
-WARNING: [HLS 200-483] The 'config_export -format ip' command is deprecated and will be removed in a future release. Use 'config_export -format ip_catalog' as its replacement.
-Execute     config_export -format ip_catalog 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
-INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
-INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS: read_platform_lib /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_family_info -name versalprimees1 -data parts 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.13 sec.
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.17 sec.
-INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=mac xml_exists=1
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to mac
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=5
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=4 #gSsdmPorts=0
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-mac_gmem_m_axi
-mac_control_s_axi
-mac
-' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.dataonly.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.dataonly.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.dataonly.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.constraint.tcl 
-Execute     sc_get_clocks mac 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/impl/misc/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to mac
-INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/driver
-INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.dataonly.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.compgen.dataonly.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_top_info
-INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=mac
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.rtl_wrap.cfg.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.constraint.tcl 
-INFO-FLOW: DBG:PUTS:       generate_syn_sh
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PUTS:       generate_imp_constraints
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.constraint.tcl 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/mac.tbgen.tcl 
-INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
-Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
-INFO-FLOW: DBG:PUTS: read_platform_lib /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/common.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/generic/autopilot/interface.gen 
-Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
-Execute     ap_family_info -name versalprimees1 -data parts 
-Execute     source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute         source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
-Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.12 sec.
+Command     ap_source done; 0.14 sec.
 INFO-FLOW: DBG:PUTS:     IP package: exec /home/franz/workspace/hls_component/hls_component/hls/impl/ip/pack.sh
 INFO-FLOW: DBG:PUTS:     IP package: success /home/franz/workspace/hls_component/hls_component/hls/impl/ip/pack.sh
 INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
@@ -1252,30 +956,9 @@ Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
 Execute       source /tools/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.12 sec.
+Command     ap_source done; 0.13 sec.
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
 Execute     source /home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
 Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data names -quiet 
 Execute     ap_part_info -name xcvc1902-vsva2197-2MP-e-S -data info -quiet 
 INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/impl.sh
-Execute     send_msg_by_id ERROR @200-478@%s%s vivado  
-ERROR: [HLS 200-478] vivado returned an error 
-INFO-FLOW: DBG:PUTS: auto_impl caught error 
-Caught error from vivado 
-    while executing
-"error "Caught error from $::AESL_AUTOIMPL::g_tool $err""
-    (procedure "::AESL_AUTOIMPL::auto_impl" line 620)
-    invoked from within
-"::AESL_AUTOIMPL::auto_impl {*}$args"
-INFO-FLOW: Caught error in export_design: 
-    while executing
-"auto_impl_catch $gStartDir {*}$auto_impl_eval_args"
-    (procedure "::AESL_AUTOIMPL::export_design_wrap" line 104)
-    invoked from within
-"::AESL_AUTOIMPL::export_design_wrap {*}$args"
-    (procedure "ap_internal_export_design" line 109)
-    invoked from within
-"ap_internal_export_design "
-Command   export_design done; error code: 2; 109.89 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 60.79 seconds. CPU system time: 7.29 seconds. Elapsed time: 109.89 seconds; current allocated memory: 8.941 MB.
-Execute   cleanup_all 

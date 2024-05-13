@@ -1,0 +1,10 @@
+/home/franz/workspace/hls_component/add.cpp:6:44: warning: unexpected pragma parameter 'depth' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite depth=100 port=a bundle=BUS_A
+                                           ^
+/home/franz/workspace/hls_component/add.cpp:7:44: warning: unexpected pragma parameter 'depth' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite depth=100 port=b bundle=BUS_A
+                                           ^
+/home/franz/workspace/hls_component/add.cpp:8:44: warning: unexpected pragma parameter 'depth' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE mode=s_axilite depth=100 port=c bundle=BUS_A
+                                           ^
+3 warnings generated.

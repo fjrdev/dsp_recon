@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon May 13 13:41:13 2024
-# Process ID: 60245
+# Start of session at: Mon May 13 19:34:51 2024
+# Process ID: 65653
 # Current directory: /home/franz/workspace/hls_component/hls_component/hls/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/franz/workspace/hls_component/hls_component/hls/impl/ip/vivado.log
 # Journal file: /home/franz/workspace/hls_component/hls_component/hls/impl/ip/vivado.jou
-# Running On: fjrdev, OS: Linux, CPU Frequency: 2693.971 MHz, CPU Physical cores: 4, Host memory: 8073 MB
+# Running On: fjrdev, OS: Linux, CPU Frequency: 1800.000 MHz, CPU Physical cores: 4, Host memory: 8073 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

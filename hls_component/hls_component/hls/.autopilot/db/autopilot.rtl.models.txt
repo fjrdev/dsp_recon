@@ -1,4 +1,4 @@
 mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
-mac_gmem_m_axi
-mac_control_s_axi
+mac_BUS_A_s_axi
+mac_flow_control_loop_pipe
 mac

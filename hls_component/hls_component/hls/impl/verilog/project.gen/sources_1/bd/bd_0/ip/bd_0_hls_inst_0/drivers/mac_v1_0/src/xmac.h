@@ -41,12 +41,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u64 Control_BaseAddress;
+    u64 Bus_a_BaseAddress;
 } XMac_Config;
 #endif
 
 typedef struct {
-    u64 Control_BaseAddress;
+    u64 Bus_a_BaseAddress;
     u32 IsReady;
 } XMac;
 
@@ -83,13 +83,21 @@ int XMac_Initialize(XMac *InstancePtr, const char* InstanceName);
 int XMac_Release(XMac *InstancePtr);
 #endif
 
+void XMac_Start(XMac *InstancePtr);
+u32 XMac_IsDone(XMac *InstancePtr);
+u32 XMac_IsIdle(XMac *InstancePtr);
+u32 XMac_IsReady(XMac *InstancePtr);
+void XMac_EnableAutoRestart(XMac *InstancePtr);
+void XMac_DisableAutoRestart(XMac *InstancePtr);
 
-void XMac_Set_a(XMac *InstancePtr, u64 Data);
-u64 XMac_Get_a(XMac *InstancePtr);
-void XMac_Set_b(XMac *InstancePtr, u64 Data);
-u64 XMac_Get_b(XMac *InstancePtr);
-void XMac_Set_c(XMac *InstancePtr, u64 Data);
-u64 XMac_Get_c(XMac *InstancePtr);
+
+void XMac_InterruptGlobalEnable(XMac *InstancePtr);
+void XMac_InterruptGlobalDisable(XMac *InstancePtr);
+void XMac_InterruptEnable(XMac *InstancePtr, u32 Mask);
+void XMac_InterruptDisable(XMac *InstancePtr, u32 Mask);
+void XMac_InterruptClear(XMac *InstancePtr, u32 Mask);
+u32 XMac_InterruptGetEnabled(XMac *InstancePtr);
+u32 XMac_InterruptGetStatus(XMac *InstancePtr);
 
 #ifdef __cplusplus
 }

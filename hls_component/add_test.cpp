@@ -3,8 +3,6 @@
 #include <iostream>
 #include <random>
 
-#define SIZE 10
-
 int main(int argc, char* argv[]) {
 
     float a[SIZE];
@@ -13,10 +11,10 @@ int main(int argc, char* argv[]) {
     
     // init
     for (int i = 0; i < SIZE; ++i) {
-        //a[i] = static_cast<float> (rand()) / static_cast<float>(1);
-        //b[i] = static_cast<float> (rand()) / static_cast<float>(1);
-        a[i] = 2.2f;
-        b[i] = 2.2f;                
+        a[i] = static_cast<float> (rand()) / static_cast<float>(1);
+        b[i] = static_cast<float> (rand()) / static_cast<float>(1);
+        //a[i] = 2.2f;
+        //b[i] = 2.2f;                
         c[i] = 0.0f;
     }
 

@@ -3,6 +3,4 @@
 	<Message severity="WARNING" prefix="[HLS 200-483]" key="HLS 200-483" tag="" content="The &apos;config_export -format ip&apos; command is deprecated and will be removed in a future release. Use &apos;config_export -format ip_catalog&apos; as its replacement." resolution=""/>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1773" tag="" content="Starting RTL evaluation using Vivado ..." resolution=""/>
-	<Message severity="ERROR" prefix="[HLS 200-478]" key="HLS 200-478" tag="" content="vivado returned an error" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command export_design CPU user time: 60.79 seconds. CPU system time: 7.29 seconds. Elapsed time: 109.89 seconds; current allocated memory: 8.941 MB." resolution=""/>
 </Messages>

@@ -45,7 +45,7 @@ dict set report_options target_device $target_device
 dict set report_options language $language
 dict set report_options clock_name $clock
 dict set report_options error_if_impl_timing_fails false
-dict set report_options bindmodules {mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 mac_gmem_m_axi mac_control_s_axi}
+dict set report_options bindmodules {mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 mac_BUS_A_s_axi mac_flow_control_loop_pipe}
 dict set report_options max_module_depth 5
 
 

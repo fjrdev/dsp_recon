@@ -26,12 +26,10 @@ using namespace std;
 #define AUTOTB_TVOUT_c "../tv/cdatafile/c.mac.autotvout_c.dat"
 #define AUTOTB_TVIN_size "../tv/cdatafile/c.mac.autotvin_size.dat"
 #define AUTOTB_TVOUT_size "../tv/cdatafile/c.mac.autotvout_size.dat"
-#define AUTOTB_TVIN_gmem "../tv/cdatafile/c.mac.autotvin_gmem.dat"
-#define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.mac.autotvout_gmem.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_gmem "../tv/rtldatafile/rtl.mac.autotvout_gmem.dat"
+#define AUTOTB_TVOUT_PC_c "../tv/rtldatafile/rtl.mac.autotvout_c.dat"
 
 
 namespace hls::sim
@@ -1145,43 +1143,7 @@ void mac_hw_stub_wrapper(void*, void*, void*, hls::sim::Byte<4>);
 extern "C"
 void apatb_mac_hw(void* __xlx_apatb_param_a, void* __xlx_apatb_param_b, void* __xlx_apatb_param_c, hls::sim::Byte<4> __xlx_apatb_param_size)
 {
-  hls::sim::Byte<4> __xlx_offset_byte_param_a;
   static hls::sim::Register port0 {
-    .name = "a",
-    .width = 32,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_a),
-#endif
-  };
-  port0.param = &__xlx_offset_byte_param_a;
-
-  hls::sim::Byte<4> __xlx_offset_byte_param_b;
-  static hls::sim::Register port1 {
-    .name = "b",
-    .width = 32,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_b),
-#endif
-  };
-  port1.param = &__xlx_offset_byte_param_b;
-
-  hls::sim::Byte<4> __xlx_offset_byte_param_c;
-  static hls::sim::Register port2 {
-    .name = "c",
-    .width = 32,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_c),
-#endif
-  };
-  port2.param = &__xlx_offset_byte_param_c;
-
-  static hls::sim::Register port3 {
     .name = "size",
     .width = 32,
 #ifdef POST_CHECK
@@ -1190,48 +1152,93 @@ void apatb_mac_hw(void* __xlx_apatb_param_a, void* __xlx_apatb_param_b, void* __
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_size),
 #endif
   };
-  port3.param = &__xlx_apatb_param_size;
+  port0.param = &__xlx_apatb_param_size;
 
 #ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port4 {
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port1 {
 #else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port1 {
 #endif
     .width = 32,
     .asize = 4,
     .hbm = false,
-    .name = { "gmem" },
+    .name = { "a" },
 #ifdef POST_CHECK
+#else
+    .owriter = nullptr,
 #ifdef USE_BINARY_TV_FILE
-    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_gmem),
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_a),
 #else
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_gmem),
-#endif
-#else
-#ifdef USE_BINARY_TV_FILE
-    .owriter = new hls::sim::Output(AUTOTB_TVOUT_gmem),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_gmem),
-#endif
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_a),
 #endif
 #endif
   };
-  __xlx_offset_byte_param_a = 0*4;
-  __xlx_offset_byte_param_b = 10*4;
-  __xlx_offset_byte_param_c = 20*4;
-  port4.param = { __xlx_apatb_param_a, __xlx_apatb_param_b, __xlx_apatb_param_c };
-  port4.nbytes = { 40, 40, 40 };
-  port4.offset = { 0, 10, 20 };
-  port4.hasWrite = { true, true, true };
+  port1.param = { __xlx_apatb_param_a };
+  port1.nbytes = { 400 };
+  port1.offset = {  };
+  port1.hasWrite = { false };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port2 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "b" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_b),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_b),
+#endif
+#endif
+  };
+  port2.param = { __xlx_apatb_param_b };
+  port2.nbytes = { 400 };
+  port2.offset = {  };
+  port2.hasWrite = { false };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
+#endif
+    .width = 32,
+    .asize = 4,
+    .hbm = false,
+    .name = { "c" },
+#ifdef POST_CHECK
+#ifdef USE_BINARY_TV_FILE
+    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_c),
+#else
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_c),
+#endif
+#else
+#ifdef USE_BINARY_TV_FILE
+    .owriter = new hls::sim::Output(AUTOTB_TVOUT_c),
+#else
+    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_c),
+#endif
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_c),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_c),
+#endif
+#endif
+  };
+  port3.param = { __xlx_apatb_param_c };
+  port3.nbytes = { 400 };
+  port3.offset = {  };
+  port3.hasWrite = { true };
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
-    check(port4);
+    check(port3);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     CodeState = DUMP_INPUTS;
@@ -1239,16 +1246,14 @@ void apatb_mac_hw(void* __xlx_apatb_param_a, void* __xlx_apatb_param_b, void* __
     dump(port1, port1.iwriter, tcl.AESL_transaction);
     dump(port2, port2.iwriter, tcl.AESL_transaction);
     dump(port3, port3.iwriter, tcl.AESL_transaction);
-    dump(port4, port4.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
     port3.doTCL(tcl);
-    port4.doTCL(tcl);
     CodeState = CALL_C_DUT;
     mac_hw_stub_wrapper(__xlx_apatb_param_a, __xlx_apatb_param_b, __xlx_apatb_param_c, __xlx_apatb_param_size);
     CodeState = DUMP_OUTPUTS;
-    dump(port4, port4.owriter, tcl.AESL_transaction);
+    dump(port3, port3.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

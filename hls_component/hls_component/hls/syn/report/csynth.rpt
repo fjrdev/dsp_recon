@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'mac'
 ================================================================
 + General Information: 
-    * Date:           Mon May 13 10:26:23 2024
+    * Date:           Mon May 13 19:27:05 2024
     * Version:        2023.1 (Build 3854077 on May  4 2023)
     * Project:        hls_component
     * Solution:       hls (Vivado IP Flow Target)
@@ -15,44 +15,48 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------+------+------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
-    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |         |         |            |            |     |
-    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
-    +--------------------+------+------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
-    |+ mac               |     -|  0.00|        -|       -|         -|        -|     -|        no|  2 (~0%)|  1 (~0%)|  1490 (~0%)|  1575 (~0%)|    -|
-    | o VITIS_LOOP_11_1  |    II|  7.30|        -|       -|        19|        3|     -|       yes|        -|        -|           -|           -|    -|
-    +--------------------+------+------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+----------+-----------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |          |           |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |    FF    |    LUT    | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+----------+-----------+-----+
+    |+ mac               |     -|  2.68|        -|       -|         -|        -|     -|        no|     -|  1 (~0%)|  53 (~0%)|  102 (~0%)|    -|
+    | o VITIS_LOOP_11_1  |     -|  7.30|        -|       -|         2|        1|     -|       yes|     -|        -|         -|          -|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+----------+-----------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
-* M_AXI
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
-|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-| m_axi_gmem | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
-+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
-
 * S_AXILITE Interfaces
-+---------------+------------+---------------+--------+----------+
-| Interface     | Data Width | Address Width | Offset | Register |
-+---------------+------------+---------------+--------+----------+
-| s_axi_control | 32         | 6             | 16     | 0        |
-+---------------+------------+---------------+--------+----------+
++-------------+------------+---------------+
+| Interface   | Data Width | Address Width |
++-------------+------------+---------------+
+| s_axi_BUS_A | 32         | 4             |
++-------------+------------+---------------+
 
 * S_AXILITE Registers
-+---------------+----------+--------+-------+--------+------------------+
-| Interface     | Register | Offset | Width | Access | Description      |
-+---------------+----------+--------+-------+--------+------------------+
-| s_axi_control | a_1      | 0x10   | 32    | W      | Data signal of a |
-| s_axi_control | a_2      | 0x14   | 32    | W      | Data signal of a |
-| s_axi_control | b_1      | 0x1c   | 32    | W      | Data signal of b |
-| s_axi_control | b_2      | 0x20   | 32    | W      | Data signal of b |
-| s_axi_control | c_1      | 0x28   | 32    | W      | Data signal of c |
-| s_axi_control | c_2      | 0x2c   | 32    | W      | Data signal of c |
-+---------------+----------+--------+-------+--------+------------------+
++-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface   | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_BUS_A | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_BUS_A | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_BUS_A | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_BUS_A | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AP_MEMORY
++------------+-----------+----------+
+| Port       | Direction | Bitwidth |
++------------+-----------+----------+
+| a_address0 | out       | 7        |
+| a_q0       | in        | 32       |
+| b_address0 | out       | 7        |
+| b_q0       | in        | 32       |
+| c_address0 | out       | 7        |
+| c_address1 | out       | 7        |
+| c_d0       | out       | 32       |
+| c_q1       | in        | 32       |
++------------+-----------+----------+
 
 * Other Ports
 +------+---------+-----------+----------+
@@ -62,13 +66,14 @@
 +------+---------+-----------+----------+
 
 * TOP LEVEL CONTROL
-+-----------+------------+-----------------------------------+
-| Interface | Type       | Ports                             |
-+-----------+------------+-----------------------------------+
-| ap_clk    | clock      | ap_clk                            |
-| ap_rst_n  | reset      | ap_rst_n                          |
-| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
-+-----------+------------+-----------------------------------+
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
 
 
 ================================================================
@@ -78,61 +83,42 @@
 +----------+-----------+----------+
 | Argument | Direction | Datatype |
 +----------+-----------+----------+
-| a        | inout     | float*   |
-| b        | inout     | float*   |
+| a        | in        | float*   |
+| b        | in        | float*   |
 | c        | inout     | float*   |
 | size     | in        | int      |
 +----------+-----------+----------+
 
 * SW-to-HW Mapping
-+----------+---------------+-----------+----------+-------------------------------+
-| Argument | HW Interface  | HW Type   | HW Usage | HW Info                       |
-+----------+---------------+-----------+----------+-------------------------------+
-| a        | m_axi_gmem    | interface |          |                               |
-| a        | s_axi_control | register  | offset   | name=a_1 offset=0x10 range=32 |
-| a        | s_axi_control | register  | offset   | name=a_2 offset=0x14 range=32 |
-| b        | m_axi_gmem    | interface |          |                               |
-| b        | s_axi_control | register  | offset   | name=b_1 offset=0x1c range=32 |
-| b        | s_axi_control | register  | offset   | name=b_2 offset=0x20 range=32 |
-| c        | m_axi_gmem    | interface |          |                               |
-| c        | s_axi_control | register  | offset   | name=c_1 offset=0x28 range=32 |
-| c        | s_axi_control | register  | offset   | name=c_2 offset=0x2c range=32 |
-| size     | size          | port      |          |                               |
-+----------+---------------+-----------+----------+-------------------------------+
++----------+--------------+---------+----------+
+| Argument | HW Interface | HW Type | HW Usage |
++----------+--------------+---------+----------+
+| a        | a_address0   | port    | offset   |
+| a        | a_ce0        | port    |          |
+| a        | a_q0         | port    |          |
+| b        | b_address0   | port    | offset   |
+| b        | b_ce0        | port    |          |
+| b        | b_q0         | port    |          |
+| c        | c_address0   | port    | offset   |
+| c        | c_ce0        | port    |          |
+| c        | c_we0        | port    |          |
+| c        | c_d0         | port    |          |
+| c        | c_address1   | port    | offset   |
+| c        | c_ce1        | port    |          |
+| c        | c_q1         | port    |          |
+| size     | size         | port    |          |
++----------+--------------+---------+----------+
 
-
-================================================================
-== M_AXI Burst Information
-================================================================
- Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
-
-* All M_AXI Variable Accesses
-+--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
-| HW Interface | Variable | Access Location                                   | Direction | Burst Status | Length   | Loop            | Loop Location                                     | Resolution | Problem                                                                                                 |
-+--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
-| m_axi_gmem   |          | /home/franz/workspace/hls_component/add.cpp:11:19 | read      | Fail         |          |                 |                                                   | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region.                  |
-| m_axi_gmem   | b        | /home/franz/workspace/hls_component/add.cpp:12:24 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:19 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | a        | /home/franz/workspace/hls_component/add.cpp:12:17 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:19 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem   | c        | /home/franz/workspace/hls_component/add.cpp:12:14 | write     | Fail         |          |                 |                                                   | 214-231    | Access is clobbered by load                                                                             |
-| m_axi_gmem   | c        | /home/franz/workspace/hls_component/add.cpp:12:14 | read      | Fail         |          |                 |                                                   | 214-231    | Access is clobbered by store                                                                            |
-| m_axi_gmem   | b        | /home/franz/workspace/hls_component/add.cpp:12:24 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:19 |            |                                                                                                         |
-| m_axi_gmem   | a        | /home/franz/workspace/hls_component/add.cpp:12:17 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:19 |            |                                                                                                         |
-+--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
-
-    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+------------------------+-----+--------+------------+-----+--------+---------+
-| Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
-+------------------------+-----+--------+------------+-----+--------+---------+
-| + mac                  | 1   |        |            |     |        |         |
-|   add_ln11_fu_207_p2   | -   |        | add_ln11   | add | fabric | 0       |
-|   add_ln12_fu_226_p2   | -   |        | add_ln12   | add | fabric | 0       |
-|   add_ln12_1_fu_241_p2 | -   |        | add_ln12_1 | add | fabric | 0       |
-|   add_ln12_2_fu_268_p2 | -   |        | add_ln12_2 | add | fabric | 0       |
-+------------------------+-----+--------+------------+-----+--------+---------+
++----------------------+-----+--------+----------+-----+--------+---------+
+| Name                 | DSP | Pragma | Variable | Op  | Impl   | Latency |
++----------------------+-----+--------+----------+-----+--------+---------+
+| + mac                | 1   |        |          |     |        |         |
+|   add_ln11_fu_118_p2 | -   |        | add_ln11 | add | fabric | 0       |
++----------------------+-----+--------+----------+-----+--------+---------+
 
 
 ================================================================
@@ -143,13 +129,21 @@
 ================================================================
 == Pragma Report
 ================================================================
+* Ignored Pragmas
++-----------+----------------------------------------------+---------------------+-------------------------------------+
+| Type      | Options                                      | Location            | Messages                            |
++-----------+----------------------------------------------+---------------------+-------------------------------------+
+| interface | mode=s_axilite depth=100 port=a bundle=BUS_A | add.cpp:6 in mac, a | unexpected pragma parameter 'depth' |
+| interface | mode=s_axilite depth=100 port=b bundle=BUS_A | add.cpp:7 in mac, b | unexpected pragma parameter 'depth' |
+| interface | mode=s_axilite depth=100 port=c bundle=BUS_A | add.cpp:8 in mac, c | unexpected pragma parameter 'depth' |
++-----------+----------------------------------------------+---------------------+-------------------------------------+
+
 * Valid Pragma Syntax
-+-----------+------------------------------------+---------------------+
-| Type      | Options                            | Location            |
-+-----------+------------------------------------+---------------------+
-| interface | m_axi depth=10 port=a offset=slave | add.cpp:7 in mac, a |
-| interface | m_axi depth=10 port=b offset=slave | add.cpp:8 in mac, b |
-| interface | m_axi depth=10 port=c offset=slave | add.cpp:9 in mac, c |
-+-----------+------------------------------------+---------------------+
++-----------+-----------------------------------------+--------------------------+
+| Type      | Options                                 | Location                 |
++-----------+-----------------------------------------+--------------------------+
+| interface | mode=s_axilite port=return bundle=BUS_A | add.cpp:5 in mac, return |
+| interface | mode=ap_vld port=b                      | add.cpp:9 in mac, b      |
++-----------+-----------------------------------------+--------------------------+
 
 
