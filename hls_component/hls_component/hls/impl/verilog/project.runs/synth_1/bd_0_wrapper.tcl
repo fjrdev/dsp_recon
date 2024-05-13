@@ -92,7 +92,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
 add_files /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd
-set_property used_in_implementation false [get_files -all /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/add_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/mac_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/bd_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -104,8 +104,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/add.xdc
-set_property used_in_implementation false [get_files /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/add.xdc]
+read_xdc /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/mac.xdc
+set_property used_in_implementation false [get_files /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/mac.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

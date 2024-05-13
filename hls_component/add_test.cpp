@@ -1,18 +1,29 @@
 #include "add.h"
 #include <cstdlib>
 #include <iostream>
+#include <random>
 
-bool verify(int a, int b, int c) {
-    if ((a + b) == c) return true;
-    return false;
-}
+#define SIZE 10
 
-int main() {
+int main(int argc, char* argv[]) {
 
-    int a = 5;
-    int b = 5;
-    int c = add(a, b);
+    float a[SIZE];
+    float b[SIZE];
+    float c[SIZE];
     
-    if (verify(a, b, c)) return EXIT_SUCCESS;
-    return EXIT_FAILURE;
+    // init
+    for (int i = 0; i < SIZE; ++i) {
+        //a[i] = static_cast<float> (rand()) / static_cast<float>(1);
+        //b[i] = static_cast<float> (rand()) / static_cast<float>(1);
+        a[i] = 2.2f;
+        b[i] = 2.2f;                
+        c[i] = 0.0f;
+    }
+
+    mac(a, b, c, SIZE);
+
+    for (int i = 0; i < SIZE; ++i) {
+        if ((a[i] * b[i]) != c[i]) return EXIT_FAILURE;
+    }
+    return EXIT_SUCCESS;
 }

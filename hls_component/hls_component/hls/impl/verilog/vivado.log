@@ -3,23 +3,23 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun May  5 18:06:19 2024
-# Process ID: 13454
+# Start of session at: Mon May 13 13:41:37 2024
+# Process ID: 60325
 # Current directory: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog
 # Command line: vivado -mode batch -source run_vivado.tcl
 # Log file: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/vivado.log
 # Journal file: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/vivado.jou
-# Running On: fjrdev, OS: Linux, CPU Frequency: 2848.840 MHz, CPU Physical cores: 4, Host memory: 8073 MB
+# Running On: fjrdev, OS: Linux, CPU Frequency: 1800.000 MHz, CPU Physical cores: 4, Host memory: 8073 MB
 #-----------------------------------------------------------
 source run_vivado.tcl
 # source ./settings.tcl
-## set top_module add
+## set top_module mac
 ## set language verilog
 ## set family versal
 ## set device xcvc1902
 ## set package -vsva2197
 ## set speed -2MP-e-S
-## set clock ""
+## set clock ap_clk
 ## set fsm_ext "off"
 ## set add_io_buffers false ;
 # source -notrace ./extraction.tcl
@@ -28,7 +28,7 @@ source run_vivado.tcl
 # set target_device "${device}${package}${speed}"
 # set target_clk_period_ns "10.000"
 # set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
-# set ip_vlnv xilinx.com:hls:add:1.0
+# set ip_vlnv xilinx.com:hls:mac:1.0
 # set ip_repo_path ../ip
 # set bd_design_name bd_0
 # set bd_inst_name hls_inst
@@ -57,10 +57,10 @@ source run_vivado.tcl
 # dict set report_options language $language
 # dict set report_options clock_name $clock
 # dict set report_options error_if_impl_timing_fails false
-# dict set report_options bindmodules {}
+# dict set report_options bindmodules {mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 mac_gmem_m_axi mac_control_s_axi}
 # dict set report_options max_module_depth 5
 # create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.262 ; gain = 122.992 ; free physical = 118 ; free virtual = 2028
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.352 ; gain = 122.992 ; free physical = 130 ; free virtual = 2692
 # set_property target_language $language [current_project]
 # if { ![file exists $ip_repo_path] } {
 #   error "Cannot find packaged HLS IP"
@@ -78,7 +78,6 @@ Wrote  : </home/franz/workspace/hls_component/hls_component/hls/impl/verilog/pro
 # }
 # make_bd_pins_external $cell_inst
 # make_bd_intf_pins_external $cell_inst
-WARNING: [BD 5-236] No ports matched 'get_bd_ports -filter TYPE==clk'
 # set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
 # if { [llength $bd_clk_ports] && $target_clk_freq_hz ne "" } { 
 #   set_property CONFIG.FREQ_HZ $target_clk_freq_hz $bd_clk_ports 
@@ -90,7 +89,6 @@ WARNING: [BD 5-236] No ports matched 'get_bd_ports -filter TYPE==clk'
 #   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
 # }
 # set s_axi_addr_width_min 32
-WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}'
 # foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
 #   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
 #   if { $bd_port_addr_width < $s_axi_addr_width_min } {
@@ -98,14 +96,17 @@ WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE 
 #     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
 #   }
 # }
+INFO: Updating /s_axi_control CONFIG.ADDR_WIDTH to 32
 # set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
 # assign_bd_address
+Slave segment '/hls_inst/s_axi_control/Reg' is being assigned into address space '/s_axi_control' at <0x0000_0000 [ 64K ]>.
+Slave segment '/m_axi_gmem/Reg' is being assigned into address space '/hls_inst/Data_m_axi_gmem' at <0x44A0_0000 [ 64K ]>.
 INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
 Wrote  : </home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.srcs/sources_1/bd/bd_0/bd_0.bd> 
 Verilog Output written to : /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
 Verilog Output written to : /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
 Verilog Output written to : /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
-make_wrapper: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 3010.223 ; gain = 812.266 ; free physical = 237 ; free virtual = 1132
+make_wrapper: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3017.672 ; gain = 817.828 ; free physical = 290 ; free virtual = 1553
 # set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
 # add_files -norecurse $toprtl
 # set top_inst_name [file root [file tail $toprtl]]
@@ -125,13 +126,13 @@ Exporting to file /home/franz/workspace/hls_component/hls_component/hls/impl/ver
 Generated Hardware Definition File /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3082.258 ; gain = 72.035 ; free physical = 194 ; free virtual = 1176
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3089.707 ; gain = 72.035 ; free physical = 243 ; free virtual = 1551
 # foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
 #   reset_run [get_runs $run]
 # }
 # set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
 # hls_vivado_reports_setup $report_options
-TIMESTAMP: HLS-REPORT: initialize report directories: 2024-05-05 18:06:59 CEST
+TIMESTAMP: HLS-REPORT: initialize report directories: 2024-05-13 13:42:18 CEST
 # if { $has_synth || $has_impl } {
 #   # synth properties setting
 #   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
@@ -166,8 +167,8 @@ TIMESTAMP: HLS-REPORT: initialize report directories: 2024-05-05 18:06:59 CEST
 # }
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Sun May  5 18:06:59 2024] Launched bd_0_hls_inst_0_synth_1...
+[Mon May 13 13:42:18 2024] Launched bd_0_hls_inst_0_synth_1...
 Run output will be captured here: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
-[Sun May  5 18:06:59 2024] Launched synth_1...
+[Mon May 13 13:42:18 2024] Launched synth_1...
 Run output will be captured here: /home/franz/workspace/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/runme.log
-[Sun May  5 18:06:59 2024] Waiting for synth_1 to finish...
+[Mon May 13 13:42:18 2024] Waiting for synth_1 to finish...

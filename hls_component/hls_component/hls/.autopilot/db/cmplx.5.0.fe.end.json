@@ -1,11 +1,20 @@
 {
     "0": {
-        "name": "add",
+        "name": "mac",
         "file": "add.cpp",
-        "fileloc": "3",
-        "instructions": "10",
-        "total_instructions": "10",
+        "fileloc": "5",
+        "instructions": "59",
+        "total_instructions": "59",
         "calls": "",
-        "basicblocks": "1"
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
     }
 }

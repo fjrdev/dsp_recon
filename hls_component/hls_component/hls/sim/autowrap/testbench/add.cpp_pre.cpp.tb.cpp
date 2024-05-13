@@ -11,28 +11,35 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "/home/franz/workspace/hls_component/add.cpp"
+extern "C" {
+
 # 1 "/home/franz/workspace/hls_component/add.h" 1
 
+void mac(float *a, float *b, float *c, int size);
+# 4 "/home/franz/workspace/hls_component/add.cpp" 2
 
-int add(int a, int b);
-# 2 "/home/franz/workspace/hls_component/add.cpp" 2
+void mac(float a[10], float b[10], float c[10], int size) {
 
-int add(int a, int b) {
+#pragma HLS INTERFACE m_axi depth=10 port=a offset=slave
+#pragma HLS INTERFACE m_axi depth=10 port=b offset=slave
+#pragma HLS INTERFACE m_axi depth=10 port=c offset=slave
 
-    return a + b;
+    for (int i = 0; i < size; ++i) {
+        c[i] += a[i] * b[i];
+    }
 
 }
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-int apatb_add_ir(int, int);
+void apatb_mac_ir(float *, float *, float *, int);
 #ifdef __cplusplus
 extern "C"
 #endif
-int add_hw_stub(int a, int b){
-int _ret = add(a, b);
-return _ret;
+void mac_hw_stub(float *a, float *b, float *c, int size){
+mac(a, b, c, size);
+return ;
 }
 #ifdef __cplusplus
 extern "C"
@@ -41,11 +48,12 @@ void refine_signal_handler();
 #ifdef __cplusplus
 extern "C"
 #endif
-int apatb_add_sw(int a, int b){
+void apatb_mac_sw(float *a, float *b, float *c, int size){
 refine_signal_handler();
-int _ret = apatb_add_ir(a, b);
-return _ret;
+apatb_mac_ir(a, b, c, size);
+return ;
 }
 #endif
-# 7 "/home/franz/workspace/hls_component/add.cpp"
+# 15 "/home/franz/workspace/hls_component/add.cpp"
 
+}

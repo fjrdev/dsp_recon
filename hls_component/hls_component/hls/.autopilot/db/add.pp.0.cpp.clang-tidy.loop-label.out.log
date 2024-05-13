@@ -1,0 +1,5 @@
+/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp:177:2: warning: Added loop label VITIS_LOOP_11_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < size; ++i) {
+ ^~~
+ VITIS_LOOP_11_1: 
+/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/add.pp.0.cpp:177:2: note: FIX-IT applied suggested code changes

@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sun May  5 18:05:47 2024",
- "timestampMillis": "1714925147164",
+ "dateTimestamp": "Mon May 13 13:41:02 2024",
+ "timestampMillis": "1715600462182",
  "buildStep": {
-  "cmdId": "f284ccaf-8d47-4aa6-bb7e-9784f8279026",
+  "cmdId": "46683608-65ca-4efd-9e01-b1da8f326270",
   "name": "vitis-run",
   "logFile": "/home/franz/workspace/hls_component/hls_component/logs/hls_component.steps.log",
   "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/franz/workspace/hls_component/hls_config.cfg --work_dir hls_component --hls.ide.compjson=0 ",
@@ -34,10 +34,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May  5 18:05:47 2024",
- "timestampMillis": "1714925147164",
+ "dateTimestamp": "Mon May 13 13:41:02 2024",
+ "timestampMillis": "1715600462182",
  "status": {
-  "cmdId": "f284ccaf-8d47-4aa6-bb7e-9784f8279026",
+  "cmdId": "46683608-65ca-4efd-9e01-b1da8f326270",
   "state": "CS_RUNNING"
  }
 }
@@ -45,8 +45,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sun May  5 18:05:54 2024",
- "timestampMillis": "1714925154320",
+ "dateTimestamp": "Mon May 13 13:41:09 2024",
+ "timestampMillis": "1715600469924",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -59,7 +59,7 @@
    {
     "base": {
      "type": "KERNEL",
-     "name": "add",
+     "name": "mac",
      "file": "",
      "reports": [],
      "uuid": ""
@@ -82,10 +82,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sun May  5 18:05:54 2024",
- "timestampMillis": "1714925154324",
+ "dateTimestamp": "Mon May 13 13:41:09 2024",
+ "timestampMillis": "1715600469926",
  "buildStep": {
-  "cmdId": "a06a308c-39e1-4bc7-9fee-1cead662e3b7",
+  "cmdId": "f36cc8af-d6d6-420b-8c57-2c88807d1a14",
   "name": "export_design",
   "logFile": "/home/franz/workspace/hls_component/hls_component/hls/hls.log",
   "commandLine": "export_design",
@@ -98,10 +98,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May  5 18:05:54 2024",
- "timestampMillis": "1714925154324",
+ "dateTimestamp": "Mon May 13 13:41:09 2024",
+ "timestampMillis": "1715600469926",
  "status": {
-  "cmdId": "a06a308c-39e1-4bc7-9fee-1cead662e3b7",
+  "cmdId": "f36cc8af-d6d6-420b-8c57-2c88807d1a14",
   "state": "CS_RUNNING"
  }
 }
@@ -109,8 +109,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun May  5 18:05:54 2024",
- "timestampMillis": "1714925154324",
+ "dateTimestamp": "Mon May 13 13:41:09 2024",
+ "timestampMillis": "1715600469926",
  "report": {
   "path": "/home/franz/workspace/hls_component/hls_component/hls",
   "name": "",
@@ -123,8 +123,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun May  5 18:05:54 2024",
- "timestampMillis": "1714925154325",
+ "dateTimestamp": "Mon May 13 13:41:09 2024",
+ "timestampMillis": "1715600469927",
  "report": {
   "path": "/home/franz/workspace/hls_component/hls_component/hls",
   "name": "",
@@ -137,10 +137,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May  5 18:09:08 2024",
- "timestampMillis": "1714925348169",
+ "dateTimestamp": "Mon May 13 13:42:59 2024",
+ "timestampMillis": "1715600579801",
  "status": {
-  "cmdId": "a06a308c-39e1-4bc7-9fee-1cead662e3b7",
+  "cmdId": "f36cc8af-d6d6-420b-8c57-2c88807d1a14",
   "state": "CS_FAILED"
  }
 }
@@ -148,10 +148,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May  5 18:09:08 2024",
- "timestampMillis": "1714925348648",
+ "dateTimestamp": "Mon May 13 13:43:00 2024",
+ "timestampMillis": "1715600580422",
  "status": {
-  "cmdId": "f284ccaf-8d47-4aa6-bb7e-9784f8279026",
+  "cmdId": "46683608-65ca-4efd-9e01-b1da8f326270",
   "state": "CS_FAILED"
  }
 }
@@ -159,8 +159,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun May  5 18:09:08 2024",
- "timestampMillis": "1714925348653",
+ "dateTimestamp": "Mon May 13 13:43:00 2024",
+ "timestampMillis": "1715600580432",
  "report": {
   "path": "",
   "name": "",
@@ -173,8 +173,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun May  5 18:09:08 2024",
- "timestampMillis": "1714925348654",
+ "dateTimestamp": "Mon May 13 13:43:00 2024",
+ "timestampMillis": "1715600580437",
  "report": {
   "path": "",
   "name": "",

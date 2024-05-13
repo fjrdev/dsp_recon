@@ -1,20 +1,20 @@
 
-set TopModule "add"
+set TopModule "mac"
 set ClockPeriod 10
-set ClockList {}
+set ClockList ap_clk
 set HasVivadoClockPeriod 0
-set CombLogicFlag 1
+set CombLogicFlag 0
 set PipelineFlag 0
-set DataflowTaskPipelineFlag 0
+set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 0
+set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 0
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix add_
+set RtlSubPrefix mac_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}

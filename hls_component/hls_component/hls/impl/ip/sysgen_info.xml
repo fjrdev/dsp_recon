@@ -2,12 +2,7 @@
 <AdditionalInfo>
   <CTypeInfo>
       <RtlPort>
-        <name>a</name>
-        <type>Signed</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
-        <name>b</name>
+        <name>size</name>
         <type>Signed</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
@@ -17,8 +12,8 @@
   </DesignConstraint>
   <Machine>64</Machine>
   <modelParameters>
-    <combinational>1</combinational>
-    <latency>0</latency>
-    <II>1</II>
+    <combinational>0</combinational>
+    <latency>undef</latency>
+    <II>undef</II>
   </modelParameters>
 </AdditionalInfo>

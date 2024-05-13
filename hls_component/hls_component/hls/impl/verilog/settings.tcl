@@ -8,13 +8,13 @@
 #
 # Settings for Vivado implementation flow
 #
-set top_module add
+set top_module mac
 set language verilog
 set family versal
 set device xcvc1902
 set package -vsva2197
 set speed -2MP-e-S
-set clock ""
+set clock ap_clk
 set fsm_ext "off"
 
 # For customizing the implementation flow

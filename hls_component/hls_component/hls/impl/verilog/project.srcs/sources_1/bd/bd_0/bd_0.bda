@@ -187,6 +187,42 @@
                 "VH": "2",
                 "VT": "PM",
                 "TU": "active"
+            },
+            "V3": {
+                "VT": "AC",
+                "BA": "0x00000000",
+                "HA": "0x0000FFFF",
+                "BP": "C_S_AXI_CONTROL_BASEADDR",
+                "HP": "C_S_AXI_CONTROL_HIGHADDR",
+                "MA": "s_axi_control",
+                "MX": "/",
+                "MI": "s_axi_control",
+                "MS": "SEG_hls_inst_Reg",
+                "MV": ":::",
+                "SX": "/hls_inst",
+                "SI": "s_axi_control",
+                "SS": "Reg",
+                "SV": "xilinx.com:hls:mac:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x0000000044A00000",
+                "HA": "0x0000000044A0FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data_m_axi_gmem",
+                "MX": "/hls_inst",
+                "MI": "m_axi_gmem",
+                "MS": "SEG_m_axi_gmem_Reg",
+                "MV": "xilinx.com:hls:mac:1.0",
+                "SX": "/",
+                "SI": "m_axi_gmem",
+                "SS": "Reg",
+                "SV": "::bd_0_imp:",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -197,6 +233,16 @@
             {
                 "src": "V1",
                 "trg": "V2"
+            },
+            {
+                "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
+                "trg": "V2",
+                "EH": "2"
             }
         ]
     }

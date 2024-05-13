@@ -1,0 +1,53 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /home/franz/workspace/hls_component/hls_component/hls_component.hlsrun_csim_summary, at Wed May  8 17:00:25 2024
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run csim -work_dir /home/franz/workspace/hls_component/hls_component -config /home/franz/workspace/hls_component/hls_config.cfg -cmdlineconfig /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+  **** SW Build 3854077 on May  4 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'franz' on host 'fjrdev' (Linux_x86_64 version 5.15.0-105-generic) on Wed May 08 17:00:28 CEST 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/franz/workspace/hls_component'
+INFO: [HLS 200-2005] Using work_dir /home/franz/workspace/hls_component/hls_component 
+INFO: [HLS 200-1510] Running: open_project /home/franz/workspace/hls_component/hls_component -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /home/franz/workspace/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/add.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/franz/workspace/hls_component/add_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=mac' at /home/franz/workspace/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/franz/workspace/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /home/franz/workspace/hls_component/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/franz/workspace/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /home/franz/workspace/hls_component/hls_config.cfg(6)
+INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /home/franz/workspace/hls_component/hls_component/hls/config.cmdline(4)
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../add_test.cpp in debug mode
+   Generating csim.exe
+@E Simulation failed: SIGSEGV.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.95 seconds. CPU system time: 0.55 seconds. Elapsed time: 1.71 seconds; current allocated memory: 0.000 MB.
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 6.51 seconds. Total CPU system time: 1.52 seconds. Total elapsed time: 8.04 seconds; peak allocated memory: 1.080 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed May  8 17:00:35 2024...

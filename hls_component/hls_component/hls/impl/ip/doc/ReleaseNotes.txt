@@ -10,3 +10,4 @@ Family       : versal
 Device       : xcvc1902
 Package      : -vsva2197
 Speed Grade  : -2MP-e-S
+Clock Period : 10.000 ns

@@ -1,4 +1,4 @@
-INFO: [v++ 60-1548] Creating build summary session with primary output /home/franz/workspace/hls_component/hls_component/hls_component.hlscompile_summary, at Sun May  5 12:48:54 2024
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/franz/workspace/hls_component/hls_component/hls_component.hlscompile_summary, at Mon May 13 10:26:03 2024
 INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /home/franz/workspace/hls_component/hls_component -config /home/franz/workspace/hls_component/hls_config.cfg -cmdlineconfig /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
@@ -10,7 +10,7 @@ INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /h
 
 source /tools/Xilinx/Vitis_HLS/2023.1/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'franz' on host 'fjrdev' (Linux_x86_64 version 5.15.0-105-generic) on Sun May 05 12:48:56 CEST 2024
+INFO: [HLS 200-10] For user 'franz' on host 'fjrdev' (Linux_x86_64 version 5.15.0-105-generic) on Mon May 13 10:26:06 CEST 2024
 INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
 INFO: [HLS 200-10] In directory '/home/franz/workspace/hls_component'
 INFO: [HLS 200-2005] Using work_dir /home/franz/workspace/hls_component/hls_component 
@@ -20,68 +20,108 @@ INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
 INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_config.cfg
-INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(6)
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(7)
 INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/add.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /home/franz/workspace/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /home/franz/workspace/hls_component/hls_config.cfg(8)
 INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/add.h' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(10)
 INFO: [HLS 200-10] Adding test bench file '/home/franz/workspace/hls_component/add_test.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'syn.top=add' at /home/franz/workspace/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'syn.top=mac' at /home/franz/workspace/hls_component/hls_config.cfg(9)
 INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/franz/workspace/hls_component/hls_config.cfg(4)
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /home/franz/workspace/hls_component/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/franz/workspace/hls_component/hls_config.cfg(1)
 INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
-INFO: [HLS 200-1465] Applying ini 'syn.output.format=rtl' at /home/franz/workspace/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=ip' at /home/franz/workspace/hls_component/hls_config.cfg(6)
 INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
 INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
 INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /home/franz/workspace/hls_component/hls_component/hls/config.cmdline(4)
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.080 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.17 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.080 GB.
 INFO: [HLS 200-10] Analyzing design file '/home/franz/workspace/hls_component/add.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.59 seconds. CPU system time: 0.74 seconds. Elapsed time: 1.53 seconds; current allocated memory: 1.081 GB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.68 seconds. CPU system time: 0.63 seconds. Elapsed time: 1.3 seconds; current allocated memory: 1.082 GB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 2 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 2 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-1995] There were 7 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.71 seconds. CPU system time: 0.8 seconds. Elapsed time: 9.3 seconds; current allocated memory: 1.082 GB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 28 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance/Pipeline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 40 instructions in the design after the 'Optimizations' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.13 seconds. CPU system time: 0.67 seconds. Elapsed time: 9.39 seconds; current allocated memory: 1.083 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.083 GB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.084 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.082 GB.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.102 GB.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.084 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_11_1' (/home/franz/workspace/hls_component/add.cpp:11) in function 'mac' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.104 GB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'add' ...
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Synthesizing 'mac' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'add' 
+INFO: [HLS 200-42] -- Implementing module 'mac' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+WARNING: [HLS 200-885] The II Violation in module 'mac' (loop 'VITIS_LOOP_11_1'): Unable to schedule bus request operation ('gmem_load_1_req', /home/franz/workspace/hls_component/add.cpp:12) on port 'gmem' (/home/franz/workspace/hls_component/add.cpp:12) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'mac' (loop 'VITIS_LOOP_11_1'): Unable to schedule bus request operation ('gmem_load_2_req', /home/franz/workspace/hls_component/add.cpp:12) on port 'gmem' (/home/franz/workspace/hls_component/add.cpp:12) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 19, loop 'VITIS_LOOP_11_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.104 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.102 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.47 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.104 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'add' 
+INFO: [HLS 200-10] -- Generating RTL for module 'mac' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'add/a' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'add/b' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'add' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Finished creating RTL model for 'add'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 1.102 GB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 1.102 GB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.26 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.102 GB.
-INFO: [VHDL 208-304] Generating VHDL RTL for add.
-INFO: [VLOG 209-307] Generating Verilog RTL for add.
-INFO: [HLS 200-789] **** Estimated Fmax: 1119.82 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5.14 seconds. CPU system time: 1.7 seconds. Elapsed time: 11.89 seconds; current allocated memory: 22.523 MB.
-INFO: [HLS 200-112] Total CPU user time: 9.66 seconds. Total CPU system time: 2.58 seconds. Total elapsed time: 17.1 seconds; peak allocated memory: 1.102 GB.
-INFO: [Common 17-206] Exiting vitis_hls at Sun May  5 12:49:12 2024...
-INFO: [v++ 60-791] Total elapsed time: 0h 0m 29s
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mac/size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'mac' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'a', 'b' and 'c' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mac'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.93 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.97 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.59 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.6 seconds; current allocated memory: 1.105 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for mac.
+INFO: [VLOG 209-307] Generating Verilog RTL for mac.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.6 seconds. CPU system time: 1.45 seconds. Elapsed time: 13.72 seconds; current allocated memory: 25.234 MB.
+INFO: [HLS 200-1510] Running: export_design -flow none 
+WARNING: [HLS 200-483] The 'config_export -format ip' command is deprecated and will be removed in a future release. Use 'config_export -format ip_catalog' as its replacement.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2066.207 ; gain = 121.992 ; free physical = 160 ; free virtual = 840
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+create_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2172.477 ; gain = 106.270 ; free physical = 132 ; free virtual = 795
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 10:27:00 2024...
+INFO: [HLS 200-802] Generated output file hls_component/mac.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 25.25 seconds. CPU system time: 8.66 seconds. Elapsed time: 41.93 seconds; current allocated memory: 6.340 MB.
+INFO: [HLS 200-112] Total CPU user time: 37.67 seconds. Total CPU system time: 11.01 seconds. Total elapsed time: 61.23 seconds; peak allocated memory: 1.111 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon May 13 10:27:06 2024...
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 13s

@@ -1,3 +1,2 @@
 
-
-int add(int a, int b);
+void mac(float *a, float *b, float *c, int size);

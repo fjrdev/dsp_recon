@@ -36,12 +36,12 @@ if {$ret == 1} {
 	return -code error -errorcode $::errorCode
 }
 
-if {[file isfile add.autotvin.dat]} {
-	file delete -force add.autotvin.dat
+if {[file isfile mac.autotvin.dat]} {
+	file delete -force mac.autotvin.dat
 }
 
-if {[file isfile add.autotvout.dat]} {
-	file delete -force add.autotvout.dat
+if {[file isfile mac.autotvout.dat]} {
+	file delete -force mac.autotvout.dat
 }
 
 sc_sim_check $ret $err "temp0.log"

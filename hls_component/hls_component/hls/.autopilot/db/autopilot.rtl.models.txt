@@ -1,1 +1,4 @@
-add
+mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
+mac_gmem_m_axi
+mac_control_s_axi
+mac

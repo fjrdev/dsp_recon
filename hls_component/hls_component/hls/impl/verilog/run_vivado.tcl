@@ -13,7 +13,7 @@ set vivado_proj_dir .
 set target_device "${device}${package}${speed}"
 set target_clk_period_ns "10.000"
 set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
-set ip_vlnv xilinx.com:hls:add:1.0
+set ip_vlnv xilinx.com:hls:mac:1.0
 set ip_repo_path ../ip
 set bd_design_name bd_0
 set bd_inst_name hls_inst
@@ -45,7 +45,7 @@ dict set report_options target_device $target_device
 dict set report_options language $language
 dict set report_options clock_name $clock
 dict set report_options error_if_impl_timing_fails false
-dict set report_options bindmodules {}
+dict set report_options bindmodules {mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 mac_gmem_m_axi mac_control_s_axi}
 dict set report_options max_module_depth 5
 
 
