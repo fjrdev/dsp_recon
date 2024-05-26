@@ -9,16 +9,16 @@ proc generate {drv_handle} {
     xdefine_include_file $drv_handle "xparameters.h" "XMac" \
         "NUM_INSTANCES" \
         "DEVICE_ID" \
-        "C_S_AXI_BUS_A_BASEADDR" \
-        "C_S_AXI_BUS_A_HIGHADDR"
+        "C_S_AXI_CONTROL_BASEADDR" \
+        "C_S_AXI_CONTROL_HIGHADDR"
 
     xdefine_config_file $drv_handle "xmac_g.c" "XMac" \
         "DEVICE_ID" \
-        "C_S_AXI_BUS_A_BASEADDR"
+        "C_S_AXI_CONTROL_BASEADDR"
 
     xdefine_canonical_xpars $drv_handle "xparameters.h" "XMac" \
         "DEVICE_ID" \
-        "C_S_AXI_BUS_A_BASEADDR" \
-        "C_S_AXI_BUS_A_HIGHADDR"
+        "C_S_AXI_CONTROL_BASEADDR" \
+        "C_S_AXI_CONTROL_HIGHADDR"
 }
 

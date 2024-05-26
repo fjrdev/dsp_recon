@@ -4,10 +4,10 @@
 == Synthesis Summary Report of 'mac'
 ================================================================
 + General Information: 
-    * Date:           Mon May 13 19:27:05 2024
+    * Date:           Sun May 26 15:28:56 2024
     * Version:        2023.1 (Build 3854077 on May  4 2023)
     * Project:        hls_component
-    * Solution:       hls (Vivado IP Flow Target)
+    * Solution:       hls (Vitis Kernel Flow Target)
     * Product family: versalaicore
     * Target device:  xcvc1902-vsva2197-2MP-e-S
     
@@ -15,65 +15,59 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+----------+-----------+-----+
-    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |         |          |           |     |
-    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |    FF    |    LUT    | URAM|
-    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+----------+-----------+-----+
-    |+ mac               |     -|  2.68|        -|       -|         -|        -|     -|        no|     -|  1 (~0%)|  53 (~0%)|  102 (~0%)|    -|
-    | o VITIS_LOOP_11_1  |     -|  7.30|        -|       -|         2|        1|     -|       yes|     -|        -|         -|          -|    -|
-    +--------------------+------+------+---------+--------+----------+---------+------+----------+------+---------+----------+-----------+-----+
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |       Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |         |         |            |            |     |
+    |       & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |+ mac               |     -|  0.00|        -|       -|         -|        -|     -|        no|  2 (~0%)|  1 (~0%)|  1580 (~0%)|  1801 (~0%)|    -|
+    | o VITIS_LOOP_11_1  |    II|  7.30|        -|       -|       145|        3|     -|       yes|        -|        -|           -|           -|    -|
+    +--------------------+------+------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
 
 
 ================================================================
 == HW Interfaces
 ================================================================
+* M_AXI
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | 32 -> 32   | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=2            |
++------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
 * S_AXILITE Interfaces
-+-------------+------------+---------------+
-| Interface   | Data Width | Address Width |
-+-------------+------------+---------------+
-| s_axi_BUS_A | 32         | 4             |
-+-------------+------------+---------------+
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
 
 * S_AXILITE Registers
-+-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
-| Interface   | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
-+-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
-| s_axi_BUS_A | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
-| s_axi_BUS_A | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
-| s_axi_BUS_A | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
-| s_axi_BUS_A | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
-+-------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
-
-* AP_MEMORY
-+------------+-----------+----------+
-| Port       | Direction | Bitwidth |
-+------------+-----------+----------+
-| a_address0 | out       | 7        |
-| a_q0       | in        | 32       |
-| b_address0 | out       | 7        |
-| b_q0       | in        | 32       |
-| c_address0 | out       | 7        |
-| c_address1 | out       | 7        |
-| c_d0       | out       | 32       |
-| c_q1       | in        | 32       |
-+------------+-----------+----------+
-
-* Other Ports
-+------+---------+-----------+----------+
-| Port | Mode    | Direction | Bitwidth |
-+------+---------+-----------+----------+
-| size | ap_none | in        | 32       |
-+------+---------+-----------+----------+
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                                         |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                                           |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                                      |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                                      |
+| s_axi_control | a_1      | 0x10   | 32    | W      | Data signal of a                 |                                                                                    |
+| s_axi_control | a_2      | 0x14   | 32    | W      | Data signal of a                 |                                                                                    |
+| s_axi_control | b_1      | 0x1c   | 32    | W      | Data signal of b                 |                                                                                    |
+| s_axi_control | b_2      | 0x20   | 32    | W      | Data signal of b                 |                                                                                    |
+| s_axi_control | c_1      | 0x28   | 32    | W      | Data signal of c                 |                                                                                    |
+| s_axi_control | c_2      | 0x2c   | 32    | W      | Data signal of c                 |                                                                                    |
+| s_axi_control | size     | 0x34   | 32    | W      | Data signal of size              |                                                                                    |
++---------------+----------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
 
 * TOP LEVEL CONTROL
-+-----------+------------+-----------+
-| Interface | Type       | Ports     |
-+-----------+------------+-----------+
-| ap_clk    | clock      | ap_clk    |
-| ap_rst_n  | reset      | ap_rst_n  |
-| interrupt | interrupt  | interrupt |
-| ap_ctrl   | ap_ctrl_hs |           |
-+-----------+------------+-----------+
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
 
 
 ================================================================
@@ -83,42 +77,61 @@
 +----------+-----------+----------+
 | Argument | Direction | Datatype |
 +----------+-----------+----------+
-| a        | in        | float*   |
-| b        | in        | float*   |
+| a        | inout     | float*   |
+| b        | inout     | float*   |
 | c        | inout     | float*   |
 | size     | in        | int      |
 +----------+-----------+----------+
 
 * SW-to-HW Mapping
-+----------+--------------+---------+----------+
-| Argument | HW Interface | HW Type | HW Usage |
-+----------+--------------+---------+----------+
-| a        | a_address0   | port    | offset   |
-| a        | a_ce0        | port    |          |
-| a        | a_q0         | port    |          |
-| b        | b_address0   | port    | offset   |
-| b        | b_ce0        | port    |          |
-| b        | b_q0         | port    |          |
-| c        | c_address0   | port    | offset   |
-| c        | c_ce0        | port    |          |
-| c        | c_we0        | port    |          |
-| c        | c_d0         | port    |          |
-| c        | c_address1   | port    | offset   |
-| c        | c_ce1        | port    |          |
-| c        | c_q1         | port    |          |
-| size     | size         | port    |          |
-+----------+--------------+---------+----------+
++----------+---------------+-----------+----------+--------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                        |
++----------+---------------+-----------+----------+--------------------------------+
+| a        | m_axi_gmem    | interface |          |                                |
+| a        | s_axi_control | register  | offset   | name=a_1 offset=0x10 range=32  |
+| a        | s_axi_control | register  | offset   | name=a_2 offset=0x14 range=32  |
+| b        | m_axi_gmem    | interface |          |                                |
+| b        | s_axi_control | register  | offset   | name=b_1 offset=0x1c range=32  |
+| b        | s_axi_control | register  | offset   | name=b_2 offset=0x20 range=32  |
+| c        | m_axi_gmem    | interface |          |                                |
+| c        | s_axi_control | register  | offset   | name=c_1 offset=0x28 range=32  |
+| c        | s_axi_control | register  | offset   | name=c_2 offset=0x2c range=32  |
+| size     | s_axi_control | register  |          | name=size offset=0x34 range=32 |
++----------+---------------+-----------+----------+--------------------------------+
 
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* All M_AXI Variable Accesses
++--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+----------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                                   | Direction | Burst Status | Length   | Loop            | Loop Location                                     | Resolution | Problem                                                                                |
++--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+----------------------------------------------------------------------------------------+
+| m_axi_gmem   |          | /home/franz/workspace/hls_component/add.cpp:11:26 | read      | Fail         |          |                 |                                                   | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region. |
+| m_axi_gmem   | b        | /home/franz/workspace/hls_component/add.cpp:12:28 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 | 214-234    | Sequential access length is not divisible by 2                                         |
+| m_axi_gmem   | a        | /home/franz/workspace/hls_component/add.cpp:12:21 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 | 214-234    | Sequential access length is not divisible by 2                                         |
+| m_axi_gmem   | c        | /home/franz/workspace/hls_component/add.cpp:12:18 | write     | Fail         |          |                 |                                                   | 214-231    | Access is clobbered by load                                                            |
+| m_axi_gmem   | c        | /home/franz/workspace/hls_component/add.cpp:12:18 | read      | Fail         |          |                 |                                                   | 214-231    | Access is clobbered by store                                                           |
+| m_axi_gmem   | b        | /home/franz/workspace/hls_component/add.cpp:12:28 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 |            |                                                                                        |
+| m_axi_gmem   | a        | /home/franz/workspace/hls_component/add.cpp:12:21 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 |            |                                                                                        |
++--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+----------------------------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
 ================================================================
-+----------------------+-----+--------+----------+-----+--------+---------+
-| Name                 | DSP | Pragma | Variable | Op  | Impl   | Latency |
-+----------------------+-----+--------+----------+-----+--------+---------+
-| + mac                | 1   |        |          |     |        |         |
-|   add_ln11_fu_118_p2 | -   |        | add_ln11 | add | fabric | 0       |
-+----------------------+-----+--------+----------+-----+--------+---------+
++------------------------+-----+--------+------------+-----+--------+---------+
+| Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++------------------------+-----+--------+------------+-----+--------+---------+
+| + mac                  | 1   |        |            |     |        |         |
+|   add_ln11_fu_213_p2   | -   |        | add_ln11   | add | fabric | 0       |
+|   add_ln12_fu_232_p2   | -   |        | add_ln12   | add | fabric | 0       |
+|   add_ln12_1_fu_247_p2 | -   |        | add_ln12_1 | add | fabric | 0       |
+|   add_ln12_2_fu_274_p2 | -   |        | add_ln12_2 | add | fabric | 0       |
++------------------------+-----+--------+------------+-----+--------+---------+
 
 
 ================================================================
@@ -129,21 +142,5 @@
 ================================================================
 == Pragma Report
 ================================================================
-* Ignored Pragmas
-+-----------+----------------------------------------------+---------------------+-------------------------------------+
-| Type      | Options                                      | Location            | Messages                            |
-+-----------+----------------------------------------------+---------------------+-------------------------------------+
-| interface | mode=s_axilite depth=100 port=a bundle=BUS_A | add.cpp:6 in mac, a | unexpected pragma parameter 'depth' |
-| interface | mode=s_axilite depth=100 port=b bundle=BUS_A | add.cpp:7 in mac, b | unexpected pragma parameter 'depth' |
-| interface | mode=s_axilite depth=100 port=c bundle=BUS_A | add.cpp:8 in mac, c | unexpected pragma parameter 'depth' |
-+-----------+----------------------------------------------+---------------------+-------------------------------------+
-
-* Valid Pragma Syntax
-+-----------+-----------------------------------------+--------------------------+
-| Type      | Options                                 | Location                 |
-+-----------+-----------------------------------------+--------------------------+
-| interface | mode=s_axilite port=return bundle=BUS_A | add.cpp:5 in mac, return |
-| interface | mode=ap_vld port=b                      | add.cpp:9 in mac, b      |
-+-----------+-----------------------------------------+--------------------------+
-
+  No pragmas found
 

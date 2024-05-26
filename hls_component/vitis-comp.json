@@ -8,5 +8,8 @@
     ],
     "work_dir": "hls_component"
   },
-  "previousBuildStatusMap": {}
+  "previousBuildStatusMap": {
+    "sw_emu": "SUCCESS",
+    "hw_emu": "SUCCESS"
+  }
 }

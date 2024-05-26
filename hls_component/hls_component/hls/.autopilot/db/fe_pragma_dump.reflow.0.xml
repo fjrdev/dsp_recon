@@ -1,4 +1,2 @@
 <pragmas>
-<pragma file="/home/franz/workspace/hls_component/add.cpp" line="5" pragmaType="interface" parentfunction="mac" mode="s_axilite" port="" bundle="BUS_A" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="/home/franz/workspace/hls_component/add.cpp" line="9" pragmaType="interface" parentfunction="mac" mode="ap_vld" port="b" name="" register="0"/>
 </pragmas>

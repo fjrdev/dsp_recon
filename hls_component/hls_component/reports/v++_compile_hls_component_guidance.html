@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2023.1 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Mon May 13 19:27:35 2024</td></tr>
+<tr><td><b>Date</b></td><td>Sun May 26 15:29:25 2024</td></tr>
 <tr><td><b>Host</b></td><td>fjrdev running 64-bit Ubuntu 20.04.5 LTS</td></tr>
 <tr><td><b>Command</b></td><td>/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/franz/workspace/hls_component/hls_config.cfg --work_dir hls_component --hls.ide.compjson=0 </td></tr>
 </table></center><br>
@@ -3416,7 +3416,7 @@ window.onload = function () { addSorting(); }
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 3
+<pre>Violations found: 5
 </pre>
 <pre>Rule Specs Violated: 2
 </pre>
@@ -3434,35 +3434,57 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">3</td>
+<td align="left">1</td>
 <td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
+<td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.mac.Kernel</td>
-<td align="left">**** Estimated Fmax: 216.64 MHz
-</td>
-<td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.mac.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_11_1'
+<td align="left">The II Violation in module 'mac' (loop 'VITIS_LOOP_11_1'): Unable to schedule bus request operation ('gmem_load_1_req', <a href="file:///home/franz/workspace/hls_component/add.cpp#line=12">add.cpp</a>) on port 'gmem' (<a href="file:///home/franz/workspace/hls_component/add.cpp#line=12">add.cpp</a>) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
 </td>
 <td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">2</td>
 <td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.mac.Kernel</td>
+<td align="left">The II Violation in module 'mac' (loop 'VITIS_LOOP_11_1'): Unable to schedule bus request operation ('gmem_load_2_req', <a href="file:///home/franz/workspace/hls_component/add.cpp#line=12">add.cpp</a>) on port 'gmem' (<a href="file:///home/franz/workspace/hls_component/add.cpp#line=12">add.cpp</a>) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+</td>
+<td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.mac.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 3, Depth = 145, loop 'VITIS_LOOP_11_1'
+</td>
+<td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.mac.Kernel</td>
-<td align="left">**** Loop Constraint Status: All loop constraints were satisfied.
+<td align="left">**** Loop Constraint Status: All loop constraints were NOT satisfied.
+</td>
+<td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.mac.Kernel</td>
+<td align="left">**** Estimated Fmax: 136.99 MHz
 </td>
 <td align="left"><a href="http:///www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;d=ug1399-vitis-hls.pdf;">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

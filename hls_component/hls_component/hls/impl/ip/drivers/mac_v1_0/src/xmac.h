@@ -41,12 +41,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u64 Bus_a_BaseAddress;
+    u64 Control_BaseAddress;
 } XMac_Config;
 #endif
 
 typedef struct {
-    u64 Bus_a_BaseAddress;
+    u64 Control_BaseAddress;
     u32 IsReady;
 } XMac;
 
@@ -87,9 +87,18 @@ void XMac_Start(XMac *InstancePtr);
 u32 XMac_IsDone(XMac *InstancePtr);
 u32 XMac_IsIdle(XMac *InstancePtr);
 u32 XMac_IsReady(XMac *InstancePtr);
+void XMac_Continue(XMac *InstancePtr);
 void XMac_EnableAutoRestart(XMac *InstancePtr);
 void XMac_DisableAutoRestart(XMac *InstancePtr);
 
+void XMac_Set_a(XMac *InstancePtr, u64 Data);
+u64 XMac_Get_a(XMac *InstancePtr);
+void XMac_Set_b(XMac *InstancePtr, u64 Data);
+u64 XMac_Get_b(XMac *InstancePtr);
+void XMac_Set_c(XMac *InstancePtr, u64 Data);
+u64 XMac_Get_c(XMac *InstancePtr);
+void XMac_Set_size(XMac *InstancePtr, u32 Data);
+u32 XMac_Get_size(XMac *InstancePtr);
 
 void XMac_InterruptGlobalEnable(XMac *InstancePtr);
 void XMac_InterruptGlobalDisable(XMac *InstancePtr);

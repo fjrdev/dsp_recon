@@ -3,23 +3,22 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon May 13 19:49:38 2024
-# Process ID: 4795
-# Current directory: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip
+# Start of session at: Sun May 26 15:29:01 2024
+# Process ID: 15458
+# Current directory: /home/franz/workspace/hls_component/hls_component/hls/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
-# Log file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/vivado.log
-# Journal file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/vivado.jou
-# Running On: franz-MS-7C02, OS: Linux, CPU Frequency: 2800.000 MHz, CPU Physical cores: 12, Host memory: 16704 MB
+# Log file: /home/franz/workspace/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file: /home/franz/workspace/hls_component/hls_component/hls/impl/ip/vivado.jou
+# Running On: fjrdev, OS: Linux, CPU Frequency: 2350.207 MHz, CPU Physical cores: 4, Host memory: 8073 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2113.719 ; gain = 122.992 ; free physical = 7562 ; free virtual = 12794
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2066.480 ; gain = 123.023 ; free physical = 117 ; free virtual = 2160
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/tmp/Vivado/2023.1/data/ip'.
-create_ip: Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:08 . Memory (MB): peak = 2218.988 ; gain = 105.270 ; free physical = 7408 ; free virtual = 12740
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/tmp/Vivado/2023.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon May 13 19:50:24 2024...
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 15:29:21 2024...

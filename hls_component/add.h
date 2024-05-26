@@ -1,4 +1,7 @@
+extern "C" {
 
-#define SIZE 100
+    #define SIZE 100
 
-void mac(float *a, float *b, float *c, int size);
+    void mac(float *a, float *b, float *c, int size);
+
+}

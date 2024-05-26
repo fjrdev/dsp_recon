@@ -1,7 +1,8 @@
 set depth_list {
-  {a 100}
-  {b 100}
-  {c 100}
+  {a 1}
+  {b 1}
+  {c 1}
+  {gmem 300}
   {size 1}
 }
 set trans_num 1

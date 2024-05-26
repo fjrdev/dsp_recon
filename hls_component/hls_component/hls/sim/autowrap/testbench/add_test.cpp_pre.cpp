@@ -5,10 +5,13 @@
 # 1 "<command-line>" 2
 # 1 "/home/franz/workspace/hls_component/add_test.cpp"
 # 1 "/home/franz/workspace/hls_component/add.h" 1
+extern "C" {
 
 
 
-void mac(float *a, float *b, float *c, int size);
+    void mac(float *a, float *b, float *c, int size);
+
+}
 # 2 "/home/franz/workspace/hls_component/add_test.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 1 3
 # 39 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cstdlib" 3

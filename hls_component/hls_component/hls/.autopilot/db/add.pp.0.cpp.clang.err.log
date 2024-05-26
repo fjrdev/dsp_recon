@@ -1,28 +1,4 @@
 directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=name=mac_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=mac
         ^
-/home/franz/workspace/hls_component/add.cpp:5:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=mode=s_axilite port=return bundle=BUS_A_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite port=return bundle=BUS_A
-        ^
-/home/franz/workspace/hls_component/add.cpp:6:44: warning: unexpected pragma parameter 'depth' [-Winvalid-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite depth=100 port=a bundle=BUS_A
-                                           ^
-/home/franz/workspace/hls_component/add.cpp:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=mode=s_axilite depth=100 port=a bundle=BUS_A_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite depth=100 port=a bundle=BUS_A
-        ^
-/home/franz/workspace/hls_component/add.cpp:7:44: warning: unexpected pragma parameter 'depth' [-Winvalid-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite depth=100 port=b bundle=BUS_A
-                                           ^
-/home/franz/workspace/hls_component/add.cpp:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=mode=s_axilite depth=100 port=b bundle=BUS_A_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite depth=100 port=b bundle=BUS_A
-        ^
-/home/franz/workspace/hls_component/add.cpp:8:44: warning: unexpected pragma parameter 'depth' [-Winvalid-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite depth=100 port=c bundle=BUS_A
-                                           ^
-/home/franz/workspace/hls_component/add.cpp:8:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=0_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=mode=s_axilite depth=100 port=c bundle=BUS_A_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=s_axilite depth=100 port=c bundle=BUS_A
-        ^
-/home/franz/workspace/hls_component/add.cpp:9:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=mac_XLX_SEP_ PragmaOptions=mode=ap_vld port=b_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE mode=ap_vld port=b
-        ^
-9 warnings generated.
+1 warning generated.

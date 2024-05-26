@@ -1,0 +1,81 @@
+{
+  "modelVersion": "1.0",
+  "projectName": "system_project",
+  "platform": "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm",
+  "externalComponentRefs": [
+    "hls_component"
+  ],
+  "components": [
+    {
+      "name": "package",
+      "type": "PACKAGE",
+      "configuration": {
+        "componentType": "PACKAGE",
+        "packageConfigurations": [
+          {
+            "configId": "package.default",
+            "options": []
+          }
+        ],
+        "configFiles": [
+          "package/package.cfg"
+        ]
+      },
+      "previousBuildStatusMap": {}
+    },
+    {
+      "name": "hw_link",
+      "type": "HW_LINKER",
+      "configuration": {
+        "componentType": "HW_LINKER",
+        "containers": [
+          {
+            "name": "mac",
+            "kernels": {
+              "mac": "hls_component"
+            },
+            "userXoKernels": {},
+            "aieComponents": [],
+            "userAieLibadfList": [],
+            "cfgFiles": [
+              "hw_link/binary_container_1-link.cfg"
+            ]
+          }
+        ],
+        "vppLinkerConfigurations": [
+          {
+            "configId": "hw_link.default",
+            "options": [],
+            "containerOptions": {},
+            "buildDatafiles": []
+          }
+        ]
+      },
+      "previousBuildStatusMap": {}
+    }
+  ],
+  "buildConfigurations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "supportedTargets": [
+        "SW_EMU",
+        "HW_EMU",
+        "HW"
+      ],
+      "componentConfigMap": {
+        "package": "package.default",
+        "hw_link": "hw_link.default"
+      }
+    }
+  ],
+  "activeBuildConfigId": "default",
+  "hostMode": "x86",
+  "previousBuildStatusMap": {
+    "sw_emu": "SUCCESS",
+    "hw_emu": "ERROR",
+    "hw": "NEW"
+  },
+  "isDirty": true,
+  "applicationFlow": "EMBEDDED_ACCEL"
+}

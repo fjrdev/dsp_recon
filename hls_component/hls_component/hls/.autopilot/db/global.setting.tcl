@@ -7,7 +7,7 @@ set CombLogicFlag 0
 set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
-set noPortSwitchingFlag 1
+set noPortSwitchingFlag 0
 set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0
@@ -17,9 +17,9 @@ set HasDSPModule 0
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
-set ResetRegisterFlag 0
+set ResetRegisterFlag 1
 set ResetVariableFlag 0
-set ResetRegisterNum 0
+set ResetRegisterNum 3
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}

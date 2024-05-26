@@ -3,7 +3,7 @@ source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"
 
-; Function Attrs: inaccessiblemem_or_argmemonly noinline
+; Function Attrs: argmemonly noinline
 define void @apatb_mac_ir(float* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="100" %a, float* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="100" %b, float* noalias nocapture nonnull "fpga.decayed.dim.hint"="100" %c, i32 %size) local_unnamed_addr #0 {
 entry:
   %a_copy = alloca [100 x float], align 512
@@ -106,7 +106,7 @@ entry:
 
 declare void @mac_hw_stub(float*, float*, float*, i32)
 
-attributes #0 = { inaccessiblemem_or_argmemonly noinline "fpga.wrapper.func"="wrapper" }
+attributes #0 = { argmemonly noinline "fpga.wrapper.func"="wrapper" }
 attributes #1 = { argmemonly noinline norecurse "fpga.wrapper.func"="copyin" }
 attributes #2 = { argmemonly noinline norecurse "fpga.wrapper.func"="onebyonecpy_hls" }
 attributes #3 = { argmemonly noinline norecurse "fpga.wrapper.func"="arraycpy_hls" }

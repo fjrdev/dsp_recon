@@ -2,7 +2,6 @@
 <Messages>
 	<Message severity="WARNING" prefix="[HLS 200-483]" key="HLS 200-483" tag="" content="The &apos;config_export -format ip&apos; command is deprecated and will be removed in a future release. Use &apos;config_export -format ip_catalog&apos; as its replacement." resolution=""/>
 	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
-	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1773" tag="" content="Starting RTL evaluation using Vivado ..." resolution=""/>
 	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file hls_component/mac.zip" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command export_design CPU user time: 220.11 seconds. CPU system time: 18.43 seconds. Elapsed time: 502.82 seconds; current allocated memory: 8.375 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command export_design CPU user time: 22.43 seconds. CPU system time: 1.71 seconds. Elapsed time: 26.87 seconds; current allocated memory: 5.938 MB." resolution=""/>
 </Messages>
