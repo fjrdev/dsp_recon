@@ -1,8 +1,8 @@
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 11, 
-                   Column: 26 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 11, Column: 26 }
 Function:        mac
 Args:            
   - String:          'Sequential '
@@ -19,15 +19,15 @@ Args:
   - String:          ' '
   - LoopName:        VITIS_LOOP_11_1
   - String:          ' '
-  - LoopLoc:         '/home/franz/workspace/hls_component/add.cpp:11:26'
+  - LoopLoc:         '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26'
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 12, Column: 21 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.4
@@ -35,8 +35,8 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 11, 
-                   Column: 26 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 11, Column: 26 }
 Function:        mac
 Args:            
   - String:          'Sequential '
@@ -53,15 +53,15 @@ Args:
   - String:          ' '
   - LoopName:        VITIS_LOOP_11_1
   - String:          ' '
-  - LoopLoc:         '/home/franz/workspace/hls_component/add.cpp:11:26'
+  - LoopLoc:         '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26'
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 12, Column: 28 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.7
@@ -69,17 +69,17 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            AccessClobbered
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 12, 
-                   Column: 18 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 12, Column: 18 }
 Function:        mac
 Args:            
   - String:          'Access is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 12, Column: 18 }
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 12, Column: 18 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.10
@@ -88,24 +88,24 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            AccessClobbered
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 12, 
-                   Column: 18 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 12, Column: 18 }
 Function:        mac
 Args:            
   - String:          'Access is clobbered by '
   - ClobberedBy:     load
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 12, Column: 18 }
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 12, Column: 18 }
   - OrigDirection:   write
   - OrigID:          for.inc.store.12
@@ -114,21 +114,21 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            BadAccessLen
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 11, 
-                   Column: 26 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 11, Column: 26 }
 Function:        mac
 Args:            
   - String:          Sequential access length is not divisible by 2
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 11, Column: 26 }
   - OrigDirection:   read
   - OrigID:          a4seq
@@ -138,24 +138,24 @@ Args:
   - String:          ' '
   - LoopName:        VITIS_LOOP_11_1
   - String:          ' '
-  - LoopLoc:         '/home/franz/workspace/hls_component/add.cpp:11:26'
+  - LoopLoc:         '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26'
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            BadAccessLen
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 11, 
-                   Column: 26 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 11, Column: 26 }
 Function:        mac
 Args:            
   - String:          Sequential access length is not divisible by 2
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 11, Column: 26 }
   - OrigDirection:   read
   - OrigID:          b5seq
@@ -165,18 +165,18 @@ Args:
   - String:          ' '
   - LoopName:        VITIS_LOOP_11_1
   - String:          ' '
-  - LoopLoc:         '/home/franz/workspace/hls_component/add.cpp:11:26'
+  - LoopLoc:         '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26'
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
 ...
 --- !Failure
 Pass:            reflow-interface-check
 Name:            UnspportedNonScalarType
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 4, 
-                   Column: 0 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 4, Column: 0 }
 Function:        mac
 Args:            
   - String:          'Cannot apply interface mode '''
@@ -189,8 +189,8 @@ Args:
 --- !Failure
 Pass:            reflow-interface-check
 Name:            UnspportedNonScalarType
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 4, 
-                   Column: 0 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 4, Column: 0 }
 Function:        mac
 Args:            
   - String:          'Cannot apply interface mode '''
@@ -203,8 +203,8 @@ Args:
 --- !Failure
 Pass:            reflow-interface-check
 Name:            UnspportedNonScalarType
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 4, 
-                   Column: 0 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 4, Column: 0 }
 Function:        mac
 Args:            
   - String:          'Cannot apply interface mode '''
@@ -217,8 +217,8 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            BurstConflict
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 11, 
-                   Column: 26 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 11, Column: 26 }
 Function:        mac
 Args:            
   - String:          'Could not burst due to multiple potential '
@@ -226,7 +226,7 @@ Args:
   - String:          ' to the same bundle in the same region.'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 11, Column: 26 }
   - OrigDirection:   read
   - OrigID:          seq
@@ -235,15 +235,15 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            BurstConflict
-DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, Line: 11, 
-                   Column: 26 }
+DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
+                   Line: 11, Column: 26 }
 Function:        mac
 Args:            
   - String:          'Could not burst due to multiple potential '
@@ -251,7 +251,7 @@ Args:
   - String:          ' to the same bundle in the same region.'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 11, Column: 26 }
   - OrigDirection:   read
   - OrigID:          seq1
@@ -260,7 +260,7 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        mac
-    DebugLoc:        { File: /home/franz/workspace/hls_component/add.cpp, 
+    DebugLoc:        { File: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp, 
                        Line: 4, Column: 0 }
   - String:          ' '
 ...

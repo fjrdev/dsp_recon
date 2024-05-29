@@ -1,11 +1,11 @@
-# 1 "/home/franz/workspace/hls_component/add.cpp"
+# 1 "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 376 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 108 "/tools/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "/mnt/tmp/Vitis_HLS/2023.1/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
+# 108 "/mnt/tmp/Vitis_HLS/2023.1/common/technology/autopilot/etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -155,10 +155,10 @@ extern "C" {
 
 }
 # 2 "<built-in>" 2
-# 1 "/home/franz/workspace/hls_component/add.cpp" 2
+# 1 "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp" 2
 extern "C" {
 
-# 1 "/home/franz/workspace/hls_component/add.h" 1
+# 1 "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h" 1
 extern "C" {
 
 
@@ -166,12 +166,12 @@ extern "C" {
     __attribute__((sdx_kernel("mac", 0))) void mac(float *a, float *b, float *c, int size);
 
 }
-# 3 "/home/franz/workspace/hls_component/add.cpp" 2
+# 3 "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp" 2
 
     __attribute__((sdx_kernel("mac", 0))) void mac(float a[100], float b[100], float c[100], int size) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=mac
-# 4 "/home/franz/workspace/hls_component/add.cpp"
+# 4 "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp"
 
 
 

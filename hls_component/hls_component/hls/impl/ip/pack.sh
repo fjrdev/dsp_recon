@@ -7,4 +7,4 @@
 # 
 # ==============================================================
 
-/tools/Xilinx/Vivado/2023.1/bin/vivado  -notrace -mode batch -source run_ippack.tcl
+/mnt/tmp/Vivado/2023.1/bin/vivado  -notrace -mode batch -source run_ippack.tcl

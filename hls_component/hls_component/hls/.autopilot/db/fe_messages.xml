@@ -2,13 +2,13 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="mac" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mac" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="/home/franz/workspace/hls_component/add.cpp:4:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'a' since this interface mode only supports scalar types">
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:4:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'a' since this interface mode only supports scalar types">
         <args Name="a"/>
     </msg>
-    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="/home/franz/workspace/hls_component/add.cpp:4:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'b' since this interface mode only supports scalar types">
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:4:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'b' since this interface mode only supports scalar types">
         <args Name="b"/>
     </msg>
-    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="/home/franz/workspace/hls_component/add.cpp:4:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'c' since this interface mode only supports scalar types">
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:4:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'c' since this interface mode only supports scalar types">
         <args Name="c"/>
     </msg>
 </xilinx:hls_fe_msgs>

@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
 	}
 
     // Read settings
-    std::string binaryFile = "./mac.xclbin";
+    std::string binaryFile = "/mnt/tmp/franz/Desktop/dsp_recon/system_project/build/sw_emu/package/mac.xclbin";
     int device_index = 0;
 
     std::cout << "Open the device" << device_index << std::endl;
@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
     auto boIn1 = xrt::bo(device, vector_size_bytes, krnl.group_id(0)); //Match kernel arguments to RTL kernel
     auto boIn2 = xrt::bo(device, vector_size_bytes, krnl.group_id(1));
     auto boOut = xrt::bo(device, vector_size_bytes, krnl.group_id(2));
-    auto boIn3 = xrt::bo(device, vector_size_bytes, krnl.group_id(4));
+    auto boIn3 = xrt::bo(device, sizeof(int), krnl.group_id(3));
 
     // Map the contents of the buffer object into host memory
     auto bo0_map = boIn1.map<float*>();

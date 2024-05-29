@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName /home/franz/workspace/hls_component/hls_component/hls/./sim/autowrap/testbench/add.cpp_pre.cpp.tb.cpp
+set ::AESL_AUTOSIM::gTopFileName /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/./sim/autowrap/testbench/add.cpp_pre.cpp.tb.cpp

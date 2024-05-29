@@ -1,6 +1,7 @@
 {
   "name": "hls_component",
   "type": "HLS",
+  "part": "xcvc1902-vsva2197-2MP-e-S",
   "configuration": {
     "componentType": "HLS",
     "configFiles": [

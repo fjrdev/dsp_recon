@@ -22,7 +22,7 @@ IRWRAPPER  := $(basename $(wildcard *.ll))
 CPPWRAPPER := $(IRWRAPPER:_ir=)
 APATB_UTIL := $(basename $(wildcard $(IRWRAPPER:_ir=_util).cpp))
 
-AUTOPILOT_ROOT := /tools/Xilinx/Vitis_HLS/2023.1
+AUTOPILOT_ROOT := /mnt/tmp/Vitis_HLS/2023.1
 AUTOPILOT_MACH := lnx64
 
 ifdef COSIM_M32
@@ -35,7 +35,7 @@ ifdef AP_GCC_M32
 endif
 IFLAG += -fPIC
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := /tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin
+  AP_GCC_PATH := /mnt/tmp/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin
 endif
 AUTOPILOT_TOOL = ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
 AUTOPILOT_TECH = ${AUTOPILOT_ROOT}/common/technology

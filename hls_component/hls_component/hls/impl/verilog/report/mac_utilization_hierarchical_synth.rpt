@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Wed May 29 22:21:56 2024
+| Host         : franz-MS-7C02 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/mac_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xcvc1902-vsva2197-2MP-e-S
+| Speed File   : -2MP
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+|                              Instance                             |                                 Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+| bd_0_wrapper                                                      |                                                                 (top) |       2337 |       1785 |       0 |  552 | 2666 |      0 |      2 |    0 |          1 |
+|   bd_0_i                                                          |                                                                  bd_0 |       2337 |       1785 |       0 |  552 | 2666 |      0 |      2 |    0 |          1 |
+|     hls_inst                                                      |                                                       bd_0_hls_inst_0 |       2337 |       1785 |       0 |  552 | 2666 |      0 |      2 |    0 |          1 |
+|       (hls_inst)                                                  |                                                       bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          0 |
+|       inst                                                        |                                                   bd_0_hls_inst_0_mac |       2337 |       1785 |       0 |  552 | 2666 |      0 |      2 |    0 |          1 |
+|         (inst)                                                    |                                                   bd_0_hls_inst_0_mac |        286 |        222 |       0 |   64 |  637 |      0 |      0 |    0 |          0 |
+|         control_s_axi_U                                           |                                     bd_0_hls_inst_0_mac_control_s_axi |        254 |        254 |       0 |    0 |  281 |      0 |      0 |    0 |          0 |
+|         fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1         |    bd_0_hls_inst_0_mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|           mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u | bd_0_hls_inst_0_mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip |          0 |          0 |       0 |    0 |    0 |      0 |      0 |    0 |          1 |
+|         gmem_m_axi_U                                              |                                        bd_0_hls_inst_0_mac_gmem_m_axi |       1797 |       1309 |       0 |  488 | 1748 |      0 |      2 |    0 |          0 |
+|           bus_read                                                |                                   bd_0_hls_inst_0_mac_gmem_m_axi_read |        443 |        442 |       0 |    1 |  561 |      0 |      0 |    0 |          0 |
+|           bus_write                                               |                                  bd_0_hls_inst_0_mac_gmem_m_axi_write |        635 |        527 |       0 |  108 |  801 |      0 |      0 |    0 |          0 |
+|           load_unit                                               |                                   bd_0_hls_inst_0_mac_gmem_m_axi_load |        392 |        203 |       0 |  189 |  190 |      0 |      1 |    0 |          0 |
+|           store_unit                                              |                                  bd_0_hls_inst_0_mac_gmem_m_axi_store |        327 |        137 |       0 |  190 |  196 |      0 |      1 |    0 |          0 |
++-------------------------------------------------------------------+-----------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------+------------+
+
+

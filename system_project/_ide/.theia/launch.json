@@ -20,6 +20,65 @@
 				"LD_LIBRARY_PATH": "${env:XILINX_XRT}/lib",
 				"XRT_INI_PATH": "${workspaceFolder}/system_project/system_project_host/runtime/sw_emu_xrt.ini"
 			}
+		},
+		{
+			"type": "tcf-debug",
+			"request": "launch",
+			"name": "system_project_hw_emu_new",
+			"target": {
+				"host": "127.0.0.1",
+				"port": 1440,
+				"file": "${workspaceFolder}/build/hw",
+				"remoteFilePath": "/run/media/mmcblk0p1"
+			},
+			"env": {
+				"XILINX_VITIS": "/run/media/mmcblk0p1",
+				"XILINX_XRT": "/usr",
+				"XCL_EMULATION_MODE": "hw_emu",
+				"XRT_INI_PATH": "/run/media/mmcblk0p1/hw_emu_xrt.ini",
+				"LD_LIBRARY_PATH": "/run/media/mmcblk0p1:/tmp:$LD_LIBRARY_PATH"
+			},
+			"copyToTarget": [
+				{
+					"source": "${workspaceFolder}/system_project/build/sw_emu/package/mac.xclbin",
+					"destination": "/run/media/mmcblk0p1"
+				},
+				{
+					"source": "${workspaceFolder}/system_project/system_project_host/runtime/hw_emu_xrt.ini",
+					"destination": "/run/media/mmcblk0p1"
+				}
+			],
+			"copyFromTargetOnTermination": [
+				{
+					"pattern": ".txt",
+					"destination": "${workspaceFolder}/system_project/build/hw_emu/system_project_hw_emu_new"
+				},
+				{
+					"pattern": ".run_summary",
+					"destination": "${workspaceFolder}/system_project/build/hw_emu/system_project_hw_emu_new"
+				},
+				{
+					"pattern": ".json",
+					"destination": "${workspaceFolder}/system_project/build/hw_emu/system_project_hw_emu_new"
+				},
+				{
+					"pattern": ".csv",
+					"destination": "${workspaceFolder}/system_project/build/hw_emu/system_project_hw_emu_new"
+				}
+			],
+			"pathMap": [
+				{
+					"source": "/mnt/tmp/franz/Desktop/dsp_recon/system_project/build/hw_emu/hw_link/mac/mac/int/xo/mac/mac/cpu_sources",
+					"destination": "/mnt/tmp/franz/Desktop/dsp_recon/hls_component"
+				}
+			],
+			"replaceNativeEnv": false,
+			"arguments": "./mac.xclbin",
+			"workingDirectory": "/run/media/mmcblk0p1",
+			"stopAtMain": true,
+			"stopAtProgramEntry": false,
+			"autoAttachProcessChildren": false,
+			"internalConsoleOptions": "openOnSessionStart"
 		}
 	]
 }

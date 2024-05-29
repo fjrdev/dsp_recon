@@ -503,7 +503,7 @@ initial begin : AW_request_proc
             end
             
             if (FIFO_AW_req_ADDR_tmp/data_byte_size > gmem_mem_depth) begin
-                $display ("/home/franz/workspace/hls_component/hls_component/hls/sim/verilog/AESL_axi_master_gmem.v: Write request address %d exceed AXI master gmem array depth: %d",FIFO_AW_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
+                $display ("/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/AESL_axi_master_gmem.v: Write request address %d exceed AXI master gmem array depth: %d",FIFO_AW_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
                 $finish;
             end
             
@@ -690,7 +690,7 @@ initial begin : AR_request_proc
             end
 
             if (FIFO_AR_req_ADDR_tmp/data_byte_size > gmem_mem_depth) begin
-                $display ("/home/franz/workspace/hls_component/hls_component/hls/sim/verilog/AESL_axi_master_gmem.v: Read request address %d exceed AXI master gmem array depth: %d",FIFO_AR_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
+                $display ("/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/AESL_axi_master_gmem.v: Read request address %d exceed AXI master gmem array depth: %d",FIFO_AR_req_ADDR_tmp/data_byte_size, gmem_mem_depth); 
                 $finish;
             end
 

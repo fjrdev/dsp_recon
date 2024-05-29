@@ -1,0 +1,218 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls_component.hlsrun_cosim_summary, at Tue May 28 18:01:34 2024
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component -config /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg -cmdlineconfig /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+  **** SW Build 3854077 on May  4 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /mnt/tmp/Vitis_HLS/2023.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/mnt/tmp/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'franz' on host 'franz-MS-7C02' (Linux_x86_64 version 5.15.0-105-generic) on Tue May 28 18:01:38 CEST 2024
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/mnt/tmp/franz/Desktop/dsp_recon/hls_component'
+INFO: [HLS 200-2005] Using work_dir /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component 
+INFO: [HLS 200-1510] Running: open_project /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=add.h' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=add_test.cpp' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=mac' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=ip' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_config.cfg(6)
+INFO: [HLS 200-1510] Running: apply_ini /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/config.cmdline(4)
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/mnt/tmp/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling add_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_mac.cpp
+   Compiling add.cpp_pre.cpp.tb.cpp
+   Compiling apatb_mac_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2097.828 ; gain = 121.992 ; free physical = 3417 ; free virtual = 11083
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/tmp/Vivado/2023.1/data/ip'.
+create_ip: Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:07 . Memory (MB): peak = 2203.098 ; gain = 105.270 ; free physical = 3321 ; free virtual = 11008
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Tue May 28 18:02:50 2024...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /mnt/tmp/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_mac_top glbl -Oenable_linking_all_libraries -prj mac.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s mac 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/ip/xil_defaultlib/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/mac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/mac_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/mac_gmem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_load
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_store
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_read
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_write
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_srl
+INFO: [VRFC 10-311] analyzing module mac_gmem_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/mac.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_mac_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_exp_table...
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_pkg
+Compiling package floating_point_v7_1_15.flt_utils
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.mac_control_s_axi
+Compiling module xil_defaultlib.mac_gmem_m_axi_srl(DATA_WIDTH=96...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(DATA_WIDTH=9...
+Compiling module xil_defaultlib.mac_gmem_m_axi_mem(MEM_STYLE="bl...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(MEM_STYLE="b...
+Compiling module xil_defaultlib.mac_gmem_m_axi_srl(DATA_WIDTH=1,...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(DATA_WIDTH=1...
+Compiling module xil_defaultlib.mac_gmem_m_axi_srl(DATA_WIDTH=1,...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(DATA_WIDTH=1...
+Compiling module xil_defaultlib.mac_gmem_m_axi_store(NUM_WRITE_O...
+Compiling module xil_defaultlib.mac_gmem_m_axi_mem(MEM_STYLE="bl...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(MEM_STYLE="b...
+Compiling module xil_defaultlib.mac_gmem_m_axi_load(NUM_READ_OUT...
+Compiling module xil_defaultlib.mac_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.mac_gmem_m_axi_burst_converter(A...
+Compiling module xil_defaultlib.mac_gmem_m_axi_srl(DATA_WIDTH=8,...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(DATA_WIDTH=8...
+Compiling module xil_defaultlib.mac_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.mac_gmem_m_axi_srl(DATA_WIDTH=72...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(DATA_WIDTH=7...
+Compiling module xil_defaultlib.mac_gmem_m_axi_srl(DATA_WIDTH=37...
+Compiling module xil_defaultlib.mac_gmem_m_axi_fifo(DATA_WIDTH=3...
+Compiling module xil_defaultlib.mac_gmem_m_axi_throttle(CONSERVA...
+Compiling module xil_defaultlib.mac_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.mac_gmem_m_axi_write(CONSERVATIV...
+Compiling module xil_defaultlib.mac_gmem_m_axi_reg_slice(DATA_WI...
+Compiling module xil_defaultlib.mac_gmem_m_axi_read(C_USER_VALUE...
+Compiling module xil_defaultlib.mac_gmem_m_axi(CONSERVATIVE=1,NU...
+Compiling module unisims_ver.DSPFP32(ACASCREG=0,AREG=0,A_FPTY...
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_ufma [\flt_ufma(c_xdevicefamily="versa...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=32,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15_viv [\floating_point_v7_1_15_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15 [\floating_point_v7_1_15(c_xdevic...]
+Compiling module xil_defaultlib.mac_fmadd_32ns_32ns_32ns_32ns_32...
+Compiling module xil_defaultlib.mac_fmadd_32ns_32ns_32ns_32ns_32...
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.AESL_axi_master_gmem
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_mac_top
+Compiling module work.glbl
+Built simulation snapshot mac
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/mac/xsim_script.tcl
+# xsim {mac} -autoloadwcfg -tclbatch {mac.tcl}
+Time resolution is 1 ps
+source mac.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "155000"
+// RTL Simulation : 1 / 1 [n/a] @ "15345000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 15405 ns : File "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/sim/verilog/mac.autotb.v" Line 440
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue May 28 18:03:16 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 36.88 seconds. CPU system time: 3.15 seconds. Elapsed time: 83.84 seconds; current allocated memory: 7.906 MB.
+INFO: [HLS 200-112] Total CPU user time: 40.33 seconds. Total CPU system time: 3.69 seconds. Total elapsed time: 100.8 seconds; peak allocated memory: 1.087 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue May 28 18:03:17 2024...
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 52s

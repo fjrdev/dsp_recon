@@ -42,10 +42,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvc1902:-vsva2197:-2MP-e-S
-set SourceFiles {sc {} c /home/franz/workspace/hls_component/add.cpp}
+set SourceFiles {sc {} c /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog /home/franz/workspace/hls_component/add_test.cpp bc /home/franz/workspace/hls_component/add_test.cpp vhdl /home/franz/workspace/hls_component/add_test.cpp sc /home/franz/workspace/hls_component/add_test.cpp cas /home/franz/workspace/hls_component/add_test.cpp c {}}
+set TBFiles {verilog /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp bc /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp vhdl /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp sc /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp cas /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add_test.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

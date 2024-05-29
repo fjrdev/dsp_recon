@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'mac'
 ================================================================
 + General Information: 
-    * Date:           Sun May 26 15:28:56 2024
+    * Date:           Wed May 29 22:09:16 2024
     * Version:        2023.1 (Build 3854077 on May  4 2023)
     * Project:        hls_component
     * Solution:       hls (Vitis Kernel Flow Target)
@@ -106,17 +106,17 @@
  Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
 
 * All M_AXI Variable Accesses
-+--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+----------------------------------------------------------------------------------------+
-| HW Interface | Variable | Access Location                                   | Direction | Burst Status | Length   | Loop            | Loop Location                                     | Resolution | Problem                                                                                |
-+--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+----------------------------------------------------------------------------------------+
-| m_axi_gmem   |          | /home/franz/workspace/hls_component/add.cpp:11:26 | read      | Fail         |          |                 |                                                   | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region. |
-| m_axi_gmem   | b        | /home/franz/workspace/hls_component/add.cpp:12:28 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 | 214-234    | Sequential access length is not divisible by 2                                         |
-| m_axi_gmem   | a        | /home/franz/workspace/hls_component/add.cpp:12:21 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 | 214-234    | Sequential access length is not divisible by 2                                         |
-| m_axi_gmem   | c        | /home/franz/workspace/hls_component/add.cpp:12:18 | write     | Fail         |          |                 |                                                   | 214-231    | Access is clobbered by load                                                            |
-| m_axi_gmem   | c        | /home/franz/workspace/hls_component/add.cpp:12:18 | read      | Fail         |          |                 |                                                   | 214-231    | Access is clobbered by store                                                           |
-| m_axi_gmem   | b        | /home/franz/workspace/hls_component/add.cpp:12:28 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 |            |                                                                                        |
-| m_axi_gmem   | a        | /home/franz/workspace/hls_component/add.cpp:12:21 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /home/franz/workspace/hls_component/add.cpp:11:26 |            |                                                                                        |
-+--------------+----------+---------------------------------------------------+-----------+--------------+----------+-----------------+---------------------------------------------------+------------+----------------------------------------------------------------------------------------+
++--------------+----------+--------------------------------------------------------------+-----------+--------------+----------+-----------------+--------------------------------------------------------------+------------+----------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                                              | Direction | Burst Status | Length   | Loop            | Loop Location                                                | Resolution | Problem                                                                                |
++--------------+----------+--------------------------------------------------------------+-----------+--------------+----------+-----------------+--------------------------------------------------------------+------------+----------------------------------------------------------------------------------------+
+| m_axi_gmem   |          | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26 | read      | Fail         |          |                 |                                                              | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region. |
+| m_axi_gmem   | b        | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:28 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26 | 214-234    | Sequential access length is not divisible by 2                                         |
+| m_axi_gmem   | a        | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:21 | read      | Widen Fail   |          | VITIS_LOOP_11_1 | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26 | 214-234    | Sequential access length is not divisible by 2                                         |
+| m_axi_gmem   | c        | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:18 | write     | Fail         |          |                 |                                                              | 214-231    | Access is clobbered by load                                                            |
+| m_axi_gmem   | c        | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:18 | read      | Fail         |          |                 |                                                              | 214-231    | Access is clobbered by store                                                           |
+| m_axi_gmem   | b        | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:28 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26 |            |                                                                                        |
+| m_axi_gmem   | a        | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:21 | read      | Inferred     | variable | VITIS_LOOP_11_1 | /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26 |            |                                                                                        |
++--------------+----------+--------------------------------------------------------------+-----------+--------------+----------+-----------------+--------------------------------------------------------------+------------+----------------------------------------------------------------------------------------+
 
     * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
 

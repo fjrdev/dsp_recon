@@ -11,7 +11,6 @@ set(_CONTAINER_NAMES
 mac
 )
 
-
 ####    START OF USER SETTINGS    ####
 # Below settings can be customized
 # Adding any other command line options to be passed to v++ --link

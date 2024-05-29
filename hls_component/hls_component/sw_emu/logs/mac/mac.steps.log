@@ -9,39 +9,45 @@
 Environment variables :
 ------------------------------------------
 SHELL=/bin/bash
-SESSION_MANAGER=local/fjrdev:@/tmp/.ICE-unix/1559,unix/fjrdev:/tmp/.ICE-unix/1559
+ROS_VERSION=1
+SESSION_MANAGER=local/franz-MS-7C02:@/tmp/.ICE-unix/3282,unix/franz-MS-7C02:/tmp/.ICE-unix/3282
 QT_ACCESSIBILITY=1
 COLORTERM=truecolor
 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
 XDG_MENU_PREFIX=gnome-
-RDI_APPROOT=/tools/Xilinx/Vitis/2023.1
+RDI_APPROOT=/mnt/tmp/Vitis/2023.1
 RDI_JAVA_PLATFORM=
-SHARED_DATA_HOME=/tools/Xilinx/SharedData/2023.1
-TK_LIBRARY=/tools/Xilinx/Vitis/2023.1/tps/tk/tk8.5
+PKG_CONFIG_PATH=/opt/ros/noetic/lib/pkgconfig
+SHARED_DATA_HOME=/mnt/tmp/SharedData/2023.1
+ROS_PYTHON_VERSION=3
+TK_LIBRARY=/mnt/tmp/Vitis/2023.1/tps/tk/tk8.5
 LANGUAGE=en_US:en
 FREETYPE_PROPERTIES=truetype:interpreter-version=35
 XIL_SUPPRESS_OVERRIDE_WARNINGS=1
-RDI_BINROOT=/tools/Xilinx/Vitis/2023.1/bin
+RDI_BINROOT=/mnt/tmp/Vitis/2023.1/bin
 LC_ADDRESS=de_DE.UTF-8
-XILINX_VIVADO=/tools/Xilinx/Vivado/2023.1
-JAVA_HOME=/tools/Xilinx/Vitis/2023.1/tps/lnx64/jre11.0.16_1/
+XILINX_VIVADO=/mnt/tmp/Vivado/2023.1
+JAVA_HOME=/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1/
 GNOME_SHELL_SESSION_MODE=ubuntu
 LC_NAME=de_DE.UTF-8
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 RDI_OPT_EXT=.o
 RDI_INSTALLVER=2023.1
-RDI_INSTALLROOT=/tools/Xilinx
-THEIA_DEFAULT_PLUGINS=local-dir:/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins
+RDI_INSTALLROOT=/mnt/tmp
+THEIA_DEFAULT_PLUGINS=local-dir:/mnt/tmp/Vitis/2023.1/ide/electron-app/lnx64/resources/app/plugins
 RDI_PATCHROOT=
 XMODIFIERS=@im=ibus
 DESKTOP_SESSION=ubuntu
 LC_MONETARY=de_DE.UTF-8
-SSH_AGENT_PID=1516
-XILINX_VITIS_AIETOOLS=/tools/Xilinx/Vitis/2023.1/aietools
+SSH_AGENT_PID=3240
+XILINX_XRT=/opt/xilinx/xrt
+XILINX_VITIS_AIETOOLS=/mnt/tmp/Vitis/2023.1/aietools
+ROS_PACKAGE_PATH=/opt/ros/noetic/share
 GTK_MODULES=gail:atk-bridge
+ROSLISP_PACKAGE_DIRECTORIES=
 XIL_NO_OVERRIDE=0
-RDI_LIBDIR=/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o
-PWD=/home/franz/workspace/hls_component
+RDI_LIBDIR=/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o
+PWD=/mnt/tmp/franz/Desktop/dsp_recon/hls_component
 LOGNAME=franz
 XDG_SESSION_DESKTOP=ubuntu
 THEIA_ELECTRON_VERSION=15.5.7
@@ -49,7 +55,7 @@ XDG_SESSION_TYPE=x11
 _RDI_DONT_SET_XILINX_AS_PATH=True
 GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 XAUTHORITY=/run/user/1000/gdm/Xauthority
-RDI_PREPEND_PATH=/tools/Xilinx/Vitis/2023.1/bin
+RDI_PREPEND_PATH=/mnt/tmp/Vitis/2023.1/bin
 XILINX_DSP=
 GJS_DEBUG_TOPICS=JS ERROR;JS LOG
 WINDOWPATH=2
@@ -57,108 +63,115 @@ THEIA_PLUGINS=local-dir:/home/franz/.theia/plugins
 HOME=/home/franz
 USERNAME=franz
 IM_CONFIG_PHASE=1
-SYNTH_COMMON=/tools/Xilinx/Vitis/2023.1/scripts/rt/data
+SYNTH_COMMON=/mnt/tmp/Vitis/2023.1/scripts/rt/data
 LANG=en_US.UTF-8
 LC_PAPER=de_DE.UTF-8
+ROS_ETC_DIR=/opt/ros/noetic/etc/ros
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 XDG_CURRENT_DESKTOP=Unity
+PLATFORM_REPO_PATHS=/mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1
 VTE_VERSION=6003
-XILINX_HLS=/tools/Xilinx/Vitis_HLS/2023.1
+XILINX_HLS=/mnt/tmp/Vitis_HLS/2023.1
+CMAKE_PREFIX_PATH=/opt/ros/noetic
 HDI_PROCESSOR=x86_64
 RDI_BUILD=yes
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/f4f16fe7_31b9_44a0_a7cf_5bc7fb140fe9
-RDI_PROG=/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++
-INVOCATION_ID=cffc64fcc4d54b9bb127ed03be8a707d
-MANAGERPID=1329
-RDI_SESSION_INFO=/home/franz:fjrdev_1715623315_2894
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9ec97129_a5b0_4ea0_9f88_fd78f1d84173
+RDI_PROG=/mnt/tmp/Vitis/2023.1/bin/unwrapped/lnx64.o/v++
+INVOCATION_ID=19245da5688f440f80317464c8721208
+MANAGERPID=3065
+RDI_SESSION_INFO=/home/franz:franz-MS-7C02_1717003854_4370
 CHROME_DESKTOP=Vitis Unified IDE.desktop
-RT_TCL_PATH=/tools/Xilinx/Vitis/2023.1/scripts/rt/base_tcl/tcl
+RT_TCL_PATH=/mnt/tmp/Vitis/2023.1/scripts/rt/base_tcl/tcl
 GJS_DEBUG_OUTPUT=stderr
-XILINX_SDK=/tools/Xilinx/Vitis/2023.1
-RDI_SHARED_DATA=/tools/Xilinx/SharedData/2023.1/data
+XILINX_SDK=/mnt/tmp/Vitis/2023.1
+RDI_SHARED_DATA=/mnt/tmp/SharedData/2023.1/data
 VSCODE_API_VERSION=1.53.2
 LESSCLOSE=/usr/bin/lesspipe %s %s
 XDG_SESSION_CLASS=user
-PYTHONPATH=/tools/Xilinx/Vitis/2023.1/data/lopper:/tools/Xilinx/Vitis/2023.1/cli/:/tools/Xilinx/Vitis/2023.1/cli/python-packages/site-packages:/tools/Xilinx/Vitis/2023.1/cli/proto:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8:/tools/Xilinx/Vitis/2023.1/cli/:/tools/Xilinx/Vitis/2023.1/cli/python-packages/site-packages:/tools/Xilinx/Vitis/2023.1/cli/proto
+PYTHONPATH=/mnt/tmp/Vitis/2023.1/data/lopper:/mnt/tmp/Vitis/2023.1/cli/:/mnt/tmp/Vitis/2023.1/cli/python-packages/site-packages:/mnt/tmp/Vitis/2023.1/cli/proto:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8/lib-dynload/:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib/python3.8:/mnt/tmp/Vitis/2023.1/cli/:/mnt/tmp/Vitis/2023.1/cli/python-packages/site-packages:/mnt/tmp/Vitis/2023.1/cli/proto
 TERM=xterm-256color
 LC_IDENTIFICATION=de_DE.UTF-8
 LESSOPEN=| /usr/bin/lesspipe %s
-PYTHONHOME=/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/
+PYTHONHOME=/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/
 USER=franz
-XILINX_PLANAHEAD=/tools/Xilinx/Vitis/2023.1
-GNOME_TERMINAL_SERVICE=:1.83
-RDI_BASEROOT=/tools/Xilinx/Vitis
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/local/cuda-12.0/lib64:/opt/ros/noetic/lib
+XILINX_PLANAHEAD=/mnt/tmp/Vitis/2023.1
+GNOME_TERMINAL_SERVICE=:1.77
+RDI_BASEROOT=/mnt/tmp/Vitis
 LOPPER_DTC_FLAGS=-b 0 -@
-RDI_TPS_ROOT=/tools/Xilinx/Vivado/2023.1/tps/lnx64
+RDI_TPS_ROOT=/mnt/tmp/Vivado/2023.1/tps/lnx64
 RDI_JAVA_VERSION=11.0.16_1
 IDE_SKIP_SERVER_LICENSE=1
-RDI_DATADIR=/tools/Xilinx/SharedData/2023.1/data:/tools/Xilinx/Vitis/2023.1/data
-THEIA_ELECTRON_TOKEN={"value":"085bb4de-8165-4ef0-9b24-6afbf06f2750"}
-DISPLAY=:0
+RDI_DATADIR=/mnt/tmp/SharedData/2023.1/data:/mnt/tmp/Vitis/2023.1/data
+THEIA_ELECTRON_TOKEN={"value":"806ed21a-c0cc-492a-84cf-733f1113a622"}
+DISPLAY=:1
 SHLVL=5
 LC_TELEPHONE=de_DE.UTF-8
 RDI_USE_JDK11=1
+ROS_MASTER_URI=http://localhost:11311
 QT_IM_MODULE=ibus
-ESW_REPO=/tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/
+ESW_REPO=/mnt/tmp/Vitis/2023.1/data/embeddedsw-sdt/
 LC_MEASUREMENT=de_DE.UTF-8
-XILINX_VIVADO_HLS=/tools/Xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS=/mnt/tmp/Vivado/2023.1
 XIL_CHECK_TCL_DEBUG=False
-LD_LIBRARY_PATH=/tools/Xilinx/Vitis/2023.1/tps/lnx64/java-cef-95.0.4638.69/bin/lib/linux64:/tools/Xilinx/Vitis/2023.1/tps/lnx64/javafx-sdk-11.0.2/lib:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/jre11.0.16_1/lib/:/tools/Xilinx/Vitis/2023.1/tps/lnx64/jre11.0.16_1/lib//server:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2023.1/aietools/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/bin/../lnx64/tools/dot/lib
-HDIPRELDPATH=/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.1/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/tools/Xilinx/Vitis/2023.1/aietools/lib/lnx64.o:/tools/Xilinx/Vitis/2023.1/bin/../lnx64/tools/dot/lib
+LD_LIBRARY_PATH=/mnt/tmp/Vitis/2023.1/tps/lnx64/java-cef-95.0.4638.69/bin/lib/linux64:/mnt/tmp/Vitis/2023.1/tps/lnx64/javafx-sdk-11.0.2/lib:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1/lib/:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1/lib//server:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/mnt/tmp/Vitis/2023.1/aietools/lib/lnx64.o:/opt/xilinx/xrt/lib:/usr/local/cuda-12.0/lib64:/opt/ros/noetic/lib:/mnt/tmp/Vitis/2023.1/bin/../lnx64/tools/dot/lib
+HDIPRELDPATH=/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu/20:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs/Ubuntu:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/libs:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu/20:/mnt/tmp/Vitis/2023.1/lib/lnx64.o/Ubuntu:/mnt/tmp/Vitis/2023.1/lib/lnx64.o:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/lib:/mnt/tmp/Vitis/2023.1/aietools/lib/lnx64.o:/opt/xilinx/xrt/lib:/usr/local/cuda-12.0/lib64:/opt/ros/noetic/lib:/mnt/tmp/Vitis/2023.1/bin/../lnx64/tools/dot/lib
 XDG_RUNTIME_DIR=/run/user/1000
 TCMALLOC_LARGE_ALLOC_REPORT_THRESHOLD=4294967296
 LC_TIME=de_DE.UTF-8
-TCL_LIBRARY=/tools/Xilinx/Vitis/2023.1/tps/tcl/tcl8.5
+TCL_LIBRARY=/mnt/tmp/Vitis/2023.1/tps/tcl/tcl8.5
 LC_ALL=en_US.UTF-8
-JOURNAL_STREAM=8:44440
+JOURNAL_STREAM=8:52130
 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-PATH=/tools/Xilinx/Vivado/2023.1/tps/lnx64/binutils-2.26/bin:/tools/Xilinx/Vitis/2023.1/bin/../gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.1/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/tools/Xilinx/Vitis/2023.1/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vivado/2023.1/tps/lnx64/gcc-8.3.0/bin:/tools/Xilinx/Vivado/2023.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vitis/2023.1/tps/lnx64/jre11.0.16_1/bin:/tools/Xilinx/Vitis/2023.1/data/lopper/bin:/tools/Xilinx/Vitis/2023.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_be/bin:/tools/Xilinx/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_le/bin:/tools/Xilinx/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.24.2/bin:/tools/Xilinx/Vitis/2023.1/tps/lnx64/clang-14.0.0/bin:/tools/Xilinx/Vitis/2023.1/tps/lnx64/python-3.8.3//bin:/tools/Xilinx/Vitis/2023.1/tps/lnx64/jre11.0.16_1//bin:/tools/Xilinx/Vitis/2023.1/aietools/bin:/tools/Xilinx/Vivado/2023.1/bin:/tools/Xilinx/Vitis_HLS/2023.1/bin:/tools/Xilinx/Model_Composer/2023.1/bin:/tools/Xilinx/Vitis/2023.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/DocNav:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-RT_LIBPATH=/tools/Xilinx/Vitis/2023.1/scripts/rt/data
+PATH=/mnt/tmp/Vivado/2023.1/tps/lnx64/binutils-2.26/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/aarch64/lin/aarch64-linux/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/mnt/tmp/Vivado/2023.1/tps/lnx64/gcc-8.3.0/bin:/mnt/tmp/Vivado/2023.1/gnu/microblaze/lin/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1/bin:/mnt/tmp/Vitis/2023.1/data/lopper/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/lin/bin:/mnt/tmp/Vitis/2023.1/gnu/arm/lin/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_be/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_le/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch64/lin/aarch64-linux/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch64/lin/aarch64-none/bin:/mnt/tmp/Vitis/2023.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/clang-14.0.0/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3//bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1//bin:/mnt/tmp/Vitis/2023.1/aietools/bin:/mnt/tmp/Vivado/2023.1/bin:/mnt/tmp/Vitis_HLS/2023.1/bin:/mnt/tmp/Model_Composer/2023.1/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.3.2/bin:/mnt/tmp/DocNav:/opt/xilinx/xrt/bin:/usr/local/cuda-12.0/bin:/usr/bin:/home/franz/anaconda3/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+RT_LIBPATH=/mnt/tmp/Vitis/2023.1/scripts/rt/data
 GDMSESSION=ubuntu
 ORIGINAL_XDG_CURRENT_DESKTOP=ubuntu:GNOME
-HDI_APPROOT=/tools/Xilinx/Vitis/2023.1
+HDI_APPROOT=/mnt/tmp/Vitis/2023.1
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 RDI_PLATFORM=lnx64
-THEIA_APP_PROJECT_PATH=/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app
+THEIA_APP_PROJECT_PATH=/mnt/tmp/Vitis/2023.1/ide/electron-app/lnx64/resources/app
 MYVIVADO=
 BUILDINFO=SW Build 3860322 on 2023-05-04-06:32:46
-ISL_IOSTREAMS_RSA=/tools/Xilinx/Vitis/2023.1/tps/isl
-lops_dir=/tools/Xilinx/Vitis/2023.1/data/lopper/lopper/lops/
+ISL_IOSTREAMS_RSA=/mnt/tmp/Vitis/2023.1/tps/isl
+ROS_ROOT=/opt/ros/noetic/share/ros
+ROS_DISTRO=noetic
+lops_dir=/mnt/tmp/Vitis/2023.1/data/lopper/lopper/lops/
 LC_NUMERIC=C
-XILINX_VITIS=/tools/Xilinx/Vitis/2023.1
-OLDPWD=/tools/Xilinx/Vitis/2023.1/bin
-_=/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=38377
-XILINX_CD_SESSION=b1871344-5a78-4f3e-8168-781bcd4bd0f5
+XILINX_VITIS=/mnt/tmp/Vitis/2023.1
+OLDPWD=/mnt/tmp/Vitis/2023.1/bin
+_=/mnt/tmp/Vitis/2023.1/bin/unwrapped/lnx64.o/v++
+XILINX_CD_CONNECT_ID=39175
+XILINX_CD_SESSION=1d0ae4c9-736c-47e2-9f0c-991e57c034bf
 
 
 V++ command line:
 ------------------------------------------
-/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++ -c -k mac --target sw_emu -g /home/franz/workspace/hls_component/add.h /home/franz/workspace/hls_component/add.cpp --platform /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm --temp_dir /home/franz/workspace/hls_component/hls_component/sw_emu -o /home/franz/workspace/hls_component/hls_component/sw_emu/mac.xo 
+/mnt/tmp/Vitis/2023.1/bin/unwrapped/lnx64.o/v++ -c -k mac --target sw_emu -g /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp --platform /mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm --temp_dir /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu -o /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac.xo 
 
 FINAL PROGRAM OPTIONS
 --compile
 --debug
---input_files /home/franz/workspace/hls_component/add.h
---input_files /home/franz/workspace/hls_component/add.cpp
+--input_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h
+--input_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp
 --kernel mac
 --optimize 0
---output /home/franz/workspace/hls_component/hls_component/sw_emu/mac.xo
---platform /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm
+--output /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac.xo
+--platform /mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm
 --report_level 0
 --target sw_emu
---temp_dir /home/franz/workspace/hls_component/hls_component/sw_emu
+--temp_dir /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu
 
 PARSED COMMAND LINE OPTIONS
 -c 
 -k mac 
 --target sw_emu 
 -g 
-/home/franz/workspace/hls_component/add.h 
-/home/franz/workspace/hls_component/add.cpp 
---platform /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm 
---temp_dir /home/franz/workspace/hls_component/hls_component/sw_emu 
--o /home/franz/workspace/hls_component/hls_component/sw_emu/mac.xo 
+/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h 
+/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp 
+--platform /mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm 
+--temp_dir /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu 
+-o /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac.xo 
 
 EXPANDED PARAMETERS
 From application of optMap.xml: 
@@ -166,22 +179,22 @@ From application of optMap.xml:
 
 
 FINAL PLATFORM PATH
-/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm
+/mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 14 May 2024 18:17:21
+timestamp: 29 May 2024 22:46:42
 ------------------------------------------
 step: performing high-level synthesis for kernel:mac
-timestamp: 14 May 2024 18:17:41
-launch dir: /home/franz/workspace/hls_component/hls_component/sw_emu/mac/mac
-cmd: vitis_hls -f /home/franz/workspace/hls_component/hls_component/sw_emu/mac/mac/mac.tcl -messageDb vitis_hls.pb
+timestamp: 29 May 2024 22:46:55
+launch dir: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac
+cmd: vitis_hls -f /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac/mac.tcl -messageDb vitis_hls.pb
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 14 May 2024 18:17:41
-output: /home/franz/workspace/hls_component/hls_component/sw_emu/reports/mac/system_estimate_mac.xtxt
+timestamp: 29 May 2024 22:46:55
+output: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/reports/mac/system_estimate_mac.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 14 May 2024 18:17:41
+timestamp: 29 May 2024 22:46:55

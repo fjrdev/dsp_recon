@@ -1,0 +1,798 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date              : Wed May 29 22:26:36 2024
+| Host              : franz-MS-7C02 running 64-bit Ubuntu 20.04.5 LTS
+| Command           : report_timing -max_paths 10 -file ./report/mac_timing_paths_routed.rpt
+| Design            : bd_0_wrapper
+| Device            : xcvc1902-vsva2197
+| Speed File        : -2MP  PRODUCTION 2.11 2022-11-23
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             5.936ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.909ns  (logic 2.918ns (74.648%)  route 0.991ns (25.352%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.751ns = ( 12.751 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.623ns (routing 1.176ns, distribution 1.447ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[19])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[19]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<19>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[19]_FPA_OUT[19])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[19]
+                         net (fo=1, routed)           0.602     6.991    bd_0_i/hls_inst/inst/add_fu_170_p4[19]
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.623    12.751    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[19]/C
+                         clock pessimism              0.227    12.978    
+                         clock uncertainty           -0.058    12.920    
+    SLICE_X130Y64        FDRE (Setup_DFF_SLICEL_C_D)
+                                                      0.007    12.927    bd_0_i/hls_inst/inst/add_reg_385_reg[19]
+  -------------------------------------------------------------------
+                         required time                         12.927    
+                         arrival time                          -6.991    
+  -------------------------------------------------------------------
+                         slack                                  5.936    
+
+Slack (MET) :             5.946ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.895ns  (logic 2.918ns (74.917%)  route 0.977ns (25.083%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.746ns = ( 12.746 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.618ns (routing 1.176ns, distribution 1.442ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[7])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[7]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<7>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[7]_FPA_OUT[7])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[7]
+                         net (fo=1, routed)           0.588     6.977    bd_0_i/hls_inst/inst/add_fu_170_p4[7]
+    SLICE_X132Y65        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.618    12.746    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X132Y65        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[7]/C
+                         clock pessimism              0.227    12.973    
+                         clock uncertainty           -0.058    12.915    
+    SLICE_X132Y65        FDRE (Setup_HFF_SLICEL_C_D)
+                                                      0.008    12.923    bd_0_i/hls_inst/inst/add_reg_385_reg[7]
+  -------------------------------------------------------------------
+                         required time                         12.923    
+                         arrival time                          -6.977    
+  -------------------------------------------------------------------
+                         slack                                  5.946    
+
+Slack (MET) :             5.976ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.870ns  (logic 2.918ns (75.401%)  route 0.952ns (24.599%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.751ns = ( 12.751 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.623ns (routing 1.176ns, distribution 1.447ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[11])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[11]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<11>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[11]_FPA_OUT[11])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[11]
+                         net (fo=1, routed)           0.563     6.952    bd_0_i/hls_inst/inst/add_fu_170_p4[11]
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.623    12.751    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[11]/C
+                         clock pessimism              0.227    12.978    
+                         clock uncertainty           -0.058    12.920    
+    SLICE_X130Y64        FDRE (Setup_AFF2_SLICEL_C_D)
+                                                      0.008    12.928    bd_0_i/hls_inst/inst/add_reg_385_reg[11]
+  -------------------------------------------------------------------
+                         required time                         12.928    
+                         arrival time                          -6.952    
+  -------------------------------------------------------------------
+                         slack                                  5.976    
+
+Slack (MET) :             5.977ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[28]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.864ns  (logic 2.918ns (75.518%)  route 0.946ns (24.482%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.746ns = ( 12.746 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.618ns (routing 1.176ns, distribution 1.442ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[28])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[28]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<28>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[28]_FPA_OUT[28])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[28]
+                         net (fo=1, routed)           0.557     6.946    bd_0_i/hls_inst/inst/add_fu_170_p4[28]
+    SLICE_X132Y65        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.618    12.746    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X132Y65        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[28]/C
+                         clock pessimism              0.227    12.973    
+                         clock uncertainty           -0.058    12.915    
+    SLICE_X132Y65        FDRE (Setup_GFF_SLICEL_C_D)
+                                                      0.008    12.923    bd_0_i/hls_inst/inst/add_reg_385_reg[28]
+  -------------------------------------------------------------------
+                         required time                         12.923    
+                         arrival time                          -6.946    
+  -------------------------------------------------------------------
+                         slack                                  5.977    
+
+Slack (MET) :             6.080ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.760ns  (logic 2.918ns (77.606%)  route 0.842ns (22.394%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.746ns = ( 12.746 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.618ns (routing 1.176ns, distribution 1.442ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[2])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[2]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<2>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[2]_FPA_OUT[2])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[2]
+                         net (fo=1, routed)           0.453     6.842    bd_0_i/hls_inst/inst/add_fu_170_p4[2]
+    SLICE_X132Y65        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.618    12.746    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X132Y65        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[2]/C
+                         clock pessimism              0.227    12.973    
+                         clock uncertainty           -0.058    12.915    
+    SLICE_X132Y65        FDRE (Setup_GFF2_SLICEL_C_D)
+                                                      0.007    12.922    bd_0_i/hls_inst/inst/add_reg_385_reg[2]
+  -------------------------------------------------------------------
+                         required time                         12.922    
+                         arrival time                          -6.842    
+  -------------------------------------------------------------------
+                         slack                                  6.080    
+
+Slack (MET) :             6.094ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.751ns  (logic 2.918ns (77.793%)  route 0.833ns (22.207%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.751ns = ( 12.751 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.623ns (routing 1.176ns, distribution 1.447ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[17])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[17]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<17>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[17]_FPA_OUT[17])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[17]
+                         net (fo=1, routed)           0.444     6.833    bd_0_i/hls_inst/inst/add_fu_170_p4[17]
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.623    12.751    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[17]/C
+                         clock pessimism              0.227    12.978    
+                         clock uncertainty           -0.058    12.920    
+    SLICE_X130Y64        FDRE (Setup_CFF_SLICEL_C_D)
+                                                      0.007    12.927    bd_0_i/hls_inst/inst/add_reg_385_reg[17]
+  -------------------------------------------------------------------
+                         required time                         12.927    
+                         arrival time                          -6.833    
+  -------------------------------------------------------------------
+                         slack                                  6.094    
+
+Slack (MET) :             6.102ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.747ns  (logic 2.918ns (77.876%)  route 0.829ns (22.124%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.101ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.754ns = ( 12.754 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.626ns (routing 1.176ns, distribution 1.450ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[21])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[21]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<21>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[21]_FPA_OUT[21])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[21]
+                         net (fo=1, routed)           0.440     6.829    bd_0_i/hls_inst/inst/add_fu_170_p4[21]
+    SLICE_X128Y66        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.626    12.754    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X128Y66        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[21]/C
+                         clock pessimism              0.227    12.981    
+                         clock uncertainty           -0.058    12.923    
+    SLICE_X128Y66        FDRE (Setup_AFF2_SLICEL_C_D)
+                                                      0.008    12.931    bd_0_i/hls_inst/inst/add_reg_385_reg[21]
+  -------------------------------------------------------------------
+                         required time                         12.931    
+                         arrival time                          -6.829    
+  -------------------------------------------------------------------
+                         slack                                  6.102    
+
+Slack (MET) :             6.104ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.744ns  (logic 2.918ns (77.938%)  route 0.826ns (22.062%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.101ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.754ns = ( 12.754 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.626ns (routing 1.176ns, distribution 1.450ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[24])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[24]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<24>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[24]_FPA_OUT[24])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[24]
+                         net (fo=1, routed)           0.437     6.826    bd_0_i/hls_inst/inst/add_fu_170_p4[24]
+    SLICE_X128Y66        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.626    12.754    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X128Y66        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[24]/C
+                         clock pessimism              0.227    12.981    
+                         clock uncertainty           -0.058    12.923    
+    SLICE_X128Y66        FDRE (Setup_CFF_SLICEL_C_D)
+                                                      0.007    12.930    bd_0_i/hls_inst/inst/add_reg_385_reg[24]
+  -------------------------------------------------------------------
+                         required time                         12.930    
+                         arrival time                          -6.826    
+  -------------------------------------------------------------------
+                         slack                                  6.104    
+
+Slack (MET) :             6.114ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.732ns  (logic 2.918ns (78.189%)  route 0.814ns (21.811%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.751ns = ( 12.751 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.623ns (routing 1.176ns, distribution 1.447ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[0])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[0]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<0>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[0]_FPA_OUT[0])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[0]
+                         net (fo=1, routed)           0.425     6.814    bd_0_i/hls_inst/inst/add_fu_170_p4[0]
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.623    12.751    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[0]/C
+                         clock pessimism              0.227    12.978    
+                         clock uncertainty           -0.058    12.920    
+    SLICE_X130Y64        FDRE (Setup_GFF_SLICEL_C_D)
+                                                      0.008    12.928    bd_0_i/hls_inst/inst/add_reg_385_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.928    
+                         arrival time                          -6.814    
+  -------------------------------------------------------------------
+                         slack                                  6.114    
+
+Slack (MET) :             6.114ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/add_reg_385_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.732ns  (logic 2.918ns (78.189%)  route 0.814ns (21.811%))
+  Logic Levels:           8  (DSP_FP_ADDER=1 DSP_FP_INMUX=1 DSP_FP_INREG=1 DSP_FP_OUTPUT=2 DSP_FPM_PIPEREG=1 DSP_FPM_STAGE0=1 DSP_FPM_STAGE1=1)
+  Clock Path Skew:        -0.104ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.751ns = ( 12.751 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.082ns
+    Clock Pessimism Removal (CPR):    0.227ns
+  Clock Uncertainty:      0.058ns  (CJ)/2 + PE + PJ
+    Clock Jitter             (CJ):    0.116ns
+    Phase Error              (PE):    0.000ns
+    Phase Jitter             (PJ):    0.000ns
+  Clock Net Delay (Source):      2.927ns (routing 1.292ns, distribution 1.635ns)
+  Clock Net Delay (Destination): 2.623ns (routing 1.176ns, distribution 1.447ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=0)                   0.077     0.077    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.078     0.155 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.927     3.082    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X124Y65        FDRE                                         r  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X124Y65        FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.092     3.174 f  bd_0_i/hls_inst/inst/gmem_addr_1_read_reg_375_reg[14]/Q
+                         net (fo=1, routed)           0.389     3.563    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/B_MAN[14]
+    DSP_X2Y33            DSP_FP_INREG (Prop_DSP_FP_INREG_DSPFP_B_MAN[14]_B_DATA[14])
+                                                      0.475     4.038 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG_INST/B_DATA[14]
+                         net (fo=1, routed)           0.000     4.038    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INREG.B_DATA<14>
+    DSP_X2Y33            DSP_FP_INMUX (Prop_DSP_FP_INMUX_DSPFP_B_DATA[14]_B_MAN_DATA[14])
+                                                      0.076     4.114 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX_INST/B_MAN_DATA[14]
+                         net (fo=1, routed)           0.000     4.114    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_INMUX.B_MAN_DATA<14>
+    DSP_X2Y33            DSP_FPM_STAGE0 (Prop_DSP_FPM_STAGE0_DSPFP_B_MAN_DATA[14]_U[43])
+                                                      0.487     4.601 f  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0_INST/U[43]
+                         net (fo=1, routed)           0.000     4.601    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE0.U<43>
+    DSP_X2Y33            DSP_FPM_PIPEREG (Prop_DSP_FPM_PIPEREG_DSPFP_U[43]_U_DATA[43])
+                                                      0.096     4.697 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG_INST/U_DATA[43]
+                         net (fo=1, routed)           0.000     4.697    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_PIPEREG.U_DATA<43>
+    DSP_X2Y33            DSP_FPM_STAGE1 (Prop_DSP_FPM_STAGE1_DSPFP_U_DATA[43]_FPM_INT[31])
+                                                      0.741     5.438 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1_INST/FPM_INT[31]
+                         net (fo=1, routed)           0.000     5.438    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FPM_STAGE1.FPM_INT<31>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPM_INT[31]_FPM_DATA[31])
+                                                      0.133     5.571 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPM_DATA[31]
+                         net (fo=1, routed)           0.000     5.571    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT.FPM_DATA<31>
+    DSP_X2Y33            DSP_FP_ADDER (Prop_DSP_FP_ADDER_DSPFP_FPM_DATA[31]_FPA_INT[10])
+                                                      0.670     6.241 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER_INST/FPA_INT[10]
+                         net (fo=1, routed)           0.000     6.241    bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_ADDER.FPA_INT<10>
+    DSP_X2Y33            DSP_FP_OUTPUT (Prop_DSP_FP_OUTPUT_DSPFP_FPA_INT[10]_FPA_OUT[10])
+                                                      0.148     6.389 r  bd_0_i/hls_inst/inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/UFMA_OP.OP/i_prim/DSP_FP_OUTPUT_INST/FPA_OUT[10]
+                         net (fo=1, routed)           0.425     6.814    bd_0_i/hls_inst/inst/add_fu_170_p4[10]
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=0)                   0.065    10.065    ap_clk_BUFG_LOPT_OOC
+    BUFGCE_HDIO_X0Y0     BUFGCE (Prop_BUFCE_BUFGCE_HDIO_I_O)
+                                                      0.063    10.128 r  ap_clk_BUFGCE_inst_LOPT_OOC/O
+    X1Y1 (CLOCK_ROOT)    net (fo=3222, routed)        2.623    12.751    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X130Y64        FDRE                                         r  bd_0_i/hls_inst/inst/add_reg_385_reg[10]/C
+                         clock pessimism              0.227    12.978    
+                         clock uncertainty           -0.058    12.920    
+    SLICE_X130Y64        FDRE (Setup_AFF_SLICEL_C_D)
+                                                      0.008    12.928    bd_0_i/hls_inst/inst/add_reg_385_reg[10]
+  -------------------------------------------------------------------
+                         required time                         12.928    
+                         arrival time                          -6.814    
+  -------------------------------------------------------------------
+                         slack                                  6.114    
+
+
+
+

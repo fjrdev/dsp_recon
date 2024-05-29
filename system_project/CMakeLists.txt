@@ -11,6 +11,10 @@ set(CMAKE_MODULE_PATH
 "$ENV{XILINX_VITIS}/vitisng-server/scripts/cmake"
 ${CMAKE_MODULE_PATH}
 )
+
+include(CMakePrintHelpers)
+cmake_print_variables(CMAKE_MODULE_PATH)
+
 find_package(Vitis REQUIRED)
 
 # Default Target is sw_emu, can be overridden by passing cmake argument. Valid
@@ -27,7 +31,7 @@ set_property(CACHE VITIS_TARGET
 )
 
 set(VITIS_PLATFORM_PATH
-/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm
+/mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm
 CACHE STRING
 "Vitis Platform"
 )
