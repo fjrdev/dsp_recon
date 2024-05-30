@@ -2837,8 +2837,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Mac</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113579397</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-05-29T20:17:53Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2113580872</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-05-30T20:53:34Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

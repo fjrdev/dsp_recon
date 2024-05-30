@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Wed May 29 22:46:42 2024",
- "timestampMillis": "1717015602113",
+ "dateTimestamp": "Thu May 30 19:06:34 2024",
+ "timestampMillis": "1717088794050",
  "buildStep": {
-  "cmdId": "a70f108e-6b10-4ec0-9d38-b64aea0ce9de",
+  "cmdId": "31c89bbe-35fc-4d7f-8a9e-315ec2726871",
   "name": "v++",
   "logFile": "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac.steps.log",
   "commandLine": "/mnt/tmp/Vitis/2023.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -k mac --target sw_emu -g /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.h /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp --platform /mnt/tmp/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm --temp_dir /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu -o /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac.xo ",
@@ -40,10 +40,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed May 29 22:46:42 2024",
- "timestampMillis": "1717015602113",
+ "dateTimestamp": "Thu May 30 19:06:34 2024",
+ "timestampMillis": "1717088794050",
  "status": {
-  "cmdId": "a70f108e-6b10-4ec0-9d38-b64aea0ce9de",
+  "cmdId": "31c89bbe-35fc-4d7f-8a9e-315ec2726871",
   "state": "CS_RUNNING"
  }
 }
@@ -51,8 +51,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Wed May 29 22:46:42 2024",
- "timestampMillis": "1717015602876",
+ "dateTimestamp": "Thu May 30 19:06:34 2024",
+ "timestampMillis": "1717088794825",
  "buildSummary": {
   "hardwarePlatform": "xilinx_vck190_base_202310_1.xpfm",
   "hardwareDsa": "hw.xsa",
@@ -88,10 +88,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Wed May 29 22:46:42 2024",
- "timestampMillis": "1717015602878",
+ "dateTimestamp": "Thu May 30 19:06:34 2024",
+ "timestampMillis": "1717088794827",
  "buildStep": {
-  "cmdId": "6a944610-c458-4666-8f96-9491ad52b8fe",
+  "cmdId": "c2ff4328-2343-48c4-b4ff-5f5cbbe12f6e",
   "name": "vitis_hls",
   "logFile": "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac/vitis_hls.log",
   "commandLine": "vitis_hls -f /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac/mac.tcl -messageDb vitis_hls.pb",
@@ -110,10 +110,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed May 29 22:46:42 2024",
- "timestampMillis": "1717015602878",
+ "dateTimestamp": "Thu May 30 19:06:34 2024",
+ "timestampMillis": "1717088794827",
  "status": {
-  "cmdId": "6a944610-c458-4666-8f96-9491ad52b8fe",
+  "cmdId": "c2ff4328-2343-48c4-b4ff-5f5cbbe12f6e",
   "state": "CS_RUNNING"
  }
 }
@@ -121,10 +121,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed May 29 22:46:55 2024",
- "timestampMillis": "1717015615544",
+ "dateTimestamp": "Thu May 30 19:06:47 2024",
+ "timestampMillis": "1717088807422",
  "status": {
-  "cmdId": "6a944610-c458-4666-8f96-9491ad52b8fe",
+  "cmdId": "c2ff4328-2343-48c4-b4ff-5f5cbbe12f6e",
   "state": "CS_PASSED"
  }
 }
@@ -132,10 +132,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed May 29 22:46:55 2024",
- "timestampMillis": "1717015615556",
+ "dateTimestamp": "Thu May 30 19:06:47 2024",
+ "timestampMillis": "1717088807460",
  "status": {
-  "cmdId": "a70f108e-6b10-4ec0-9d38-b64aea0ce9de",
+  "cmdId": "31c89bbe-35fc-4d7f-8a9e-315ec2726871",
   "state": "CS_PASSED"
  }
 }
@@ -143,8 +143,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed May 29 22:46:55 2024",
- "timestampMillis": "1717015615625",
+ "dateTimestamp": "Thu May 30 19:06:47 2024",
+ "timestampMillis": "1717088807527",
  "report": {
   "path": "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/reports/mac/v++_compile_mac_guidance.html",
   "name": "",
@@ -157,8 +157,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Wed May 29 22:46:55 2024",
- "timestampMillis": "1717015615625",
+ "dateTimestamp": "Thu May 30 19:06:47 2024",
+ "timestampMillis": "1717088807527",
  "report": {
   "path": "/mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/v++_compile_mac_guidance.pb3",
   "name": "",

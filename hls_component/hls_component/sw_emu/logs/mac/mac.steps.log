@@ -10,7 +10,7 @@ Environment variables :
 ------------------------------------------
 SHELL=/bin/bash
 ROS_VERSION=1
-SESSION_MANAGER=local/franz-MS-7C02:@/tmp/.ICE-unix/3282,unix/franz-MS-7C02:/tmp/.ICE-unix/3282
+SESSION_MANAGER=local/franz-MS-7C02:@/tmp/.ICE-unix/2095,unix/franz-MS-7C02:/tmp/.ICE-unix/2095
 QT_ACCESSIBILITY=1
 COLORTERM=truecolor
 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
@@ -39,7 +39,7 @@ RDI_PATCHROOT=
 XMODIFIERS=@im=ibus
 DESKTOP_SESSION=ubuntu
 LC_MONETARY=de_DE.UTF-8
-SSH_AGENT_PID=3240
+SSH_AGENT_PID=2058
 XILINX_XRT=/opt/xilinx/xrt
 XILINX_VITIS_AIETOOLS=/mnt/tmp/Vitis/2023.1/aietools
 ROS_PACKAGE_PATH=/opt/ros/noetic/share
@@ -75,11 +75,11 @@ XILINX_HLS=/mnt/tmp/Vitis_HLS/2023.1
 CMAKE_PREFIX_PATH=/opt/ros/noetic
 HDI_PROCESSOR=x86_64
 RDI_BUILD=yes
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9ec97129_a5b0_4ea0_9f88_fd78f1d84173
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/d02d4e53_138a_42c0_97e9_d97fbf7b11c4
 RDI_PROG=/mnt/tmp/Vitis/2023.1/bin/unwrapped/lnx64.o/v++
-INVOCATION_ID=19245da5688f440f80317464c8721208
-MANAGERPID=3065
-RDI_SESSION_INFO=/home/franz:franz-MS-7C02_1717003854_4370
+INVOCATION_ID=eee5e000c7744e1fbf1cf625c57af89d
+MANAGERPID=1881
+RDI_SESSION_INFO=/home/franz:franz-MS-7C02_1717085347_3155
 CHROME_DESKTOP=Vitis Unified IDE.desktop
 RT_TCL_PATH=/mnt/tmp/Vitis/2023.1/scripts/rt/base_tcl/tcl
 GJS_DEBUG_OUTPUT=stderr
@@ -96,14 +96,14 @@ PYTHONHOME=/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3/
 USER=franz
 LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/local/cuda-12.0/lib64:/opt/ros/noetic/lib
 XILINX_PLANAHEAD=/mnt/tmp/Vitis/2023.1
-GNOME_TERMINAL_SERVICE=:1.77
+GNOME_TERMINAL_SERVICE=:1.79
 RDI_BASEROOT=/mnt/tmp/Vitis
 LOPPER_DTC_FLAGS=-b 0 -@
 RDI_TPS_ROOT=/mnt/tmp/Vivado/2023.1/tps/lnx64
 RDI_JAVA_VERSION=11.0.16_1
 IDE_SKIP_SERVER_LICENSE=1
 RDI_DATADIR=/mnt/tmp/SharedData/2023.1/data:/mnt/tmp/Vitis/2023.1/data
-THEIA_ELECTRON_TOKEN={"value":"806ed21a-c0cc-492a-84cf-733f1113a622"}
+THEIA_ELECTRON_TOKEN={"value":"2e79a3ed-75ec-4f13-b44d-6c77413612d0"}
 DISPLAY=:1
 SHLVL=5
 LC_TELEPHONE=de_DE.UTF-8
@@ -121,9 +121,9 @@ TCMALLOC_LARGE_ALLOC_REPORT_THRESHOLD=4294967296
 LC_TIME=de_DE.UTF-8
 TCL_LIBRARY=/mnt/tmp/Vitis/2023.1/tps/tcl/tcl8.5
 LC_ALL=en_US.UTF-8
-JOURNAL_STREAM=8:52130
+JOURNAL_STREAM=8:45404
 XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-PATH=/mnt/tmp/Vivado/2023.1/tps/lnx64/binutils-2.26/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/aarch64/lin/aarch64-linux/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/mnt/tmp/Vivado/2023.1/tps/lnx64/gcc-8.3.0/bin:/mnt/tmp/Vivado/2023.1/gnu/microblaze/lin/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1/bin:/mnt/tmp/Vitis/2023.1/data/lopper/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/lin/bin:/mnt/tmp/Vitis/2023.1/gnu/arm/lin/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_be/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_le/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch64/lin/aarch64-linux/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch64/lin/aarch64-none/bin:/mnt/tmp/Vitis/2023.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/clang-14.0.0/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3//bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1//bin:/mnt/tmp/Vitis/2023.1/aietools/bin:/mnt/tmp/Vivado/2023.1/bin:/mnt/tmp/Vitis_HLS/2023.1/bin:/mnt/tmp/Model_Composer/2023.1/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.3.2/bin:/mnt/tmp/DocNav:/opt/xilinx/xrt/bin:/usr/local/cuda-12.0/bin:/usr/bin:/home/franz/anaconda3/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH=/mnt/tmp/Vivado/2023.1/tps/lnx64/binutils-2.26/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/aarch64/lin/aarch64-linux/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/mnt/tmp/Vitis/2023.1/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/mnt/tmp/Vivado/2023.1/tps/lnx64/gcc-8.3.0/bin:/mnt/tmp/Vivado/2023.1/gnu/microblaze/lin/bin:/mnt/tmp/Vitis/2023.1/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1/bin:/mnt/tmp/Vitis/2023.1/data/lopper/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/lin/bin:/mnt/tmp/Vitis/2023.1/gnu/arm/lin/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_be/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/nt64_le/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch64/lin/aarch64-linux/bin:/mnt/tmp/Vitis/2023.1/gnu/aarch64/lin/aarch64-none/bin:/mnt/tmp/Vitis/2023.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.24.2/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/clang-14.0.0/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/python-3.8.3//bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/jre11.0.16_1//bin:/mnt/tmp/Vitis/2023.1/aietools/bin:/mnt/tmp/Vivado/2023.1/bin:/opt/xilinx/xrt/bin:/mnt/tmp/Vitis_HLS/2023.1/bin:/mnt/tmp/Model_Composer/2023.1/bin:/mnt/tmp/Vitis/2023.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/mnt/tmp/Vitis/2023.1/tps/lnx64/cmake-3.3.2/bin:/mnt/tmp/DocNav:/usr/local/cuda-12.0/bin:/usr/bin:/home/franz/anaconda3/bin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 RT_LIBPATH=/mnt/tmp/Vitis/2023.1/scripts/rt/data
 GDMSESSION=ubuntu
 ORIGINAL_XDG_CURRENT_DESKTOP=ubuntu:GNOME
@@ -141,8 +141,8 @@ LC_NUMERIC=C
 XILINX_VITIS=/mnt/tmp/Vitis/2023.1
 OLDPWD=/mnt/tmp/Vitis/2023.1/bin
 _=/mnt/tmp/Vitis/2023.1/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=39175
-XILINX_CD_SESSION=1d0ae4c9-736c-47e2-9f0c-991e57c034bf
+XILINX_CD_CONNECT_ID=39423
+XILINX_CD_SESSION=f89a2468-1629-4392-8894-69aa689f99bb
 
 
 V++ command line:
@@ -183,18 +183,18 @@ FINAL PLATFORM PATH
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 29 May 2024 22:46:42
+timestamp: 30 May 2024 19:06:34
 ------------------------------------------
 step: performing high-level synthesis for kernel:mac
-timestamp: 29 May 2024 22:46:55
+timestamp: 30 May 2024 19:06:47
 launch dir: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac
 cmd: vitis_hls -f /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/mac/mac/mac.tcl -messageDb vitis_hls.pb
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: generating system estimate report file
-timestamp: 29 May 2024 22:46:55
+timestamp: 30 May 2024 19:06:47
 output: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/sw_emu/reports/mac/system_estimate_mac.xtxt
 V++ internal step status: success
 ------------------------------------------
 system estimate report task completed
-timestamp: 29 May 2024 22:46:55
+timestamp: 30 May 2024 19:06:47

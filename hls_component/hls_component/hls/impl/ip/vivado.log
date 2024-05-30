@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May 29 22:17:43 2024
-# Process ID: 16310
+# Start of session at: Thu May 30 22:52:48 2024
+# Process ID: 3954
 # Current directory: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/vivado.log
@@ -12,14 +12,15 @@
 # Running On: franz-MS-7C02, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 12, Host memory: 16704 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2066.348 ; gain = 121.023 ; free physical = 2492 ; free virtual = 10252
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2106.820 ; gain = 123.023 ; free physical = 8371 ; free virtual = 12985
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/tmp/Vivado/2023.1/data/ip'.
+create_ip: Time (s): cpu = 00:00:00.9 ; elapsed = 00:00:09 . Memory (MB): peak = 2213.090 ; gain = 106.270 ; free physical = 8206 ; free virtual = 12919
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/tmp/Vivado/2023.1/data/ip'.
 Running package_xo -xo_path /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/mac.xo -kernel_name mac -kernel_xml /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/../kernel/kernel.xml -kernel_files /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp -ip_directory /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/ip_unzip_dir -design_xml /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/mac.design.xml -debug_directory /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/.debug -hls_directory /mnt/tmp/franz/Desktop/dsp_recon/hls_component/hls_component/hls/impl/ip/hls_files
-INFO: [Common 17-206] Exiting Vivado at Wed May 29 22:17:54 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu May 30 22:53:34 2024...
