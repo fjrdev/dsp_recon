@@ -1,4 +1,4 @@
-relativeroot=/mnt/tmp/franz/Desktop/dsp_recon/hls_component
+relativeroot=/home/franz/workspace/hls_component
 
 [hls]
 ide.compjson=0

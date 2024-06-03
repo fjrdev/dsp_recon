@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
     auto boIn1 = xrt::bo(device, vector_size_bytes, krnl.group_id(0)); //Match kernel arguments to RTL kernel
     auto boIn2 = xrt::bo(device, vector_size_bytes, krnl.group_id(1));
     auto boOut = xrt::bo(device, vector_size_bytes, krnl.group_id(2));
-    //auto boIn3 = xrt::bo(device, sizeof(int), krnl.group_id(3));
+    //auto boIn3 = xrt::bo(device, sizeof(int), krnl.group_id(3)); DONT PASS SIZE OPERATORS
 
     // Map the contents of the buffer object into host memory
     auto bo0_map = boIn1.map<float*>();

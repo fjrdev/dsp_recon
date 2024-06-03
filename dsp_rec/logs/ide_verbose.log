@@ -924,3 +924,151 @@ Debugger contribution has been registered: mago-mi
 2024-05-05 11:22:12 [debug] : RIGEL SERVER 11:22:12 INFO  : Successfully created repository data at /home/franz/workspace 
 2024-05-05 11:22:12 [debug] : RIGEL SERVER 11:22:12 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz13670728156156625160 -r /home/franz/workspace/.repo.yaml 
 2024-05-05 11:22:12 [debug] : RIGEL SERVER 11:22:12 INFO  : Embedded Template List generated successfully 
+2024-05-30 23:07:15 [debug] : Notification event posted from server - ON_DID_UPDATE_WORKSPACE. 
+2024-05-30 23:07:15 [debug] : --------------------------------------------------------------------------------- 
+2024-05-30 23:07:15 [debug] : /home/franz/workspace/dsp_rec 
+2024-05-30 23:07:15 [debug] : --------------------------------------------------------------------------------- 
+2024-05-30 23:07:15 [debug] : [Logger] Previous user logs are stored in the file - /home/franz/.Xilinx/Vitis/2023.1/logs/ide.log 
+2024-05-30 23:07:15 [debug] : [Logger] Previous debug logs are stored in the file - /home/franz/.Xilinx/Vitis/2023.1/logs/ide_verbose.log 
+2024-05-30 23:07:15 [debug] : Trace: 2024-05-30T21:07:15.630Z ide TRACE [Logger] User logs will be redirected to the file - /home/franz/workspace/dsp_rec/logs/ide.log
+    at Object.log (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/logger-protocol.js:99:9)
+    at LoggerServer.showInfoOnConsole (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:209:41)
+    at LoggerServer.printLogDetails (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:175:14)
+    at LoggerServer.handleWorkspaceChange (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:103:14)
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:70:22
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:103:69
+    at CallbackList.invoke (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:109:26)
+    at Emitter.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:224:29)
+    at NotificationBackendClientImpl.handleEvent (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-backend-client.js:23:34)
+    at NotificationServerImpl.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:117:28)
+    at ClientReadableStreamImpl.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:66:22)
+    at ClientReadableStreamImpl.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at ClientReadableStreamImpl.Readable.push (node:internal/streams/readable:226:10)
+    at Object.onReceiveMessage (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:322:24) 
+2024-05-30 23:07:15 [debug] : Trace: 2024-05-30T21:07:15.631Z ide TRACE [Logger] Debug logs will be redirected to the file -  /home/franz/workspace/dsp_rec/logs/ide_verbose.log
+    at Object.log (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/logger-protocol.js:99:9)
+    at LoggerServer.showInfoOnConsole (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:209:41)
+    at LoggerServer.printLogDetails (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:177:14)
+    at LoggerServer.handleWorkspaceChange (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:103:14)
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/logger/lib/node/logger-server.js:70:22
+    at /tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:103:69
+    at CallbackList.invoke (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:109:26)
+    at Emitter.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@theia/core/lib/common/event.js:224:29)
+    at NotificationBackendClientImpl.handleEvent (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-backend-client.js:23:34)
+    at NotificationServerImpl.fire (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:117:28)
+    at ClientReadableStreamImpl.<anonymous> (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@rigel/notification/lib/node/notification-server.js:66:22)
+    at ClientReadableStreamImpl.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at ClientReadableStreamImpl.Readable.push (node:internal/streams/readable:226:10)
+    at Object.onReceiveMessage (/tools/Xilinx/Vitis/2023.1/ide/electron-app/lnx64/resources/app/node_modules/@grpc/grpc-js/build/src/client.js:322:24) 
+2024-05-30 23:07:15 [debug] : [Logger] All the internal problems will be logged at debug level. 
+2024-05-30 23:07:15 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-30 23:07:15 [debug] : RIGEL SERVER 23:07:15 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt 
+2024-05-30 23:07:15 [debug] : [ProjectCache] fetching projects for project-cache 
+2024-05-30 23:07:15 [debug] : Received event from notification service: ON_DID_UPDATE_WORKSPACE. 
+2024-05-30 23:07:15 [debug] : [Logger Client] log levelchanged to  {"0":"Info"}
+2024-05-30 23:07:15 [debug] : [Logger UI]  Update Log Level  called 
+2024-05-30 23:07:15 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-30 23:07:15 [debug] : [Logger UI]  Update Log Level success {"0":{"success":true,"error":""}}
+2024-05-30 23:07:16 [debug] : RIGEL SERVER 23:07:16 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec 
+2024-05-30 23:07:16 [debug] : RIGEL SERVER 23:07:16 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz11045133233151982244 -r /home/franz/workspace/dsp_rec/.repo.yaml 
+2024-05-30 23:07:16 [debug] : RIGEL SERVER 23:07:16 INFO  : Embedded Template List generated successfully 
+2024-05-30 23:07:16 [debug] : RIGEL SERVER 23:07:16 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec 
+2024-05-30 23:07:16 [debug] : Notification event posted from server - ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2024-05-30 23:07:16 [debug] : Received event from notification service: ON_DID_REFRESH_WORKSPACE_SUMMARIES. 
+2024-05-30 23:07:16 [debug] : Event posted using notification server in backend. {"0":{"wrappers_":{},"arrayIndexOffset_":-1,"array":["78b7d9e6-51c1-4491-b6e1-c6b3621fb36f",null,54,null,null,null,null,"refresh-summaries"],"pivot_":1.7976931348623157e+308,"convertedPrimitiveFields_":{}}}
+2024-05-30 23:07:16 [debug] : [ProjectDecorator] tree decoration updated 
+2024-05-30 23:07:16 [debug] : [ProjectCache] Project location updated to undefined 
+2024-05-30 23:07:16 [debug] : [ProjectDecorator] tree decoration updated 
+2024-05-30 23:07:16 [debug] : Notification event posted from server - ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-30 23:07:16 [debug] : Received event from notification service: ON_STOP_ANALYSIS_PROGRESS. 
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.fireDidChangeContent - enter - {
+  "changes": [
+    {
+      "range": {
+        "startLineNumber": 2,
+        "startColumn": 29,
+        "endLineNumber": 2,
+        "endColumn": 31
+      },
+      "rangeLength": 2,
+      "text": "[]",
+      "rangeOffset": 30,
+      "forceMoveMarkers": false
+    }
+  ],
+  "eol": "\n",
+  "versionId": 2,
+  "isUndoing": false,
+  "isRedoing": false,
+  "isFlush": false
+} {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.markAsDirty - enter {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.cancelSync {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.markAsDirty - exit {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.fireDidChangeContent - exit {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.cancelSync {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:07:16 [debug] : MonacoEditorModel.cancelSave {"0":"file:///home/franz/workspace/dsp_rec/.theia/settings.json"}
+2024-05-30 23:10:02 [debug] : Shutting down because of Close request. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/commands'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/keyboard'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/logger'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/messageService'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/startup-workspace'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/remote-filesystem'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/envs'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/workspace'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/stopwatch'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/application'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/i18n'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/hostedPlugin'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/debug'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/shell-terminal'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/task'. 
+2024-05-30 23:10:02 [debug] : a client has disconnected - removed from list: 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/quickPick'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/plugin-ext'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/plugin-paths'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/search'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/server'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/repository'. 
+2024-05-30 23:10:02 [debug] : [Repository Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/rigel-utils'. 
+2024-05-30 23:10:02 [debug] : [Rigel Utils Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/component'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/rigel-workspace'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/project'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/analysis'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/notification'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/recent-summaries'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/build'. 
+2024-05-30 23:10:02 [debug] : [Build Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path 'services/rigel-backend-helper'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/debugger'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/aie'. 
+2024-05-30 23:10:02 [debug] : [AIE Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/rigel_explorer'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/rigel-logger'. 
+2024-05-30 23:10:02 [debug] : [Logger Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/platform'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/vitis-hls'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/device'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/vcxx'. 
+2024-05-30 23:10:02 [debug] : [Rigel Vcxx Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/hls_flow'. 
+2024-05-30 23:10:02 [debug] : [Hls Flow Server] Disposing objects in backend. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/mini-browser-service'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/flow_navigator'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/hls/common/data/info'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/hls/report'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/hls/wave/open'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/search-in-workspace'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/request-service'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/report-model'. 
+2024-05-30 23:10:02 [debug] : Closing channel on service path '/services/keytar'. 

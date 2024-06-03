@@ -39,3 +39,19 @@
 11:22:12 INFO  : Successfully created repository data at /home/franz/workspace
 11:22:12 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz13670728156156625160 -r /home/franz/workspace/.repo.yaml
 11:22:12 INFO  : Embedded Template List generated successfully
+23:07:13 INFO  : updated workspace path: /home/franz/workspace/dsp_rec
+23:07:13 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+23:07:13 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+23:07:15 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+23:07:15 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz7136703385145512974 -r /home/franz/workspace/dsp_rec/.repo.yaml
+23:07:15 INFO  : Successfully created repository data at /tmp/rigel_lopper_franz5282036287018902718
+23:07:15 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz5282036287018902718 -r /tmp/rigel_lopper_franz5282036287018902718/.repo.yaml
+23:07:15 INFO  : Embedded Template List generated successfully
+23:07:15 INFO  : Embedded Template List generated successfully
+23:07:15 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec
+23:07:15 INFO  : updated workspace path: /home/franz/workspace/dsp_rec
+23:07:15 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//repo.py -st   /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt
+23:07:16 INFO  : Successfully created repository data at /home/franz/workspace/dsp_rec
+23:07:16 INFO  : python3 /tools/Xilinx/Vitis/2023.1/data/embeddedsw-sdt/scripts/rigel_scripts//get_template_data.py -d /tmp/rigel_lopper_franz11045133233151982244 -r /home/franz/workspace/dsp_rec/.repo.yaml
+23:07:16 INFO  : Embedded Template List generated successfully
+23:07:16 INFO  : created .gitignore file for the project /home/franz/workspace/dsp_rec
