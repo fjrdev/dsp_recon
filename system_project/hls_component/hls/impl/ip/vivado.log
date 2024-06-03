@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jun  3 16:46:57 2024
+# Process ID: 2655471
+# Current directory: /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/impl/ip/vivado.log
+# Journal file: /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/impl/ip/vivado.jou
+# Running On: ubuntu-MS-7D30, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 16, Host memory: 134841 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+Running package_xo -xo_path /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/mac.xo -kernel_name mac -kernel_xml /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/impl/ip/../kernel/kernel.xml -kernel_files /home/ubuntu/Desktop/dsp_recon/hls_component/add.cpp -ip_directory /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/impl/ip/ip_unzip_dir -design_xml /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/.autopilot/db/mac.design.xml -debug_directory /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/.debug -hls_directory /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/impl/ip/hls_files
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 16:47:02 2024...

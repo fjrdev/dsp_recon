@@ -1,0 +1,2 @@
+Compiling (bitstream) accelerator binary: binary_container
+Log file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/runme.log

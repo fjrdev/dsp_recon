@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jun  3 17:52:17 2024
+# Process ID: 2688872
+# Current directory: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1
+# Command line: vivado -log vitis_design_axi_intc_cascaded_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_axi_intc_cascaded_1_0.tcl
+# Log file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.vds
+# Journal file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vivado.jou
+# Running On: ubuntu-MS-7D30, OS: Linux, CPU Frequency: 3200.000 MHz, CPU Physical cores: 16, Host memory: 134841 MB
+#-----------------------------------------------------------
+source vitis_design_axi_intc_cascaded_1_0.tcl -notrace

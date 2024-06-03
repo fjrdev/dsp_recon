@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/.autopilot/db/add.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        /home/ubuntu/Desktop/dsp_recon/hls_component/add.cpp
+    Replacements:    
+      - FilePath:        /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/.autopilot/db/add.pp.0.cpp
+        Offset:          10188
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+...

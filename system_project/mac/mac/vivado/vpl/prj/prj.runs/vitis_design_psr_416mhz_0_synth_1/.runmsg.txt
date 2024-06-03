@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: vitis_design_psr_416mhz_0
+Log file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/runme.log

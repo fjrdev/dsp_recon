@@ -1,0 +1,1042 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jun  3 17:52:17 2024
+# Process ID: 2688863
+# Current directory: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1
+# Command line: vivado -log vitis_design_noc_lpddr4_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_noc_lpddr4_0.tcl
+# Log file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.vds
+# Journal file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vivado.jou
+# Running On: ubuntu-MS-7D30, OS: Linux, CPU Frequency: 4909.375 MHz, CPU Physical cores: 16, Host memory: 134841 MB
+#-----------------------------------------------------------
+source vitis_design_noc_lpddr4_0.tcl -notrace
+INFO: Dispatch client connection id - 46641
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2023.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: vitis_design_noc_lpddr4_0
+Command: synth_design -top vitis_design_noc_lpddr4_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2689246
+INFO: [Synth 8-11241] undeclared symbol 'pll0_locked', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4083]
+INFO: [Synth 8-11241] undeclared symbol 'pll1_locked', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4159]
+INFO: [Synth 8-11241] undeclared symbol 'pll2_locked', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4231]
+WARNING: [Synth 8-10507] attribute 'XPHYIO_MC_ADDR_BIT33' is already specified; last one will take precedence [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_wrapper.sv:265]
+WARNING: [Synth 8-10507] attribute 'XPHYIO_MC_MEMORY_TIMEPERIOD1' is already specified; last one will take precedence [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_wrapper.sv:464]
+WARNING: [Synth 8-10507] attribute 'XPHYIO_MC_XMPU_CONFIG3' is already specified; last one will take precedence [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_wrapper.sv:597]
+INFO: [Synth 8-11241] undeclared symbol 'pll0_locked', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4083]
+INFO: [Synth 8-11241] undeclared symbol 'pll1_locked', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4159]
+INFO: [Synth 8-11241] undeclared symbol 'pll2_locked', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4231]
+WARNING: [Synth 8-10507] attribute 'XPHYIO_MC_ADDR_BIT33' is already specified; last one will take precedence [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0_wrapper.sv:265]
+WARNING: [Synth 8-10507] attribute 'XPHYIO_MC_MEMORY_TIMEPERIOD1' is already specified; last one will take precedence [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0_wrapper.sv:464]
+WARNING: [Synth 8-10507] attribute 'XPHYIO_MC_XMPU_CONFIG3' is already specified; last one will take precedence [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0_wrapper.sv:597]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3312.941 ; gain = 361.758 ; free physical = 21641 ; free virtual = 106814
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_noc_lpddr4_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/synth/vitis_design_noc_lpddr4_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/synth/bd_28ba.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC0_ddrc_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC0_ddrc_0_wrapper' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0_wrapper.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC0_ddrc_0_phy' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/bfm/bd_28ba_MC0_ddrc_0_phy.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC0_ddrc_0_phy_wrapper' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:78]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71783]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71783]
+INFO: [Synth 8-6157] synthesizing module 'DDRMC' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:34243]
+INFO: [Synth 8-6155] done synthesizing module 'DDRMC' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:34243]
+INFO: [Synth 8-6157] synthesizing module 'DDRMC_RIU' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:36528]
+INFO: [Synth 8-6155] done synthesizing module 'DDRMC_RIU' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:36528]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91121]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91121]
+INFO: [Synth 8-6157] synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'XPHY' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized0' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized1' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized1' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized2' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized2' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized3' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized3' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized4' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized4' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized5' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized5' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76334]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91135]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:91135]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS_COMP' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76417]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS_COMP' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:76417]
+INFO: [Synth 8-6157] synthesizing module 'XPIO_VREF' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137427]
+INFO: [Synth 8-6155] done synthesizing module 'XPIO_VREF' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137427]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7071] port 'DLY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'FIFO_WR_CLK' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'PHY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'CNTVALUEOUT' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'CE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'CNTVALUEIN' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'RX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'INC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'LD' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'RXTX_SEL' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'RX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'TX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'TX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'LPTX_I_RX_O' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'LPTX_T_RX_DISABLE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'HSRX_DISABLE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7071] port 'VREF' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST2' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3750]
+INFO: [Synth 8-6157] synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_OUT' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_START_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7071] port 'BISC_STOP_IN' of module 'XPHY' is unconnected for instance 'I_XPHY' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7071] port 'DLY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'FIFO_WR_CLK' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'PHY_RDY' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'CNTVALUEOUT' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'CE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'CNTVALUEIN' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'RX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'INC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'LD' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'RXTX_SEL' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'RX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'TX_EN_VTC' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'TX_RST' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'LPTX_I_RX_O' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'LPTX_T_RX_DISABLE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'HSRX_DISABLE' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7071] port 'VREF' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' is unconnected for instance 'BANK_WRAPPER_INST1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST1' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:3876]
+INFO: [Synth 8-6157] synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized6' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized6' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized7' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized7' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6157] synthesizing module 'XPHY__parameterized8' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+INFO: [Synth 8-6155] done synthesizing module 'XPHY__parameterized8' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:137209]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+WARNING: [Synth 8-7023] instance 'I_XPHY' of module 'XPHY' has 62 connections declared, but only 58 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:486]
+INFO: [Synth 8-6155] done synthesizing module 'advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:49]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST0' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4002]
+INFO: [Synth 8-6157] synthesizing module 'XPLL' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:143254]
+INFO: [Synth 8-6155] done synthesizing module 'XPLL' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:143254]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank0' of module 'XPLL' has 37 connections declared, but only 30 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4074]
+INFO: [Synth 8-6157] synthesizing module 'XPLL__parameterized0' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:143254]
+INFO: [Synth 8-6155] done synthesizing module 'XPLL__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:143254]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank1' of module 'XPLL' has 37 connections declared, but only 30 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4150]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank2' of module 'XPLL' has 37 connections declared, but only 30 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:4222]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC0_ddrc_0_phy_wrapper' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC0_ddrc_0_phy' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/bfm/bd_28ba_MC0_ddrc_0_phy.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC0_ddrc_0_wrapper' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0_wrapper.sv:67]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC0_ddrc_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/rtl/bd_28ba_MC0_ddrc_0.sv:67]
+WARNING: [Synth 8-7023] instance 'MC0_ddrc' of module 'bd_28ba_MC0_ddrc_0' has 76 connections declared, but only 44 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/synth/bd_28ba.v:311]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC1_ddrc_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC1_ddrc_0_wrapper' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_wrapper.sv:67]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC1_ddrc_0_phy' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/bfm/bd_28ba_MC1_ddrc_0_phy.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'bd_28ba_MC1_ddrc_0_phy_wrapper' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:78]
+INFO: [Synth 8-6157] synthesizing module 'DDRMC__parameterized0' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:34243]
+INFO: [Synth 8-6155] done synthesizing module 'DDRMC__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:34243]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST2' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:3750]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST1' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:3876]
+WARNING: [Synth 8-7023] instance 'BANK_WRAPPER_INST0' of module 'advanced_io_wizard_phy_v1_0_bank_wrapper' has 43 connections declared, but only 25 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4002]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank0' of module 'XPLL' has 37 connections declared, but only 30 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4074]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank1' of module 'XPLL' has 37 connections declared, but only 30 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4150]
+WARNING: [Synth 8-7023] instance 'u_xpll0_bank2' of module 'XPLL' has 37 connections declared, but only 30 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:4222]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC1_ddrc_0_phy_wrapper' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC1_ddrc_0_phy' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/bfm/bd_28ba_MC1_ddrc_0_phy.sv:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC1_ddrc_0_wrapper' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_wrapper.sv:67]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba_MC1_ddrc_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0.sv:67]
+WARNING: [Synth 8-7023] instance 'MC1_ddrc' of module 'bd_28ba_MC1_ddrc_0' has 76 connections declared, but only 44 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/synth/bd_28ba.v:357]
+INFO: [Synth 8-6155] done synthesizing module 'bd_28ba' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/synth/bd_28ba.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_noc_lpddr4_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/synth/vitis_design_noc_lpddr4_0.v:53]
+WARNING: [Synth 8-3848] Net CNTVALUEOUT in module/entity advanced_io_wizard_phy_v1_0_bank_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:165]
+WARNING: [Synth 8-3848] Net CNTVALUEOUT in module/entity advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized0 does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:165]
+WARNING: [Synth 8-3848] Net CNTVALUEOUT in module/entity advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/common/advanced_io_wizard_phy_v1_0_bank_wrapper.sv:165]
+WARNING: [Synth 8-3848] Net nc_dmc_d in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1161]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rdcs0 in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1181]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rdcs1 in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1184]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rden in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1187]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wrcs0 in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1190]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wrcs1 in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1193]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wren in module/entity bd_28ba_MC0_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/hdl/rtl/bd_28ba_MC0_ddrc_0_phy_wrapper.sv:1196]
+WARNING: [Synth 8-3848] Net nc_dmc_d in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1161]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rdcs0 in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1181]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rdcs1 in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1184]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_rden in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1187]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wrcs0 in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1190]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wrcs1 in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1193]
+WARNING: [Synth 8-3848] Net nc_dmc2phy_wren in module/entity bd_28ba_MC1_ddrc_0_phy_wrapper does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/hdl/rtl/bd_28ba_MC1_ddrc_0_phy_wrapper.sv:1196]
+WARNING: [Synth 8-7129] Port FIFO_EMPTY[8] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIFO_WR_CLK[8] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GT_STATUS[8] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[431] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[430] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[429] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[428] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[427] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[426] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[425] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[424] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[423] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[422] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[421] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[420] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[419] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[418] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[417] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[416] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[415] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[414] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[413] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[412] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[411] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[410] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[409] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[408] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[407] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[406] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[405] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[404] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[403] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[402] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[401] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[400] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[399] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[398] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[397] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[396] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[395] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[394] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[393] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[392] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[391] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[390] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[389] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[388] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[387] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[386] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[385] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q[384] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[143] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[142] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[141] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[140] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[139] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[138] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[137] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[136] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[135] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[134] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[133] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[132] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[131] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[130] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[129] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIU_RD_DATA[128] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[485] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[484] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[483] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[482] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[481] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[480] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[479] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[478] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[477] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[476] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[475] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[474] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[473] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[472] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[471] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[470] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[469] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[468] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[467] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[466] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[465] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[464] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[463] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[462] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[461] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[460] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[459] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[458] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[457] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[456] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[455] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[454] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CNTVALUEOUT[453] in module advanced_io_wizard_phy_v1_0_bank_wrapper__parameterized1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3433.816 ; gain = 482.633 ; free physical = 19997 ; free virtual = 105199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3433.816 ; gain = 482.633 ; free physical = 19987 ; free virtual = 105191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3433.816 ; gain = 482.633 ; free physical = 19987 ; free virtual = 105191
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3441.816 ; gain = 0.000 ; free physical = 19791 ; free virtual = 105001
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/vitis_design_noc_lpddr4_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/vitis_design_noc_lpddr4_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/par/bd_28ba_MC1_ddrc_0_ip.xdc] for cell 'inst/MC1_ddrc/inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/hdl/par/bd_28ba_MC1_ddrc_0_ip.xdc] for cell 'inst/MC1_ddrc/inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/par/bd_28ba_MC0_ddrc_0_ip.xdc] for cell 'inst/MC0_ddrc/inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/hdl/par/bd_28ba_MC0_ddrc_0_ip.xdc] for cell 'inst/MC0_ddrc/inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/vitis_design_noc_lpddr4_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/vitis_design_noc_lpddr4_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/vitis_design_noc_lpddr4_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/vitis_design_noc_lpddr4_0.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vitis_design_noc_lpddr4_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vitis_design_noc_lpddr4_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3581.312 ; gain = 0.000 ; free physical = 19576 ; free virtual = 104809
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3584.281 ; gain = 2.969 ; free physical = 19575 ; free virtual = 104809
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3584.281 ; gain = 633.098 ; free physical = 19248 ; free virtual = 104528
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3584.281 ; gain = 633.098 ; free physical = 19246 ; free virtual = 104526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/MC1_ddrc/inst. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/MC0_ddrc/inst. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/MC1_ddrc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/MC1_ddrc/inst/noc_ddr4_phy. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/MC0_ddrc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/MC0_ddrc/inst/noc_ddr4_phy. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[3]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[2]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[5]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[8]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[9]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[14]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[23]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[17]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[16]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[21]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[20]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[7]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[19]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[6]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[18]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[10]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[22]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[4]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[43]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[12]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[24]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[36]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[42]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[20]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[28]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[29]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[33]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[32]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[35]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[27]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[21]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[22]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[23]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[16]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[17]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[15]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[14]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[26]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[34]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[44]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[47]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[46]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[39]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[38]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[44]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[45]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[45]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[41]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[40]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[46]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[47]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[39]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[38]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[40]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[41]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[19]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[31]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[43]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[37]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[18]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[30]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[42]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[36]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/ch0_lpddr4_reset_n[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[3]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[2]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[5]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[8]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[9]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[14]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[23]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[17]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[16]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[21]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[20]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[7]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[19]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[6]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[18]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[10]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[22]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[4]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[43]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[12]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[24]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[36]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[42]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[20]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[28]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[29]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[33]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[32]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[35]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[27]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[21]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[22]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[23]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[16]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[17]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[15]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[14]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[26]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[34]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[44]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[47]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[46]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[39]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[38]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[44]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[45]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[45]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[41]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[40]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[46]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[47]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[39]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[38]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[40]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[41]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[19]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[31]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[43]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[37]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[18]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[30]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[42]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST2/IOB[36]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/ch0_lpddr4_reset_n[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[39]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[38]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[41]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[40]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[44]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[45]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[22]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[23]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[17]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[21]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[20]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[16]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[43]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[19]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[42]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[18]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[46]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[13]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[36]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[31]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[30]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[6]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[24]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[33]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[3]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[2]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[10]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[11]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[9]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[8]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[29]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[34]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[35]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[26]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[27]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[28]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[32]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[4]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[5]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[2]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[35]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[28]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[33]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[29]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[32]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[26]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[11]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[4]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[5]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[8]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[9]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[10]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[3]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[27]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[34]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[25]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[1]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[7]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[31]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[24]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[6]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[30]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC0_ddrc/inst/noc_ddr4_phy/inst/ch1_lpddr4_reset_n[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[39]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[38]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[41]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[40]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[44]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[45]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[22]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[23]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[17]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[21]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[20]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[16]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[43]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[19]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[42]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[18]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[46]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[13]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[36]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[31]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[30]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[6]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[24]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[33]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[3]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[2]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[10]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[11]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[9]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[8]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[29]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[34]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[35]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[26]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[27]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[28]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[32]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[4]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[5]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[2]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[35]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[28]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[33]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[29]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[32]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[26]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[11]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[4]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[5]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[8]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[9]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[10]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[3]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[27]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[34]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[25]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[1]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[7]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[31]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[24]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST0/IOB[6]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/BANK_WRAPPER_INST1/IOB[30]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/MC1_ddrc/inst/noc_ddr4_phy/inst/ch1_lpddr4_reset_n[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for sys_clk0_clk_n[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for sys_clk0_clk_p[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for sys_clk1_clk_n[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for sys_clk1_clk_p[0]. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3584.281 ; gain = 633.098 ; free physical = 18932 ; free virtual = 104218
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3584.281 ; gain = 633.098 ; free physical = 18893 ; free virtual = 104181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3584.281 ; gain = 633.098 ; free physical = 18799 ; free virtual = 104092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 4228.328 ; gain = 1277.145 ; free physical = 14573 ; free virtual = 99961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 4231.328 ; gain = 1280.145 ; free physical = 14570 ; free virtual = 99958
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC0_ddrc_0_phy`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC0_ddrc_0_phy' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC0_ddrc_0_wrapper`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC0_ddrc_0_wrapper' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC0_ddrc_0`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC0_ddrc_0' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC1_ddrc_0_phy`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC1_ddrc_0_phy' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC1_ddrc_0_wrapper`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC1_ddrc_0_wrapper' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC1_ddrc_0`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba_MC1_ddrc_0' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `bd_28ba`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `bd_28ba' done
+
+
+Retiming: no retiming is needed due to large slack: 214748368
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `vitis_design_noc_lpddr4_0`
+   Worst Slack before retiming is 214748368 and worst slack after retiming is 214748368
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `vitis_design_noc_lpddr4_0' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 4245.680 ; gain = 1294.496 ; free physical = 28201 ; free virtual = 113602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_valid_in_0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[181] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[180] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[179] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[178] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[177] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[176] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[175] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[174] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[173] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[172] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[171] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[170] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[169] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[168] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[167] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[166] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[165] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[164] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[163] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[162] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[161] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[160] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[159] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[158] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[157] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[156] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[155] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[154] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[153] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[152] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[151] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[150] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[149] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[148] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[147] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[146] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[145] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[144] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[143] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[142] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[141] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[140] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[139] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[138] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[137] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[136] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[135] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[134] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[133] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[132] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[131] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[130] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[129] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[128] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[127] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[126] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[125] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[124] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[123] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[122] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[121] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[120] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[119] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[118] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[117] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[116] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[115] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[114] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[113] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[112] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[111] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[110] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[109] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[108] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[107] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[106] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[105] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[104] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[103] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[102] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[101] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[100] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[99] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[98] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[97] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[96] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[95] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[94] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[93] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[92] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[91] to constant 0
+INFO: [Synth 8-3295] tying undriven pin MC0_ddrc:noc2dmc_data_in_0[90] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 25054 ; free virtual = 110457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 25050 ; free virtual = 110453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 24923 ; free virtual = 110326
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 24920 ; free virtual = 110323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 24912 ; free virtual = 110315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 24884 ; free virtual = 110287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |DDRMC        |     2|
+|2     |DDRMC_RIU    |     2|
+|3     |XPHY         |    48|
+|13    |XPIO_VREF    |    32|
+|14    |XPLL         |     6|
+|16    |IBUFDS       |     2|
+|17    |IOBUF        |   144|
+|18    |IOBUFDS_COMP |    16|
+|19    |OBUF         |    68|
+|20    |OBUFDS       |     8|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.555 ; gain = 1307.371 ; free physical = 24882 ; free virtual = 110285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 4258.555 ; gain = 1156.906 ; free physical = 24820 ; free virtual = 110223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4258.562 ; gain = 1307.371 ; free physical = 24817 ; free virtual = 110220
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4258.562 ; gain = 0.000 ; free physical = 24715 ; free virtual = 110119
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-5243] Reading ELF File '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_0/ip_0/bd_28ba_MC1_ddrc_0_phy_ddrmc.elf' for cell 'inst/MC1_ddrc/inst/noc_ddr4_phy/inst/u_ddrmc_main'
+INFO: [Constraints 18-5243] Reading ELF File '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_noc_lpddr4_0/bd_0/ip/ip_1/ip_0/bd_28ba_MC0_ddrc_0_phy_ddrmc.elf' for cell 'inst/MC0_ddrc/inst/noc_ddr4_phy/inst/u_ddrmc_main'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4324.461 ; gain = 0.000 ; free physical = 32767 ; free virtual = 118178
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 646b9957
+INFO: [Common 17-83] Releasing license: Synthesis
+235 Infos, 262 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 4324.461 ; gain = 2170.762 ; free physical = 32567 ; free virtual = 117979
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3715.685; main = 3453.368; forked = 329.045
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5221.504; main = 4324.465; forked = 975.820
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_noc_lpddr4_0, cache-ID = 9ac0f863e0735fb0
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vitis_design_noc_lpddr4_0_utilization_synth.rpt -pb vitis_design_noc_lpddr4_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 17:53:07 2024...

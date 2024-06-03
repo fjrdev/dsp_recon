@@ -1,0 +1,2 @@
+ERROR: [v++ 60-1620] File does not exist: /home/ubuntu/Desktop/dsp_rec/hls_component/hls_config.cfg
+INFO: [v++ 60-1662] Stopping dispatch session having empty uuid.

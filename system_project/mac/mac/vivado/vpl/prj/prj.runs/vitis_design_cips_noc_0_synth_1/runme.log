@@ -1,0 +1,609 @@
+
+*** Running vivado
+    with args -log vitis_design_cips_noc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_cips_noc_0.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vitis_design_cips_noc_0.tcl -notrace
+INFO: Dispatch client connection id - 46641
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2023.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: vitis_design_cips_noc_0
+Command: synth_design -top vitis_design_cips_noc_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2689323
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:549]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:563]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:562]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:562]
+INFO: [Synth 8-11241] undeclared symbol 'IF_NOC_AXI_TDEST', assumed default net type 'wire' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0.sv:302]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3315.543 ; gain = 361.828 ; free physical = 21711 ; free virtual = 106883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_cips_noc_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/synth/vitis_design_cips_noc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_M00_AXI_nsu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_M00_AXI_nsu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0_top.sv:69]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NSU128' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:90398]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NSU128' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:90398]
+WARNING: [Synth 8-689] width (17) of port connection 'IF_NOC_AXI_RUSER' does not match port width (16) of module 'NOC_NSU128' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0_top.sv:257]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_ARUSER' of module 'NOC_NSU128' is unconnected for instance 'NOC_NSU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0_top.sv:214]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_AWUSER' of module 'NOC_NSU128' is unconnected for instance 'NOC_NSU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0_top.sv:214]
+WARNING: [Synth 8-7023] instance 'NOC_NSU128_INST' of module 'NOC_NSU128' has 76 connections declared, but only 74 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0_top.sv:214]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_M00_AXI_nsu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0_top.sv:69]
+WARNING: [Synth 8-689] width (1) of port connection 'IF_NOC_AXI_TDEST' does not match port width (10) of module 'bd_27ec_M00_AXI_nsu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0.sv:302]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_M00_AXI_nsu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/hdl/bfm/bd_27ec_M00_AXI_nsu_0.sv:54]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7071] port 'AXI_OUT' of module 'bd_27ec_M00_AXI_nsu_0' is unconnected for instance 'M00_AXI_nsu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+WARNING: [Synth 8-7023] instance 'M00_AXI_nsu' of module 'bd_27ec_M00_AXI_nsu_0' has 52 connections declared, but only 43 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1614]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S00_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S00_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S00_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S00_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/hdl/bfm/bd_27ec_S00_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S00_AXI_nmu_0' is unconnected for instance 'S00_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+WARNING: [Synth 8-7023] instance 'S00_AXI_nmu' of module 'bd_27ec_S00_AXI_nmu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1659]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S01_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S01_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized0' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized0' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S01_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S01_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/hdl/bfm/bd_27ec_S01_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S01_AXI_nmu_0' is unconnected for instance 'S01_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+WARNING: [Synth 8-7023] instance 'S01_AXI_nmu' of module 'bd_27ec_S01_AXI_nmu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1710]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S02_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S02_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized1' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized1' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S02_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S02_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/hdl/bfm/bd_27ec_S02_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S02_AXI_nmu_0' is unconnected for instance 'S02_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+WARNING: [Synth 8-7023] instance 'S02_AXI_nmu' of module 'bd_27ec_S02_AXI_nmu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1761]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S03_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S03_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized2' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized2' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S03_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S03_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/hdl/bfm/bd_27ec_S03_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S03_AXI_nmu_0' is unconnected for instance 'S03_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+WARNING: [Synth 8-7023] instance 'S03_AXI_nmu' of module 'bd_27ec_S03_AXI_nmu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1812]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S04_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S04_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized3' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized3' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized3' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized3' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S04_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S04_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/hdl/bfm/bd_27ec_S04_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S04_AXI_nmu_0' is unconnected for instance 'S04_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+WARNING: [Synth 8-7023] instance 'S04_AXI_nmu' of module 'bd_27ec_S04_AXI_nmu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1863]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S05_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S05_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized4' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized4' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized4' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized4' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S05_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S05_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/hdl/bfm/bd_27ec_S05_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S05_AXI_nmu_0' is unconnected for instance 'S05_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+WARNING: [Synth 8-7023] instance 'S05_AXI_nmu' of module 'bd_27ec_S05_AXI_nmu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1914]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S06_AXI_rpu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S06_AXI_rpu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized5' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized5' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized5' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:548]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized5' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:562]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:527]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:527]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:527]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S06_AXI_rpu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S06_AXI_rpu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/hdl/bfm/bd_27ec_S06_AXI_rpu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S06_AXI_rpu_0' is unconnected for instance 'S06_AXI_rpu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+WARNING: [Synth 8-7023] instance 'S06_AXI_rpu' of module 'bd_27ec_S06_AXI_rpu_0' has 58 connections declared, but only 49 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:1965]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S07_AXI_nmu_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0.sv:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_S07_AXI_nmu_0_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'NOC_NMU128__parameterized6' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+INFO: [Synth 8-6155] done synthesizing module 'NOC_NMU128__parameterized6' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:86991]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_ARADDR' does not match port width (64) of module 'NOC_NMU128__parameterized6' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:549]
+WARNING: [Synth 8-689] width (96) of port connection 'IF_NOC_AXI_AWADDR' does not match port width (64) of module 'NOC_NMU128__parameterized6' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:563]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID_EN' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:528]
+WARNING: [Synth 8-7071] port 'IF_NOC_AXI_TDEST' of module 'NOC_NMU128' is unconnected for instance 'NOC_NMU128_INST' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:528]
+WARNING: [Synth 8-7023] instance 'NOC_NMU128_INST' of module 'NOC_NMU128' has 74 connections declared, but only 72 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:528]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S07_AXI_nmu_0_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0_top.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_S07_AXI_nmu_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/hdl/bfm/bd_27ec_S07_AXI_nmu_0.sv:55]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RETURN' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RDY' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_FLIT' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_VALID' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_CREDIT_RDY' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_FLIT' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_IN_NOC_VALID' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'IF_NOC_NPP_OUT_NOC_CREDIT_RETURN' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7071] port 'NMU' of module 'bd_27ec_S07_AXI_nmu_0' is unconnected for instance 'S07_AXI_nmu' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+WARNING: [Synth 8-7023] instance 'S07_AXI_nmu' of module 'bd_27ec_S07_AXI_nmu_0' has 59 connections declared, but only 50 given [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:2016]
+INFO: [Synth 8-6157] synthesizing module 'bd_27ec_const_0_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_1/synth/bd_27ec_const_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec_const_0_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_1/synth/bd_27ec_const_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_27ec' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_cips_noc_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/synth/vitis_design_cips_noc_0.v:53]
+WARNING: [Synth 8-3848] Net M00_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:457]
+WARNING: [Synth 8-3848] Net M01_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:458]
+WARNING: [Synth 8-3848] Net M02_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:459]
+WARNING: [Synth 8-3848] Net M03_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:460]
+WARNING: [Synth 8-3848] Net M04_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:461]
+WARNING: [Synth 8-3848] Net M05_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:462]
+WARNING: [Synth 8-3848] Net M06_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:463]
+WARNING: [Synth 8-3848] Net M07_INI_internoc in module/entity bd_27ec does not have driver. [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/synth/bd_27ec.v:464]
+WARNING: [Synth 8-7129] Port IF_NOC_AXI_RUSER[16] in module bd_27ec_M00_AXI_nsu_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk0 in module bd_27ec is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3411.418 ; gain = 457.703 ; free physical = 20472 ; free virtual = 105657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3426.262 ; gain = 472.547 ; free physical = 20439 ; free virtual = 105624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3426.262 ; gain = 472.547 ; free physical = 20439 ; free virtual = 105624
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3434.262 ; gain = 0.000 ; free physical = 20116 ; free virtual = 105302
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/vitis_design_cips_noc_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/vitis_design_cips_noc_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/xdc/bd_27ec_S07_AXI_nmu_0.xdc] for cell 'inst/S07_AXI_nmu/bd_27ec_S07_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_0/xdc/bd_27ec_S07_AXI_nmu_0.xdc] for cell 'inst/S07_AXI_nmu/bd_27ec_S07_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/xdc/bd_27ec_S04_AXI_nmu_0.xdc] for cell 'inst/S04_AXI_nmu/bd_27ec_S04_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_2/xdc/bd_27ec_S04_AXI_nmu_0.xdc] for cell 'inst/S04_AXI_nmu/bd_27ec_S04_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/xdc/bd_27ec_S03_AXI_nmu_0.xdc] for cell 'inst/S03_AXI_nmu/bd_27ec_S03_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_3/xdc/bd_27ec_S03_AXI_nmu_0.xdc] for cell 'inst/S03_AXI_nmu/bd_27ec_S03_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/xdc/bd_27ec_S06_AXI_rpu_0.xdc] for cell 'inst/S06_AXI_rpu/bd_27ec_S06_AXI_rpu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_4/xdc/bd_27ec_S06_AXI_rpu_0.xdc] for cell 'inst/S06_AXI_rpu/bd_27ec_S06_AXI_rpu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/xdc/bd_27ec_S02_AXI_nmu_0.xdc] for cell 'inst/S02_AXI_nmu/bd_27ec_S02_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_5/xdc/bd_27ec_S02_AXI_nmu_0.xdc] for cell 'inst/S02_AXI_nmu/bd_27ec_S02_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/xdc/bd_27ec_S05_AXI_nmu_0.xdc] for cell 'inst/S05_AXI_nmu/bd_27ec_S05_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_6/xdc/bd_27ec_S05_AXI_nmu_0.xdc] for cell 'inst/S05_AXI_nmu/bd_27ec_S05_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/xdc/bd_27ec_S01_AXI_nmu_0.xdc] for cell 'inst/S01_AXI_nmu/bd_27ec_S01_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_7/xdc/bd_27ec_S01_AXI_nmu_0.xdc] for cell 'inst/S01_AXI_nmu/bd_27ec_S01_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/xdc/bd_27ec_S00_AXI_nmu_0.xdc] for cell 'inst/S00_AXI_nmu/bd_27ec_S00_AXI_nmu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_8/xdc/bd_27ec_S00_AXI_nmu_0.xdc] for cell 'inst/S00_AXI_nmu/bd_27ec_S00_AXI_nmu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/xdc/bd_27ec_M00_AXI_nsu_0.xdc] for cell 'inst/M00_AXI_nsu/bd_27ec_M00_AXI_nsu_0_top_INST'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/bd_0/ip/ip_9/xdc/bd_27ec_M00_AXI_nsu_0.xdc] for cell 'inst/M00_AXI_nsu/bd_27ec_M00_AXI_nsu_0_top_INST'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/vitis_design_cips_noc_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/vitis_design_cips_noc_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/vitis_design_cips_noc_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_cips_noc_0/vitis_design_cips_noc_0.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vitis_design_cips_noc_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vitis_design_cips_noc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3486.109 ; gain = 0.000 ; free physical = 19758 ; free virtual = 104968
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3486.109 ; gain = 0.000 ; free physical = 19740 ; free virtual = 104950
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3486.109 ; gain = 532.395 ; free physical = 19583 ; free virtual = 104801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3486.109 ; gain = 532.395 ; free physical = 19583 ; free virtual = 104801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S07_AXI_nmu/bd_27ec_S07_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S04_AXI_nmu/bd_27ec_S04_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 44).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S03_AXI_nmu/bd_27ec_S03_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 47).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S06_AXI_rpu/bd_27ec_S06_AXI_rpu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 50).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S02_AXI_nmu/bd_27ec_S02_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 53).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S05_AXI_nmu/bd_27ec_S05_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 56).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S01_AXI_nmu/bd_27ec_S01_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 59).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S00_AXI_nmu/bd_27ec_S00_AXI_nmu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 62).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/M00_AXI_nsu/bd_27ec_M00_AXI_nsu_0_top_INST. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/dont_touch.xdc, line 65).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S07_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/const_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S04_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S03_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S06_AXI_rpu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S02_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S05_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S01_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S00_AXI_nmu. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/M00_AXI_nsu. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3486.109 ; gain = 532.395 ; free physical = 19583 ; free virtual = 104801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3486.109 ; gain = 532.395 ; free physical = 19571 ; free virtual = 104790
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port IF_NOC_AXI_RUSER[16] in module bd_27ec_M00_AXI_nsu_0_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_INI_internoc[0] in module bd_27ec is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk0 in module bd_27ec is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3486.109 ; gain = 532.395 ; free physical = 19549 ; free virtual = 104775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4203.156 ; gain = 1249.441 ; free physical = 16232 ; free virtual = 101594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4206.156 ; gain = 1252.441 ; free physical = 16222 ; free virtual = 101584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 4218.148 ; gain = 1264.434 ; free physical = 16136 ; free virtual = 101498
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_CREDIT_RDY to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[181] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[180] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[179] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[178] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[177] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[176] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[175] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[174] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[173] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[172] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[171] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[170] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[169] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[168] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[167] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[166] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[165] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[164] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[163] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[162] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[161] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[160] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[159] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[158] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[157] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[156] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[155] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[154] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[153] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[152] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[151] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[150] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[149] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[148] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[147] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[146] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[145] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[144] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[143] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[142] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[141] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[140] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[139] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[138] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[137] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[136] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[135] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[134] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[133] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[132] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[131] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[130] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[129] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[128] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[127] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[126] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[125] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[124] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[123] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[122] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[121] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[120] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[119] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[118] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[117] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[116] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[115] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[114] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[113] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[112] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[111] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[110] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[109] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[108] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[107] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[106] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[105] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[104] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[103] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[102] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[101] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[100] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[99] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[98] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[97] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[96] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[95] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[94] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[93] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[92] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[91] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[90] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[89] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[88] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[87] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[86] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[85] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[84] to constant 0
+INFO: [Synth 8-3295] tying undriven pin M00_AXI_nsu:IF_NOC_NPP_IN_NOC_FLIT[83] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15113 ; free virtual = 100480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15112 ; free virtual = 100479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15089 ; free virtual = 100456
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15086 ; free virtual = 100452
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15083 ; free virtual = 100450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15080 ; free virtual = 100447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |NOC_NMU128 |     8|
+|2     |NOC_NSU128 |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4232.992 ; gain = 1279.277 ; free physical = 15080 ; free virtual = 100447
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 4232.992 ; gain = 1219.430 ; free physical = 15076 ; free virtual = 100443
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 4233.000 ; gain = 1279.277 ; free physical = 15076 ; free virtual = 100443
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4233.000 ; gain = 0.000 ; free physical = 15270 ; free virtual = 100637
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4293.680 ; gain = 0.000 ; free physical = 14666 ; free virtual = 100039
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ecbc30a3
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 4293.680 ; gain = 2139.574 ; free physical = 14653 ; free virtual = 100026
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3472.246; main = 3366.815; forked = 297.456
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5069.887; main = 4293.684; forked = 975.820
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_cips_noc_0, cache-ID = fbed126d4d1fdde7
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vitis_design_cips_noc_0_utilization_synth.rpt -pb vitis_design_cips_noc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 17:52:54 2024...

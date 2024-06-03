@@ -1,0 +1,1535 @@
+<ENTRY>
+{
+ "thisFile": "/home/ubuntu/Desktop/dsp_recon/system_project/binary_container.xsa.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:40 2024",
+ "timestampMillis": "1717429720569",
+ "buildStep": {
+  "cmdId": "043761f5-dbf1-4cff-a3cd-8b47d72895c1",
+  "name": "v++",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/mac.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw --platform /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm --link --config hw_link/binary_container_1-link.cfg hls_component/mac.xo -o binary_container.xsa ",
+  "args": [
+   "--target",
+   "hw",
+   "--platform",
+   "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm",
+   "--link",
+   "--config",
+   "hw_link/binary_container_1-link.cfg",
+   "hls_component/mac.xo",
+   "-o",
+   "binary_container.xsa"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hw_link/binary_container_1-link.cfg",
+    "content": "debug=1\nsave-temps=1\ntemp_dir=mac\nreport_dir=mac/reports\nlog_dir=mac/logs\n\n[advanced]\nmisc=solution_name=mac\n\n[connectivity]\nnk=mac:1:mac_1"
+   }
+  ],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:40 2024",
+ "timestampMillis": "1717429720569",
+ "status": {
+  "cmdId": "043761f5-dbf1-4cff-a3cd-8b47d72895c1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun  3 17:48:41 2024",
+ "timestampMillis": "1717429721038",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_vck190_base_202310_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "binary_container",
+    "file": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mac",
+     "file": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/mac.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/mac/mac/cpu_sources/add.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "mac_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.1. SW Build 3860322 on 2023-05-04-06:32:48"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:41 2024",
+ "timestampMillis": "1717429721119",
+ "buildStep": {
+  "cmdId": "9ab0fd76-29b7-49a7-a873-ce1e4d8ca565",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/ubuntu/Desktop/dsp_recon/system_project/hls_component/mac.xo -keep --config /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/syslinkConfig.ini --xpfm /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm --target hw --output_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int --temp_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/sys_link",
+  "args": [
+   "--xo",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/mac.xo",
+   "-keep",
+   "--config",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/syslinkConfig.ini",
+   "--xpfm",
+   "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int",
+   "--temp_dir",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/syslinkConfig.ini",
+    "content": "nk=mac:1:mac_1\n\n"
+   }
+  ],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:41 2024",
+ "timestampMillis": "1717429721119",
+ "status": {
+  "cmdId": "9ab0fd76-29b7-49a7-a873-ce1e4d8ca565",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:47 2024",
+ "timestampMillis": "1717429727507",
+ "status": {
+  "cmdId": "9ab0fd76-29b7-49a7-a873-ce1e4d8ca565",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:47 2024",
+ "timestampMillis": "1717429727508",
+ "buildStep": {
+  "cmdId": "631ea3dc-a5bd-484c-ac1b-fbc75007b9d3",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/sdsl.dat -rtd /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/cf2sw.rtd -nofilter /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/cf2sw_full.rtd -xclbin /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xclbin_orig.xml -o /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/sdsl.dat",
+   "-rtd",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xclbin_orig.xml",
+   "-o",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:47 2024",
+ "timestampMillis": "1717429727508",
+ "status": {
+  "cmdId": "631ea3dc-a5bd-484c-ac1b-fbc75007b9d3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728814",
+ "status": {
+  "cmdId": "631ea3dc-a5bd-484c-ac1b-fbc75007b9d3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728815",
+ "buildStep": {
+  "cmdId": "c841e8ac-842e-4948-87f0-6d8825246b7d",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728815",
+ "status": {
+  "cmdId": "c841e8ac-842e-4948-87f0-6d8825246b7d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728913",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728914",
+ "status": {
+  "cmdId": "c841e8ac-842e-4948-87f0-6d8825246b7d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728914",
+ "buildStep": {
+  "cmdId": "0b2298b2-df6c-42f0-a9b2-cd568f675748",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm -s -g --remote_ip_cache /home/ubuntu/Desktop/dsp_recon/system_project/.ipcache --output_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int --log_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/logs/mac --report_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac --config /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/vplConfig.ini -k /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac --no-info --iprepo /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0 --messageDb /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/run_link/vpl.pb /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm",
+   "-s",
+   "-g",
+   "--remote_ip_cache",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/.ipcache",
+   "--output_dir",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int",
+   "--log_dir",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/logs/mac",
+   "--report_dir",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac",
+   "--config",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/vplConfig.ini",
+   "-k",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac",
+   "--no-info",
+   "--iprepo",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0",
+   "--messageDb",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/run_link/vpl.pb",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nmisc=solution_name=mac\nparam=hw_emu.enableDebugWaveform=1\nparam=hw_emu.enableProfiling=1\nparam=compiler.vppCurrentWorkingDir=/home/ubuntu/Desktop/dsp_recon/system_project\nmisc=BinaryName=binary_container\n\n[connectivity]\nnk=mac:1:mac_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:48 2024",
+ "timestampMillis": "1717429728915",
+ "status": {
+  "cmdId": "0b2298b2-df6c-42f0-a9b2-cd568f675748",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:49 2024",
+ "timestampMillis": "1717429729535",
+ "buildStep": {
+  "cmdId": "90194060-b79f-46ee-91c9-3474d4751590",
+  "name": "vpl",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/mac.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/vpl -t hw -f /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm -s -g --remote_ip_cache /home/ubuntu/Desktop/dsp_recon/system_project/.ipcache --output_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int --log_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/logs/mac --report_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac --config /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/vplConfig.ini -k /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac --no-info --iprepo /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0 --messageDb /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/run_link/vpl.pb /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:49 2024",
+ "timestampMillis": "1717429729535",
+ "status": {
+  "cmdId": "90194060-b79f-46ee-91c9-3474d4751590",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Mon Jun  3 17:48:50 2024",
+ "timestampMillis": "1717429730331",
+ "vivadoProject": {
+  "openDir": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 17:48:50 2024",
+ "timestampMillis": "1717429730331",
+ "buildStep": {
+  "cmdId": "f7844b00-a2ef-42a7-bd5c-a51e158646f7",
+  "name": "vivado",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:48:50 2024",
+ "timestampMillis": "1717429730332",
+ "status": {
+  "cmdId": "f7844b00-a2ef-42a7-bd5c-a51e158646f7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 17:49:16 2024",
+ "timestampMillis": "1717429756837",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/debug_ip_layout.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "DEBUG_IP_LAYOUT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 17:49:16 2024",
+ "timestampMillis": "1717429756856",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/automation_summary_update_bd.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  3 17:55:17 2024",
+ "timestampMillis": "1717430117924",
+ "buildStep": {
+  "cmdId": "9ee1eda6-b07f-4217-9129-89ae67e4a407",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:55:17 2024",
+ "timestampMillis": "1717430117925",
+ "status": {
+  "cmdId": "9ee1eda6-b07f-4217-9129-89ae67e4a407",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  3 17:55:17 2024",
+ "timestampMillis": "1717430117925",
+ "buildStep": {
+  "cmdId": "9ecbab71-74f1-4dfb-abc0-9f5e52f1cfc8",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 17:55:17 2024",
+ "timestampMillis": "1717430117925",
+ "status": {
+  "cmdId": "9ecbab71-74f1-4dfb-abc0-9f5e52f1cfc8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 17:59:49 2024",
+ "timestampMillis": "1717430389638",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 17:59:50 2024",
+ "timestampMillis": "1717430390374",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 17:59:50 2024",
+ "timestampMillis": "1717430390374",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520065",
+ "status": {
+  "cmdId": "f7844b00-a2ef-42a7-bd5c-a51e158646f7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520080",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520080",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_full_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520081",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520081",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520082",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520082",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520082",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520083",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520083",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520083",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520083",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520083",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_full_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520084",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520084",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520084",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520084",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520085",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_cips_noc_0_synth_1_vitis_design_cips_noc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520085",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_noc_ddr4_0_synth_1_vitis_design_noc_ddr4_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520085",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_noc_lpddr4_0_synth_1_vitis_design_noc_lpddr4_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520085",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_axi_intc_cascaded_1_0_synth_1_vitis_design_axi_intc_cascaded_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520085",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_axi_intc_parent_0_synth_1_vitis_design_axi_intc_parent_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520085",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_clk_wizard_0_0_synth_1_vitis_design_clk_wizard_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_104mhz_0_synth_1_vitis_design_psr_104mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_156mhz_0_synth_1_vitis_design_psr_156mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_312mhz_0_synth_1_vitis_design_psr_312mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_78mhz_0_synth_1_vitis_design_psr_78mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_208mhz_0_synth_1_vitis_design_psr_208mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_416mhz_0_synth_1_vitis_design_psr_416mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520086",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_psr_625mhz_0_synth_1_vitis_design_psr_625mhz_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_icn_ctrl_1_0_synth_1_vitis_design_icn_ctrl_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_icn_ctrl_2_0_synth_1_vitis_design_icn_ctrl_2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_dummy_slave_0_0_synth_1_vitis_design_dummy_slave_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_icn_ctrl_3_0_synth_1_vitis_design_icn_ctrl_3_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_icn_ctrl_4_0_synth_1_vitis_design_icn_ctrl_4_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_icn_ctrl_5_0_synth_1_vitis_design_icn_ctrl_5_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520087",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/syn/vitis_design_mac_1_0_synth_1_vitis_design_mac_1_0_utilization_synth.rpt",
+  "name": "mac",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520088",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "9ecbab71-74f1-4dfb-abc0-9f5e52f1cfc8"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520088",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "9ecbab71-74f1-4dfb-abc0-9f5e52f1cfc8"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520088",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "9ecbab71-74f1-4dfb-abc0-9f5e52f1cfc8"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520089",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "9ecbab71-74f1-4dfb-abc0-9f5e52f1cfc8"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520097",
+ "status": {
+  "cmdId": "90194060-b79f-46ee-91c9-3474d4751590",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520103",
+ "status": {
+  "cmdId": "0b2298b2-df6c-42f0-a9b2-cd568f675748",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520104",
+ "buildStep": {
+  "cmdId": "02e9fc2f-78bb-417b-8adc-b8213cae3c13",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520104",
+ "status": {
+  "cmdId": "02e9fc2f-78bb-417b-8adc-b8213cae3c13",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520104",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520105",
+ "buildStep": {
+  "cmdId": "d9a4fa13-d76d-4a45-a038-c25f63b61b7f",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/address_map.xml -sdsl /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/sdsl.dat -xclbin /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xclbin_orig.xml -rtd /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.rtd -o /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xml",
+  "args": [
+   "-a",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/address_map.xml",
+   "-sdsl",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/sdsl.dat",
+   "-xclbin",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.rtd",
+   "-o",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:00 2024",
+ "timestampMillis": "1717430520105",
+ "status": {
+  "cmdId": "d9a4fa13-d76d-4a45-a038-c25f63b61b7f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521226",
+ "status": {
+  "cmdId": "d9a4fa13-d76d-4a45-a038-c25f63b61b7f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521227",
+ "buildStep": {
+  "cmdId": "040438c3-0c90-49b9-aa9a-225b70918a0e",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.rtd",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521227",
+ "status": {
+  "cmdId": "040438c3-0c90-49b9-aa9a-225b70918a0e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521228",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521228",
+ "status": {
+  "cmdId": "040438c3-0c90-49b9-aa9a-225b70918a0e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521229",
+ "buildStep": {
+  "cmdId": "5ecfb54a-4920-4c84-830c-a1c436ecc0df",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521229",
+ "status": {
+  "cmdId": "5ecfb54a-4920-4c84-830c-a1c436ecc0df",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521229",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521229",
+ "status": {
+  "cmdId": "5ecfb54a-4920-4c84-830c-a1c436ecc0df",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521229",
+ "status": {
+  "cmdId": "02e9fc2f-78bb-417b-8adc-b8213cae3c13",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521230",
+ "buildStep": {
+  "cmdId": "57aedf3c-49db-4ee9-a919-af1fbca7ef79",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/system.pdi --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container_xml.rtd --add-section BUILD_METADATA:JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xml --add-section SYSTEM_METADATA:RAW:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx.com_xd_xilinx_vck190_base_202310_1_202310_1 --output /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/system.pdi",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx.com_xd_xilinx_vck190_base_202310_1_202310_1",
+   "--output",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521230",
+ "status": {
+  "cmdId": "57aedf3c-49db-4ee9-a919-af1fbca7ef79",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521259",
+ "status": {
+  "cmdId": "57aedf3c-49db-4ee9-a919-af1fbca7ef79",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521260",
+ "buildStep": {
+  "cmdId": "ad87bcec-783e-4f57-a7f9-47d4554dfad5",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin.info --input /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin.info",
+   "--input",
+   "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/binary_container.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521260",
+ "status": {
+  "cmdId": "ad87bcec-783e-4f57-a7f9-47d4554dfad5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521316",
+ "status": {
+  "cmdId": "ad87bcec-783e-4f57-a7f9-47d4554dfad5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521317",
+ "buildStep": {
+  "cmdId": "87d90759-f5e8-4de7-8bb4-f776cc876830",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521317",
+ "status": {
+  "cmdId": "87d90759-f5e8-4de7-8bb4-f776cc876830",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521318",
+ "status": {
+  "cmdId": "87d90759-f5e8-4de7-8bb4-f776cc876830",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521319",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/system_estimate_binary_container.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521449",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521449",
+ "status": {
+  "cmdId": "043761f5-dbf1-4cff-a3cd-8b47d72895c1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521492",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/reports/mac/mac_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 18:02:01 2024",
+ "timestampMillis": "1717430521492",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

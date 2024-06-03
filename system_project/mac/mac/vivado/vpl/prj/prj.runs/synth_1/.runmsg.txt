@@ -1,0 +1,2 @@
+Compiling (top level synthesis checkpoint) dynamic region
+Log file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/runme.log

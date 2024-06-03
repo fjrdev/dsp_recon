@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "add.cpp",
+    "fileloc": 4,
+    "instructions": 43,
+    "loads": {
+      "T": 3
+    },
+    "name": "mac",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 43
+  }
+}
