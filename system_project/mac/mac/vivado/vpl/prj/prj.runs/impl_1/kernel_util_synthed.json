@@ -1,0 +1,42 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "design_state": "Synthesized",
+    "user_budget": {
+        "actual_resources": {
+            "REG": "2666",
+            "LUT": "2337",
+            "LUTAsMem": "552",
+            "BRAM": "1",
+            "URAM": "0"
+        },
+        "supply_resources": {
+            "REG": "1794069",
+            "LUT": "896724",
+            "LUTAsMem": "449906",
+            "BRAM": "967",
+            "URAM": "463"
+        }
+    },
+    "kernels": [
+        {
+            "name": "mac",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "mac_1",
+                    "actual_resources": {
+                        "REG": "2666",
+                        "LUT": "2337",
+                        "LUTAsMem": "552",
+                        "BRAM": "1",
+                        "URAM": "0"
+                    }
+                }
+            ]
+        }
+    ]
+}

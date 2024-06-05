@@ -1,0 +1,562 @@
+
+*** Running vivado
+    with args -log vitis_design_mac_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_mac_1_0.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vitis_design_mac_1_0.tcl -notrace
+INFO: Dispatch client connection id - 46641
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2023.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: vitis_design_mac_1_0
+Command: synth_design -top vitis_design_mac_1_0 -part xcvc1902-vsva2197-2MP-e-S -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2691952
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3302.953 ; gain = 362.828 ; free physical = 25190 ; free virtual = 110769
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_mac_1_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_mac_1_0/synth/vitis_design_mac_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mac_control_s_axi' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_control_s_axi.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'mac_control_s_axi' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_store' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_srl' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_srl' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_mem' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2700]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_mem' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2700]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_srl__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_srl__parameterized0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized1' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_srl__parameterized1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_srl__parameterized1' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized2' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_store' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_load' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:329]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized3' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_mem__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2700]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_mem__parameterized0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2700]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized3' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_load' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:329]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_write' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_burst_converter' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_reg_slice' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_reg_slice' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_burst_converter' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1867]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized4' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_srl__parameterized2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_srl__parameterized2' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized4' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_throttle' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2140]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_reg_slice__parameterized0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_reg_slice__parameterized0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized5' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_srl__parameterized3' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_srl__parameterized3' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized5' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_fifo__parameterized6' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_srl__parameterized4' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_srl__parameterized4' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2646]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_fifo__parameterized6' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2468]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_throttle' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2140]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_reg_slice__parameterized1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_reg_slice__parameterized1' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1858]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1861]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_write' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1547]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_read' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1355]
+INFO: [Synth 8-6157] synthesizing module 'mac_gmem_m_axi_reg_slice__parameterized2' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_reg_slice__parameterized2' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:2366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1539]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi_read' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:1355]
+INFO: [Synth 8-6155] done synthesizing module 'mac_gmem_m_axi' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_gmem_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/ip/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6157] synthesizing module 'DSPFP32' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:38751]
+INFO: [Synth 8-6155] done synthesizing module 'DSPFP32' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:38751]
+INFO: [Synth 8-6155] done synthesizing module 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/ip/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_mac_1_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_mac_1_0/synth/vitis_design_mac_1_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/6acc/hdl/verilog/mac_control_s_axi.v:318]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract[5] in module flt_ufma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract[4] in module flt_ufma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract[3] in module flt_ufma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract[2] in module flt_ufma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract[1] in module flt_ufma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port subtract[0] in module flt_ufma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tvalid in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[5] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[4] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[3] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tready in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[31] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[30] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[29] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[28] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[27] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[26] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[25] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[24] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[23] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[22] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[21] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[20] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[19] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[18] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[17] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[16] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[15] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[14] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[13] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[12] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[11] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[10] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[9] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[8] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[7] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[6] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[5] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[4] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[3] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[2] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[1] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din0[0] in module mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RID[0] in module mac_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[1] in module mac_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RRESP[0] in module mac_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_RUSER[0] in module mac_gmem_m_axi_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module mac_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module mac_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module mac_gmem_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module mac_gmem_m_axi_write is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3456.828 ; gain = 516.703 ; free physical = 23791 ; free virtual = 109398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3456.828 ; gain = 516.703 ; free physical = 23755 ; free virtual = 109373
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3456.828 ; gain = 516.703 ; free physical = 23754 ; free virtual = 109373
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3470.766 ; gain = 0.000 ; free physical = 23506 ; free virtual = 109119
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_mac_1_0/constraints/mac_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_mac_1_0/constraints/mac_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3586.332 ; gain = 0.000 ; free physical = 22882 ; free virtual = 108511
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  DSPFP32 => DSPFP32 (DSP_FPA_CREG, DSP_FPA_OPM_REG, DSP_FPM_PIPEREG, DSP_FPM_STAGE0, DSP_FPM_STAGE1, DSP_FP_ADDER, DSP_FP_INMUX, DSP_FP_INREG, DSP_FP_OUTPUT, DSP_FP_SRCMX_OPTINV): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3592.270 ; gain = 5.938 ; free physical = 22880 ; free virtual = 108508
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3592.270 ; gain = 652.145 ; free physical = 26431 ; free virtual = 112073
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3592.270 ; gain = 652.145 ; free physical = 26431 ; free virtual = 112073
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3592.270 ; gain = 652.145 ; free physical = 26431 ; free virtual = 112073
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'mac_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'mac_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mac_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mac_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mac_gmem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mac_gmem_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'mac_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'mac_control_s_axi'
+INFO: [Synth 8-7082] The signal mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "mac_gmem_m_axi_mem:/mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 34 for RAM "mac_gmem_m_axi_mem__parameterized0:/mem_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mac_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mac_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mac_gmem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mac_gmem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3592.270 ; gain = 652.145 ; free physical = 26424 ; free virtual = 112074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_U1/mac_fmadd_32ns_32ns_32ns_32ns_32_1_primitive_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tvalid in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[5] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[4] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[3] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_15_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[0] in module floating_point_v7_1_15_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7082] The signal store_unit/buff_wdata/U_fifo_mem/mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 36 for RAM "inst/gmem_m_axi_U/store_unit/buff_wdata/U_fifo_mem/mem_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 34 for RAM "inst/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg"
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module mac.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3665.332 ; gain = 725.207 ; free physical = 26214 ; free virtual = 111898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 4250.410 ; gain = 1310.285 ; free physical = 27342 ; free virtual = 113078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 4331.012 ; gain = 1390.887 ; free physical = 27844 ; free virtual = 113588
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_15_viv`
+   Worst Slack before retiming is 7650 and worst slack after retiming is 7650
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_15_viv' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_15`
+   Worst Slack before retiming is 7650 and worst slack after retiming is 7650
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `floating_point_v7_1_15' done
+
+
+WARNING: [Synth 8-3332] Sequential element (gmem_m_axi_U/bus_write/len_cnt_reg[0]_fret) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (gmem_m_axi_U/bus_write/len_cnt_reg[1]_fret) is unused and will be removed from module mac.
+INFO: [Synth 8-5816] Retiming module `mac`
+   Worst Slack before retiming is 7650 and worst slack after retiming is 8145
+   Numbers of local forward move = 17, and local backward move = 7
+
+	Retimed registers names:
+		inst/ap_CS_fsm_reg[3]_fret
+		inst/ap_enable_reg_pp0_iter1_reg_fret
+		inst/ap_enable_reg_pp0_iter24_reg_fret
+		inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.len_buf_reg[0]_fret
+		inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[0]_fret
+		inst/gmem_m_axi_U/bus_read/rreq_burst_conv/could_multi_bursts.loop_cnt_reg[3]_fret
+		inst/gmem_m_axi_U/bus_write/WVALID_Dummy_reg_fret
+		inst/gmem_m_axi_U/bus_write/len_cnt_reg[6]_fret
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_buf_reg[60]_bret
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_buf_reg[60]_bret__1
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_buf_reg[62]_bret
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_buf_reg[62]_bret__0
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.addr_buf_reg[62]_bret__1
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.burst_valid_reg_fret
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.len_buf_reg[0]_fret
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.loop_cnt_reg[0]_fret
+		inst/gmem_m_axi_U/bus_write/wreq_burst_conv/could_multi_bursts.loop_cnt_reg[3]_fret
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/last_cnt_reg[0]_fret
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/last_cnt_reg[0]_fret__0
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr_reg[4]_bret
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr_reg[4]_bret__0
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr_reg[4]_bret__1
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr_reg[4]_bret__2
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr_reg[4]_bret__3
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/mOutPtr_reg[4]_bret__4
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr_reg[3]_bret
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr_reg[3]_bret__0
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr_reg[3]_bret__1
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr_reg[3]_bret__2
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr_reg[3]_bret__3
+		inst/gmem_m_axi_U/bus_write/wreq_throttle/req_fifo/raddr_reg[3]_bret__4
+		inst/gmem_m_axi_U/load_unit/fifo_rreq/full_n_reg_fret
+		inst/gmem_m_axi_U/load_unit/fifo_rreq/mOutPtr_reg[5]_bret
+		inst/gmem_m_axi_U/load_unit/fifo_rreq/mOutPtr_reg[5]_bret__0
+		inst/gmem_m_axi_U/load_unit/fifo_rreq/mOutPtr_reg[5]_bret__1
+		inst/gmem_m_axi_U/load_unit/fifo_rreq/mOutPtr_reg[7]_bret
+		inst/gmem_m_axi_U/load_unit/fifo_rreq/mOutPtr_reg[7]_bret__3
+		inst/gmem_m_axi_U/store_unit/fifo_wrsp/U_fifo_srl/dout_reg[0]_fret
+		inst/gmem_m_axi_U/store_unit/fifo_wrsp/U_fifo_srl/dout_reg[0]_fret__0
+ 
+
+INFO: [Synth 8-5816] Retiming module `mac' done
+
+
+INFO: [Synth 8-11328] No retiming is needed, due to no register satisfying retiming conditions
+INFO: [Synth 8-5816] Retiming module `vitis_design_mac_1_0`
+   Worst Slack before retiming is 8145 and worst slack after retiming is 8145
+   Numbers of local forward move = 0, and local backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `vitis_design_mac_1_0' done
+
+
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 4347.027 ; gain = 1406.902 ; free physical = 27757 ; free virtual = 113519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27901 ; free virtual = 113666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27901 ; free virtual = 113666
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27898 ; free virtual = 113664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27898 ; free virtual = 113664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27896 ; free virtual = 113663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27896 ; free virtual = 113663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |DSPFP32      |     1|
+|2     |LOOKAHEAD8   |    92|
+|7     |LUT1         |    46|
+|8     |LUT2         |    67|
+|9     |LUT3         |   629|
+|10    |LUT4         |   381|
+|11    |LUT5         |   324|
+|12    |LUT6         |   198|
+|13    |LUT6CY       |   696|
+|14    |RAMB18E5_INT |     2|
+|16    |SRL16E       |   110|
+|17    |SRLC32E      |   442|
+|18    |FDRE         |  2657|
+|19    |FDSE         |     9|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4349.996 ; gain = 1409.871 ; free physical = 27896 ; free virtual = 113662
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 4349.996 ; gain = 1274.430 ; free physical = 27891 ; free virtual = 113657
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 4350.004 ; gain = 1409.871 ; free physical = 27891 ; free virtual = 113657
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4350.004 ; gain = 0.000 ; free physical = 28169 ; free virtual = 113936
+INFO: [Netlist 29-17] Analyzing 699 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4358.902 ; gain = 0.000 ; free physical = 28136 ; free virtual = 113907
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 699 instances were transformed.
+  DSPFP32 => DSPFP32 (DSP_FPA_CREG, DSP_FPA_OPM_REG, DSP_FPM_PIPEREG, DSP_FPM_STAGE0, DSP_FPM_STAGE1, DSP_FP_ADDER, DSP_FP_INMUX, DSP_FP_INREG, DSP_FP_OUTPUT, DSP_FP_SRCMX_OPTINV): 1 instance 
+  LUT6CY => LUT6CY (LUTCY1, LUTCY2): 696 instances
+  RAMB18E5 => RAMB18E5_INT: 2 instances
+
+Synth Design complete | Checksum: 68432d4e
+INFO: [Common 17-83] Releasing license: Synthesis
+133 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 4358.902 ; gain = 2204.824 ; free physical = 28136 ; free virtual = 113907
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3757.270; main = 3504.780; forked = 313.737
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5290.832; main = 4358.906; forked = 975.824
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_mac_1_0, cache-ID = 2b965e1da9da90bb
+INFO: [Coretcl 2-1174] Renamed 42 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vitis_design_mac_1_0_utilization_synth.rpt -pb vitis_design_mac_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 17:54:28 2024...

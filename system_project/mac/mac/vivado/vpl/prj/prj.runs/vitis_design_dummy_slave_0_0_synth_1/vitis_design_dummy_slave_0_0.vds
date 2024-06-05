@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jun  3 17:53:11 2024
+# Process ID: 2690800
+# Current directory: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1
+# Command line: vivado -log vitis_design_dummy_slave_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_dummy_slave_0_0.tcl
+# Log file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.vds
+# Journal file: /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vivado.jou
+# Running On: ubuntu-MS-7D30, OS: Linux, CPU Frequency: 4898.867 MHz, CPU Physical cores: 16, Host memory: 134841 MB
+#-----------------------------------------------------------
+source vitis_design_dummy_slave_0_0.tcl -notrace
+INFO: Dispatch client connection id - 46641
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/int/xo/ip_repo/xilinx_com_hls_mac_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2023.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: vitis_design_dummy_slave_0_0
+Command: synth_design -top vitis_design_dummy_slave_0_0 -part xcvc1902-vsva2197-2MP-e-S -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvc1902'
+INFO: [Device 21-403] Loading part xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2691140
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3302.234 ; gain = 362.828 ; free physical = 18571 ; free virtual = 104065
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_dummy_slave_0_0' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_dummy_slave_0_0/synth/vitis_design_dummy_slave_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_vip_v1_1_14_top' [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/ed63/hdl/axi_vip_v1_1_vlsyn_rfs.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vip_v1_1_14_top' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/ed63/hdl/axi_vip_v1_1_vlsyn_rfs.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_dummy_slave_0_0' (0#1) [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_dummy_slave_0_0/synth/vitis_design_dummy_slave_0_0.sv:53]
+WARNING: [Synth 8-7129] Port aclk in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[31] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[30] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[29] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[28] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[27] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[26] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[25] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[24] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[23] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[22] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[21] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[20] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[19] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[18] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[17] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[16] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[15] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[14] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[13] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[12] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[11] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[10] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[9] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[8] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[7] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[6] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[5] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[4] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[3] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awvalid in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[31] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[30] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[29] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[28] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[27] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[26] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[25] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[24] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[23] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[22] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[21] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[20] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[19] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[18] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[17] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[16] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[15] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[14] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[13] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[12] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[11] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[10] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[9] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[8] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[7] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[6] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[5] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[4] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[3] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[2] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[1] in module axi_vip_v1_1_14_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wdata[0] in module axi_vip_v1_1_14_top is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3373.141 ; gain = 433.734 ; free physical = 18172 ; free virtual = 103672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3390.953 ; gain = 451.547 ; free physical = 18167 ; free virtual = 103668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3390.953 ; gain = 451.547 ; free physical = 18167 ; free virtual = 103668
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3390.953 ; gain = 0.000 ; free physical = 18167 ; free virtual = 103667
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+WARNING: [Designutils 20-1758] instance inst wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_dummy_slave_0_0/vitis_design_dummy_slave_0_0_ooc.xdc'.
+Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3451.707 ; gain = 0.000 ; free physical = 17896 ; free virtual = 103399
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3451.707 ; gain = 0.000 ; free physical = 17895 ; free virtual = 103398
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3451.707 ; gain = 512.301 ; free physical = 17313 ; free virtual = 102823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvc1902-vsva2197-2MP-e-S
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3451.707 ; gain = 512.301 ; free physical = 17313 ; free virtual = 102823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3451.707 ; gain = 512.301 ; free physical = 17312 ; free virtual = 102822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3451.707 ; gain = 512.301 ; free physical = 17307 ; free virtual = 102817
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:164)
+BRAMs: 1934 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3451.707 ; gain = 512.301 ; free physical = 17070 ; free virtual = 102582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 4184.535 ; gain = 1245.129 ; free physical = 27006 ; free virtual = 112561
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 4184.535 ; gain = 1245.129 ; free physical = 27005 ; free virtual = 112560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11322] No global retiming is needed without any clock constraint
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 4193.551 ; gain = 1254.145 ; free physical = 26995 ; free virtual = 112550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26941 ; free virtual = 112502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26941 ; free virtual = 112502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26940 ; free virtual = 112502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26940 ; free virtual = 112502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26940 ; free virtual = 112502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26940 ; free virtual = 112502
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.426 ; gain = 1269.020 ; free physical = 26940 ; free virtual = 112501
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 220 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 4208.426 ; gain = 1208.266 ; free physical = 26932 ; free virtual = 112494
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 4208.434 ; gain = 1269.020 ; free physical = 26932 ; free virtual = 112493
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4208.434 ; gain = 0.000 ; free physical = 26932 ; free virtual = 112493
+INFO: [Chipscope 16-579] Latest version is versal_cips_v3_3 for versal_cips_v3_2
+INFO: [Constraints 18-6359] No Clock Expansion Window constraints config file entry for device xcvc1902.  GCLK Deskew mode will be Off and cannot be enabled via GCLK_DESKEW override.
+INFO: [Constraints 18-5720] The default GCLK Deskew mode is Off.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4253.176 ; gain = 0.000 ; free physical = 26955 ; free virtual = 112519
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4a649aa9
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 4267.113 ; gain = 2113.035 ; free physical = 26826 ; free virtual = 112390
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3614.793; main = 3365.511; forked = 308.179
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5169.375; main = 4267.117; forked = 975.820
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_dummy_slave_0_0, cache-ID = f2f3a989c6c49dd6
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vitis_design_dummy_slave_0_0_utilization_synth.rpt -pb vitis_design_dummy_slave_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 17:53:45 2024...

@@ -1,0 +1,39 @@
+===============================================================================
+Version:    v++ v2023.1 (64-bit)
+Build:      SW Build 3860322 on 2023-05-04-06:32:48
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Mon Jun  3 18:02:01 2024
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             binary_container
+Target Device:           xilinx.com:xd:xilinx_vck190_base_202310_1:202310.1
+Target Clock:            312.500000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library    Compute Units
+-----------  ----  ------------------  ----------------  -------------
+mac          c     fpga0:OCL_REGION_0  binary_container  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     binary_container
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name  Target Frequency  Estimated Frequency
+------------  -----------  -----------  ----------------  -------------------
+mac_1         mac          mac          100               136.986298
+
+Latency Information
+Compute Unit  Kernel Name  Module Name  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -----------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+mac_1         mac          mac          undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name  FF    LUT   DSP  BRAM  URAM
+------------  -----------  -----------  ----  ----  ---  ----  ----
+mac_1         mac          mac          1580  1801  0    2     0
+-------------------------------------------------------------------------------

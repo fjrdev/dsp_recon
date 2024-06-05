@@ -1,0 +1,325 @@
+<ENTRY>
+{
+ "thisFile": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  3 16:46:45 2024",
+ "timestampMillis": "1717426005038",
+ "buildStep": {
+  "cmdId": "10ccdfe6-7a65-461f-b8e9-19b22de9c185",
+  "name": "v++",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/ubuntu/Desktop/dsp_recon/hls_component/hls_config.cfg --work_dir hls_component --hls.ide.compjson=0 ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/ubuntu/Desktop/dsp_recon/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component",
+   "--hls.ide.compjson=0"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ubuntu/Desktop/dsp_recon/hls_component/hls_config.cfg",
+    "content": "part=xcvc1902-vsva2197-2MP-e-S\n\n[hls]\nflow_target=vitis\nclock=10\nsyn.output.format=xo\nsyn.file=add.cpp\nsyn.file=add.h\nsyn.top=mac\ntb.file=add_test.cpp\n"
+   }
+  ],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 16:46:45 2024",
+ "timestampMillis": "1717426005038",
+ "status": {
+  "cmdId": "10ccdfe6-7a65-461f-b8e9-19b22de9c185",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun  3 16:46:47 2024",
+ "timestampMillis": "1717426007284",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mac",
+     "file": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/mac.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ubuntu/Desktop/dsp_recon/hls_component/add.cpp",
+     "/home/ubuntu/Desktop/dsp_recon/hls_component/add.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 16:46:47 2024",
+ "timestampMillis": "1717426007284",
+ "buildStep": {
+  "cmdId": "9eb62438-1697-4b2c-9293-be2c2d4b0ea3",
+  "name": "csynth_design",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 16:46:47 2024",
+ "timestampMillis": "1717426007285",
+ "status": {
+  "cmdId": "9eb62438-1697-4b2c-9293-be2c2d4b0ea3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:46:47 2024",
+ "timestampMillis": "1717426007285",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:46:47 2024",
+ "timestampMillis": "1717426007285",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:46:47 2024",
+ "timestampMillis": "1717426007285",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/syn/report/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015969",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015969",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015970",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015970",
+ "status": {
+  "cmdId": "9eb62438-1697-4b2c-9293-be2c2d4b0ea3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015971",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mac",
+     "file": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/mac.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ubuntu/Desktop/dsp_recon/hls_component/add.cpp",
+     "/home/ubuntu/Desktop/dsp_recon/hls_component/add.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015971",
+ "buildStep": {
+  "cmdId": "3b45e26a-c2af-44c8-8e5b-1c0ca9317988",
+  "name": "export_design",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/hls/hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 16:46:55 2024",
+ "timestampMillis": "1717426015971",
+ "status": {
+  "cmdId": "3b45e26a-c2af-44c8-8e5b-1c0ca9317988",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 16:47:05 2024",
+ "timestampMillis": "1717426025685",
+ "status": {
+  "cmdId": "3b45e26a-c2af-44c8-8e5b-1c0ca9317988",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  3 16:47:05 2024",
+ "timestampMillis": "1717426025779",
+ "status": {
+  "cmdId": "10ccdfe6-7a65-461f-b8e9-19b22de9c185",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:47:05 2024",
+ "timestampMillis": "1717426025810",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/reports/v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  3 16:47:05 2024",
+ "timestampMillis": "1717426025810",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/hls_component/reports/.db/v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

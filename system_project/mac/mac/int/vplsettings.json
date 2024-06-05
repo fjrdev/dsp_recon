@@ -1,0 +1,18 @@
+{
+    "kernelContainerValues": [
+        "mac:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/ubuntu\/Desktop\/dsp_recon\/system_project\/mac\/logs\/mac",
+    "package": "false",
+    "reportDir": "\/home\/ubuntu\/Desktop\/dsp_recon\/system_project\/mac\/reports\/mac",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

@@ -1,0 +1,39 @@
+{
+    "Used Resources": [
+        {
+            "ip_instance": "vitis_design_mac_1_0",
+            "resources": [
+                {
+                    "REG": "2666"
+                },
+                {
+                    "LUT": "2337"
+                },
+                {
+                    "LUTAsLogic": "1785"
+                },
+                {
+                    "LUTAsMem": "552"
+                },
+                {
+                    "LOOKAHEAD8": "92"
+                },
+                {
+                    "BRAM": "1"
+                },
+                {
+                    "URAM": "0"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                }
+            ]
+        }
+    ]
+}

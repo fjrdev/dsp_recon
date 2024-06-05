@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root VersionMajor="7" VersionMinor="1" SoftwareVersionMajor="2023" SoftwareVersionMinor="1" IpCache="no">
+  <IpCaches/>
+  <Kernels>
+    <Kernel Name="mac" Dir="mac" IP="ip_repo/xilinx_com_hls_mac_1_0" TopIpDir="." ProjectID="2dcb2b59e06442bfa742e22ec376cc5b" Debug="yes" Hls="yes" Pdi="no" ShimSoln="no" SwEmu="no" Domain="" Deadlock="no">
+      <SupportedFlows>
+        <SupportedFlow>CPU_EMU</SupportedFlow>
+        <SupportedFlow>HW_EMU</SupportedFlow>
+        <SupportedFlow>SYSTEM</SupportedFlow>
+      </SupportedFlows>
+    </Kernel>
+  </Kernels>
+</Root>

@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|2685150|10|run|cpp|1717429721021|START|OCL_LINK|",
+      "[OPTRACE]|2685150|11|setupBinaryForLink|cpp|1717429721021|START|Create Binary|",
+      "[OPTRACE]|2685150|12||cpp|1717429721021|END|Create Binary|",
+      "[OPTRACE]|2685150|13|setupBinaryForLink|cpp|1717429721021|START|Extract Kernels|",
+      "[OPTRACE]|2685150|14||cpp|1717429721038|END|Extract Kernels|",
+      "[OPTRACE]|2685150|15|launchStep_|cpp|1717429721118|START|Launch Step: system_link|",
+      "[OPTRACE]|2685150|16||cpp|1717429727507|END|Launch Step: system_link|",
+      "[OPTRACE]|2685150|17|launchStep_|cpp|1717429727507|START|Launch Step: cf2sw|",
+      "[OPTRACE]|2685150|18||cpp|1717429728814|END|Launch Step: cf2sw|",
+      "[OPTRACE]|2685150|19|launchStep_|cpp|1717429728815|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|2685150|1|main|cpp|1717429710380|START|v++|ROLLUP_0",
+      "[OPTRACE]|2685150|20||cpp|1717429728914|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|2685150|21|launchStep_|cpp|1717429728914|START|Launch Step: vpl|",
+      "[OPTRACE]|2685150|2|run|cpp|1717429710380|START|Validate Kernels|",
+      "[OPTRACE]|2685150|3||cpp|1717429710550|END|Validate Kernels|",
+      "[OPTRACE]|2685150|4|prepareProject|cpp|1717429710560|START|Create Solution|",
+      "[OPTRACE]|2685150|540||cpp|1717430520104|END|Launch Step: vpl|",
+      "[OPTRACE]|2685150|541|launchStep_|cpp|1717430520104|START|Launch Step: rtdgen|",
+      "[OPTRACE]|2685150|542|launchCf2sw_|cpp|1717430520104|START|Launch cf2sw|",
+      "[OPTRACE]|2685150|543||cpp|1717430521226|END|Launch cf2sw|",
+      "[OPTRACE]|2685150|544|writeSystemDiagram|cpp|1717430521226|START|writeSystemDiagram|",
+      "[OPTRACE]|2685150|545||cpp|1717430521229|END|writeSystemDiagram|",
+      "[OPTRACE]|2685150|546|writeAutomationSummary|cpp|1717430521229|START|writeAutomationSummary|",
+      "[OPTRACE]|2685150|547||cpp|1717430521229|END|writeAutomationSummary|",
+      "[OPTRACE]|2685150|548||cpp|1717430521230|END|Launch Step: rtdgen|",
+      "[OPTRACE]|2685150|549|launchStep_|cpp|1717430521230|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|2685150|550||cpp|1717430521259|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|2685150|551|launchStep_|cpp|1717430521260|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|2685150|552||cpp|1717430521317|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|2685150|553|launchStep_|cpp|1717430521317|START|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|2685150|554||cpp|1717430521318|END|Launch Step: generate_sc_driver|",
+      "[OPTRACE]|2685150|555||cpp|1717430521318|END|OCL_LINK|",
+      "[OPTRACE]|2685150|556||cpp|1717430521448|END|v++|",
+      "[OPTRACE]|2685150|5||cpp|1717429720667|END|Create Solution|",
+      "[OPTRACE]|2685150|6|prepareProject|cpp|1717429720667|START|Add Device|",
+      "[OPTRACE]|2685150|7|addDevice|cpp|1717429720667|START|Find & Load Device|",
+      "[OPTRACE]|2685150|8||cpp|1717429720721|END|Find & Load Device|",
+      "[OPTRACE]|2685150|9||cpp|1717429721015|END|Add Device|",
+      "[OPTRACE]|2685697|22|main|cpp|1717429729524|START|vpl|",
+      "[OPTRACE]|2685697|23|runPlatformLinker|cpp|1717429729534|START|runPlatformLinker|",
+      "[OPTRACE]|2685697|24|setupBinaryForLink|cpp|1717429729534|START|Create Solution|",
+      "[OPTRACE]|2685697|25||cpp|1717429729536|END|Create Solution|",
+      "[OPTRACE]|2685697|26|setupBinaryForLink|cpp|1717429729536|START|Add platform|",
+      "[OPTRACE]|2685697|27||cpp|1717429729935|END|Add platform|",
+      "[OPTRACE]|2685697|28|setupBinaryForLink|cpp|1717429729936|START|Create Binary|",
+      "[OPTRACE]|2685697|29||cpp|1717429729936|END|Create Binary|",
+      "[OPTRACE]|2685697|30|setupBinaryForLink|cpp|1717429729936|START|Create Kernels|",
+      "[OPTRACE]|2685697|31||cpp|1717429729937|END|Create Kernels|",
+      "[OPTRACE]|2685697|32|runPlatformLinker|cpp|1717429729940|START|Process Kernels|",
+      "[OPTRACE]|2685697|33|runPlatformLinker|cpp|1717429729940|START|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|2685697|34||cpp|1717429729940|END|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|2685697|35|runPlatformLinker|cpp|1717429729940|START|Process Kernel Profiles|",
+      "[OPTRACE]|2685697|36||cpp|1717429729940|END|Process Kernel Profiles|",
+      "[OPTRACE]|2685697|37|runPlatformLinker|cpp|1717429729940|START|Process Trace Memory|",
+      "[OPTRACE]|2685697|38||cpp|1717429729940|END|Process Trace Memory|",
+      "[OPTRACE]|2685697|39|runPlatformLinker|cpp|1717429729940|START|Process AIE Trace|",
+      "[OPTRACE]|2685697|40||cpp|1717429729940|END|Process AIE Trace|",
+      "[OPTRACE]|2685697|41||cpp|1717429729940|END|Process Kernels|",
+      "[OPTRACE]|2685697|42|runPlatformLinker|cpp|1717429729940|START|Process Kernel Debug|",
+      "[OPTRACE]|2685697|43||cpp|1717429729940|END|Process Kernel Debug|",
+      "[OPTRACE]|2685697|44|runPlatformLinker|cpp|1717429729940|START|Set Kernel Debug|",
+      "[OPTRACE]|2685697|45||cpp|1717429729940|END|Set Kernel Debug|",
+      "[OPTRACE]|2685697|46|runPlatformLinker|cpp|1717429729940|START|Set Miscellaneous|",
+      "[OPTRACE]|2685697|47||cpp|1717429729940|END|Set Miscellaneous|",
+      "[OPTRACE]|2685697|48|run|cpp|1717429729940|START|Extract Platform|",
+      "[OPTRACE]|2685697|49||cpp|1717429730329|END|Extract Platform|",
+      "[OPTRACE]|2685697|536|runPlatformLinker|cpp|1717430520089|START|Generate Resource Availability Report|",
+      "[OPTRACE]|2685697|537||cpp|1717430520089|END|Generate Resource Availability Report|",
+      "[OPTRACE]|2685697|538||cpp|1717430520089|END|runPlatformLinker|",
+      "[OPTRACE]|2685697|539||cpp|1717430520097|END|vpl|",
+      "[OPTRACE]|2685789|434|ipirun.tcl|vpl|1717430117883|END|Synthesis|",
+      "[OPTRACE]|2685789|50|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/vpl.tcl|vivado_impl|1717429733526|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|2685789|51|ipirun.tcl|vpl|1717429733533|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|2685789|52|ipirun.tcl|vpl|1717429733533|END|ipirun|",
+      "[OPTRACE]|2685789|535|ipirun.tcl|vpl|1717430519966|END|Implementation|",
+      "[OPTRACE]|2685789|53|ipirun.tcl|vpl|1717429733541|START|Create project|",
+      "[OPTRACE]|2685789|54|ipirun.tcl|vpl|1717429745373|END|Create project|",
+      "[OPTRACE]|2685789|55|ipirun.tcl|vpl|1717429745374|START|Create IP caching environment|",
+      "[OPTRACE]|2685789|56|ipirun.tcl|vpl|1717429745425|END|Create IP caching environment|",
+      "[OPTRACE]|2685789|57|ipirun.tcl|vpl|1717429745425|START|Import/add dynamic BD|",
+      "[OPTRACE]|2685789|58|ipirun.tcl|vpl|1717429745427|END|Import/add dynamic BD|",
+      "[OPTRACE]|2685789|59|ipirun.tcl|vpl|1717429745427|START|Open BD and insert kernels|",
+      "[OPTRACE]|2685789|60|ipirun.tcl|vpl|1717429756828|END|Open BD and insert kernels|",
+      "[OPTRACE]|2685789|61|ipirun.tcl|vpl|1717429756829|START|Add debug/profiling support|",
+      "[OPTRACE]|2685789|62|ipirun.tcl|vpl|1717429756838|END|Add debug/profiling support|",
+      "[OPTRACE]|2685789|63|ipirun.tcl|vpl|1717429756838|START|IPI address assignments|",
+      "[OPTRACE]|2685789|64|ipirun.tcl|vpl|1717429756848|END|IPI address assignments|",
+      "[OPTRACE]|2685789|65|ipirun.tcl|vpl|1717429756849|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|2685789|66|ipirun.tcl|vpl|1717429756853|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|2685789|67|ipirun.tcl|vpl|1717429756853|START|Collect BD interface connectivity and write automation summary report|",
+      "[OPTRACE]|2685789|68|ipirun.tcl|vpl|1717429756856|END|Collect BD interface connectivity and write automation summary report|",
+      "[OPTRACE]|2685789|69|ipirun.tcl|vpl|1717429757658|START|Generate output products|",
+      "[OPTRACE]|2685789|70|ipirun.tcl|vpl|1717429935089|END|Generate output products|",
+      "[OPTRACE]|2685789|71|ipirun.tcl|vpl|1717429935091|START|Source report_commands_tcl|",
+      "[OPTRACE]|2685789|72|ipirun.tcl|vpl|1717429935124|END|Source report_commands_tcl|",
+      "[OPTRACE]|2685789|73|ipirun.tcl|vpl|1717429935124|START|Source synth_props_tcl|",
+      "[OPTRACE]|2685789|74|ipirun.tcl|vpl|1717429935776|END|Source synth_props_tcl|",
+      "[OPTRACE]|2685789|75|ipirun.tcl|vpl|1717429935777|START|Source impl_props_tcl|",
+      "[OPTRACE]|2685789|76|ipirun.tcl|vpl|1717429935820|END|Source impl_props_tcl|",
+      "[OPTRACE]|2685789|77|ipirun.tcl|vpl|1717429935821|START|Synthesis|ROLLUP_1,SYNTH",
+      "[OPTRACE]|2688863|120|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429943368|END|Adding files|",
+      "[OPTRACE]|2688863|121|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429943369|START|Configure IP Cache|",
+      "[OPTRACE]|2688863|122|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429943392|END|Configure IP Cache|",
+      "[OPTRACE]|2688863|123|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429943393|START|synth_design|",
+      "[OPTRACE]|2688863|206|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429982633|END|synth_design|",
+      "[OPTRACE]|2688863|207|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429982633|START|Write IP Cache|",
+      "[OPTRACE]|2688863|238|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429985257|END|Write IP Cache|",
+      "[OPTRACE]|2688863|239|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429985257|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688863|244|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429987171|END|write_checkpoint|",
+      "[OPTRACE]|2688863|245|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429987171|START|synth reports|REPORT",
+      "[OPTRACE]|2688863|252|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429987274|END|synth reports|",
+      "[OPTRACE]|2688863|257|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429987701|END|vitis_design_noc_lpddr4_0_synth_1|",
+      "[OPTRACE]|2688863|84|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429939786|START|vitis_design_noc_lpddr4_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688863|85|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429939786|START|Creating in-memory project|",
+      "[OPTRACE]|2688863|98|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429943064|END|Creating in-memory project|",
+      "[OPTRACE]|2688863|99|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_lpddr4_0_synth_1/vitis_design_noc_lpddr4_0.tcl|vivado_synth|1717429943064|START|Adding files|",
+      "[OPTRACE]|2688864|102|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429943100|END|Creating in-memory project|",
+      "[OPTRACE]|2688864|103|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429943100|START|Adding files|",
+      "[OPTRACE]|2688864|128|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429943464|END|Adding files|",
+      "[OPTRACE]|2688864|129|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429943465|START|Configure IP Cache|",
+      "[OPTRACE]|2688864|130|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429943502|END|Configure IP Cache|",
+      "[OPTRACE]|2688864|131|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429943502|START|synth_design|",
+      "[OPTRACE]|2688864|142|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429972578|END|synth_design|",
+      "[OPTRACE]|2688864|143|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429972578|START|Write IP Cache|",
+      "[OPTRACE]|2688864|148|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429973510|END|Write IP Cache|",
+      "[OPTRACE]|2688864|149|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429973510|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688864|158|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429973878|END|write_checkpoint|",
+      "[OPTRACE]|2688864|159|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429973878|START|synth reports|REPORT",
+      "[OPTRACE]|2688864|162|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429973989|END|synth reports|",
+      "[OPTRACE]|2688864|165|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429974495|END|vitis_design_cips_noc_0_synth_1|",
+      "[OPTRACE]|2688864|78|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429939772|START|vitis_design_cips_noc_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688864|79|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_cips_noc_0_synth_1/vitis_design_cips_noc_0.tcl|vivado_synth|1717429939772|START|Creating in-memory project|",
+      "[OPTRACE]|2688867|108|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429943155|END|Adding files|",
+      "[OPTRACE]|2688867|109|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429943155|START|Configure IP Cache|",
+      "[OPTRACE]|2688867|110|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429943156|END|Configure IP Cache|",
+      "[OPTRACE]|2688867|111|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429943156|START|synth_design|",
+      "[OPTRACE]|2688867|180|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978291|END|synth_design|",
+      "[OPTRACE]|2688867|181|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978291|START|Write IP Cache|",
+      "[OPTRACE]|2688867|187|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978754|END|Write IP Cache|",
+      "[OPTRACE]|2688867|188|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978755|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688867|190|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978893|END|write_checkpoint|",
+      "[OPTRACE]|2688867|191|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978893|START|synth reports|REPORT",
+      "[OPTRACE]|2688867|194|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429978995|END|synth reports|",
+      "[OPTRACE]|2688867|196|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429979351|END|vitis_design_axi_intc_parent_0_synth_1|",
+      "[OPTRACE]|2688867|80|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429939785|START|vitis_design_axi_intc_parent_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688867|82|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429939785|START|Creating in-memory project|",
+      "[OPTRACE]|2688867|94|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429943061|END|Creating in-memory project|",
+      "[OPTRACE]|2688867|95|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_parent_0_synth_1/vitis_design_axi_intc_parent_0.tcl|vivado_synth|1717429943062|START|Adding files|",
+      "[OPTRACE]|2688868|116|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429943321|END|Creating in-memory project|",
+      "[OPTRACE]|2688868|117|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429943321|START|Adding files|",
+      "[OPTRACE]|2688868|124|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429943428|END|Adding files|",
+      "[OPTRACE]|2688868|125|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429943429|START|Configure IP Cache|",
+      "[OPTRACE]|2688868|126|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429943430|END|Configure IP Cache|",
+      "[OPTRACE]|2688868|127|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429943430|START|synth_design|",
+      "[OPTRACE]|2688868|144|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973328|END|synth_design|",
+      "[OPTRACE]|2688868|145|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973329|START|Write IP Cache|",
+      "[OPTRACE]|2688868|150|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973703|END|Write IP Cache|",
+      "[OPTRACE]|2688868|151|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973703|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688868|154|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973816|END|write_checkpoint|",
+      "[OPTRACE]|2688868|155|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973816|START|synth reports|REPORT",
+      "[OPTRACE]|2688868|160|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429973914|END|synth reports|",
+      "[OPTRACE]|2688868|163|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429974167|END|vitis_design_clk_wizard_0_0_synth_1|",
+      "[OPTRACE]|2688868|90|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429939901|START|vitis_design_clk_wizard_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688868|91|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_clk_wizard_0_0_synth_1/vitis_design_clk_wizard_0_0.tcl|vivado_synth|1717429939901|START|Creating in-memory project|",
+      "[OPTRACE]|2688869|104|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429943145|END|Adding files|",
+      "[OPTRACE]|2688869|105|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429943146|START|Configure IP Cache|",
+      "[OPTRACE]|2688869|106|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429943147|END|Configure IP Cache|",
+      "[OPTRACE]|2688869|107|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429943147|START|synth_design|",
+      "[OPTRACE]|2688869|146|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973390|END|synth_design|",
+      "[OPTRACE]|2688869|147|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973390|START|Write IP Cache|",
+      "[OPTRACE]|2688869|152|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973758|END|Write IP Cache|",
+      "[OPTRACE]|2688869|153|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973758|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688869|156|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973863|END|write_checkpoint|",
+      "[OPTRACE]|2688869|157|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973863|START|synth reports|REPORT",
+      "[OPTRACE]|2688869|161|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429973963|END|synth reports|",
+      "[OPTRACE]|2688869|164|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429974226|END|vitis_design_psr_104mhz_0_synth_1|",
+      "[OPTRACE]|2688869|81|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429939785|START|vitis_design_psr_104mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688869|83|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429939785|START|Creating in-memory project|",
+      "[OPTRACE]|2688869|96|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429943062|END|Creating in-memory project|",
+      "[OPTRACE]|2688869|97|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_104mhz_0_synth_1/vitis_design_psr_104mhz_0.tcl|vivado_synth|1717429943062|START|Adding files|",
+      "[OPTRACE]|2688872|100|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429943068|END|Creating in-memory project|",
+      "[OPTRACE]|2688872|101|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429943068|START|Adding files|",
+      "[OPTRACE]|2688872|112|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429943161|END|Adding files|",
+      "[OPTRACE]|2688872|113|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429943162|START|Configure IP Cache|",
+      "[OPTRACE]|2688872|114|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429943163|END|Configure IP Cache|",
+      "[OPTRACE]|2688872|115|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429943163|START|synth_design|",
+      "[OPTRACE]|2688872|176|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429977827|END|synth_design|",
+      "[OPTRACE]|2688872|177|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429977827|START|Write IP Cache|",
+      "[OPTRACE]|2688872|178|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429978270|END|Write IP Cache|",
+      "[OPTRACE]|2688872|179|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429978271|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688872|182|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429978409|END|write_checkpoint|",
+      "[OPTRACE]|2688872|183|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429978410|START|synth reports|REPORT",
+      "[OPTRACE]|2688872|186|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429978515|END|synth reports|",
+      "[OPTRACE]|2688872|189|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429978812|END|vitis_design_axi_intc_cascaded_1_0_synth_1|",
+      "[OPTRACE]|2688872|86|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429939797|START|vitis_design_axi_intc_cascaded_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688872|87|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_cascaded_1_0_synth_1/vitis_design_axi_intc_cascaded_1_0.tcl|vivado_synth|1717429939797|START|Creating in-memory project|",
+      "[OPTRACE]|2688873|118|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429943338|END|Creating in-memory project|",
+      "[OPTRACE]|2688873|119|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429943338|START|Adding files|",
+      "[OPTRACE]|2688873|132|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429943596|END|Adding files|",
+      "[OPTRACE]|2688873|133|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429943596|START|Configure IP Cache|",
+      "[OPTRACE]|2688873|134|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429943615|END|Configure IP Cache|",
+      "[OPTRACE]|2688873|135|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429943616|START|synth_design|",
+      "[OPTRACE]|2688873|174|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429977483|END|synth_design|",
+      "[OPTRACE]|2688873|175|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429977483|START|Write IP Cache|",
+      "[OPTRACE]|2688873|184|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429978430|END|Write IP Cache|",
+      "[OPTRACE]|2688873|185|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429978431|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688873|192|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429978932|END|write_checkpoint|",
+      "[OPTRACE]|2688873|193|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429978933|START|synth reports|REPORT",
+      "[OPTRACE]|2688873|195|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429979036|END|synth reports|",
+      "[OPTRACE]|2688873|197|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429979428|END|vitis_design_noc_ddr4_0_synth_1|",
+      "[OPTRACE]|2688873|92|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429940047|START|vitis_design_noc_ddr4_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688873|93|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_noc_ddr4_0_synth_1/vitis_design_noc_ddr4_0.tcl|vivado_synth|1717429940047|START|Creating in-memory project|",
+      "[OPTRACE]|2688876|136|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429944101|END|Creating in-memory project|",
+      "[OPTRACE]|2688876|137|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429944101|START|Adding files|",
+      "[OPTRACE]|2688876|138|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429944194|END|Adding files|",
+      "[OPTRACE]|2688876|139|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429944195|START|Configure IP Cache|",
+      "[OPTRACE]|2688876|140|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429944196|END|Configure IP Cache|",
+      "[OPTRACE]|2688876|141|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429944196|START|synth_design|",
+      "[OPTRACE]|2688876|166|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429974837|END|synth_design|",
+      "[OPTRACE]|2688876|167|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429974837|START|Write IP Cache|",
+      "[OPTRACE]|2688876|168|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429975190|END|Write IP Cache|",
+      "[OPTRACE]|2688876|169|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429975191|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2688876|170|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429975291|END|write_checkpoint|",
+      "[OPTRACE]|2688876|171|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429975291|START|synth reports|REPORT",
+      "[OPTRACE]|2688876|172|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429975386|END|synth reports|",
+      "[OPTRACE]|2688876|173|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429975621|END|vitis_design_psr_156mhz_0_synth_1|",
+      "[OPTRACE]|2688876|88|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429939816|START|vitis_design_psr_156mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2688876|89|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_156mhz_0_synth_1/vitis_design_psr_156mhz_0.tcl|vivado_synth|1717429939817|START|Creating in-memory project|",
+      "[OPTRACE]|2690233|198|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429980516|START|vitis_design_psr_312mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690233|200|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429980516|START|Creating in-memory project|",
+      "[OPTRACE]|2690233|212|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429983843|END|Creating in-memory project|",
+      "[OPTRACE]|2690233|213|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429983843|START|Adding files|",
+      "[OPTRACE]|2690233|218|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429983935|END|Adding files|",
+      "[OPTRACE]|2690233|219|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429983936|START|Configure IP Cache|",
+      "[OPTRACE]|2690233|220|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429983937|END|Configure IP Cache|",
+      "[OPTRACE]|2690233|221|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717429983937|START|synth_design|",
+      "[OPTRACE]|2690233|270|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430013781|END|synth_design|",
+      "[OPTRACE]|2690233|271|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430013782|START|Write IP Cache|",
+      "[OPTRACE]|2690233|274|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430014200|END|Write IP Cache|",
+      "[OPTRACE]|2690233|275|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430014200|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690233|276|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430014318|END|write_checkpoint|",
+      "[OPTRACE]|2690233|277|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430014318|START|synth reports|REPORT",
+      "[OPTRACE]|2690233|280|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430014422|END|synth reports|",
+      "[OPTRACE]|2690233|284|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_312mhz_0_synth_1/vitis_design_psr_312mhz_0.tcl|vivado_synth|1717430014701|END|vitis_design_psr_312mhz_0_synth_1|",
+      "[OPTRACE]|2690235|204|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429980746|START|vitis_design_psr_208mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690235|205|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429980746|START|Creating in-memory project|",
+      "[OPTRACE]|2690235|232|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429984142|END|Creating in-memory project|",
+      "[OPTRACE]|2690235|233|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429984142|START|Adding files|",
+      "[OPTRACE]|2690235|234|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429984235|END|Adding files|",
+      "[OPTRACE]|2690235|235|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429984236|START|Configure IP Cache|",
+      "[OPTRACE]|2690235|236|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429984237|END|Configure IP Cache|",
+      "[OPTRACE]|2690235|237|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717429984237|START|synth_design|",
+      "[OPTRACE]|2690235|286|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430014863|END|synth_design|",
+      "[OPTRACE]|2690235|287|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430014863|START|Write IP Cache|",
+      "[OPTRACE]|2690235|290|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430015262|END|Write IP Cache|",
+      "[OPTRACE]|2690235|291|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430015262|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690235|294|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430015372|END|write_checkpoint|",
+      "[OPTRACE]|2690235|295|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430015372|START|synth reports|REPORT",
+      "[OPTRACE]|2690235|298|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430015474|END|synth reports|",
+      "[OPTRACE]|2690235|300|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_208mhz_0_synth_1/vitis_design_psr_208mhz_0.tcl|vivado_synth|1717430015742|END|vitis_design_psr_208mhz_0_synth_1|",
+      "[OPTRACE]|2690240|199|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429980516|START|vitis_design_psr_78mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690240|201|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429980516|START|Creating in-memory project|",
+      "[OPTRACE]|2690240|214|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429983860|END|Creating in-memory project|",
+      "[OPTRACE]|2690240|215|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429983861|START|Adding files|",
+      "[OPTRACE]|2690240|224|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429983970|END|Adding files|",
+      "[OPTRACE]|2690240|225|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429983971|START|Configure IP Cache|",
+      "[OPTRACE]|2690240|226|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429983972|END|Configure IP Cache|",
+      "[OPTRACE]|2690240|227|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717429983972|START|synth_design|",
+      "[OPTRACE]|2690240|288|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430014930|END|synth_design|",
+      "[OPTRACE]|2690240|289|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430014931|START|Write IP Cache|",
+      "[OPTRACE]|2690240|292|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430015328|END|Write IP Cache|",
+      "[OPTRACE]|2690240|293|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430015328|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690240|296|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430015437|END|write_checkpoint|",
+      "[OPTRACE]|2690240|297|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430015437|START|synth reports|REPORT",
+      "[OPTRACE]|2690240|299|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430015538|END|synth reports|",
+      "[OPTRACE]|2690240|301|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_78mhz_0_synth_1/vitis_design_psr_78mhz_0.tcl|vivado_synth|1717430015808|END|vitis_design_psr_78mhz_0_synth_1|",
+      "[OPTRACE]|2690242|202|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429980584|START|vitis_design_psr_416mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690242|203|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429980584|START|Creating in-memory project|",
+      "[OPTRACE]|2690242|222|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429983948|END|Creating in-memory project|",
+      "[OPTRACE]|2690242|223|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429983948|START|Adding files|",
+      "[OPTRACE]|2690242|228|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429984040|END|Adding files|",
+      "[OPTRACE]|2690242|229|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429984042|START|Configure IP Cache|",
+      "[OPTRACE]|2690242|230|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429984043|END|Configure IP Cache|",
+      "[OPTRACE]|2690242|231|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717429984043|START|synth_design|",
+      "[OPTRACE]|2690242|272|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430013920|END|synth_design|",
+      "[OPTRACE]|2690242|273|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430013920|START|Write IP Cache|",
+      "[OPTRACE]|2690242|278|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430014331|END|Write IP Cache|",
+      "[OPTRACE]|2690242|279|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430014332|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690242|281|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430014456|END|write_checkpoint|",
+      "[OPTRACE]|2690242|282|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430014456|START|synth reports|REPORT",
+      "[OPTRACE]|2690242|283|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430014564|END|synth reports|",
+      "[OPTRACE]|2690242|285|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_416mhz_0_synth_1/vitis_design_psr_416mhz_0.tcl|vivado_synth|1717430014853|END|vitis_design_psr_416mhz_0_synth_1|",
+      "[OPTRACE]|2690493|208|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429983537|START|vitis_design_psr_625mhz_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690493|209|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429983538|START|Creating in-memory project|",
+      "[OPTRACE]|2690493|242|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429987128|END|Creating in-memory project|",
+      "[OPTRACE]|2690493|243|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429987128|START|Adding files|",
+      "[OPTRACE]|2690493|246|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429987212|END|Adding files|",
+      "[OPTRACE]|2690493|247|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429987213|START|Configure IP Cache|",
+      "[OPTRACE]|2690493|248|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429987214|END|Configure IP Cache|",
+      "[OPTRACE]|2690493|249|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717429987214|START|synth_design|",
+      "[OPTRACE]|2690493|302|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430018520|END|synth_design|",
+      "[OPTRACE]|2690493|303|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430018520|START|Write IP Cache|",
+      "[OPTRACE]|2690493|304|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430018951|END|Write IP Cache|",
+      "[OPTRACE]|2690493|305|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430018952|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690493|306|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430019104|END|write_checkpoint|",
+      "[OPTRACE]|2690493|307|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430019104|START|synth reports|REPORT",
+      "[OPTRACE]|2690493|308|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430019248|END|synth reports|",
+      "[OPTRACE]|2690493|309|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_psr_625mhz_0_synth_1/vitis_design_psr_625mhz_0.tcl|vivado_synth|1717430019604|END|vitis_design_psr_625mhz_0_synth_1|",
+      "[OPTRACE]|2690499|210|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429983626|START|vitis_design_icn_ctrl_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690499|211|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429983626|START|Creating in-memory project|",
+      "[OPTRACE]|2690499|240|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429987071|END|Creating in-memory project|",
+      "[OPTRACE]|2690499|241|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429987072|START|Adding files|",
+      "[OPTRACE]|2690499|258|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429988098|END|Adding files|",
+      "[OPTRACE]|2690499|259|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429988099|START|Configure IP Cache|",
+      "[OPTRACE]|2690499|260|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429988123|END|Configure IP Cache|",
+      "[OPTRACE]|2690499|261|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717429988123|START|synth_design|",
+      "[OPTRACE]|2690499|382|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430040089|END|synth_design|",
+      "[OPTRACE]|2690499|383|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430040089|START|Write IP Cache|",
+      "[OPTRACE]|2690499|384|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430042158|END|Write IP Cache|",
+      "[OPTRACE]|2690499|385|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430042160|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690499|386|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430042952|END|write_checkpoint|",
+      "[OPTRACE]|2690499|387|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430042952|START|synth reports|REPORT",
+      "[OPTRACE]|2690499|388|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430043075|END|synth reports|",
+      "[OPTRACE]|2690499|389|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_1_0_synth_1/vitis_design_icn_ctrl_1_0.tcl|vivado_synth|1717430044331|END|vitis_design_icn_ctrl_1_0_synth_1|",
+      "[OPTRACE]|2690501|216|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429983867|START|vitis_design_icn_ctrl_2_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690501|217|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429983868|START|Creating in-memory project|",
+      "[OPTRACE]|2690501|250|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429987273|END|Creating in-memory project|",
+      "[OPTRACE]|2690501|251|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429987273|START|Adding files|",
+      "[OPTRACE]|2690501|253|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429987610|END|Adding files|",
+      "[OPTRACE]|2690501|254|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429987611|START|Configure IP Cache|",
+      "[OPTRACE]|2690501|255|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429987654|END|Configure IP Cache|",
+      "[OPTRACE]|2690501|256|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717429987654|START|synth_design|",
+      "[OPTRACE]|2690501|318|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430024207|END|synth_design|",
+      "[OPTRACE]|2690501|319|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430024207|START|Write IP Cache|",
+      "[OPTRACE]|2690501|350|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430025198|END|Write IP Cache|",
+      "[OPTRACE]|2690501|351|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430025199|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690501|353|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430025484|END|write_checkpoint|",
+      "[OPTRACE]|2690501|354|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430025484|START|synth reports|REPORT",
+      "[OPTRACE]|2690501|356|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430025597|END|synth reports|",
+      "[OPTRACE]|2690501|357|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_2_0_synth_1/vitis_design_icn_ctrl_2_0.tcl|vivado_synth|1717430026274|END|vitis_design_icn_ctrl_2_0_synth_1|",
+      "[OPTRACE]|2690800|262|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429994387|START|vitis_design_dummy_slave_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2690800|263|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429994387|START|Creating in-memory project|",
+      "[OPTRACE]|2690800|264|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429997804|END|Creating in-memory project|",
+      "[OPTRACE]|2690800|265|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429997804|START|Adding files|",
+      "[OPTRACE]|2690800|266|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429997898|END|Adding files|",
+      "[OPTRACE]|2690800|267|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429997899|START|Configure IP Cache|",
+      "[OPTRACE]|2690800|268|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429997900|END|Configure IP Cache|",
+      "[OPTRACE]|2690800|269|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717429997900|START|synth_design|",
+      "[OPTRACE]|2690800|332|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430024648|END|synth_design|",
+      "[OPTRACE]|2690800|333|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430024649|START|Write IP Cache|",
+      "[OPTRACE]|2690800|346|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430025053|END|Write IP Cache|",
+      "[OPTRACE]|2690800|347|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430025053|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2690800|348|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430025173|END|write_checkpoint|",
+      "[OPTRACE]|2690800|349|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430025174|START|synth reports|REPORT",
+      "[OPTRACE]|2690800|352|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430025279|END|synth reports|",
+      "[OPTRACE]|2690800|355|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_0_0_synth_1/vitis_design_dummy_slave_0_0.tcl|vivado_synth|1717430025559|END|vitis_design_dummy_slave_0_0_synth_1|",
+      "[OPTRACE]|2691514|314|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430021080|START|vitis_design_icn_ctrl_4_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691514|315|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430021080|START|Creating in-memory project|",
+      "[OPTRACE]|2691514|324|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430024559|END|Creating in-memory project|",
+      "[OPTRACE]|2691514|325|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430024559|START|Adding files|",
+      "[OPTRACE]|2691514|338|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430024900|END|Adding files|",
+      "[OPTRACE]|2691514|339|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430024901|START|Configure IP Cache|",
+      "[OPTRACE]|2691514|340|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430024924|END|Configure IP Cache|",
+      "[OPTRACE]|2691514|341|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430024925|START|synth_design|",
+      "[OPTRACE]|2691514|392|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430061066|END|synth_design|",
+      "[OPTRACE]|2691514|393|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430061066|START|Write IP Cache|",
+      "[OPTRACE]|2691514|398|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430062060|END|Write IP Cache|",
+      "[OPTRACE]|2691514|399|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430062061|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2691514|402|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430062345|END|write_checkpoint|",
+      "[OPTRACE]|2691514|404|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430062345|START|synth reports|REPORT",
+      "[OPTRACE]|2691514|405|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430062461|END|synth reports|",
+      "[OPTRACE]|2691514|409|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_4_0_synth_1/vitis_design_icn_ctrl_4_0.tcl|vivado_synth|1717430063151|END|vitis_design_icn_ctrl_4_0_synth_1|",
+      "[OPTRACE]|2691517|310|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430021039|START|vitis_design_icn_ctrl_3_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691517|313|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430021039|START|Creating in-memory project|",
+      "[OPTRACE]|2691517|322|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430024469|END|Creating in-memory project|",
+      "[OPTRACE]|2691517|323|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430024469|START|Adding files|",
+      "[OPTRACE]|2691517|334|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430024809|END|Adding files|",
+      "[OPTRACE]|2691517|335|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430024810|START|Configure IP Cache|",
+      "[OPTRACE]|2691517|336|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430024833|END|Configure IP Cache|",
+      "[OPTRACE]|2691517|337|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430024834|START|synth_design|",
+      "[OPTRACE]|2691517|394|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430061882|END|synth_design|",
+      "[OPTRACE]|2691517|395|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430061882|START|Write IP Cache|",
+      "[OPTRACE]|2691517|406|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430062883|END|Write IP Cache|",
+      "[OPTRACE]|2691517|407|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430062884|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2691517|410|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430063161|END|write_checkpoint|",
+      "[OPTRACE]|2691517|411|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430063161|START|synth reports|REPORT",
+      "[OPTRACE]|2691517|412|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430063274|END|synth reports|",
+      "[OPTRACE]|2691517|413|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_3_0_synth_1/vitis_design_icn_ctrl_3_0.tcl|vivado_synth|1717430063931|END|vitis_design_icn_ctrl_3_0_synth_1|",
+      "[OPTRACE]|2691528|316|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430021209|START|vitis_design_icn_ctrl_5_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691528|317|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430021209|START|Creating in-memory project|",
+      "[OPTRACE]|2691528|330|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430024634|END|Creating in-memory project|",
+      "[OPTRACE]|2691528|331|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430024635|START|Adding files|",
+      "[OPTRACE]|2691528|342|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430024976|END|Adding files|",
+      "[OPTRACE]|2691528|343|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430024977|START|Configure IP Cache|",
+      "[OPTRACE]|2691528|344|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430025001|END|Configure IP Cache|",
+      "[OPTRACE]|2691528|345|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430025002|START|synth_design|",
+      "[OPTRACE]|2691528|390|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430060954|END|synth_design|",
+      "[OPTRACE]|2691528|391|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430060955|START|Write IP Cache|",
+      "[OPTRACE]|2691528|396|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430061946|END|Write IP Cache|",
+      "[OPTRACE]|2691528|397|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430061947|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2691528|400|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430062228|END|write_checkpoint|",
+      "[OPTRACE]|2691528|401|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430062228|START|synth reports|REPORT",
+      "[OPTRACE]|2691528|403|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430062345|END|synth reports|",
+      "[OPTRACE]|2691528|408|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_icn_ctrl_5_0_synth_1/vitis_design_icn_ctrl_5_0.tcl|vivado_synth|1717430063038|END|vitis_design_icn_ctrl_5_0_synth_1|",
+      "[OPTRACE]|2691529|311|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430021039|START|vitis_design_mac_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691529|312|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430021039|START|Creating in-memory project|",
+      "[OPTRACE]|2691529|320|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430024462|END|Creating in-memory project|",
+      "[OPTRACE]|2691529|321|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430024463|START|Adding files|",
+      "[OPTRACE]|2691529|326|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430024564|END|Adding files|",
+      "[OPTRACE]|2691529|327|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430024565|START|Configure IP Cache|",
+      "[OPTRACE]|2691529|328|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430024566|END|Configure IP Cache|",
+      "[OPTRACE]|2691529|329|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430024566|START|synth_design|",
+      "[OPTRACE]|2691529|414|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430066210|END|synth_design|",
+      "[OPTRACE]|2691529|415|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430066210|START|Write IP Cache|",
+      "[OPTRACE]|2691529|416|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430067227|END|Write IP Cache|",
+      "[OPTRACE]|2691529|417|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430067228|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2691529|418|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430067537|END|write_checkpoint|",
+      "[OPTRACE]|2691529|419|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430067537|START|synth reports|REPORT",
+      "[OPTRACE]|2691529|420|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430067654|END|synth reports|",
+      "[OPTRACE]|2691529|421|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_mac_1_0_synth_1/vitis_design_mac_1_0.tcl|vivado_synth|1717430068309|END|vitis_design_mac_1_0_synth_1|",
+      "[OPTRACE]|2691862|358|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430032176|START|vitis_design_dummy_slave_2_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691862|359|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430032177|START|Creating in-memory project|",
+      "[OPTRACE]|2691862|366|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430035575|END|Creating in-memory project|",
+      "[OPTRACE]|2691862|367|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430035575|START|Adding files|",
+      "[OPTRACE]|2691862|372|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430035670|END|Adding files|",
+      "[OPTRACE]|2691862|373|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430035671|START|Configure IP Cache|",
+      "[OPTRACE]|2691862|374|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430035674|END|Configure IP Cache|",
+      "[OPTRACE]|2691862|375|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_2_0_synth_1/vitis_design_dummy_slave_2_0.tcl|vivado_synth|1717430035674|END|vitis_design_dummy_slave_2_0_synth_1|",
+      "[OPTRACE]|2691863|362|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430032831|START|vitis_design_dummy_slave_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691863|363|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430032832|START|Creating in-memory project|",
+      "[OPTRACE]|2691863|376|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430036208|END|Creating in-memory project|",
+      "[OPTRACE]|2691863|377|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430036209|START|Adding files|",
+      "[OPTRACE]|2691863|378|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430036311|END|Adding files|",
+      "[OPTRACE]|2691863|379|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430036312|START|Configure IP Cache|",
+      "[OPTRACE]|2691863|380|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430036315|END|Configure IP Cache|",
+      "[OPTRACE]|2691863|381|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_1_0_synth_1/vitis_design_dummy_slave_1_0.tcl|vivado_synth|1717430036315|END|vitis_design_dummy_slave_1_0_synth_1|",
+      "[OPTRACE]|2691865|360|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430032191|START|vitis_design_dummy_slave_3_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2691865|361|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430032191|START|Creating in-memory project|",
+      "[OPTRACE]|2691865|364|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430035532|END|Creating in-memory project|",
+      "[OPTRACE]|2691865|365|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430035532|START|Adding files|",
+      "[OPTRACE]|2691865|368|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430035627|END|Adding files|",
+      "[OPTRACE]|2691865|369|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430035628|START|Configure IP Cache|",
+      "[OPTRACE]|2691865|370|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430035631|END|Configure IP Cache|",
+      "[OPTRACE]|2691865|371|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/vitis_design_dummy_slave_3_0_synth_1/vitis_design_dummy_slave_3_0.tcl|vivado_synth|1717430035631|END|vitis_design_dummy_slave_3_0_synth_1|",
+      "[OPTRACE]|2692639|422|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430072232|START|synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|2692639|423|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430072233|START|Creating in-memory project|",
+      "[OPTRACE]|2692639|424|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430075357|END|Creating in-memory project|",
+      "[OPTRACE]|2692639|425|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430075357|START|Adding files|",
+      "[OPTRACE]|2692639|426|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430079718|END|Adding files|",
+      "[OPTRACE]|2692639|427|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430079721|START|synth_design|",
+      "[OPTRACE]|2692639|428|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430113846|END|synth_design|",
+      "[OPTRACE]|2692639|429|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430113847|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2692639|430|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430114460|END|write_checkpoint|",
+      "[OPTRACE]|2692639|431|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430114460|START|synth reports|REPORT",
+      "[OPTRACE]|2692639|432|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430114461|END|synth reports|",
+      "[OPTRACE]|2692639|433|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1717430114461|END|synth_1|",
+      "[OPTRACE]|2693086|435|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430121246|START|impl_1|ROLLUP_1",
+      "[OPTRACE]|2693086|436|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430121247|START|Phase: Init Design|ROLLUP_AUTO",
+      "[OPTRACE]|2693086|437|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430121247|START|Design Initialization: pre hook|",
+      "[OPTRACE]|2693086|438|ipirun.tcl|vpl|1717430121255|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|2693086|439|ipirun.tcl|vpl|1717430121255|END|ipirun|",
+      "[OPTRACE]|2693086|440|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430121255|END|Design Initialization: pre hook|",
+      "[OPTRACE]|2693086|441|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430121256|START|create in-memory project|",
+      "[OPTRACE]|2693086|442|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430124098|END|create in-memory project|",
+      "[OPTRACE]|2693086|443|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430124098|START|set parameters|",
+      "[OPTRACE]|2693086|444|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430124385|END|set parameters|",
+      "[OPTRACE]|2693086|445|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430124385|START|add files|",
+      "[OPTRACE]|2693086|446|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430129067|START|read constraints: implementation|",
+      "[OPTRACE]|2693086|447|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430129068|END|read constraints: implementation|",
+      "[OPTRACE]|2693086|448|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430129068|END|add files|",
+      "[OPTRACE]|2693086|449|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430129068|START|link_design|",
+      "[OPTRACE]|2693086|450|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156382|END|link_design|",
+      "[OPTRACE]|2693086|451|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156382|START|gray box cells|",
+      "[OPTRACE]|2693086|452|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156382|END|gray box cells|",
+      "[OPTRACE]|2693086|453|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156382|START|init_design_reports|REPORT",
+      "[OPTRACE]|2693086|454|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156382|END|init_design_reports|",
+      "[OPTRACE]|2693086|455|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156382|START|Design Initialization: post hook|",
+      "[OPTRACE]|2693086|456|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156384|END|Design Initialization: post hook|",
+      "[OPTRACE]|2693086|457|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156384|START|init_design_write_hwdef|",
+      "[OPTRACE]|2693086|458|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156384|END|init_design_write_hwdef|",
+      "[OPTRACE]|2693086|459|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156384|END|Phase: Init Design|",
+      "[OPTRACE]|2693086|460|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156384|START|Phase: Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|2693086|461|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156385|START|Opt Design: pre hook|",
+      "[OPTRACE]|2693086|462|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156797|END|Opt Design: pre hook|",
+      "[OPTRACE]|2693086|463|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156798|START|read constraints: opt_design|",
+      "[OPTRACE]|2693086|464|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156798|END|read constraints: opt_design|",
+      "[OPTRACE]|2693086|465|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430156798|START|opt_design|",
+      "[OPTRACE]|2693086|466|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269041|END|opt_design|",
+      "[OPTRACE]|2693086|467|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269041|START|read constraints: opt_design_post|",
+      "[OPTRACE]|2693086|468|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269041|END|read constraints: opt_design_post|",
+      "[OPTRACE]|2693086|469|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269041|START|opt_design reports|REPORT",
+      "[OPTRACE]|2693086|470|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269042|END|opt_design reports|",
+      "[OPTRACE]|2693086|471|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269042|START|Opt Design: post hook|",
+      "[OPTRACE]|2693086|472|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269042|END|Opt Design: post hook|",
+      "[OPTRACE]|2693086|473|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269042|END|Phase: Opt Design|",
+      "[OPTRACE]|2693086|474|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269042|START|Phase: Place Design|ROLLUP_AUTO",
+      "[OPTRACE]|2693086|475|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269043|START|Place Design: pre hook|",
+      "[OPTRACE]|2693086|476|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269506|END|Place Design: pre hook|",
+      "[OPTRACE]|2693086|477|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269507|START|read constraints: place_design|",
+      "[OPTRACE]|2693086|478|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269507|END|read constraints: place_design|",
+      "[OPTRACE]|2693086|479|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430269507|START|place_design|",
+      "[OPTRACE]|2693086|480|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430343948|END|place_design|",
+      "[OPTRACE]|2693086|481|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430343948|START|read constraints: place_design_post|",
+      "[OPTRACE]|2693086|482|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430343948|END|read constraints: place_design_post|",
+      "[OPTRACE]|2693086|483|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430343948|START|place_design reports|REPORT",
+      "[OPTRACE]|2693086|484|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430343948|END|place_design reports|",
+      "[OPTRACE]|2693086|485|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430343949|START|Place Design: post hook|",
+      "[OPTRACE]|2693086|486|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430344827|END|Place Design: post hook|",
+      "[OPTRACE]|2693086|487|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430344828|END|Phase: Place Design|",
+      "[OPTRACE]|2693086|488|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430344828|START|Phase: Physical Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|2693086|489|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430344828|START|read constraints: phys_opt_design|",
+      "[OPTRACE]|2693086|490|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430344828|END|read constraints: phys_opt_design|",
+      "[OPTRACE]|2693086|491|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430344828|START|phys_opt_design|",
+      "[OPTRACE]|2693086|492|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|END|phys_opt_design|",
+      "[OPTRACE]|2693086|493|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|START|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|2693086|494|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|END|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|2693086|495|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|START|phys_opt_design report|REPORT",
+      "[OPTRACE]|2693086|496|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|END|phys_opt_design report|",
+      "[OPTRACE]|2693086|497|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|END|Phase: Physical Opt Design|",
+      "[OPTRACE]|2693086|498|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353043|START|Phase: Route Design|ROLLUP_AUTO",
+      "[OPTRACE]|2693086|499|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353044|START|read constraints: route_design|",
+      "[OPTRACE]|2693086|500|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353044|END|read constraints: route_design|",
+      "[OPTRACE]|2693086|501|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430353044|START|route_design|",
+      "[OPTRACE]|2693086|502|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430388537|END|route_design|",
+      "[OPTRACE]|2693086|503|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430388537|START|read constraints: route_design_post|",
+      "[OPTRACE]|2693086|504|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430388537|END|read constraints: route_design_post|",
+      "[OPTRACE]|2693086|505|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430388538|START|route_design reports|REPORT",
+      "[OPTRACE]|2693086|506|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430388894|END|route_design reports|",
+      "[OPTRACE]|2693086|507|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430388895|START|Route Design: post hook|",
+      "[OPTRACE]|2693086|508|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430390383|END|Route Design: post hook|",
+      "[OPTRACE]|2693086|509|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430390384|START|Route Design: write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|2693086|510|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394055|END|Route Design: write_checkpoint|",
+      "[OPTRACE]|2693086|511|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394055|START|route_design misc|",
+      "[OPTRACE]|2693086|512|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394055|END|route_design misc|",
+      "[OPTRACE]|2693086|513|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394056|END|Phase: Route Design|",
+      "[OPTRACE]|2693086|514|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394056|START|Phase: Write Device Image|ROLLUP_AUTO",
+      "[OPTRACE]|2693086|515|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394056|START|write_device_image setup|",
+      "[OPTRACE]|2693086|516|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394056|START|Write Device Image: pre hook|",
+      "[OPTRACE]|2693086|517|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394134|END|Write Device Image: pre hook|",
+      "[OPTRACE]|2693086|518|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394134|START|read constraints: write_bitstream|",
+      "[OPTRACE]|2693086|519|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394134|END|read constraints: write_bitstream|",
+      "[OPTRACE]|2693086|520|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394135|START|read constraints: write_bitstream|",
+      "[OPTRACE]|2693086|521|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394135|END|read constraints: write_bitstream|",
+      "[OPTRACE]|2693086|522|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394770|END|write_device_image setup|",
+      "[OPTRACE]|2693086|523|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430394771|START|write_device_image|",
+      "[OPTRACE]|2693086|524|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430506661|END|write_device_image|",
+      "[OPTRACE]|2693086|525|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430506661|START|write_device_image misc|",
+      "[OPTRACE]|2693086|526|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430506661|START|read constraints: write_bitstream_post|",
+      "[OPTRACE]|2693086|527|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430506662|END|read constraints: write_bitstream_post|",
+      "[OPTRACE]|2693086|528|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430506662|START|read constraints: write_device_image_post|",
+      "[OPTRACE]|2693086|529|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430506662|END|read constraints: write_device_image_post|",
+      "[OPTRACE]|2693086|530|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430509349|START|Write Device Image: post hook|",
+      "[OPTRACE]|2693086|531|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430514364|END|Write Device Image: post hook|",
+      "[OPTRACE]|2693086|532|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430514364|END|write_device_image misc|",
+      "[OPTRACE]|2693086|533|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430514365|END|Phase: Write Device Image|",
+      "[OPTRACE]|2693086|534|/home/ubuntu/Desktop/dsp_recon/system_project/mac/mac/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1717430514365|END|impl_1|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM:SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+

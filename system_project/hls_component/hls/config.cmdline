@@ -1,0 +1,5 @@
+relativeroot=/home/ubuntu/Desktop/dsp_recon/system_project
+
+[hls]
+ide.compjson=0
+
