@@ -12,3 +12,5 @@
 
 #Ignore lock files
 .lock
+
+.ipcache
