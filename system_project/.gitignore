@@ -14,3 +14,7 @@
 .lock
 
 .ipcache
+
+output/sd_card.img
+
+.img

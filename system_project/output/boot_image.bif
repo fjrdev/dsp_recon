@@ -1,0 +1,14 @@
+all:
+{
+    image
+    {
+        { type=bootimage, file=/home/ubuntu/Desktop/dsp_recon/system_project/package_debug.build/package/system.pdi }
+    }
+    image
+    {
+        name=default_subsys, id=0x1c000000
+        { load=0x1000, file=/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/sw/xilinx_vck190_base_202310_1/boot/system.dtb }
+        { core=a72-0, exception_level=el-3, trustzone, file=/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/sw/xilinx_vck190_base_202310_1/boot/bl31.elf }
+        { core=a72-0, exception_level=el-2, load=0x8000000, file=/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/sw/xilinx_vck190_base_202310_1/boot/u-boot.elf }
+    }
+}
