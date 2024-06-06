@@ -12,3 +12,5 @@
 
 #Ignore lock files
 .lock
+
+/system_project/package_debug/sd_card.img
