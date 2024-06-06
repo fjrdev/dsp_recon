@@ -880,10 +880,10 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_fu_213_p2" SOURCE="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11" URAM="0" VARIABLE="add_ln11"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_232_p2" SOURCE="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12" URAM="0" VARIABLE="add_ln12"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_1_fu_247_p2" SOURCE="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12" URAM="0" VARIABLE="add_ln12_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_2_fu_274_p2" SOURCE="/mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12" URAM="0" VARIABLE="add_ln12_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_fu_213_p2" SOURCE="/home/franz/workspace/hls_component/add.cpp:11" URAM="0" VARIABLE="add_ln11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_232_p2" SOURCE="/home/franz/workspace/hls_component/add.cpp:12" URAM="0" VARIABLE="add_ln12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_1_fu_247_p2" SOURCE="/home/franz/workspace/hls_component/add.cpp:12" URAM="0" VARIABLE="add_ln12_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_2_fu_274_p2" SOURCE="/home/franz/workspace/hls_component/add.cpp:12" URAM="0" VARIABLE="add_ln12_2"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -1196,13 +1196,13 @@
             <item name="All M_AXI Variable Accesses">
                 <table>
                     <keys size="10">HW Interface, Variable, Access Location, Direction, Burst Status, Length, Loop, Loop Location, Resolution, Problem</keys>
-                    <column name="m_axi_gmem">, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26, read, Fail, , , , 214-224, Could not burst due to multiple potential reads to the same bundle in the same region.</column>
-                    <column name="m_axi_gmem">b, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:28, read, Widen Fail, , VITIS_LOOP_11_1, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26, 214-234, Sequential access length is not divisible by 2</column>
-                    <column name="m_axi_gmem">a, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:21, read, Widen Fail, , VITIS_LOOP_11_1, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26, 214-234, Sequential access length is not divisible by 2</column>
-                    <column name="m_axi_gmem">c, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:18, write, Fail, , , , 214-231, Access is clobbered by load</column>
-                    <column name="m_axi_gmem">c, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:18, read, Fail, , , , 214-231, Access is clobbered by store</column>
-                    <column name="m_axi_gmem">b, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:28, read, Inferred, variable, VITIS_LOOP_11_1, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26, , </column>
-                    <column name="m_axi_gmem">a, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:12:21, read, Inferred, variable, VITIS_LOOP_11_1, /mnt/tmp/franz/Desktop/dsp_recon/hls_component/add.cpp:11:26, , </column>
+                    <column name="m_axi_gmem">, /home/franz/workspace/hls_component/add.cpp:11:26, read, Fail, , , , 214-224, Could not burst due to multiple potential reads to the same bundle in the same region.</column>
+                    <column name="m_axi_gmem">b, /home/franz/workspace/hls_component/add.cpp:12:28, read, Widen Fail, , VITIS_LOOP_11_1, /home/franz/workspace/hls_component/add.cpp:11:26, 214-234, Sequential access length is not divisible by 2</column>
+                    <column name="m_axi_gmem">a, /home/franz/workspace/hls_component/add.cpp:12:21, read, Widen Fail, , VITIS_LOOP_11_1, /home/franz/workspace/hls_component/add.cpp:11:26, 214-234, Sequential access length is not divisible by 2</column>
+                    <column name="m_axi_gmem">c, /home/franz/workspace/hls_component/add.cpp:12:18, write, Fail, , , , 214-231, Access is clobbered by load</column>
+                    <column name="m_axi_gmem">c, /home/franz/workspace/hls_component/add.cpp:12:18, read, Fail, , , , 214-231, Access is clobbered by store</column>
+                    <column name="m_axi_gmem">b, /home/franz/workspace/hls_component/add.cpp:12:28, read, Inferred, variable, VITIS_LOOP_11_1, /home/franz/workspace/hls_component/add.cpp:11:26, , </column>
+                    <column name="m_axi_gmem">a, /home/franz/workspace/hls_component/add.cpp:12:21, read, Inferred, variable, VITIS_LOOP_11_1, /home/franz/workspace/hls_component/add.cpp:11:26, , </column>
                 </table>
             </item>
         </section>

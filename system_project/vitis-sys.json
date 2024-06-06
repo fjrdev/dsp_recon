@@ -73,7 +73,7 @@
   "hostMode": "x86",
   "previousBuildStatusMap": {
     "sw_emu": "SUCCESS",
-    "hw_emu": "SUCCESS",
+    "hw_emu": "ERROR",
     "hw": "ERROR"
   },
   "isDirty": true,

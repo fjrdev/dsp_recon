@@ -2636,3 +2636,21 @@ Thu May 30 22:53:38 2024: SERVER: destructor for server bound to port 42815
 Thu May 30 22:53:38 2024: XCD main fifo: Good unlink of /tmp/xcdmain1839e25e-823f-4e88-96fe-6d8e4ef5118a
 Thu May 30 22:53:38 2024: Server exiting with status 0.
 Thu May 30 22:53:38 2024: Closing log file.
+Mon Jun  3 16:42:22 2024: Running xcd server. This server was built by gradle.
+Mon Jun  3 16:42:22 2024: Server was asked to start on port: '46347'
+Mon Jun  3 16:42:22 2024: Server is using token UUID: '1a397065-f902-4556-a040-6ba1e47369b3'
+Mon Jun  3 16:42:22 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Jun  3 16:42:22 2024: Attempting to start server on port '46347'
+Mon Jun  3 16:42:22 2024: XCD main fifo: created main fifo '/tmp/xcdmain1a397065-f902-4556-a040-6ba1e47369b3', fd read = 13
+Mon Jun  3 16:42:22 2024: Running Dispatch Server
+Mon Jun  3 16:42:22 2024: Version 2.2.0
+Mon Jun  3 16:42:31 2024: Dispatch Server: Accepted socket connection from client
+Mon Jun  3 16:42:31 2024: Starting Socket connection
+Mon Jun  3 16:42:31 2024: EXCHANGE_TOKEN received, server token: 1a397065-f902-4556-a040-6ba1e47369b3, passed token: 1a397065-f902-4556-a040-6ba1e47369b3
+Mon Jun  3 16:42:31 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Jun  3 16:42:31 2024: SESSION_MGR: creating session with session uuid: 'cfd57355-632e-4c92-84d9-908c29695feb' and name 'v++_compile_hls_component'
+Mon Jun  3 16:42:31 2024: KERNEL_SVC: creating session with uuid: 'cfd57355-632e-4c92-84d9-908c29695feb' and name 'v++_compile_hls_component'
+Mon Jun  3 16:42:31 2024: GUIDANCE_SMGR: creating guidance session with uuid: 'cfd57355-632e-4c92-84d9-908c29695feb' and name 'v++_compile_hls_component'
+Mon Jun  3 16:42:31 2024: SYSTEM_DIAGRAM: creating session with uuid: 'cfd57355-632e-4c92-84d9-908c29695feb' and name 'v++_compile_hls_component'
+Mon Jun  3 16:42:38 2024: Dispatch Server: Accepted socket connection from client
+Mon Jun  3 16:42:38 2024: Starting Socket connection

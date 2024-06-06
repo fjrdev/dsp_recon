@@ -12,6 +12,6 @@
   "previousBuildStatusMap": {
     "sw_emu": "SUCCESS",
     "hw_emu": "SUCCESS",
-    "hw": "SUCCESS"
+    "hw": "ERROR"
   }
 }
