@@ -1,0 +1,125 @@
+<ENTRY>
+{
+ "thisFile": "/home/ubuntu/Desktop/dsp_recon/system_project/binary_container.xclbin.package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Jun  5 15:52:32 2024",
+ "timestampMillis": "1717595552651",
+ "buildStep": {
+  "cmdId": "51840488-f34c-43ea-b147-69626280a4e5",
+  "name": "v++",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/system_project/package_debug.build/package/package.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --package --target hw --platform /tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm --config ./package/package.cfg --package.rootfs /home/ubuntu/Desktop/xilinx-versal-common-v2023.1_05080224/xilinx-versal-common-v2023.1/rootfs.ext4 --package.kernel_image /home/ubuntu/Desktop/xilinx-versal-common-v2023.1_05080224/xilinx-versal-common-v2023.1/Image --package.out_dir package_debug --temp_dir=package_debug.build binary_container.xsa -o binary_container.xclbin ",
+  "args": [
+   "--package",
+   "--target",
+   "hw",
+   "--platform",
+   "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1/xilinx_vck190_base_202310_1.xpfm",
+   "--config",
+   "./package/package.cfg",
+   "--package.rootfs",
+   "/home/ubuntu/Desktop/xilinx-versal-common-v2023.1_05080224/xilinx-versal-common-v2023.1/rootfs.ext4",
+   "--package.kernel_image",
+   "/home/ubuntu/Desktop/xilinx-versal-common-v2023.1_05080224/xilinx-versal-common-v2023.1/Image",
+   "--package.out_dir",
+   "package_debug",
+   "--temp_dir=package_debug.build",
+   "binary_container.xsa",
+   "-o",
+   "binary_container.xclbin"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ubuntu/Desktop/dsp_recon/system_project/package/package.cfg",
+    "content": "temp_dir=package.build\nsave-temps=1\n\n[package]\nout_dir=./package\nenable_aie_debug=false\nrootfs=/home/franz/Downloads/xilinx-versal-common-v2023.1/rootfs.ext4\nkernel_image=/home/franz/Downloads/xilinx-versal-common-v2023.1/Image\n"
+   }
+  ],
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/system_project"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  5 15:52:32 2024",
+ "timestampMillis": "1717595552651",
+ "status": {
+  "cmdId": "51840488-f34c-43ea-b147-69626280a4e5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Jun  5 15:52:33 2024",
+ "timestampMillis": "1717595553238",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_vck190_base_202310_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/tools/Xilinx/Vitis/2023.1/base_platforms/xilinx_vck190_base_202310_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_PACKAGE",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "binary_container",
+    "file": "/home/ubuntu/Desktop/dsp_recon/system_project/binary_container.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [],
+  "toolVersion": "Vitis V++ Compiler Release 2023.1. SW Build 3860322 on 2023-05-04-06:32:48"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Jun  5 15:52:40 2024",
+ "timestampMillis": "1717595560200",
+ "status": {
+  "cmdId": "51840488-f34c-43ea-b147-69626280a4e5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  5 15:52:40 2024",
+ "timestampMillis": "1717595560232",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/package_debug.build/reports/package/v++_package_binary_container_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Jun  5 15:52:40 2024",
+ "timestampMillis": "1717595560232",
+ "report": {
+  "path": "/home/ubuntu/Desktop/dsp_recon/system_project/package_debug.build/v++_package_binary_container_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
