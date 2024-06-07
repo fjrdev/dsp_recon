@@ -1,6 +1,6 @@
-[submodule "hls_component/hls_component/cnpy"]
-	path = hls_component/hls_component/cnpy
+[submodule "hls_component/cnpy"]
+	path = hls_component/cnpy
 	url = https://github.com/rogersce/cnpy.git
-[submodule "hls_component/hls_component/json"]
-	path = hls_component/hls_component/json
+[submodule "hls_component/json"]
+	path = hls_component/json
 	url = https://github.com/nlohmann/json.git
