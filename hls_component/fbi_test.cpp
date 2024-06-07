@@ -1,5 +1,4 @@
 #include "fbi.h"
-#include "json/include/nlohmann/json.hpp"
 #include "cnpy/cnpy.h"
 #include <cstdlib>
 #include <iostream>
