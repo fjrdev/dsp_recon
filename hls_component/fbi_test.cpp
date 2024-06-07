@@ -1,5 +1,4 @@
 #include "fbi.h"
-#include "json/include/nlohmann/json.hpp"
 #include "cnpy/cnpy.h"
 #include <cstdlib>
 #include <iostream>
@@ -66,7 +65,7 @@ int main(int argc, char* argv[]) {
         phase_res_u, phase_res_v, fft_data, fft_im);
   
     // compare results to ground truth
-    cnpy::NpyArray fft_im_real_arr = cnpy::npy_load("fft_data_real.npy");
+    cnpy::NpyArray fft_im_real_arr = cnpy::npy_load("fft_im.npy");
     complexf* fft_im_real = fft_data_arr.data<complexf>();
 
     for (int i = 0; i < res_u * fft_im_cols; ++i) 

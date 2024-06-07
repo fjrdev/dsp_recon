@@ -50,7 +50,7 @@ extern "C" {
                 // handle each transmitter
                 for(int i_tx=0; i_tx<num_tx; i_tx++) {
 
-                    const float tx_position[2] = {pos_tx[i_tx*num_rx*2], pos_tx[(i_tx*num_rx*2)+1]};
+                    const float tx_position[2] = {static_cast<float>(pos_tx[i_tx*num_rx*2]), static_cast<float>(pos_tx[(i_tx*num_rx*2)+1])};
 
                     const float chunk_center[2] = {static_cast<float>(o[0] + ((float)c_idx_u+0.5)/phase_res_u*u[0] + ((float)c_idx_v+0.5)/phase_res_v*v[0]),
                                                 static_cast<float>(o[1] + ((float)c_idx_u+0.5)/phase_res_u*u[1] + ((float)c_idx_v+0.5)/phase_res_v*v[1])};
