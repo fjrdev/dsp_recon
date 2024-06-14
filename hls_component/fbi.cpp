@@ -2,15 +2,15 @@
 // Created by Franz Richter on 02.06.23.
 //
 
+#ifdef __cplusplus
 extern "C" {
+#endif
 
     #include "complex.h"
     #include "fbi.h"
     #include <math.h>
-    #include <complex>
-    #include <cfloat>
-
-    typedef std::complex<float> complexf;
+    #include <float.h>
+    #include <stdlib.h>
 
     // helper functions
     inline int map_neg_idx(int i, int N) {
@@ -39,8 +39,8 @@ extern "C" {
         complexf tmp = (0.0);
 
         // reconstruct image with chunk granularity
-        for(int c_idx_u = 0; c_idx_u < phase_res_u; c_idx_u++) {
-            for(int c_idx_v = 0; c_idx_v < phase_res_v; c_idx_v++) {
+        for(int c_idx_u = 0; c_idx_u < 1; c_idx_u++) {
+            for(int c_idx_v = 0; c_idx_v < 1; c_idx_v++) {
 
                 // Fill fft_im with 0.0
                 for(int i=0; i < res_u * fft_im_cols; i++) {
@@ -48,7 +48,7 @@ extern "C" {
                 }
 
                 // handle each transmitter
-                for(int i_tx=0; i_tx<num_tx; i_tx++) {
+                for(int i_tx=0; i_tx<1; i_tx++) {
 
                     const float tx_position[2] = {static_cast<float>(pos_tx[i_tx*num_rx*2]), static_cast<float>(pos_tx[(i_tx*num_rx*2)+1])};
 
@@ -59,13 +59,15 @@ extern "C" {
                     const float center_tx_diff[2] = {chunk_center[0] - tx_position[0], chunk_center[1] - tx_position[1]};
 
                     const auto diff_len = sqrt(center_tx_diff[0]*center_tx_diff[0] + center_tx_diff[1]*center_tx_diff[1]);
-                    float n[2] = {center_tx_diff[0]/diff_len, center_tx_diff[1]/diff_len};
+                    float n[2] = {static_cast<float>(center_tx_diff[0]/diff_len), static_cast<float>(center_tx_diff[1]/diff_len)};
 
                     auto rfft_cols = (sig_len / 2 + 1);
                     auto rfft_rows = num_rx;
 
-                    const complexf ii(0, 1);
-                    const float pi = std::acos(-1);
+                    //const complexf ii(0, 1);
+                    //const complexf ii = CMPLXF32(0.0, 1.0); // C-style init
+                    const complexf ii = {0.0f, 1.0f};
+                    const float pi = acos(-1);
 
                     // reconstruct pixel-wise in k-space
                     for (int iv = 0; iv < fft_im_cols; iv++) {
@@ -86,7 +88,7 @@ extern "C" {
                             float g_omega = omega * (t1 - t0);
 
                             bool is_active = (kz > 0) && (g_omega < (float)sig_len / 2) && (k0>0.0);
-                            complexf val;
+                            complexf val, tmp_mul, tmp;
 
                             // if current pixel contributes to reflected signal
                             if (is_active) {
@@ -109,7 +111,12 @@ extern "C" {
                                 val += fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_incr * rfft_cols + iomega+1) ] * a *b ;
 
                                 float phase_shift = kz_pr * (Z0 - v_len/2) + kx_pr * (-u_len/2) - k0*tx_position[0]*n[0];
-                                val *= std::exp(ii * ((float)2.0 * pi * phase_shift));
+
+                                //val *= std::exp(ii * ((float)2.0 * pi * phase_shift));
+
+                                tmp_mul = {(float) (creal(ii) * ((pi * phase_shift) * 2.0)) , (float) (cimag(ii) * ((pi * phase_shift) * 2.0)) };
+                                tmp = { (float) (exp(creal(tmp_mul)) * cos(cimag(tmp_mul))) , (float) (exp(creal(tmp_mul)) * sin(cimag(tmp_mul))) };
+                                val = { (float) (creal(val) * creal(tmp) - cimag(val) * cimag(tmp)), (float) (creal(val) * cimag(tmp) + cimag(val) * creal(tmp)) };
 
                             } else {
                                 val = 0.0;
@@ -135,7 +142,7 @@ extern "C" {
                             float g_omega = omega * (t1 - t0);
 
                             bool is_active = (kz > 0) && (g_omega < sig_len ) && (k0 > 0.0);
-                            complexf val;
+                            complexf val, tmp_mul, tmp;
 
                             // if current pixel contributes to reflected signal
                             if (is_active) {
@@ -158,7 +165,11 @@ extern "C" {
                                 val += fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_incr * rfft_cols + iomega+1 )] * a *b ;
 
                                 float phase_shift = kz_pr * (Z0 - v_len/2) + kx_pr * (-u_len/2) - k0*tx_position[0]*n[0];
-                                val *= std::exp(ii * ((float)2.0 * pi * phase_shift));
+                                //val *= std::exp(ii * ((float)2.0 * pi * phase_shift));
+
+                                tmp_mul = {(float) (creal(ii) * ((pi * phase_shift) * 2.0)) , (float) (cimag(ii) * ((pi * phase_shift) * 2.0)) };
+                                tmp = { (float) (exp(creal(tmp_mul)) * cos(cimag(tmp_mul))) , (float) (exp(creal(tmp_mul)) * sin(cimag(tmp_mul))) };
+                                val = { (float) (creal(val) * creal(tmp) - cimag(val) * cimag(tmp)), (float) (creal(val) * cimag(tmp) + cimag(val) * creal(tmp)) };
 
                             } else {
                                 val = 0.0;
@@ -176,4 +187,7 @@ extern "C" {
         //return fft_im;
 
     }
+
+#ifdef __cplusplus        
 }
+#endif

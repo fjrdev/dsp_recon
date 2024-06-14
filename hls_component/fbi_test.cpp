@@ -4,6 +4,7 @@
 #include <iostream>
 #include <random>
 #include <sys/types.h>
+#include <stdlib.h>
 
 int main(int argc, char* argv[]) {
 
@@ -50,23 +51,33 @@ int main(int argc, char* argv[]) {
     float v[2] = {0.0, static_cast<float>(aperture_size)};
 
     // get results from forward FFT as .npy (or stream data into a txt for not depending on third party libs)
-    cnpy::NpyArray fft_data_arr = cnpy::npy_load("fft_data.npy");
+    cnpy::NpyArray fft_data_arr = cnpy::npy_load("/home/franz/workspace/hls_component/fft_data.npy");
     complexf* fft_data = fft_data_arr.data<complexf>();
+
+    std::cout << fft_im_cols << std::endl;
+
+    //for (int i = 0; i < 50; ++i)
+    //    std::cout << creal(fft_data[i]) << " " << cimag(fft_data[i]) << std::endl;
 
     // init arrays
     complexf *fft_im = (complexf*)malloc(sizeof(complexf) * res_u * fft_im_cols);
-    for (int i = 0; i < res_u * fft_im_cols; ++i) fft_im[i] = 0;
+    for (int i = 0; i < res_u * fft_im_cols; ++i) fft_im[i] = {0.0, 0.0};
 
-    cnpy::NpyArray pos_tx_arr = cnpy::npy_load("pos_tx.npy");
+    // TODO: dont save the Vec2D, first convert it to a C++ array
+    cnpy::NpyArray pos_tx_arr = cnpy::npy_load("/home/franz/workspace/hls_component/pos_tx.npy");
     double* pos_tx = pos_tx_arr.data<double>();
 
     // run image reconstruction
-    fbi(pos_tx, sig_len, num_tx, num_rx, t1, 0.0, res_u, res_v, c, o, u, v, 
-        phase_res_u, phase_res_v, fft_data, fft_im);
+    //fbi(pos_tx, sig_len, num_tx, num_rx, t1, 0.0, res_u, res_v, c, o, u, v, 
+    //    phase_res_u, phase_res_v, fft_data, fft_im);
   
     // compare results to ground truth
-    cnpy::NpyArray fft_im_real_arr = cnpy::npy_load("fft_im.npy");
-    complexf* fft_im_real = fft_data_arr.data<complexf>();
+    cnpy::NpyArray fft_im_real_arr = cnpy::npy_load("/home/franz/workspace/hls_component/fft_im.npy");
+    complexd* fft_im_real = fft_data_arr.data<complexd>();
+
+    for (int i = 0; i < 100; ++i) {
+        std::cout << creal(fft_im_real[i]) << " " << cimag(fft_im_real[i]) << std::endl; 
+    }    
 
     for (int i = 0; i < res_u * fft_im_cols; ++i) 
         if (fft_im[i] != fft_im_real[i]) return EXIT_FAILURE;
