@@ -1,0 +1,58 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/franz/workspace/hls_component/hls_component/hls_component.hlscompile_summary, at Wed Jun 19 14:04:32 2024
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /home/franz/workspace/hls_component/hls_component -config /home/franz/workspace/hls_component/hls_config.cfg -cmdlineconfig /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+  **** SW Build 3854077 on May  4 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'franz' on host 'fjrdev' (Linux_x86_64 version 6.5.0-35-generic) on Wed Jun 19 14:04:34 CEST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/franz/workspace/hls_component'
+INFO: [HLS 200-2005] Using work_dir /home/franz/workspace/hls_component/hls_component 
+INFO: [HLS 200-1510] Running: open_project /home/franz/workspace/hls_component/hls_component -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=fbi.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/fbi.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=fbi.h' at /home/franz/workspace/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/franz/workspace/hls_component/fbi.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=fbi_test.cpp' at /home/franz/workspace/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/franz/workspace/hls_component/fbi_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.cflags=-L/home/franz/workspace/hls_component/' at /home/franz/workspace/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'syn.top=fbi' at /home/franz/workspace/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' at /home/franz/workspace/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying ini 'clock=10' at /home/franz/workspace/hls_component/hls_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'part=xcvc1902-vsva2197-2MP-e-S' at /home/franz/workspace/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcvc1902-vsva2197-2MP-e-S'
+INFO: [HLS 200-1465] Applying ini 'csim.ldflags=-L/home/franz/workspace/hls_component/cnpy/build/libcnpy.so -lcnpy -lz' at /home/franz/workspace/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.output.format=xo' at /home/franz/workspace/hls_component/hls_config.cfg(6)
+INFO: [HLS 200-1510] Running: apply_ini /home/franz/workspace/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/franz/workspace/hls_component/hls_component/hls/config.cmdline
+INFO: [HLS 200-1465] Applying ini 'ide.compjson=0' at /home/franz/workspace/hls_component/hls_component/hls/config.cmdline(4)
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.080 GB.
+INFO: [HLS 200-10] Analyzing design file '/home/franz/workspace/hls_component/fbi.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.24 seconds. CPU system time: 0.66 seconds. Elapsed time: 2.91 seconds; current allocated memory: 1.082 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-1995] There were 27,459 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,820 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/franz/workspace/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6.31 seconds. CPU system time: 1.38 seconds. Elapsed time: 11.4 seconds; current allocated memory: 2.887 MB.
+ERROR: Pre-synthesis failed.
+INFO: [HLS 200-112] Total CPU user time: 10.08 seconds. Total CPU system time: 2.24 seconds. Total elapsed time: 15.9 seconds; peak allocated memory: 1.083 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Jun 19 14:04:49 2024...
