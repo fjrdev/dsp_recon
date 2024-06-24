@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/franz/workspace/hls_component/hls_component/hls_component.hlsrun_csim_summary",
+ "thisFile": "/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls_component.hlsrun_csim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,35 +9,35 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sun May 26 15:27:44 2024",
- "timestampMillis": "1716730064323",
+ "dateTimestamp": "Fri Jun 21 12:31:36 2024",
+ "timestampMillis": "1718965896288",
  "buildStep": {
-  "cmdId": "b0024c0b-29d4-4278-a56a-914b5e4b614c",
+  "cmdId": "f9e2c179-bbeb-4ede-89e4-10b928b27c62",
   "name": "vitis-run",
-  "logFile": "/home/franz/workspace/hls_component/hls_component/logs/hls_component.steps.log",
-  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/franz/workspace/hls_component/hls_config.cfg --work_dir hls_component --hls.ide.compjson=0 ",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/ubuntu/Desktop/dsp_recon/hls_component/hls_config.cfg --work_dir hls_component --hls.ide.compjson=0 ",
   "args": [
    "--mode",
    "hls",
    "--csim",
    "--config",
-   "/home/franz/workspace/hls_component/hls_config.cfg",
+   "/home/ubuntu/Desktop/dsp_recon/hls_component/hls_config.cfg",
    "--work_dir",
    "hls_component",
    "--hls.ide.compjson=0"
   ],
   "iniFiles": [],
-  "cwd": "/home/franz/workspace/hls_component"
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/hls_component"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May 26 15:27:44 2024",
- "timestampMillis": "1716730064323",
+ "dateTimestamp": "Fri Jun 21 12:31:36 2024",
+ "timestampMillis": "1718965896288",
  "status": {
-  "cmdId": "b0024c0b-29d4-4278-a56a-914b5e4b614c",
+  "cmdId": "f9e2c179-bbeb-4ede-89e4-10b928b27c62",
   "state": "CS_RUNNING"
  }
 }
@@ -45,8 +45,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sun May 26 15:27:52 2024",
- "timestampMillis": "1716730072759",
+ "dateTimestamp": "Fri Jun 21 12:31:38 2024",
+ "timestampMillis": "1718965898629",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -59,14 +59,14 @@
    {
     "base": {
      "type": "KERNEL",
-     "name": "mac",
+     "name": "fbi",
      "file": "",
      "reports": [],
      "uuid": ""
     },
     "sources": [
-     "/home/franz/workspace/hls_component/add.cpp",
-     "/home/franz/workspace/hls_component/add.h"
+     "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp",
+     "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.h"
     ],
     "psSources": [],
     "cuNames": [],
@@ -82,26 +82,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sun May 26 15:27:52 2024",
- "timestampMillis": "1716730072762",
+ "dateTimestamp": "Fri Jun 21 12:31:38 2024",
+ "timestampMillis": "1718965898630",
  "buildStep": {
-  "cmdId": "5d4785b0-f2e5-4cd8-86d3-5ff58cfa0156",
+  "cmdId": "4d69a0cf-1857-48cc-abce-13984615db99",
   "name": "csim_design",
-  "logFile": "/home/franz/workspace/hls_component/hls_component/hls/hls.log",
+  "logFile": "/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/hls.log",
   "commandLine": "csim_design",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/franz/workspace/hls_component"
+  "cwd": "/home/ubuntu/Desktop/dsp_recon/hls_component"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May 26 15:27:52 2024",
- "timestampMillis": "1716730072763",
+ "dateTimestamp": "Fri Jun 21 12:31:38 2024",
+ "timestampMillis": "1718965898630",
  "status": {
-  "cmdId": "5d4785b0-f2e5-4cd8-86d3-5ff58cfa0156",
+  "cmdId": "4d69a0cf-1857-48cc-abce-13984615db99",
   "state": "CS_RUNNING"
  }
 }
@@ -109,10 +109,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May 26 15:27:53 2024",
- "timestampMillis": "1716730073779",
+ "dateTimestamp": "Fri Jun 21 12:31:39 2024",
+ "timestampMillis": "1718965899355",
  "status": {
-  "cmdId": "5d4785b0-f2e5-4cd8-86d3-5ff58cfa0156",
+  "cmdId": "4d69a0cf-1857-48cc-abce-13984615db99",
   "state": "CS_PASSED"
  }
 }
@@ -120,10 +120,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun May 26 15:27:54 2024",
- "timestampMillis": "1716730074197",
+ "dateTimestamp": "Fri Jun 21 12:31:39 2024",
+ "timestampMillis": "1718965899453",
  "status": {
-  "cmdId": "b0024c0b-29d4-4278-a56a-914b5e4b614c",
+  "cmdId": "f9e2c179-bbeb-4ede-89e4-10b928b27c62",
   "state": "CS_PASSED"
  }
 }
@@ -131,8 +131,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun May 26 15:27:54 2024",
- "timestampMillis": "1716730074198",
+ "dateTimestamp": "Fri Jun 21 12:31:39 2024",
+ "timestampMillis": "1718965899454",
  "report": {
   "path": "",
   "name": "",
@@ -145,8 +145,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun May 26 15:27:54 2024",
- "timestampMillis": "1716730074199",
+ "dateTimestamp": "Fri Jun 21 12:31:39 2024",
+ "timestampMillis": "1718965899454",
  "report": {
   "path": "",
   "name": "",

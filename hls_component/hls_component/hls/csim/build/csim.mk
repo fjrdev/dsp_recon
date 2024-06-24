@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../add_test.cpp ../../../../add.cpp
+HLS_SOURCES = ../../../../fbi_test.cpp ../../../../fbi.cpp
 
 override TARGET := csim.exe
 
@@ -60,6 +60,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP58_PRIMARY__
+LFLAG += -L/cnpy/build/libcnpy.so -lcnpy -lz
 IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
@@ -74,14 +75,14 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/add_test.o: ../../../../add_test.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../add_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+$(ObjDir)/fbi_test.o: ../../../../fbi_test.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../fbi_test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -L/cnpy/build/libcnpy.so -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/add_test.d
+-include $(ObjDir)/fbi_test.d
 
-$(ObjDir)/add.o: ../../../../add.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../add.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+$(ObjDir)/fbi.o: ../../../../fbi.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../fbi.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -L/cnpy/build/libcnpy.so -lcnpy -lz -L/cnpy/build/libcnpy.so -lcnpy -lz  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/add.d
+-include $(ObjDir)/fbi.d

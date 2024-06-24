@@ -2,12 +2,32 @@
 == Design Size Report
 ================================================================
 
+* C-Synthesis has not completed, compilation phases remaining:
+    * Performance/Pipeline
+    * Optimizations
+
 * Instructions per Function for each Compilation Phase
-+----------+-----------+--------------+---------------+----------------------+---------------+
-| Function | Location  | Compile/Link | Unroll/Inline | Performance/Pipeline | Optimizations |
-+----------+-----------+--------------+---------------+----------------------+---------------+
-|   mac    | add.cpp:4 | 22           | 25            | 37                   | 43            |
-+----------+-----------+--------------+---------------+----------------------+---------------+
++-------------------------------+-------------------+------------------+-----------------+
+| Function                      | Location          | Compile/Link     | Unroll/Inline   |
++-------------------------------+-------------------+------------------+-----------------+
+| + fbi                         | fbi.cpp:21        | 27,459           | 2,820           |
+|  + floor                      | floordouble.cpp:6 | 11,388 (4 calls) |   912 (4 calls) |
+|   + generic_floor<double>     | hls_floor.h:13    | 11,380 (4 calls) |   904 (4 calls) |
+|      init_mask_table<double>  | hls_round.h:49    |     76 (4 calls) |                 |
+|      fp_struct                | x_hls_utils.h:485 |  1,400 (4 calls) |    60 (4 calls) |
+|      __signbit                | x_hls_utils.h:541 |     72 (8 calls) |    24 (8 calls) |
+|    + generic_copysign<double> | hls_copysign.h:10 |  4,136 (4 calls) |   264 (4 calls) |
+|       fp_struct               | x_hls_utils.h:485 |  2,800 (8 calls) |   120 (8 calls) |
+|     + to_ieee                 | x_hls_utils.h:538 |  1,264 (4 calls) |    96 (4 calls) |
+|      + to_double              | x_hls_utils.h:523 |  1,256 (4 calls) |    88 (4 calls) |
+|         data                  | x_hls_utils.h:504 |  1,184 (4 calls) |    68 (4 calls) |
+|      data                     | x_hls_utils.h:504 |  1,184 (4 calls) |    68 (4 calls) |
+|      fp_struct                | x_hls_utils.h:493 |  1,280 (4 calls) |    68 (4 calls) |
+|    + to_ieee                  | x_hls_utils.h:538 |  1,264 (4 calls) |    96 (4 calls) |
+|     + to_double               | x_hls_utils.h:523 |  1,256 (4 calls) |    88 (4 calls) |
+|        data                   | x_hls_utils.h:504 |  1,184 (4 calls) |    68 (4 calls) |
+|    map_neg_idx                | fbi.cpp:16        |     20 (4 calls) |    20 (4 calls) |
++-------------------------------+-------------------+------------------+-----------------+
 
 * Description of Compilation Phases
 +----------------------+------------------------------------------------------------+

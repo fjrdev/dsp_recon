@@ -1,30 +1,30 @@
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36067:9: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35756:9: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
         for(int c_idx_u = 0; c_idx_u < 1; c_idx_u++) {
         ^~~
         VITIS_LOOP_39_1: 
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36067:9: note: FIX-IT applied suggested code changes
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36068:13: warning: Added loop label VITIS_LOOP_40_2:   [xilinx-label-all-loops]
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35756:9: note: FIX-IT applied suggested code changes
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35757:13: warning: Added loop label VITIS_LOOP_40_2:   [xilinx-label-all-loops]
             for(int c_idx_v = 0; c_idx_v < 1; c_idx_v++) {
             ^~~
             VITIS_LOOP_40_2: 
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36068:13: note: FIX-IT applied suggested code changes
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36076:17: warning: Added loop label VITIS_LOOP_48_3:   [xilinx-label-all-loops]
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35757:13: note: FIX-IT applied suggested code changes
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35765:17: warning: Added loop label VITIS_LOOP_48_3:   [xilinx-label-all-loops]
                 for(int i_tx=0; i_tx<1; i_tx++) {
                 ^~~
                 VITIS_LOOP_48_3: 
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36076:17: note: FIX-IT applied suggested code changes
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36098:21: warning: Added loop label VITIS_LOOP_70_4:   [xilinx-label-all-loops]
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35765:17: note: FIX-IT applied suggested code changes
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35787:21: warning: Added loop label VITIS_LOOP_70_4:   [xilinx-label-all-loops]
                     for (int iv = 0; iv < fft_im_cols; iv++) {
                     ^~~
                     VITIS_LOOP_70_4: 
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36098:21: note: FIX-IT applied suggested code changes
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36099:25: warning: Added loop label VITIS_LOOP_71_5:   [xilinx-label-all-loops]
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35787:21: note: FIX-IT applied suggested code changes
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35788:25: warning: Added loop label VITIS_LOOP_71_5:   [xilinx-label-all-loops]
                         for (int iu = 0; iu < res_u / 2; iu++) {
                         ^~~
                         VITIS_LOOP_71_5: 
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36099:25: note: FIX-IT applied suggested code changes
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36148:25: warning: Added loop label VITIS_LOOP_120_6:   [xilinx-label-all-loops]
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35788:25: note: FIX-IT applied suggested code changes
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35837:25: warning: Added loop label VITIS_LOOP_120_6:   [xilinx-label-all-loops]
                         for (int iu = res_u / 2; iu < res_u; iu++) {
                         ^~~
                         VITIS_LOOP_120_6: 
-/home/franz/workspace/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:36148:25: note: FIX-IT applied suggested code changes
+/home/ubuntu/Desktop/dsp_recon/hls_component/hls_component/hls/.autopilot/db/fbi.pp.0.cpp:35837:25: note: FIX-IT applied suggested code changes

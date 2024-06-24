@@ -6,6 +6,7 @@
 #include <sys/types.h>
 #include <stdlib.h>
 #include <complex>
+#include <string>
 
 typedef std::complex<double> complexd;
 
@@ -33,7 +34,7 @@ int main(int argc, char* argv[]) {
 
     // get results from forward FFT as .npy (or stream data into a txt for not depending on third party libs)
     complexd *fft_data = (complexd*) malloc(sizeof(complexd) * rfft_cols * rfft_rows);
-    cnpy::NpyArray fft_data_arr = cnpy::npy_load("/home/franz/workspace/hls_component/fft_data.npy"); // we are just getting data for one transmitter here
+    cnpy::NpyArray fft_data_arr = cnpy::npy_load("/home/ubuntu/Desktop/dsp_recon/hls_component/fft_data.npy"); // we are just getting data for one transmitter here
     fft_data = fft_data_arr.data<complexd>();
 
     // init arrays
@@ -42,7 +43,7 @@ int main(int argc, char* argv[]) {
 
     // TODO: dont save the Vec2D, first convert it to a C++ array
     double *pos_tx = (double*) malloc(sizeof(double) * num_tx * num_rx * 2); // we are getting all the pos data here
-    cnpy::NpyArray pos_tx_arr = cnpy::npy_load("/home/franz/workspace/hls_component/pos_tx.npy"); 
+    cnpy::NpyArray pos_tx_arr = cnpy::npy_load("/home/ubuntu/Desktop/dsp_recon/hls_component/pos_tx.npy"); 
     pos_tx = pos_tx_arr.data<double>();
 
     // run image reconstruction
@@ -51,7 +52,7 @@ int main(int argc, char* argv[]) {
   
     // compare results to ground truth
     complexd *fft_im_real = (complexd*) malloc(sizeof(complexd) * res_u * fft_im_cols);
-    cnpy::NpyArray fft_im_real_arr = cnpy::npy_load("/home/franz/workspace/hls_component/fft_im.npy");
+    cnpy::NpyArray fft_im_real_arr = cnpy::npy_load("/home/ubuntu/Desktop/dsp_recon/hls_component/fft_im.npy");
     fft_im_real = fft_im_real_arr.data<complexd>();   
 
     double total_off = 0;

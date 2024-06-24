@@ -1,4 +1,4 @@
-# 1 "/home/franz/workspace/hls_component/fbi.cpp"
+# 1 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 376 "<built-in>" 3
@@ -155,7 +155,7 @@ extern "C" {
 
 }
 # 2 "<built-in>" 2
-# 1 "/home/franz/workspace/hls_component/fbi.cpp" 2
+# 1 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp" 2
 
 
 
@@ -191,34 +191,23 @@ namespace __gnu_cxx
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
 # 39 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
 # 1 "/usr/include/features.h" 1 3 4
-# 392 "/usr/include/features.h" 3 4
-# 1 "/usr/include/features-time64.h" 1 3 4
-# 20 "/usr/include/features-time64.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 21 "/usr/include/features-time64.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
-# 22 "/usr/include/features-time64.h" 2 3 4
-# 393 "/usr/include/features.h" 2 3 4
-# 464 "/usr/include/features.h" 3 4
+# 439 "/usr/include/features.h" 3 4
 # 1 "/usr/include/stdc-predef.h" 1 3 4
-# 465 "/usr/include/features.h" 2 3 4
-# 486 "/usr/include/features.h" 3 4
+# 440 "/usr/include/features.h" 2 3 4
+# 461 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 559 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 560 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 561 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 487 "/usr/include/features.h" 2 3 4
-# 510 "/usr/include/features.h" 3 4
+# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 462 "/usr/include/features.h" 2 3 4
+# 485 "/usr/include/features.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
 # 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
 # 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 511 "/usr/include/features.h" 2 3 4
+# 486 "/usr/include/features.h" 2 3 4
 # 40 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
 # 509 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
 
@@ -778,9 +767,6 @@ extern "C" {
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
 # 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
 
 
@@ -852,7 +838,6 @@ typedef unsigned int __id_t;
 typedef long int __time_t;
 typedef unsigned int __useconds_t;
 typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
 
 typedef int __daddr_t;
 typedef int __key_t;
@@ -916,7 +901,7 @@ typedef int __sig_atomic_t;
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
-# 119 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
@@ -929,20 +914,20 @@ typedef double _Float64;
 typedef double _Float32x;
 # 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
 typedef long double _Float64x;
-# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 121 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
 # 44 "/usr/include/math.h" 2 3 4
-# 152 "/usr/include/math.h" 3 4
+# 138 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h" 1 3 4
-# 153 "/usr/include/math.h" 2 3 4
-# 163 "/usr/include/math.h" 3 4
+# 139 "/usr/include/math.h" 2 3 4
+# 149 "/usr/include/math.h" 3 4
 typedef float float_t;
 typedef double double_t;
-# 204 "/usr/include/math.h" 3 4
+# 190 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/fp-logb.h" 1 3 4
-# 205 "/usr/include/math.h" 2 3 4
-# 247 "/usr/include/math.h" 3 4
+# 191 "/usr/include/math.h" 2 3 4
+# 233 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/fp-fast.h" 1 3 4
-# 248 "/usr/include/math.h" 2 3 4
+# 234 "/usr/include/math.h" 2 3 4
 
 
 
@@ -964,202 +949,198 @@ enum
 
       4,
   };
-# 312 "/usr/include/math.h" 3 4
+# 289 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassify (double __value) noexcept (true)
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassify (double __value) throw ()
      __attribute__ ((__const__));
 
 
-extern int __signbit (double __value) noexcept (true)
+extern int __signbit (double __value) throw ()
      __attribute__ ((__const__));
 
 
 
-extern int __isinf (double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __isinf (double __value) throw () __attribute__ ((__const__));
 
 
-extern int __finite (double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __finite (double __value) throw () __attribute__ ((__const__));
 
 
-extern int __isnan (double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __isnan (double __value) throw () __attribute__ ((__const__));
 
 
-extern int __iseqsig (double __x, double __y) noexcept (true);
+extern int __iseqsig (double __x, double __y) throw ();
 
 
-extern int __issignaling (double __value) noexcept (true)
+extern int __issignaling (double __value) throw ()
      __attribute__ ((__const__));
-# 313 "/usr/include/math.h" 2 3 4
+# 290 "/usr/include/math.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern double acos (double __x) noexcept (true); extern double __acos (double __x) noexcept (true);
+extern double acos (double __x) throw (); extern double __acos (double __x) throw ();
 
- extern double asin (double __x) noexcept (true); extern double __asin (double __x) noexcept (true);
+extern double asin (double __x) throw (); extern double __asin (double __x) throw ();
 
- extern double atan (double __x) noexcept (true); extern double __atan (double __x) noexcept (true);
+extern double atan (double __x) throw (); extern double __atan (double __x) throw ();
 
- extern double atan2 (double __y, double __x) noexcept (true); extern double __atan2 (double __y, double __x) noexcept (true);
+extern double atan2 (double __y, double __x) throw (); extern double __atan2 (double __y, double __x) throw ();
 
 
- extern double cos (double __x) noexcept (true); extern double __cos (double __x) noexcept (true);
+ extern double cos (double __x) throw (); extern double __cos (double __x) throw ();
 
- extern double sin (double __x) noexcept (true); extern double __sin (double __x) noexcept (true);
+ extern double sin (double __x) throw (); extern double __sin (double __x) throw ();
 
- extern double tan (double __x) noexcept (true); extern double __tan (double __x) noexcept (true);
+extern double tan (double __x) throw (); extern double __tan (double __x) throw ();
 
 
 
 
- extern double cosh (double __x) noexcept (true); extern double __cosh (double __x) noexcept (true);
+extern double cosh (double __x) throw (); extern double __cosh (double __x) throw ();
 
- extern double sinh (double __x) noexcept (true); extern double __sinh (double __x) noexcept (true);
+extern double sinh (double __x) throw (); extern double __sinh (double __x) throw ();
 
- extern double tanh (double __x) noexcept (true); extern double __tanh (double __x) noexcept (true);
+extern double tanh (double __x) throw (); extern double __tanh (double __x) throw ();
 
 
 
- extern void sincos (double __x, double *__sinx, double *__cosx) noexcept (true); extern void __sincos (double __x, double *__sinx, double *__cosx) noexcept (true);
+ extern void sincos (double __x, double *__sinx, double *__cosx) throw (); extern void __sincos (double __x, double *__sinx, double *__cosx) throw ();
 
 
 
 
 
- extern double acosh (double __x) noexcept (true); extern double __acosh (double __x) noexcept (true);
+extern double acosh (double __x) throw (); extern double __acosh (double __x) throw ();
 
- extern double asinh (double __x) noexcept (true); extern double __asinh (double __x) noexcept (true);
+extern double asinh (double __x) throw (); extern double __asinh (double __x) throw ();
 
- extern double atanh (double __x) noexcept (true); extern double __atanh (double __x) noexcept (true);
+extern double atanh (double __x) throw (); extern double __atanh (double __x) throw ();
 
 
 
 
 
- extern double exp (double __x) noexcept (true); extern double __exp (double __x) noexcept (true);
+ extern double exp (double __x) throw (); extern double __exp (double __x) throw ();
 
 
-extern double frexp (double __x, int *__exponent) noexcept (true); extern double __frexp (double __x, int *__exponent) noexcept (true);
+extern double frexp (double __x, int *__exponent) throw (); extern double __frexp (double __x, int *__exponent) throw ();
 
 
-extern double ldexp (double __x, int __exponent) noexcept (true); extern double __ldexp (double __x, int __exponent) noexcept (true);
+extern double ldexp (double __x, int __exponent) throw (); extern double __ldexp (double __x, int __exponent) throw ();
 
 
- extern double log (double __x) noexcept (true); extern double __log (double __x) noexcept (true);
+ extern double log (double __x) throw (); extern double __log (double __x) throw ();
 
 
- extern double log10 (double __x) noexcept (true); extern double __log10 (double __x) noexcept (true);
+extern double log10 (double __x) throw (); extern double __log10 (double __x) throw ();
 
 
-extern double modf (double __x, double *__iptr) noexcept (true); extern double __modf (double __x, double *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern double modf (double __x, double *__iptr) throw (); extern double __modf (double __x, double *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern double exp10 (double __x) noexcept (true); extern double __exp10 (double __x) noexcept (true);
+extern double exp10 (double __x) throw (); extern double __exp10 (double __x) throw ();
 
 
 
 
- extern double expm1 (double __x) noexcept (true); extern double __expm1 (double __x) noexcept (true);
+extern double expm1 (double __x) throw (); extern double __expm1 (double __x) throw ();
 
 
- extern double log1p (double __x) noexcept (true); extern double __log1p (double __x) noexcept (true);
+extern double log1p (double __x) throw (); extern double __log1p (double __x) throw ();
 
 
-extern double logb (double __x) noexcept (true); extern double __logb (double __x) noexcept (true);
+extern double logb (double __x) throw (); extern double __logb (double __x) throw ();
 
 
 
 
- extern double exp2 (double __x) noexcept (true); extern double __exp2 (double __x) noexcept (true);
+extern double exp2 (double __x) throw (); extern double __exp2 (double __x) throw ();
 
 
- extern double log2 (double __x) noexcept (true); extern double __log2 (double __x) noexcept (true);
+extern double log2 (double __x) throw (); extern double __log2 (double __x) throw ();
 
 
 
 
 
 
- extern double pow (double __x, double __y) noexcept (true); extern double __pow (double __x, double __y) noexcept (true);
+ extern double pow (double __x, double __y) throw (); extern double __pow (double __x, double __y) throw ();
 
 
-extern double sqrt (double __x) noexcept (true); extern double __sqrt (double __x) noexcept (true);
+extern double sqrt (double __x) throw (); extern double __sqrt (double __x) throw ();
 
 
 
- extern double hypot (double __x, double __y) noexcept (true); extern double __hypot (double __x, double __y) noexcept (true);
+extern double hypot (double __x, double __y) throw (); extern double __hypot (double __x, double __y) throw ();
 
 
 
 
- extern double cbrt (double __x) noexcept (true); extern double __cbrt (double __x) noexcept (true);
+extern double cbrt (double __x) throw (); extern double __cbrt (double __x) throw ();
 
 
 
 
 
 
-extern double ceil (double __x) noexcept (true) __attribute__ ((__const__)); extern double __ceil (double __x) noexcept (true) __attribute__ ((__const__));
+extern double ceil (double __x) throw () __attribute__ ((__const__)); extern double __ceil (double __x) throw () __attribute__ ((__const__));
 
 
-extern double fabs (double __x) noexcept (true) __attribute__ ((__const__)); extern double __fabs (double __x) noexcept (true) __attribute__ ((__const__));
+extern double fabs (double __x) throw () __attribute__ ((__const__)); extern double __fabs (double __x) throw () __attribute__ ((__const__));
 
 
-extern double floor (double __x) noexcept (true) __attribute__ ((__const__)); extern double __floor (double __x) noexcept (true) __attribute__ ((__const__));
+extern double floor (double __x) throw () __attribute__ ((__const__)); extern double __floor (double __x) throw () __attribute__ ((__const__));
 
 
-extern double fmod (double __x, double __y) noexcept (true); extern double __fmod (double __x, double __y) noexcept (true);
-# 183 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int finite (double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern double fmod (double __x, double __y) throw (); extern double __fmod (double __x, double __y) throw ();
+# 182 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern int finite (double __value) throw () __attribute__ ((__const__));
 
 
-extern double drem (double __x, double __y) noexcept (true); extern double __drem (double __x, double __y) noexcept (true);
+extern double drem (double __x, double __y) throw (); extern double __drem (double __x, double __y) throw ();
 
 
 
-extern double significand (double __x) noexcept (true); extern double __significand (double __x) noexcept (true);
+extern double significand (double __x) throw (); extern double __significand (double __x) throw ();
 
 
 
 
 
 
-extern double copysign (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __copysign (double __x, double __y) noexcept (true) __attribute__ ((__const__));
+extern double copysign (double __x, double __y) throw () __attribute__ ((__const__)); extern double __copysign (double __x, double __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern double nan (const char *__tagb) noexcept (true); extern double __nan (const char *__tagb) noexcept (true);
-# 220 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern double j0 (double) noexcept (true); extern double __j0 (double) noexcept (true);
-extern double j1 (double) noexcept (true); extern double __j1 (double) noexcept (true);
-extern double jn (int, double) noexcept (true); extern double __jn (int, double) noexcept (true);
-extern double y0 (double) noexcept (true); extern double __y0 (double) noexcept (true);
-extern double y1 (double) noexcept (true); extern double __y1 (double) noexcept (true);
-extern double yn (int, double) noexcept (true); extern double __yn (int, double) noexcept (true);
+extern double nan (const char *__tagb) throw (); extern double __nan (const char *__tagb) throw ();
+# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double j0 (double) throw (); extern double __j0 (double) throw ();
+extern double j1 (double) throw (); extern double __j1 (double) throw ();
+extern double jn (int, double) throw (); extern double __jn (int, double) throw ();
+extern double y0 (double) throw (); extern double __y0 (double) throw ();
+extern double y1 (double) throw (); extern double __y1 (double) throw ();
+extern double yn (int, double) throw (); extern double __yn (int, double) throw ();
 
 
 
 
 
- extern double erf (double) noexcept (true); extern double __erf (double) noexcept (true);
- extern double erfc (double) noexcept (true); extern double __erfc (double) noexcept (true);
-extern double lgamma (double) noexcept (true); extern double __lgamma (double) noexcept (true);
+extern double erf (double) throw (); extern double __erf (double) throw ();
+extern double erfc (double) throw (); extern double __erfc (double) throw ();
+extern double lgamma (double) throw (); extern double __lgamma (double) throw ();
 
 
 
 
-extern double tgamma (double) noexcept (true); extern double __tgamma (double) noexcept (true);
+extern double tgamma (double) throw (); extern double __tgamma (double) throw ();
 
 
 
 
 
-extern double gamma (double) noexcept (true); extern double __gamma (double) noexcept (true);
+extern double gamma (double) throw (); extern double __gamma (double) throw ();
 
 
 
@@ -1167,400 +1148,362 @@ extern double gamma (double) noexcept (true); extern double __gamma (double) noe
 
 
 
-extern double lgamma_r (double, int *__signgamp) noexcept (true); extern double __lgamma_r (double, int *__signgamp) noexcept (true);
+extern double lgamma_r (double, int *__signgamp) throw (); extern double __lgamma_r (double, int *__signgamp) throw ();
 
 
 
 
 
 
-extern double rint (double __x) noexcept (true); extern double __rint (double __x) noexcept (true);
+extern double rint (double __x) throw (); extern double __rint (double __x) throw ();
 
 
-extern double nextafter (double __x, double __y) noexcept (true); extern double __nextafter (double __x, double __y) noexcept (true);
+extern double nextafter (double __x, double __y) throw (); extern double __nextafter (double __x, double __y) throw ();
 
-extern double nexttoward (double __x, long double __y) noexcept (true); extern double __nexttoward (double __x, long double __y) noexcept (true);
+extern double nexttoward (double __x, long double __y) throw (); extern double __nexttoward (double __x, long double __y) throw ();
 
 
 
 
-extern double nextdown (double __x) noexcept (true); extern double __nextdown (double __x) noexcept (true);
+extern double nextdown (double __x) throw (); extern double __nextdown (double __x) throw ();
 
-extern double nextup (double __x) noexcept (true); extern double __nextup (double __x) noexcept (true);
+extern double nextup (double __x) throw (); extern double __nextup (double __x) throw ();
 
 
 
-extern double remainder (double __x, double __y) noexcept (true); extern double __remainder (double __x, double __y) noexcept (true);
+extern double remainder (double __x, double __y) throw (); extern double __remainder (double __x, double __y) throw ();
 
 
 
-extern double scalbn (double __x, int __n) noexcept (true); extern double __scalbn (double __x, int __n) noexcept (true);
+extern double scalbn (double __x, int __n) throw (); extern double __scalbn (double __x, int __n) throw ();
 
 
 
-extern int ilogb (double __x) noexcept (true); extern int __ilogb (double __x) noexcept (true);
+extern int ilogb (double __x) throw (); extern int __ilogb (double __x) throw ();
 
 
 
 
-extern long int llogb (double __x) noexcept (true); extern long int __llogb (double __x) noexcept (true);
+extern long int llogb (double __x) throw (); extern long int __llogb (double __x) throw ();
 
 
 
 
-extern double scalbln (double __x, long int __n) noexcept (true); extern double __scalbln (double __x, long int __n) noexcept (true);
+extern double scalbln (double __x, long int __n) throw (); extern double __scalbln (double __x, long int __n) throw ();
 
 
 
-extern double nearbyint (double __x) noexcept (true); extern double __nearbyint (double __x) noexcept (true);
+extern double nearbyint (double __x) throw (); extern double __nearbyint (double __x) throw ();
 
 
 
-extern double round (double __x) noexcept (true) __attribute__ ((__const__)); extern double __round (double __x) noexcept (true) __attribute__ ((__const__));
+extern double round (double __x) throw () __attribute__ ((__const__)); extern double __round (double __x) throw () __attribute__ ((__const__));
 
 
 
-extern double trunc (double __x) noexcept (true) __attribute__ ((__const__)); extern double __trunc (double __x) noexcept (true) __attribute__ ((__const__));
+extern double trunc (double __x) throw () __attribute__ ((__const__)); extern double __trunc (double __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern double remquo (double __x, double __y, int *__quo) noexcept (true); extern double __remquo (double __x, double __y, int *__quo) noexcept (true);
+extern double remquo (double __x, double __y, int *__quo) throw (); extern double __remquo (double __x, double __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrint (double __x) noexcept (true); extern long int __lrint (double __x) noexcept (true);
+extern long int lrint (double __x) throw (); extern long int __lrint (double __x) throw ();
 __extension__
-extern long long int llrint (double __x) noexcept (true); extern long long int __llrint (double __x) noexcept (true);
+extern long long int llrint (double __x) throw (); extern long long int __llrint (double __x) throw ();
 
 
 
-extern long int lround (double __x) noexcept (true); extern long int __lround (double __x) noexcept (true);
+extern long int lround (double __x) throw (); extern long int __lround (double __x) throw ();
 __extension__
-extern long long int llround (double __x) noexcept (true); extern long long int __llround (double __x) noexcept (true);
+extern long long int llround (double __x) throw (); extern long long int __llround (double __x) throw ();
 
 
 
-extern double fdim (double __x, double __y) noexcept (true); extern double __fdim (double __x, double __y) noexcept (true);
+extern double fdim (double __x, double __y) throw (); extern double __fdim (double __x, double __y) throw ();
 
 
+extern double fmax (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fmax (double __x, double __y) throw () __attribute__ ((__const__));
 
-extern double fmax (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmax (double __x, double __y) noexcept (true) __attribute__ ((__const__));
 
+extern double fmin (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fmin (double __x, double __y) throw () __attribute__ ((__const__));
 
-extern double fmin (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmin (double __x, double __y) noexcept (true) __attribute__ ((__const__));
 
+extern double fma (double __x, double __y, double __z) throw (); extern double __fma (double __x, double __y, double __z) throw ();
 
 
-extern double fma (double __x, double __y, double __z) noexcept (true); extern double __fma (double __x, double __y, double __z) noexcept (true);
 
 
+extern double roundeven (double __x) throw () __attribute__ ((__const__)); extern double __roundeven (double __x) throw () __attribute__ ((__const__));
 
 
-extern double roundeven (double __x) noexcept (true) __attribute__ ((__const__)); extern double __roundeven (double __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfp (double __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfp (double __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfp (double __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfp (double __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfp (double __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfp (double __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfp (double __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfp (double __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpx (double __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpx (double __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpx (double __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpx (double __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpx (double __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpx (double __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpx (double __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpx (double __x, int __round, unsigned int __width) noexcept (true);
 
+extern double fmaxmag (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fmaxmag (double __x, double __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalize (double *__cx, const double *__x) noexcept (true);
+extern double fminmag (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fminmag (double __x, double __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalize (double *__cx, const double *__x) throw ();
 
 
 
 
-extern double fmaxmag (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmaxmag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminmag (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fminmag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern double fmaximum (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmaximum (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fminimum (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmaximum_num (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmaximum_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum_num (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fminimum_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmaximum_mag (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmaximum_mag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum_mag (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fminimum_mag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmaximum_mag_num (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fmaximum_mag_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum_mag_num (double __x, double __y) noexcept (true) __attribute__ ((__const__)); extern double __fminimum_mag_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorder (const double *__x, const double *__y) noexcept (true)
+extern int totalorder (const double *__x, const double *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermag (const double *__x, const double *__y) noexcept (true)
+extern int totalordermag (const double *__x, const double *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern double getpayload (const double *__x) noexcept (true); extern double __getpayload (const double *__x) noexcept (true);
+extern double getpayload (const double *__x) throw (); extern double __getpayload (const double *__x) throw ();
 
 
-extern int setpayload (double *__x, double __payload) noexcept (true);
+extern int setpayload (double *__x, double __payload) throw ();
 
 
-extern int setpayloadsig (double *__x, double __payload) noexcept (true);
-
-
-
+extern int setpayloadsig (double *__x, double __payload) throw ();
 
 
 
 
-extern double scalb (double __x, double __n) noexcept (true); extern double __scalb (double __x, double __n) noexcept (true);
-# 314 "/usr/include/math.h" 2 3 4
-# 329 "/usr/include/math.h" 3 4
+
+
+
+extern double scalb (double __x, double __n) throw (); extern double __scalb (double __x, double __n) throw ();
+# 291 "/usr/include/math.h" 2 3 4
+# 306 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassifyf (float __value) noexcept (true)
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassifyf (float __value) throw ()
      __attribute__ ((__const__));
 
 
-extern int __signbitf (float __value) noexcept (true)
+extern int __signbitf (float __value) throw ()
      __attribute__ ((__const__));
 
 
 
-extern int __isinff (float __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __isinff (float __value) throw () __attribute__ ((__const__));
 
 
-extern int __finitef (float __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __finitef (float __value) throw () __attribute__ ((__const__));
 
 
-extern int __isnanf (float __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __isnanf (float __value) throw () __attribute__ ((__const__));
 
 
-extern int __iseqsigf (float __x, float __y) noexcept (true);
+extern int __iseqsigf (float __x, float __y) throw ();
 
 
-extern int __issignalingf (float __value) noexcept (true)
+extern int __issignalingf (float __value) throw ()
      __attribute__ ((__const__));
-# 330 "/usr/include/math.h" 2 3 4
+# 307 "/usr/include/math.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern float acosf (float __x) noexcept (true); extern float __acosf (float __x) noexcept (true);
+extern float acosf (float __x) throw (); extern float __acosf (float __x) throw ();
 
- extern float asinf (float __x) noexcept (true); extern float __asinf (float __x) noexcept (true);
+extern float asinf (float __x) throw (); extern float __asinf (float __x) throw ();
 
- extern float atanf (float __x) noexcept (true); extern float __atanf (float __x) noexcept (true);
+extern float atanf (float __x) throw (); extern float __atanf (float __x) throw ();
 
- extern float atan2f (float __y, float __x) noexcept (true); extern float __atan2f (float __y, float __x) noexcept (true);
+extern float atan2f (float __y, float __x) throw (); extern float __atan2f (float __y, float __x) throw ();
 
 
- extern float cosf (float __x) noexcept (true); extern float __cosf (float __x) noexcept (true);
+ extern float cosf (float __x) throw (); extern float __cosf (float __x) throw ();
 
- extern float sinf (float __x) noexcept (true); extern float __sinf (float __x) noexcept (true);
+ extern float sinf (float __x) throw (); extern float __sinf (float __x) throw ();
 
- extern float tanf (float __x) noexcept (true); extern float __tanf (float __x) noexcept (true);
+extern float tanf (float __x) throw (); extern float __tanf (float __x) throw ();
 
 
 
 
- extern float coshf (float __x) noexcept (true); extern float __coshf (float __x) noexcept (true);
+extern float coshf (float __x) throw (); extern float __coshf (float __x) throw ();
 
- extern float sinhf (float __x) noexcept (true); extern float __sinhf (float __x) noexcept (true);
+extern float sinhf (float __x) throw (); extern float __sinhf (float __x) throw ();
 
- extern float tanhf (float __x) noexcept (true); extern float __tanhf (float __x) noexcept (true);
+extern float tanhf (float __x) throw (); extern float __tanhf (float __x) throw ();
 
 
 
- extern void sincosf (float __x, float *__sinx, float *__cosx) noexcept (true); extern void __sincosf (float __x, float *__sinx, float *__cosx) noexcept (true);
+ extern void sincosf (float __x, float *__sinx, float *__cosx) throw (); extern void __sincosf (float __x, float *__sinx, float *__cosx) throw ();
 
 
 
 
 
- extern float acoshf (float __x) noexcept (true); extern float __acoshf (float __x) noexcept (true);
+extern float acoshf (float __x) throw (); extern float __acoshf (float __x) throw ();
 
- extern float asinhf (float __x) noexcept (true); extern float __asinhf (float __x) noexcept (true);
+extern float asinhf (float __x) throw (); extern float __asinhf (float __x) throw ();
 
- extern float atanhf (float __x) noexcept (true); extern float __atanhf (float __x) noexcept (true);
+extern float atanhf (float __x) throw (); extern float __atanhf (float __x) throw ();
 
 
 
 
 
- extern float expf (float __x) noexcept (true); extern float __expf (float __x) noexcept (true);
+ extern float expf (float __x) throw (); extern float __expf (float __x) throw ();
 
 
-extern float frexpf (float __x, int *__exponent) noexcept (true); extern float __frexpf (float __x, int *__exponent) noexcept (true);
+extern float frexpf (float __x, int *__exponent) throw (); extern float __frexpf (float __x, int *__exponent) throw ();
 
 
-extern float ldexpf (float __x, int __exponent) noexcept (true); extern float __ldexpf (float __x, int __exponent) noexcept (true);
+extern float ldexpf (float __x, int __exponent) throw (); extern float __ldexpf (float __x, int __exponent) throw ();
 
 
- extern float logf (float __x) noexcept (true); extern float __logf (float __x) noexcept (true);
+ extern float logf (float __x) throw (); extern float __logf (float __x) throw ();
 
 
- extern float log10f (float __x) noexcept (true); extern float __log10f (float __x) noexcept (true);
+extern float log10f (float __x) throw (); extern float __log10f (float __x) throw ();
 
 
-extern float modff (float __x, float *__iptr) noexcept (true); extern float __modff (float __x, float *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern float modff (float __x, float *__iptr) throw (); extern float __modff (float __x, float *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern float exp10f (float __x) noexcept (true); extern float __exp10f (float __x) noexcept (true);
+extern float exp10f (float __x) throw (); extern float __exp10f (float __x) throw ();
 
 
 
 
- extern float expm1f (float __x) noexcept (true); extern float __expm1f (float __x) noexcept (true);
+extern float expm1f (float __x) throw (); extern float __expm1f (float __x) throw ();
 
 
- extern float log1pf (float __x) noexcept (true); extern float __log1pf (float __x) noexcept (true);
+extern float log1pf (float __x) throw (); extern float __log1pf (float __x) throw ();
 
 
-extern float logbf (float __x) noexcept (true); extern float __logbf (float __x) noexcept (true);
+extern float logbf (float __x) throw (); extern float __logbf (float __x) throw ();
 
 
 
 
- extern float exp2f (float __x) noexcept (true); extern float __exp2f (float __x) noexcept (true);
+extern float exp2f (float __x) throw (); extern float __exp2f (float __x) throw ();
 
 
- extern float log2f (float __x) noexcept (true); extern float __log2f (float __x) noexcept (true);
+extern float log2f (float __x) throw (); extern float __log2f (float __x) throw ();
 
 
 
 
 
 
- extern float powf (float __x, float __y) noexcept (true); extern float __powf (float __x, float __y) noexcept (true);
+ extern float powf (float __x, float __y) throw (); extern float __powf (float __x, float __y) throw ();
 
 
-extern float sqrtf (float __x) noexcept (true); extern float __sqrtf (float __x) noexcept (true);
+extern float sqrtf (float __x) throw (); extern float __sqrtf (float __x) throw ();
 
 
 
- extern float hypotf (float __x, float __y) noexcept (true); extern float __hypotf (float __x, float __y) noexcept (true);
+extern float hypotf (float __x, float __y) throw (); extern float __hypotf (float __x, float __y) throw ();
 
 
 
 
- extern float cbrtf (float __x) noexcept (true); extern float __cbrtf (float __x) noexcept (true);
+extern float cbrtf (float __x) throw (); extern float __cbrtf (float __x) throw ();
 
 
 
 
 
 
-extern float ceilf (float __x) noexcept (true) __attribute__ ((__const__)); extern float __ceilf (float __x) noexcept (true) __attribute__ ((__const__));
+extern float ceilf (float __x) throw () __attribute__ ((__const__)); extern float __ceilf (float __x) throw () __attribute__ ((__const__));
 
 
-extern float fabsf (float __x) noexcept (true) __attribute__ ((__const__)); extern float __fabsf (float __x) noexcept (true) __attribute__ ((__const__));
+extern float fabsf (float __x) throw () __attribute__ ((__const__)); extern float __fabsf (float __x) throw () __attribute__ ((__const__));
 
 
-extern float floorf (float __x) noexcept (true) __attribute__ ((__const__)); extern float __floorf (float __x) noexcept (true) __attribute__ ((__const__));
+extern float floorf (float __x) throw () __attribute__ ((__const__)); extern float __floorf (float __x) throw () __attribute__ ((__const__));
 
 
-extern float fmodf (float __x, float __y) noexcept (true); extern float __fmodf (float __x, float __y) noexcept (true);
+extern float fmodf (float __x, float __y) throw (); extern float __fmodf (float __x, float __y) throw ();
 # 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isinff (float __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int isinff (float __value) throw () __attribute__ ((__const__));
 
 
 
 
-extern int finitef (float __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int finitef (float __value) throw () __attribute__ ((__const__));
 
 
-extern float dremf (float __x, float __y) noexcept (true); extern float __dremf (float __x, float __y) noexcept (true);
+extern float dremf (float __x, float __y) throw (); extern float __dremf (float __x, float __y) throw ();
 
 
 
-extern float significandf (float __x) noexcept (true); extern float __significandf (float __x) noexcept (true);
+extern float significandf (float __x) throw (); extern float __significandf (float __x) throw ();
 
 
 
 
 
 
-extern float copysignf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __copysignf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
+extern float copysignf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __copysignf (float __x, float __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern float nanf (const char *__tagb) noexcept (true); extern float __nanf (const char *__tagb) noexcept (true);
-# 213 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isnanf (float __value) noexcept (true)
-  __attribute__ ((__const__));
+extern float nanf (const char *__tagb) throw (); extern float __nanf (const char *__tagb) throw ();
+# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern int isnanf (float __value) throw () __attribute__ ((__const__));
 
 
 
 
 
-extern float j0f (float) noexcept (true); extern float __j0f (float) noexcept (true);
-extern float j1f (float) noexcept (true); extern float __j1f (float) noexcept (true);
-extern float jnf (int, float) noexcept (true); extern float __jnf (int, float) noexcept (true);
-extern float y0f (float) noexcept (true); extern float __y0f (float) noexcept (true);
-extern float y1f (float) noexcept (true); extern float __y1f (float) noexcept (true);
-extern float ynf (int, float) noexcept (true); extern float __ynf (int, float) noexcept (true);
+extern float j0f (float) throw (); extern float __j0f (float) throw ();
+extern float j1f (float) throw (); extern float __j1f (float) throw ();
+extern float jnf (int, float) throw (); extern float __jnf (int, float) throw ();
+extern float y0f (float) throw (); extern float __y0f (float) throw ();
+extern float y1f (float) throw (); extern float __y1f (float) throw ();
+extern float ynf (int, float) throw (); extern float __ynf (int, float) throw ();
 
 
 
 
 
- extern float erff (float) noexcept (true); extern float __erff (float) noexcept (true);
- extern float erfcf (float) noexcept (true); extern float __erfcf (float) noexcept (true);
-extern float lgammaf (float) noexcept (true); extern float __lgammaf (float) noexcept (true);
+extern float erff (float) throw (); extern float __erff (float) throw ();
+extern float erfcf (float) throw (); extern float __erfcf (float) throw ();
+extern float lgammaf (float) throw (); extern float __lgammaf (float) throw ();
 
 
 
 
-extern float tgammaf (float) noexcept (true); extern float __tgammaf (float) noexcept (true);
+extern float tgammaf (float) throw (); extern float __tgammaf (float) throw ();
 
 
 
 
 
-extern float gammaf (float) noexcept (true); extern float __gammaf (float) noexcept (true);
+extern float gammaf (float) throw (); extern float __gammaf (float) throw ();
 
 
 
@@ -1568,400 +1511,362 @@ extern float gammaf (float) noexcept (true); extern float __gammaf (float) noexc
 
 
 
-extern float lgammaf_r (float, int *__signgamp) noexcept (true); extern float __lgammaf_r (float, int *__signgamp) noexcept (true);
+extern float lgammaf_r (float, int *__signgamp) throw (); extern float __lgammaf_r (float, int *__signgamp) throw ();
 
 
 
 
 
 
-extern float rintf (float __x) noexcept (true); extern float __rintf (float __x) noexcept (true);
+extern float rintf (float __x) throw (); extern float __rintf (float __x) throw ();
 
 
-extern float nextafterf (float __x, float __y) noexcept (true); extern float __nextafterf (float __x, float __y) noexcept (true);
+extern float nextafterf (float __x, float __y) throw (); extern float __nextafterf (float __x, float __y) throw ();
 
-extern float nexttowardf (float __x, long double __y) noexcept (true); extern float __nexttowardf (float __x, long double __y) noexcept (true);
+extern float nexttowardf (float __x, long double __y) throw (); extern float __nexttowardf (float __x, long double __y) throw ();
 
 
 
 
-extern float nextdownf (float __x) noexcept (true); extern float __nextdownf (float __x) noexcept (true);
+extern float nextdownf (float __x) throw (); extern float __nextdownf (float __x) throw ();
 
-extern float nextupf (float __x) noexcept (true); extern float __nextupf (float __x) noexcept (true);
+extern float nextupf (float __x) throw (); extern float __nextupf (float __x) throw ();
 
 
 
-extern float remainderf (float __x, float __y) noexcept (true); extern float __remainderf (float __x, float __y) noexcept (true);
+extern float remainderf (float __x, float __y) throw (); extern float __remainderf (float __x, float __y) throw ();
 
 
 
-extern float scalbnf (float __x, int __n) noexcept (true); extern float __scalbnf (float __x, int __n) noexcept (true);
+extern float scalbnf (float __x, int __n) throw (); extern float __scalbnf (float __x, int __n) throw ();
 
 
 
-extern int ilogbf (float __x) noexcept (true); extern int __ilogbf (float __x) noexcept (true);
+extern int ilogbf (float __x) throw (); extern int __ilogbf (float __x) throw ();
 
 
 
 
-extern long int llogbf (float __x) noexcept (true); extern long int __llogbf (float __x) noexcept (true);
+extern long int llogbf (float __x) throw (); extern long int __llogbf (float __x) throw ();
 
 
 
 
-extern float scalblnf (float __x, long int __n) noexcept (true); extern float __scalblnf (float __x, long int __n) noexcept (true);
+extern float scalblnf (float __x, long int __n) throw (); extern float __scalblnf (float __x, long int __n) throw ();
 
 
 
-extern float nearbyintf (float __x) noexcept (true); extern float __nearbyintf (float __x) noexcept (true);
+extern float nearbyintf (float __x) throw (); extern float __nearbyintf (float __x) throw ();
 
 
 
-extern float roundf (float __x) noexcept (true) __attribute__ ((__const__)); extern float __roundf (float __x) noexcept (true) __attribute__ ((__const__));
+extern float roundf (float __x) throw () __attribute__ ((__const__)); extern float __roundf (float __x) throw () __attribute__ ((__const__));
 
 
 
-extern float truncf (float __x) noexcept (true) __attribute__ ((__const__)); extern float __truncf (float __x) noexcept (true) __attribute__ ((__const__));
+extern float truncf (float __x) throw () __attribute__ ((__const__)); extern float __truncf (float __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern float remquof (float __x, float __y, int *__quo) noexcept (true); extern float __remquof (float __x, float __y, int *__quo) noexcept (true);
+extern float remquof (float __x, float __y, int *__quo) throw (); extern float __remquof (float __x, float __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrintf (float __x) noexcept (true); extern long int __lrintf (float __x) noexcept (true);
+extern long int lrintf (float __x) throw (); extern long int __lrintf (float __x) throw ();
 __extension__
-extern long long int llrintf (float __x) noexcept (true); extern long long int __llrintf (float __x) noexcept (true);
+extern long long int llrintf (float __x) throw (); extern long long int __llrintf (float __x) throw ();
 
 
 
-extern long int lroundf (float __x) noexcept (true); extern long int __lroundf (float __x) noexcept (true);
+extern long int lroundf (float __x) throw (); extern long int __lroundf (float __x) throw ();
 __extension__
-extern long long int llroundf (float __x) noexcept (true); extern long long int __llroundf (float __x) noexcept (true);
+extern long long int llroundf (float __x) throw (); extern long long int __llroundf (float __x) throw ();
 
 
 
-extern float fdimf (float __x, float __y) noexcept (true); extern float __fdimf (float __x, float __y) noexcept (true);
+extern float fdimf (float __x, float __y) throw (); extern float __fdimf (float __x, float __y) throw ();
 
 
+extern float fmaxf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fmaxf (float __x, float __y) throw () __attribute__ ((__const__));
 
-extern float fmaxf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fmaxf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
 
+extern float fminf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fminf (float __x, float __y) throw () __attribute__ ((__const__));
 
-extern float fminf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fminf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
 
+extern float fmaf (float __x, float __y, float __z) throw (); extern float __fmaf (float __x, float __y, float __z) throw ();
 
 
-extern float fmaf (float __x, float __y, float __z) noexcept (true); extern float __fmaf (float __x, float __y, float __z) noexcept (true);
 
 
+extern float roundevenf (float __x) throw () __attribute__ ((__const__)); extern float __roundevenf (float __x) throw () __attribute__ ((__const__));
 
 
-extern float roundevenf (float __x) noexcept (true) __attribute__ ((__const__)); extern float __roundevenf (float __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfpf (float __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpf (float __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpf (float __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpf (float __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfpf (float __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpf (float __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpf (float __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpf (float __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpxf (float __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpxf (float __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpxf (float __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpxf (float __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpxf (float __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpxf (float __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpxf (float __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpxf (float __x, int __round, unsigned int __width) noexcept (true);
 
+extern float fmaxmagf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fmaxmagf (float __x, float __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalizef (float *__cx, const float *__x) noexcept (true);
+extern float fminmagf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fminmagf (float __x, float __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalizef (float *__cx, const float *__x) throw ();
 
 
 
 
-extern float fmaxmagf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fmaxmagf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminmagf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fminmagf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern float fmaximumf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fmaximumf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimumf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fminimumf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmaximum_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fmaximum_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimum_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fminimum_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmaximum_magf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fmaximum_magf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimum_magf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fminimum_magf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmaximum_mag_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fmaximum_mag_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimum_mag_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__)); extern float __fminimum_mag_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf (const float *__x, const float *__y) noexcept (true)
+extern int totalorderf (const float *__x, const float *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermagf (const float *__x, const float *__y) noexcept (true)
+extern int totalordermagf (const float *__x, const float *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern float getpayloadf (const float *__x) noexcept (true); extern float __getpayloadf (const float *__x) noexcept (true);
+extern float getpayloadf (const float *__x) throw (); extern float __getpayloadf (const float *__x) throw ();
 
 
-extern int setpayloadf (float *__x, float __payload) noexcept (true);
+extern int setpayloadf (float *__x, float __payload) throw ();
 
 
-extern int setpayloadsigf (float *__x, float __payload) noexcept (true);
-
-
-
+extern int setpayloadsigf (float *__x, float __payload) throw ();
 
 
 
 
-extern float scalbf (float __x, float __n) noexcept (true); extern float __scalbf (float __x, float __n) noexcept (true);
-# 331 "/usr/include/math.h" 2 3 4
-# 398 "/usr/include/math.h" 3 4
+
+
+
+extern float scalbf (float __x, float __n) throw (); extern float __scalbf (float __x, float __n) throw ();
+# 308 "/usr/include/math.h" 2 3 4
+# 349 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassifyl (long double __value) noexcept (true)
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassifyl (long double __value) throw ()
      __attribute__ ((__const__));
 
 
-extern int __signbitl (long double __value) noexcept (true)
+extern int __signbitl (long double __value) throw ()
      __attribute__ ((__const__));
 
 
 
-extern int __isinfl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __isinfl (long double __value) throw () __attribute__ ((__const__));
 
 
-extern int __finitel (long double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __finitel (long double __value) throw () __attribute__ ((__const__));
 
 
-extern int __isnanl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int __isnanl (long double __value) throw () __attribute__ ((__const__));
 
 
-extern int __iseqsigl (long double __x, long double __y) noexcept (true);
+extern int __iseqsigl (long double __x, long double __y) throw ();
 
 
-extern int __issignalingl (long double __value) noexcept (true)
+extern int __issignalingl (long double __value) throw ()
      __attribute__ ((__const__));
-# 399 "/usr/include/math.h" 2 3 4
+# 350 "/usr/include/math.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern long double acosl (long double __x) noexcept (true); extern long double __acosl (long double __x) noexcept (true);
+extern long double acosl (long double __x) throw (); extern long double __acosl (long double __x) throw ();
 
- extern long double asinl (long double __x) noexcept (true); extern long double __asinl (long double __x) noexcept (true);
+extern long double asinl (long double __x) throw (); extern long double __asinl (long double __x) throw ();
 
- extern long double atanl (long double __x) noexcept (true); extern long double __atanl (long double __x) noexcept (true);
+extern long double atanl (long double __x) throw (); extern long double __atanl (long double __x) throw ();
 
- extern long double atan2l (long double __y, long double __x) noexcept (true); extern long double __atan2l (long double __y, long double __x) noexcept (true);
+extern long double atan2l (long double __y, long double __x) throw (); extern long double __atan2l (long double __y, long double __x) throw ();
 
 
- extern long double cosl (long double __x) noexcept (true); extern long double __cosl (long double __x) noexcept (true);
+ extern long double cosl (long double __x) throw (); extern long double __cosl (long double __x) throw ();
 
- extern long double sinl (long double __x) noexcept (true); extern long double __sinl (long double __x) noexcept (true);
+ extern long double sinl (long double __x) throw (); extern long double __sinl (long double __x) throw ();
 
- extern long double tanl (long double __x) noexcept (true); extern long double __tanl (long double __x) noexcept (true);
+extern long double tanl (long double __x) throw (); extern long double __tanl (long double __x) throw ();
 
 
 
 
- extern long double coshl (long double __x) noexcept (true); extern long double __coshl (long double __x) noexcept (true);
+extern long double coshl (long double __x) throw (); extern long double __coshl (long double __x) throw ();
 
- extern long double sinhl (long double __x) noexcept (true); extern long double __sinhl (long double __x) noexcept (true);
+extern long double sinhl (long double __x) throw (); extern long double __sinhl (long double __x) throw ();
 
- extern long double tanhl (long double __x) noexcept (true); extern long double __tanhl (long double __x) noexcept (true);
+extern long double tanhl (long double __x) throw (); extern long double __tanhl (long double __x) throw ();
 
 
 
- extern void sincosl (long double __x, long double *__sinx, long double *__cosx) noexcept (true); extern void __sincosl (long double __x, long double *__sinx, long double *__cosx) noexcept (true);
+ extern void sincosl (long double __x, long double *__sinx, long double *__cosx) throw (); extern void __sincosl (long double __x, long double *__sinx, long double *__cosx) throw ();
 
 
 
 
 
- extern long double acoshl (long double __x) noexcept (true); extern long double __acoshl (long double __x) noexcept (true);
+extern long double acoshl (long double __x) throw (); extern long double __acoshl (long double __x) throw ();
 
- extern long double asinhl (long double __x) noexcept (true); extern long double __asinhl (long double __x) noexcept (true);
+extern long double asinhl (long double __x) throw (); extern long double __asinhl (long double __x) throw ();
 
- extern long double atanhl (long double __x) noexcept (true); extern long double __atanhl (long double __x) noexcept (true);
+extern long double atanhl (long double __x) throw (); extern long double __atanhl (long double __x) throw ();
 
 
 
 
 
- extern long double expl (long double __x) noexcept (true); extern long double __expl (long double __x) noexcept (true);
+ extern long double expl (long double __x) throw (); extern long double __expl (long double __x) throw ();
 
 
-extern long double frexpl (long double __x, int *__exponent) noexcept (true); extern long double __frexpl (long double __x, int *__exponent) noexcept (true);
+extern long double frexpl (long double __x, int *__exponent) throw (); extern long double __frexpl (long double __x, int *__exponent) throw ();
 
 
-extern long double ldexpl (long double __x, int __exponent) noexcept (true); extern long double __ldexpl (long double __x, int __exponent) noexcept (true);
+extern long double ldexpl (long double __x, int __exponent) throw (); extern long double __ldexpl (long double __x, int __exponent) throw ();
 
 
- extern long double logl (long double __x) noexcept (true); extern long double __logl (long double __x) noexcept (true);
+ extern long double logl (long double __x) throw (); extern long double __logl (long double __x) throw ();
 
 
- extern long double log10l (long double __x) noexcept (true); extern long double __log10l (long double __x) noexcept (true);
+extern long double log10l (long double __x) throw (); extern long double __log10l (long double __x) throw ();
 
 
-extern long double modfl (long double __x, long double *__iptr) noexcept (true); extern long double __modfl (long double __x, long double *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern long double modfl (long double __x, long double *__iptr) throw (); extern long double __modfl (long double __x, long double *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern long double exp10l (long double __x) noexcept (true); extern long double __exp10l (long double __x) noexcept (true);
+extern long double exp10l (long double __x) throw (); extern long double __exp10l (long double __x) throw ();
 
 
 
 
- extern long double expm1l (long double __x) noexcept (true); extern long double __expm1l (long double __x) noexcept (true);
+extern long double expm1l (long double __x) throw (); extern long double __expm1l (long double __x) throw ();
 
 
- extern long double log1pl (long double __x) noexcept (true); extern long double __log1pl (long double __x) noexcept (true);
+extern long double log1pl (long double __x) throw (); extern long double __log1pl (long double __x) throw ();
 
 
-extern long double logbl (long double __x) noexcept (true); extern long double __logbl (long double __x) noexcept (true);
+extern long double logbl (long double __x) throw (); extern long double __logbl (long double __x) throw ();
 
 
 
 
- extern long double exp2l (long double __x) noexcept (true); extern long double __exp2l (long double __x) noexcept (true);
+extern long double exp2l (long double __x) throw (); extern long double __exp2l (long double __x) throw ();
 
 
- extern long double log2l (long double __x) noexcept (true); extern long double __log2l (long double __x) noexcept (true);
+extern long double log2l (long double __x) throw (); extern long double __log2l (long double __x) throw ();
 
 
 
 
 
 
- extern long double powl (long double __x, long double __y) noexcept (true); extern long double __powl (long double __x, long double __y) noexcept (true);
+ extern long double powl (long double __x, long double __y) throw (); extern long double __powl (long double __x, long double __y) throw ();
 
 
-extern long double sqrtl (long double __x) noexcept (true); extern long double __sqrtl (long double __x) noexcept (true);
+extern long double sqrtl (long double __x) throw (); extern long double __sqrtl (long double __x) throw ();
 
 
 
- extern long double hypotl (long double __x, long double __y) noexcept (true); extern long double __hypotl (long double __x, long double __y) noexcept (true);
+extern long double hypotl (long double __x, long double __y) throw (); extern long double __hypotl (long double __x, long double __y) throw ();
 
 
 
 
- extern long double cbrtl (long double __x) noexcept (true); extern long double __cbrtl (long double __x) noexcept (true);
+extern long double cbrtl (long double __x) throw (); extern long double __cbrtl (long double __x) throw ();
 
 
 
 
 
 
-extern long double ceill (long double __x) noexcept (true) __attribute__ ((__const__)); extern long double __ceill (long double __x) noexcept (true) __attribute__ ((__const__));
+extern long double ceill (long double __x) throw () __attribute__ ((__const__)); extern long double __ceill (long double __x) throw () __attribute__ ((__const__));
 
 
-extern long double fabsl (long double __x) noexcept (true) __attribute__ ((__const__)); extern long double __fabsl (long double __x) noexcept (true) __attribute__ ((__const__));
+extern long double fabsl (long double __x) throw () __attribute__ ((__const__)); extern long double __fabsl (long double __x) throw () __attribute__ ((__const__));
 
 
-extern long double floorl (long double __x) noexcept (true) __attribute__ ((__const__)); extern long double __floorl (long double __x) noexcept (true) __attribute__ ((__const__));
+extern long double floorl (long double __x) throw () __attribute__ ((__const__)); extern long double __floorl (long double __x) throw () __attribute__ ((__const__));
 
 
-extern long double fmodl (long double __x, long double __y) noexcept (true); extern long double __fmodl (long double __x, long double __y) noexcept (true);
+extern long double fmodl (long double __x, long double __y) throw (); extern long double __fmodl (long double __x, long double __y) throw ();
 # 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isinfl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int isinfl (long double __value) throw () __attribute__ ((__const__));
 
 
 
 
-extern int finitel (long double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern int finitel (long double __value) throw () __attribute__ ((__const__));
 
 
-extern long double dreml (long double __x, long double __y) noexcept (true); extern long double __dreml (long double __x, long double __y) noexcept (true);
+extern long double dreml (long double __x, long double __y) throw (); extern long double __dreml (long double __x, long double __y) throw ();
 
 
 
-extern long double significandl (long double __x) noexcept (true); extern long double __significandl (long double __x) noexcept (true);
+extern long double significandl (long double __x) throw (); extern long double __significandl (long double __x) throw ();
 
 
 
 
 
 
-extern long double copysignl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __copysignl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
+extern long double copysignl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __copysignl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern long double nanl (const char *__tagb) noexcept (true); extern long double __nanl (const char *__tagb) noexcept (true);
-# 213 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isnanl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
+extern long double nanl (const char *__tagb) throw (); extern long double __nanl (const char *__tagb) throw ();
+# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern int isnanl (long double __value) throw () __attribute__ ((__const__));
 
 
 
 
 
-extern long double j0l (long double) noexcept (true); extern long double __j0l (long double) noexcept (true);
-extern long double j1l (long double) noexcept (true); extern long double __j1l (long double) noexcept (true);
-extern long double jnl (int, long double) noexcept (true); extern long double __jnl (int, long double) noexcept (true);
-extern long double y0l (long double) noexcept (true); extern long double __y0l (long double) noexcept (true);
-extern long double y1l (long double) noexcept (true); extern long double __y1l (long double) noexcept (true);
-extern long double ynl (int, long double) noexcept (true); extern long double __ynl (int, long double) noexcept (true);
+extern long double j0l (long double) throw (); extern long double __j0l (long double) throw ();
+extern long double j1l (long double) throw (); extern long double __j1l (long double) throw ();
+extern long double jnl (int, long double) throw (); extern long double __jnl (int, long double) throw ();
+extern long double y0l (long double) throw (); extern long double __y0l (long double) throw ();
+extern long double y1l (long double) throw (); extern long double __y1l (long double) throw ();
+extern long double ynl (int, long double) throw (); extern long double __ynl (int, long double) throw ();
 
 
 
 
 
- extern long double erfl (long double) noexcept (true); extern long double __erfl (long double) noexcept (true);
- extern long double erfcl (long double) noexcept (true); extern long double __erfcl (long double) noexcept (true);
-extern long double lgammal (long double) noexcept (true); extern long double __lgammal (long double) noexcept (true);
+extern long double erfl (long double) throw (); extern long double __erfl (long double) throw ();
+extern long double erfcl (long double) throw (); extern long double __erfcl (long double) throw ();
+extern long double lgammal (long double) throw (); extern long double __lgammal (long double) throw ();
 
 
 
 
-extern long double tgammal (long double) noexcept (true); extern long double __tgammal (long double) noexcept (true);
+extern long double tgammal (long double) throw (); extern long double __tgammal (long double) throw ();
 
 
 
 
 
-extern long double gammal (long double) noexcept (true); extern long double __gammal (long double) noexcept (true);
+extern long double gammal (long double) throw (); extern long double __gammal (long double) throw ();
 
 
 
@@ -1969,1670 +1874,1456 @@ extern long double gammal (long double) noexcept (true); extern long double __ga
 
 
 
-extern long double lgammal_r (long double, int *__signgamp) noexcept (true); extern long double __lgammal_r (long double, int *__signgamp) noexcept (true);
+extern long double lgammal_r (long double, int *__signgamp) throw (); extern long double __lgammal_r (long double, int *__signgamp) throw ();
 
 
 
 
 
 
-extern long double rintl (long double __x) noexcept (true); extern long double __rintl (long double __x) noexcept (true);
+extern long double rintl (long double __x) throw (); extern long double __rintl (long double __x) throw ();
 
 
-extern long double nextafterl (long double __x, long double __y) noexcept (true); extern long double __nextafterl (long double __x, long double __y) noexcept (true);
+extern long double nextafterl (long double __x, long double __y) throw (); extern long double __nextafterl (long double __x, long double __y) throw ();
 
-extern long double nexttowardl (long double __x, long double __y) noexcept (true); extern long double __nexttowardl (long double __x, long double __y) noexcept (true);
+extern long double nexttowardl (long double __x, long double __y) throw (); extern long double __nexttowardl (long double __x, long double __y) throw ();
 
 
 
 
-extern long double nextdownl (long double __x) noexcept (true); extern long double __nextdownl (long double __x) noexcept (true);
+extern long double nextdownl (long double __x) throw (); extern long double __nextdownl (long double __x) throw ();
 
-extern long double nextupl (long double __x) noexcept (true); extern long double __nextupl (long double __x) noexcept (true);
+extern long double nextupl (long double __x) throw (); extern long double __nextupl (long double __x) throw ();
 
 
 
-extern long double remainderl (long double __x, long double __y) noexcept (true); extern long double __remainderl (long double __x, long double __y) noexcept (true);
+extern long double remainderl (long double __x, long double __y) throw (); extern long double __remainderl (long double __x, long double __y) throw ();
 
 
 
-extern long double scalbnl (long double __x, int __n) noexcept (true); extern long double __scalbnl (long double __x, int __n) noexcept (true);
+extern long double scalbnl (long double __x, int __n) throw (); extern long double __scalbnl (long double __x, int __n) throw ();
 
 
 
-extern int ilogbl (long double __x) noexcept (true); extern int __ilogbl (long double __x) noexcept (true);
+extern int ilogbl (long double __x) throw (); extern int __ilogbl (long double __x) throw ();
 
 
 
 
-extern long int llogbl (long double __x) noexcept (true); extern long int __llogbl (long double __x) noexcept (true);
+extern long int llogbl (long double __x) throw (); extern long int __llogbl (long double __x) throw ();
 
 
 
 
-extern long double scalblnl (long double __x, long int __n) noexcept (true); extern long double __scalblnl (long double __x, long int __n) noexcept (true);
+extern long double scalblnl (long double __x, long int __n) throw (); extern long double __scalblnl (long double __x, long int __n) throw ();
 
 
 
-extern long double nearbyintl (long double __x) noexcept (true); extern long double __nearbyintl (long double __x) noexcept (true);
+extern long double nearbyintl (long double __x) throw (); extern long double __nearbyintl (long double __x) throw ();
 
 
 
-extern long double roundl (long double __x) noexcept (true) __attribute__ ((__const__)); extern long double __roundl (long double __x) noexcept (true) __attribute__ ((__const__));
+extern long double roundl (long double __x) throw () __attribute__ ((__const__)); extern long double __roundl (long double __x) throw () __attribute__ ((__const__));
 
 
 
-extern long double truncl (long double __x) noexcept (true) __attribute__ ((__const__)); extern long double __truncl (long double __x) noexcept (true) __attribute__ ((__const__));
+extern long double truncl (long double __x) throw () __attribute__ ((__const__)); extern long double __truncl (long double __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern long double remquol (long double __x, long double __y, int *__quo) noexcept (true); extern long double __remquol (long double __x, long double __y, int *__quo) noexcept (true);
+extern long double remquol (long double __x, long double __y, int *__quo) throw (); extern long double __remquol (long double __x, long double __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrintl (long double __x) noexcept (true); extern long int __lrintl (long double __x) noexcept (true);
+extern long int lrintl (long double __x) throw (); extern long int __lrintl (long double __x) throw ();
 __extension__
-extern long long int llrintl (long double __x) noexcept (true); extern long long int __llrintl (long double __x) noexcept (true);
+extern long long int llrintl (long double __x) throw (); extern long long int __llrintl (long double __x) throw ();
 
 
 
-extern long int lroundl (long double __x) noexcept (true); extern long int __lroundl (long double __x) noexcept (true);
+extern long int lroundl (long double __x) throw (); extern long int __lroundl (long double __x) throw ();
 __extension__
-extern long long int llroundl (long double __x) noexcept (true); extern long long int __llroundl (long double __x) noexcept (true);
+extern long long int llroundl (long double __x) throw (); extern long long int __llroundl (long double __x) throw ();
 
 
 
-extern long double fdiml (long double __x, long double __y) noexcept (true); extern long double __fdiml (long double __x, long double __y) noexcept (true);
+extern long double fdiml (long double __x, long double __y) throw (); extern long double __fdiml (long double __x, long double __y) throw ();
 
 
+extern long double fmaxl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fmaxl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
-extern long double fmaxl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fmaxl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
 
+extern long double fminl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fminl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
-extern long double fminl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fminl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
 
+extern long double fmal (long double __x, long double __y, long double __z) throw (); extern long double __fmal (long double __x, long double __y, long double __z) throw ();
 
 
-extern long double fmal (long double __x, long double __y, long double __z) noexcept (true); extern long double __fmal (long double __x, long double __y, long double __z) noexcept (true);
 
 
+extern long double roundevenl (long double __x) throw () __attribute__ ((__const__)); extern long double __roundevenl (long double __x) throw () __attribute__ ((__const__));
 
 
-extern long double roundevenl (long double __x) noexcept (true) __attribute__ ((__const__)); extern long double __roundevenl (long double __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfpl (long double __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpl (long double __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpl (long double __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpl (long double __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfpl (long double __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpl (long double __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpl (long double __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpl (long double __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpxl (long double __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpxl (long double __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpxl (long double __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpxl (long double __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpxl (long double __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpxl (long double __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpxl (long double __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpxl (long double __x, int __round, unsigned int __width) noexcept (true);
 
+extern long double fmaxmagl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fmaxmagl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalizel (long double *__cx, const long double *__x) noexcept (true);
+extern long double fminmagl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fminmagl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalizel (long double *__cx, const long double *__x) throw ();
 
 
 
 
-extern long double fmaxmagl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fmaxmagl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminmagl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fminmagl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern long double fmaximuml (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fmaximuml (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimuml (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fminimuml (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmaximum_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fmaximum_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimum_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fminimum_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmaximum_magl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fmaximum_magl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimum_magl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fminimum_magl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmaximum_mag_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fmaximum_mag_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimum_mag_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__)); extern long double __fminimum_mag_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderl (const long double *__x, const long double *__y) noexcept (true)
+extern int totalorderl (const long double *__x, const long double *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermagl (const long double *__x, const long double *__y) noexcept (true)
+extern int totalordermagl (const long double *__x, const long double *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern long double getpayloadl (const long double *__x) noexcept (true); extern long double __getpayloadl (const long double *__x) noexcept (true);
+extern long double getpayloadl (const long double *__x) throw (); extern long double __getpayloadl (const long double *__x) throw ();
 
 
-extern int setpayloadl (long double *__x, long double __payload) noexcept (true);
+extern int setpayloadl (long double *__x, long double __payload) throw ();
 
 
-extern int setpayloadsigl (long double *__x, long double __payload) noexcept (true);
-
-
-
+extern int setpayloadsigl (long double *__x, long double __payload) throw ();
 
 
 
 
-extern long double scalbl (long double __x, long double __n) noexcept (true); extern long double __scalbl (long double __x, long double __n) noexcept (true);
-# 400 "/usr/include/math.h" 2 3 4
-# 450 "/usr/include/math.h" 3 4
+
+
+
+extern long double scalbl (long double __x, long double __n) throw (); extern long double __scalbl (long double __x, long double __n) throw ();
+# 351 "/usr/include/math.h" 2 3 4
+# 389 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern _Float32 acosf32 (_Float32 __x) noexcept (true); extern _Float32 __acosf32 (_Float32 __x) noexcept (true);
+extern _Float32 acosf32 (_Float32 __x) throw (); extern _Float32 __acosf32 (_Float32 __x) throw ();
 
- extern _Float32 asinf32 (_Float32 __x) noexcept (true); extern _Float32 __asinf32 (_Float32 __x) noexcept (true);
+extern _Float32 asinf32 (_Float32 __x) throw (); extern _Float32 __asinf32 (_Float32 __x) throw ();
 
- extern _Float32 atanf32 (_Float32 __x) noexcept (true); extern _Float32 __atanf32 (_Float32 __x) noexcept (true);
+extern _Float32 atanf32 (_Float32 __x) throw (); extern _Float32 __atanf32 (_Float32 __x) throw ();
 
- extern _Float32 atan2f32 (_Float32 __y, _Float32 __x) noexcept (true); extern _Float32 __atan2f32 (_Float32 __y, _Float32 __x) noexcept (true);
+extern _Float32 atan2f32 (_Float32 __y, _Float32 __x) throw (); extern _Float32 __atan2f32 (_Float32 __y, _Float32 __x) throw ();
 
 
- extern _Float32 cosf32 (_Float32 __x) noexcept (true); extern _Float32 __cosf32 (_Float32 __x) noexcept (true);
+ extern _Float32 cosf32 (_Float32 __x) throw (); extern _Float32 __cosf32 (_Float32 __x) throw ();
 
- extern _Float32 sinf32 (_Float32 __x) noexcept (true); extern _Float32 __sinf32 (_Float32 __x) noexcept (true);
+ extern _Float32 sinf32 (_Float32 __x) throw (); extern _Float32 __sinf32 (_Float32 __x) throw ();
 
- extern _Float32 tanf32 (_Float32 __x) noexcept (true); extern _Float32 __tanf32 (_Float32 __x) noexcept (true);
+extern _Float32 tanf32 (_Float32 __x) throw (); extern _Float32 __tanf32 (_Float32 __x) throw ();
 
 
 
 
- extern _Float32 coshf32 (_Float32 __x) noexcept (true); extern _Float32 __coshf32 (_Float32 __x) noexcept (true);
+extern _Float32 coshf32 (_Float32 __x) throw (); extern _Float32 __coshf32 (_Float32 __x) throw ();
 
- extern _Float32 sinhf32 (_Float32 __x) noexcept (true); extern _Float32 __sinhf32 (_Float32 __x) noexcept (true);
+extern _Float32 sinhf32 (_Float32 __x) throw (); extern _Float32 __sinhf32 (_Float32 __x) throw ();
 
- extern _Float32 tanhf32 (_Float32 __x) noexcept (true); extern _Float32 __tanhf32 (_Float32 __x) noexcept (true);
+extern _Float32 tanhf32 (_Float32 __x) throw (); extern _Float32 __tanhf32 (_Float32 __x) throw ();
 
 
 
- extern void sincosf32 (_Float32 __x, _Float32 *__sinx, _Float32 *__cosx) noexcept (true); extern void __sincosf32 (_Float32 __x, _Float32 *__sinx, _Float32 *__cosx) noexcept (true);
+ extern void sincosf32 (_Float32 __x, _Float32 *__sinx, _Float32 *__cosx) throw (); extern void __sincosf32 (_Float32 __x, _Float32 *__sinx, _Float32 *__cosx) throw ();
 
 
 
 
 
- extern _Float32 acoshf32 (_Float32 __x) noexcept (true); extern _Float32 __acoshf32 (_Float32 __x) noexcept (true);
+extern _Float32 acoshf32 (_Float32 __x) throw (); extern _Float32 __acoshf32 (_Float32 __x) throw ();
 
- extern _Float32 asinhf32 (_Float32 __x) noexcept (true); extern _Float32 __asinhf32 (_Float32 __x) noexcept (true);
+extern _Float32 asinhf32 (_Float32 __x) throw (); extern _Float32 __asinhf32 (_Float32 __x) throw ();
 
- extern _Float32 atanhf32 (_Float32 __x) noexcept (true); extern _Float32 __atanhf32 (_Float32 __x) noexcept (true);
+extern _Float32 atanhf32 (_Float32 __x) throw (); extern _Float32 __atanhf32 (_Float32 __x) throw ();
 
 
 
 
 
- extern _Float32 expf32 (_Float32 __x) noexcept (true); extern _Float32 __expf32 (_Float32 __x) noexcept (true);
+ extern _Float32 expf32 (_Float32 __x) throw (); extern _Float32 __expf32 (_Float32 __x) throw ();
 
 
-extern _Float32 frexpf32 (_Float32 __x, int *__exponent) noexcept (true); extern _Float32 __frexpf32 (_Float32 __x, int *__exponent) noexcept (true);
+extern _Float32 frexpf32 (_Float32 __x, int *__exponent) throw (); extern _Float32 __frexpf32 (_Float32 __x, int *__exponent) throw ();
 
 
-extern _Float32 ldexpf32 (_Float32 __x, int __exponent) noexcept (true); extern _Float32 __ldexpf32 (_Float32 __x, int __exponent) noexcept (true);
+extern _Float32 ldexpf32 (_Float32 __x, int __exponent) throw (); extern _Float32 __ldexpf32 (_Float32 __x, int __exponent) throw ();
 
 
- extern _Float32 logf32 (_Float32 __x) noexcept (true); extern _Float32 __logf32 (_Float32 __x) noexcept (true);
+ extern _Float32 logf32 (_Float32 __x) throw (); extern _Float32 __logf32 (_Float32 __x) throw ();
 
 
- extern _Float32 log10f32 (_Float32 __x) noexcept (true); extern _Float32 __log10f32 (_Float32 __x) noexcept (true);
+extern _Float32 log10f32 (_Float32 __x) throw (); extern _Float32 __log10f32 (_Float32 __x) throw ();
 
 
-extern _Float32 modff32 (_Float32 __x, _Float32 *__iptr) noexcept (true); extern _Float32 __modff32 (_Float32 __x, _Float32 *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern _Float32 modff32 (_Float32 __x, _Float32 *__iptr) throw (); extern _Float32 __modff32 (_Float32 __x, _Float32 *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern _Float32 exp10f32 (_Float32 __x) noexcept (true); extern _Float32 __exp10f32 (_Float32 __x) noexcept (true);
+extern _Float32 exp10f32 (_Float32 __x) throw (); extern _Float32 __exp10f32 (_Float32 __x) throw ();
 
 
 
 
- extern _Float32 expm1f32 (_Float32 __x) noexcept (true); extern _Float32 __expm1f32 (_Float32 __x) noexcept (true);
+extern _Float32 expm1f32 (_Float32 __x) throw (); extern _Float32 __expm1f32 (_Float32 __x) throw ();
 
 
- extern _Float32 log1pf32 (_Float32 __x) noexcept (true); extern _Float32 __log1pf32 (_Float32 __x) noexcept (true);
+extern _Float32 log1pf32 (_Float32 __x) throw (); extern _Float32 __log1pf32 (_Float32 __x) throw ();
 
 
-extern _Float32 logbf32 (_Float32 __x) noexcept (true); extern _Float32 __logbf32 (_Float32 __x) noexcept (true);
+extern _Float32 logbf32 (_Float32 __x) throw (); extern _Float32 __logbf32 (_Float32 __x) throw ();
 
 
 
 
- extern _Float32 exp2f32 (_Float32 __x) noexcept (true); extern _Float32 __exp2f32 (_Float32 __x) noexcept (true);
+extern _Float32 exp2f32 (_Float32 __x) throw (); extern _Float32 __exp2f32 (_Float32 __x) throw ();
 
 
- extern _Float32 log2f32 (_Float32 __x) noexcept (true); extern _Float32 __log2f32 (_Float32 __x) noexcept (true);
+extern _Float32 log2f32 (_Float32 __x) throw (); extern _Float32 __log2f32 (_Float32 __x) throw ();
 
 
 
 
 
 
- extern _Float32 powf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __powf32 (_Float32 __x, _Float32 __y) noexcept (true);
+ extern _Float32 powf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __powf32 (_Float32 __x, _Float32 __y) throw ();
 
 
-extern _Float32 sqrtf32 (_Float32 __x) noexcept (true); extern _Float32 __sqrtf32 (_Float32 __x) noexcept (true);
+extern _Float32 sqrtf32 (_Float32 __x) throw (); extern _Float32 __sqrtf32 (_Float32 __x) throw ();
 
 
 
- extern _Float32 hypotf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __hypotf32 (_Float32 __x, _Float32 __y) noexcept (true);
+extern _Float32 hypotf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __hypotf32 (_Float32 __x, _Float32 __y) throw ();
 
 
 
 
- extern _Float32 cbrtf32 (_Float32 __x) noexcept (true); extern _Float32 __cbrtf32 (_Float32 __x) noexcept (true);
+extern _Float32 cbrtf32 (_Float32 __x) throw (); extern _Float32 __cbrtf32 (_Float32 __x) throw ();
 
 
 
 
 
 
-extern _Float32 ceilf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__)); extern _Float32 __ceilf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32 ceilf32 (_Float32 __x) throw () __attribute__ ((__const__)); extern _Float32 __ceilf32 (_Float32 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32 fabsf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fabsf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32 fabsf32 (_Float32 __x) throw () __attribute__ ((__const__)); extern _Float32 __fabsf32 (_Float32 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32 floorf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__)); extern _Float32 __floorf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32 floorf32 (_Float32 __x) throw () __attribute__ ((__const__)); extern _Float32 __floorf32 (_Float32 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32 fmodf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __fmodf32 (_Float32 __x, _Float32 __y) noexcept (true);
-# 198 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float32 copysignf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __copysignf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
+extern _Float32 fmodf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __fmodf32 (_Float32 __x, _Float32 __y) throw ();
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32 copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float32 nanf32 (const char *__tagb) noexcept (true); extern _Float32 __nanf32 (const char *__tagb) noexcept (true);
-# 220 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float32 j0f32 (_Float32) noexcept (true); extern _Float32 __j0f32 (_Float32) noexcept (true);
-extern _Float32 j1f32 (_Float32) noexcept (true); extern _Float32 __j1f32 (_Float32) noexcept (true);
-extern _Float32 jnf32 (int, _Float32) noexcept (true); extern _Float32 __jnf32 (int, _Float32) noexcept (true);
-extern _Float32 y0f32 (_Float32) noexcept (true); extern _Float32 __y0f32 (_Float32) noexcept (true);
-extern _Float32 y1f32 (_Float32) noexcept (true); extern _Float32 __y1f32 (_Float32) noexcept (true);
-extern _Float32 ynf32 (int, _Float32) noexcept (true); extern _Float32 __ynf32 (int, _Float32) noexcept (true);
+extern _Float32 nanf32 (const char *__tagb) throw (); extern _Float32 __nanf32 (const char *__tagb) throw ();
+# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32 j0f32 (_Float32) throw (); extern _Float32 __j0f32 (_Float32) throw ();
+extern _Float32 j1f32 (_Float32) throw (); extern _Float32 __j1f32 (_Float32) throw ();
+extern _Float32 jnf32 (int, _Float32) throw (); extern _Float32 __jnf32 (int, _Float32) throw ();
+extern _Float32 y0f32 (_Float32) throw (); extern _Float32 __y0f32 (_Float32) throw ();
+extern _Float32 y1f32 (_Float32) throw (); extern _Float32 __y1f32 (_Float32) throw ();
+extern _Float32 ynf32 (int, _Float32) throw (); extern _Float32 __ynf32 (int, _Float32) throw ();
 
 
 
 
 
- extern _Float32 erff32 (_Float32) noexcept (true); extern _Float32 __erff32 (_Float32) noexcept (true);
- extern _Float32 erfcf32 (_Float32) noexcept (true); extern _Float32 __erfcf32 (_Float32) noexcept (true);
-extern _Float32 lgammaf32 (_Float32) noexcept (true); extern _Float32 __lgammaf32 (_Float32) noexcept (true);
+extern _Float32 erff32 (_Float32) throw (); extern _Float32 __erff32 (_Float32) throw ();
+extern _Float32 erfcf32 (_Float32) throw (); extern _Float32 __erfcf32 (_Float32) throw ();
+extern _Float32 lgammaf32 (_Float32) throw (); extern _Float32 __lgammaf32 (_Float32) throw ();
 
 
 
 
-extern _Float32 tgammaf32 (_Float32) noexcept (true); extern _Float32 __tgammaf32 (_Float32) noexcept (true);
-# 252 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float32 lgammaf32_r (_Float32, int *__signgamp) noexcept (true); extern _Float32 __lgammaf32_r (_Float32, int *__signgamp) noexcept (true);
+extern _Float32 tgammaf32 (_Float32) throw (); extern _Float32 __tgammaf32 (_Float32) throw ();
+# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32 lgammaf32_r (_Float32, int *__signgamp) throw (); extern _Float32 __lgammaf32_r (_Float32, int *__signgamp) throw ();
 
 
 
 
 
 
-extern _Float32 rintf32 (_Float32 __x) noexcept (true); extern _Float32 __rintf32 (_Float32 __x) noexcept (true);
+extern _Float32 rintf32 (_Float32 __x) throw (); extern _Float32 __rintf32 (_Float32 __x) throw ();
 
 
-extern _Float32 nextafterf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __nextafterf32 (_Float32 __x, _Float32 __y) noexcept (true);
+extern _Float32 nextafterf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __nextafterf32 (_Float32 __x, _Float32 __y) throw ();
 
 
 
 
 
 
-extern _Float32 nextdownf32 (_Float32 __x) noexcept (true); extern _Float32 __nextdownf32 (_Float32 __x) noexcept (true);
+extern _Float32 nextdownf32 (_Float32 __x) throw (); extern _Float32 __nextdownf32 (_Float32 __x) throw ();
 
-extern _Float32 nextupf32 (_Float32 __x) noexcept (true); extern _Float32 __nextupf32 (_Float32 __x) noexcept (true);
+extern _Float32 nextupf32 (_Float32 __x) throw (); extern _Float32 __nextupf32 (_Float32 __x) throw ();
 
 
 
-extern _Float32 remainderf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __remainderf32 (_Float32 __x, _Float32 __y) noexcept (true);
+extern _Float32 remainderf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __remainderf32 (_Float32 __x, _Float32 __y) throw ();
 
 
 
-extern _Float32 scalbnf32 (_Float32 __x, int __n) noexcept (true); extern _Float32 __scalbnf32 (_Float32 __x, int __n) noexcept (true);
+extern _Float32 scalbnf32 (_Float32 __x, int __n) throw (); extern _Float32 __scalbnf32 (_Float32 __x, int __n) throw ();
 
 
 
-extern int ilogbf32 (_Float32 __x) noexcept (true); extern int __ilogbf32 (_Float32 __x) noexcept (true);
+extern int ilogbf32 (_Float32 __x) throw (); extern int __ilogbf32 (_Float32 __x) throw ();
 
 
 
 
-extern long int llogbf32 (_Float32 __x) noexcept (true); extern long int __llogbf32 (_Float32 __x) noexcept (true);
+extern long int llogbf32 (_Float32 __x) throw (); extern long int __llogbf32 (_Float32 __x) throw ();
 
 
 
 
-extern _Float32 scalblnf32 (_Float32 __x, long int __n) noexcept (true); extern _Float32 __scalblnf32 (_Float32 __x, long int __n) noexcept (true);
+extern _Float32 scalblnf32 (_Float32 __x, long int __n) throw (); extern _Float32 __scalblnf32 (_Float32 __x, long int __n) throw ();
 
 
 
-extern _Float32 nearbyintf32 (_Float32 __x) noexcept (true); extern _Float32 __nearbyintf32 (_Float32 __x) noexcept (true);
+extern _Float32 nearbyintf32 (_Float32 __x) throw (); extern _Float32 __nearbyintf32 (_Float32 __x) throw ();
 
 
 
-extern _Float32 roundf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__)); extern _Float32 __roundf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32 roundf32 (_Float32 __x) throw () __attribute__ ((__const__)); extern _Float32 __roundf32 (_Float32 __x) throw () __attribute__ ((__const__));
 
 
 
-extern _Float32 truncf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__)); extern _Float32 __truncf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32 truncf32 (_Float32 __x) throw () __attribute__ ((__const__)); extern _Float32 __truncf32 (_Float32 __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float32 remquof32 (_Float32 __x, _Float32 __y, int *__quo) noexcept (true); extern _Float32 __remquof32 (_Float32 __x, _Float32 __y, int *__quo) noexcept (true);
+extern _Float32 remquof32 (_Float32 __x, _Float32 __y, int *__quo) throw (); extern _Float32 __remquof32 (_Float32 __x, _Float32 __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrintf32 (_Float32 __x) noexcept (true); extern long int __lrintf32 (_Float32 __x) noexcept (true);
+extern long int lrintf32 (_Float32 __x) throw (); extern long int __lrintf32 (_Float32 __x) throw ();
 __extension__
-extern long long int llrintf32 (_Float32 __x) noexcept (true); extern long long int __llrintf32 (_Float32 __x) noexcept (true);
+extern long long int llrintf32 (_Float32 __x) throw (); extern long long int __llrintf32 (_Float32 __x) throw ();
 
 
 
-extern long int lroundf32 (_Float32 __x) noexcept (true); extern long int __lroundf32 (_Float32 __x) noexcept (true);
+extern long int lroundf32 (_Float32 __x) throw (); extern long int __lroundf32 (_Float32 __x) throw ();
 __extension__
-extern long long int llroundf32 (_Float32 __x) noexcept (true); extern long long int __llroundf32 (_Float32 __x) noexcept (true);
+extern long long int llroundf32 (_Float32 __x) throw (); extern long long int __llroundf32 (_Float32 __x) throw ();
 
 
 
-extern _Float32 fdimf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __fdimf32 (_Float32 __x, _Float32 __y) noexcept (true);
+extern _Float32 fdimf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __fdimf32 (_Float32 __x, _Float32 __y) throw ();
 
 
+extern _Float32 fmaxf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __fmaxf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
-extern _Float32 fmaxf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fmaxf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float32 fminf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __fminf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
-extern _Float32 fminf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fminf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float32 fmaf32 (_Float32 __x, _Float32 __y, _Float32 __z) throw (); extern _Float32 __fmaf32 (_Float32 __x, _Float32 __y, _Float32 __z) throw ();
 
 
-extern _Float32 fmaf32 (_Float32 __x, _Float32 __y, _Float32 __z) noexcept (true); extern _Float32 __fmaf32 (_Float32 __x, _Float32 __y, _Float32 __z) noexcept (true);
 
 
+extern _Float32 roundevenf32 (_Float32 __x) throw () __attribute__ ((__const__)); extern _Float32 __roundevenf32 (_Float32 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32 roundevenf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__)); extern _Float32 __roundevenf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfpf32 (_Float32 __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpf32 (_Float32 __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfpf32 (_Float32 __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpf32 (_Float32 __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpxf32 (_Float32 __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpxf32 (_Float32 __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpxf32 (_Float32 __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpxf32 (_Float32 __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
 
+extern _Float32 fmaxmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __fmaxmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalizef32 (_Float32 *__cx, const _Float32 *__x) noexcept (true);
+extern _Float32 fminmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __fminmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalizef32 (_Float32 *__cx, const _Float32 *__x) throw ();
 
 
 
 
-extern _Float32 fmaxmagf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fmaxmagf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminmagf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fminmagf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32 fmaximumf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fmaximumf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimumf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fminimumf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmaximum_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fmaximum_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimum_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fminimum_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmaximum_magf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fmaximum_magf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimum_magf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fminimum_magf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmaximum_mag_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fmaximum_mag_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimum_mag_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__)); extern _Float32 __fminimum_mag_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf32 (const _Float32 *__x, const _Float32 *__y) noexcept (true)
+extern int totalorderf32 (const _Float32 *__x, const _Float32 *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermagf32 (const _Float32 *__x, const _Float32 *__y) noexcept (true)
+extern int totalordermagf32 (const _Float32 *__x, const _Float32 *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern _Float32 getpayloadf32 (const _Float32 *__x) noexcept (true); extern _Float32 __getpayloadf32 (const _Float32 *__x) noexcept (true);
+extern _Float32 getpayloadf32 (const _Float32 *__x) throw (); extern _Float32 __getpayloadf32 (const _Float32 *__x) throw ();
 
 
-extern int setpayloadf32 (_Float32 *__x, _Float32 __payload) noexcept (true);
+extern int setpayloadf32 (_Float32 *__x, _Float32 __payload) throw ();
 
 
-extern int setpayloadsigf32 (_Float32 *__x, _Float32 __payload) noexcept (true);
-# 451 "/usr/include/math.h" 2 3 4
-# 467 "/usr/include/math.h" 3 4
+extern int setpayloadsigf32 (_Float32 *__x, _Float32 __payload) throw ();
+# 390 "/usr/include/math.h" 2 3 4
+# 406 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern _Float64 acosf64 (_Float64 __x) noexcept (true); extern _Float64 __acosf64 (_Float64 __x) noexcept (true);
+extern _Float64 acosf64 (_Float64 __x) throw (); extern _Float64 __acosf64 (_Float64 __x) throw ();
 
- extern _Float64 asinf64 (_Float64 __x) noexcept (true); extern _Float64 __asinf64 (_Float64 __x) noexcept (true);
+extern _Float64 asinf64 (_Float64 __x) throw (); extern _Float64 __asinf64 (_Float64 __x) throw ();
 
- extern _Float64 atanf64 (_Float64 __x) noexcept (true); extern _Float64 __atanf64 (_Float64 __x) noexcept (true);
+extern _Float64 atanf64 (_Float64 __x) throw (); extern _Float64 __atanf64 (_Float64 __x) throw ();
 
- extern _Float64 atan2f64 (_Float64 __y, _Float64 __x) noexcept (true); extern _Float64 __atan2f64 (_Float64 __y, _Float64 __x) noexcept (true);
+extern _Float64 atan2f64 (_Float64 __y, _Float64 __x) throw (); extern _Float64 __atan2f64 (_Float64 __y, _Float64 __x) throw ();
 
 
- extern _Float64 cosf64 (_Float64 __x) noexcept (true); extern _Float64 __cosf64 (_Float64 __x) noexcept (true);
+ extern _Float64 cosf64 (_Float64 __x) throw (); extern _Float64 __cosf64 (_Float64 __x) throw ();
 
- extern _Float64 sinf64 (_Float64 __x) noexcept (true); extern _Float64 __sinf64 (_Float64 __x) noexcept (true);
+ extern _Float64 sinf64 (_Float64 __x) throw (); extern _Float64 __sinf64 (_Float64 __x) throw ();
 
- extern _Float64 tanf64 (_Float64 __x) noexcept (true); extern _Float64 __tanf64 (_Float64 __x) noexcept (true);
+extern _Float64 tanf64 (_Float64 __x) throw (); extern _Float64 __tanf64 (_Float64 __x) throw ();
 
 
 
 
- extern _Float64 coshf64 (_Float64 __x) noexcept (true); extern _Float64 __coshf64 (_Float64 __x) noexcept (true);
+extern _Float64 coshf64 (_Float64 __x) throw (); extern _Float64 __coshf64 (_Float64 __x) throw ();
 
- extern _Float64 sinhf64 (_Float64 __x) noexcept (true); extern _Float64 __sinhf64 (_Float64 __x) noexcept (true);
+extern _Float64 sinhf64 (_Float64 __x) throw (); extern _Float64 __sinhf64 (_Float64 __x) throw ();
 
- extern _Float64 tanhf64 (_Float64 __x) noexcept (true); extern _Float64 __tanhf64 (_Float64 __x) noexcept (true);
+extern _Float64 tanhf64 (_Float64 __x) throw (); extern _Float64 __tanhf64 (_Float64 __x) throw ();
 
 
 
- extern void sincosf64 (_Float64 __x, _Float64 *__sinx, _Float64 *__cosx) noexcept (true); extern void __sincosf64 (_Float64 __x, _Float64 *__sinx, _Float64 *__cosx) noexcept (true);
+ extern void sincosf64 (_Float64 __x, _Float64 *__sinx, _Float64 *__cosx) throw (); extern void __sincosf64 (_Float64 __x, _Float64 *__sinx, _Float64 *__cosx) throw ();
 
 
 
 
 
- extern _Float64 acoshf64 (_Float64 __x) noexcept (true); extern _Float64 __acoshf64 (_Float64 __x) noexcept (true);
+extern _Float64 acoshf64 (_Float64 __x) throw (); extern _Float64 __acoshf64 (_Float64 __x) throw ();
 
- extern _Float64 asinhf64 (_Float64 __x) noexcept (true); extern _Float64 __asinhf64 (_Float64 __x) noexcept (true);
+extern _Float64 asinhf64 (_Float64 __x) throw (); extern _Float64 __asinhf64 (_Float64 __x) throw ();
 
- extern _Float64 atanhf64 (_Float64 __x) noexcept (true); extern _Float64 __atanhf64 (_Float64 __x) noexcept (true);
+extern _Float64 atanhf64 (_Float64 __x) throw (); extern _Float64 __atanhf64 (_Float64 __x) throw ();
 
 
 
 
 
- extern _Float64 expf64 (_Float64 __x) noexcept (true); extern _Float64 __expf64 (_Float64 __x) noexcept (true);
+ extern _Float64 expf64 (_Float64 __x) throw (); extern _Float64 __expf64 (_Float64 __x) throw ();
 
 
-extern _Float64 frexpf64 (_Float64 __x, int *__exponent) noexcept (true); extern _Float64 __frexpf64 (_Float64 __x, int *__exponent) noexcept (true);
+extern _Float64 frexpf64 (_Float64 __x, int *__exponent) throw (); extern _Float64 __frexpf64 (_Float64 __x, int *__exponent) throw ();
 
 
-extern _Float64 ldexpf64 (_Float64 __x, int __exponent) noexcept (true); extern _Float64 __ldexpf64 (_Float64 __x, int __exponent) noexcept (true);
+extern _Float64 ldexpf64 (_Float64 __x, int __exponent) throw (); extern _Float64 __ldexpf64 (_Float64 __x, int __exponent) throw ();
 
 
- extern _Float64 logf64 (_Float64 __x) noexcept (true); extern _Float64 __logf64 (_Float64 __x) noexcept (true);
+ extern _Float64 logf64 (_Float64 __x) throw (); extern _Float64 __logf64 (_Float64 __x) throw ();
 
 
- extern _Float64 log10f64 (_Float64 __x) noexcept (true); extern _Float64 __log10f64 (_Float64 __x) noexcept (true);
+extern _Float64 log10f64 (_Float64 __x) throw (); extern _Float64 __log10f64 (_Float64 __x) throw ();
 
 
-extern _Float64 modff64 (_Float64 __x, _Float64 *__iptr) noexcept (true); extern _Float64 __modff64 (_Float64 __x, _Float64 *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern _Float64 modff64 (_Float64 __x, _Float64 *__iptr) throw (); extern _Float64 __modff64 (_Float64 __x, _Float64 *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern _Float64 exp10f64 (_Float64 __x) noexcept (true); extern _Float64 __exp10f64 (_Float64 __x) noexcept (true);
+extern _Float64 exp10f64 (_Float64 __x) throw (); extern _Float64 __exp10f64 (_Float64 __x) throw ();
 
 
 
 
- extern _Float64 expm1f64 (_Float64 __x) noexcept (true); extern _Float64 __expm1f64 (_Float64 __x) noexcept (true);
+extern _Float64 expm1f64 (_Float64 __x) throw (); extern _Float64 __expm1f64 (_Float64 __x) throw ();
 
 
- extern _Float64 log1pf64 (_Float64 __x) noexcept (true); extern _Float64 __log1pf64 (_Float64 __x) noexcept (true);
+extern _Float64 log1pf64 (_Float64 __x) throw (); extern _Float64 __log1pf64 (_Float64 __x) throw ();
 
 
-extern _Float64 logbf64 (_Float64 __x) noexcept (true); extern _Float64 __logbf64 (_Float64 __x) noexcept (true);
+extern _Float64 logbf64 (_Float64 __x) throw (); extern _Float64 __logbf64 (_Float64 __x) throw ();
 
 
 
 
- extern _Float64 exp2f64 (_Float64 __x) noexcept (true); extern _Float64 __exp2f64 (_Float64 __x) noexcept (true);
+extern _Float64 exp2f64 (_Float64 __x) throw (); extern _Float64 __exp2f64 (_Float64 __x) throw ();
 
 
- extern _Float64 log2f64 (_Float64 __x) noexcept (true); extern _Float64 __log2f64 (_Float64 __x) noexcept (true);
+extern _Float64 log2f64 (_Float64 __x) throw (); extern _Float64 __log2f64 (_Float64 __x) throw ();
 
 
 
 
 
 
- extern _Float64 powf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __powf64 (_Float64 __x, _Float64 __y) noexcept (true);
+ extern _Float64 powf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __powf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float64 sqrtf64 (_Float64 __x) noexcept (true); extern _Float64 __sqrtf64 (_Float64 __x) noexcept (true);
+extern _Float64 sqrtf64 (_Float64 __x) throw (); extern _Float64 __sqrtf64 (_Float64 __x) throw ();
 
 
 
- extern _Float64 hypotf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __hypotf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float64 hypotf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __hypotf64 (_Float64 __x, _Float64 __y) throw ();
 
 
 
 
- extern _Float64 cbrtf64 (_Float64 __x) noexcept (true); extern _Float64 __cbrtf64 (_Float64 __x) noexcept (true);
+extern _Float64 cbrtf64 (_Float64 __x) throw (); extern _Float64 __cbrtf64 (_Float64 __x) throw ();
 
 
 
 
 
 
-extern _Float64 ceilf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__)); extern _Float64 __ceilf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64 ceilf64 (_Float64 __x) throw () __attribute__ ((__const__)); extern _Float64 __ceilf64 (_Float64 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64 fabsf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fabsf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64 fabsf64 (_Float64 __x) throw () __attribute__ ((__const__)); extern _Float64 __fabsf64 (_Float64 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64 floorf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__)); extern _Float64 __floorf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64 floorf64 (_Float64 __x) throw () __attribute__ ((__const__)); extern _Float64 __floorf64 (_Float64 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64 fmodf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __fmodf64 (_Float64 __x, _Float64 __y) noexcept (true);
-# 198 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float64 copysignf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __copysignf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
+extern _Float64 fmodf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __fmodf64 (_Float64 __x, _Float64 __y) throw ();
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64 copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float64 nanf64 (const char *__tagb) noexcept (true); extern _Float64 __nanf64 (const char *__tagb) noexcept (true);
-# 220 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float64 j0f64 (_Float64) noexcept (true); extern _Float64 __j0f64 (_Float64) noexcept (true);
-extern _Float64 j1f64 (_Float64) noexcept (true); extern _Float64 __j1f64 (_Float64) noexcept (true);
-extern _Float64 jnf64 (int, _Float64) noexcept (true); extern _Float64 __jnf64 (int, _Float64) noexcept (true);
-extern _Float64 y0f64 (_Float64) noexcept (true); extern _Float64 __y0f64 (_Float64) noexcept (true);
-extern _Float64 y1f64 (_Float64) noexcept (true); extern _Float64 __y1f64 (_Float64) noexcept (true);
-extern _Float64 ynf64 (int, _Float64) noexcept (true); extern _Float64 __ynf64 (int, _Float64) noexcept (true);
+extern _Float64 nanf64 (const char *__tagb) throw (); extern _Float64 __nanf64 (const char *__tagb) throw ();
+# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64 j0f64 (_Float64) throw (); extern _Float64 __j0f64 (_Float64) throw ();
+extern _Float64 j1f64 (_Float64) throw (); extern _Float64 __j1f64 (_Float64) throw ();
+extern _Float64 jnf64 (int, _Float64) throw (); extern _Float64 __jnf64 (int, _Float64) throw ();
+extern _Float64 y0f64 (_Float64) throw (); extern _Float64 __y0f64 (_Float64) throw ();
+extern _Float64 y1f64 (_Float64) throw (); extern _Float64 __y1f64 (_Float64) throw ();
+extern _Float64 ynf64 (int, _Float64) throw (); extern _Float64 __ynf64 (int, _Float64) throw ();
 
 
 
 
 
- extern _Float64 erff64 (_Float64) noexcept (true); extern _Float64 __erff64 (_Float64) noexcept (true);
- extern _Float64 erfcf64 (_Float64) noexcept (true); extern _Float64 __erfcf64 (_Float64) noexcept (true);
-extern _Float64 lgammaf64 (_Float64) noexcept (true); extern _Float64 __lgammaf64 (_Float64) noexcept (true);
+extern _Float64 erff64 (_Float64) throw (); extern _Float64 __erff64 (_Float64) throw ();
+extern _Float64 erfcf64 (_Float64) throw (); extern _Float64 __erfcf64 (_Float64) throw ();
+extern _Float64 lgammaf64 (_Float64) throw (); extern _Float64 __lgammaf64 (_Float64) throw ();
 
 
 
 
-extern _Float64 tgammaf64 (_Float64) noexcept (true); extern _Float64 __tgammaf64 (_Float64) noexcept (true);
-# 252 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float64 lgammaf64_r (_Float64, int *__signgamp) noexcept (true); extern _Float64 __lgammaf64_r (_Float64, int *__signgamp) noexcept (true);
+extern _Float64 tgammaf64 (_Float64) throw (); extern _Float64 __tgammaf64 (_Float64) throw ();
+# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64 lgammaf64_r (_Float64, int *__signgamp) throw (); extern _Float64 __lgammaf64_r (_Float64, int *__signgamp) throw ();
 
 
 
 
 
 
-extern _Float64 rintf64 (_Float64 __x) noexcept (true); extern _Float64 __rintf64 (_Float64 __x) noexcept (true);
+extern _Float64 rintf64 (_Float64 __x) throw (); extern _Float64 __rintf64 (_Float64 __x) throw ();
 
 
-extern _Float64 nextafterf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __nextafterf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float64 nextafterf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __nextafterf64 (_Float64 __x, _Float64 __y) throw ();
 
 
 
 
 
 
-extern _Float64 nextdownf64 (_Float64 __x) noexcept (true); extern _Float64 __nextdownf64 (_Float64 __x) noexcept (true);
+extern _Float64 nextdownf64 (_Float64 __x) throw (); extern _Float64 __nextdownf64 (_Float64 __x) throw ();
 
-extern _Float64 nextupf64 (_Float64 __x) noexcept (true); extern _Float64 __nextupf64 (_Float64 __x) noexcept (true);
+extern _Float64 nextupf64 (_Float64 __x) throw (); extern _Float64 __nextupf64 (_Float64 __x) throw ();
 
 
 
-extern _Float64 remainderf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __remainderf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float64 remainderf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __remainderf64 (_Float64 __x, _Float64 __y) throw ();
 
 
 
-extern _Float64 scalbnf64 (_Float64 __x, int __n) noexcept (true); extern _Float64 __scalbnf64 (_Float64 __x, int __n) noexcept (true);
+extern _Float64 scalbnf64 (_Float64 __x, int __n) throw (); extern _Float64 __scalbnf64 (_Float64 __x, int __n) throw ();
 
 
 
-extern int ilogbf64 (_Float64 __x) noexcept (true); extern int __ilogbf64 (_Float64 __x) noexcept (true);
+extern int ilogbf64 (_Float64 __x) throw (); extern int __ilogbf64 (_Float64 __x) throw ();
 
 
 
 
-extern long int llogbf64 (_Float64 __x) noexcept (true); extern long int __llogbf64 (_Float64 __x) noexcept (true);
+extern long int llogbf64 (_Float64 __x) throw (); extern long int __llogbf64 (_Float64 __x) throw ();
 
 
 
 
-extern _Float64 scalblnf64 (_Float64 __x, long int __n) noexcept (true); extern _Float64 __scalblnf64 (_Float64 __x, long int __n) noexcept (true);
+extern _Float64 scalblnf64 (_Float64 __x, long int __n) throw (); extern _Float64 __scalblnf64 (_Float64 __x, long int __n) throw ();
 
 
 
-extern _Float64 nearbyintf64 (_Float64 __x) noexcept (true); extern _Float64 __nearbyintf64 (_Float64 __x) noexcept (true);
+extern _Float64 nearbyintf64 (_Float64 __x) throw (); extern _Float64 __nearbyintf64 (_Float64 __x) throw ();
 
 
 
-extern _Float64 roundf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__)); extern _Float64 __roundf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64 roundf64 (_Float64 __x) throw () __attribute__ ((__const__)); extern _Float64 __roundf64 (_Float64 __x) throw () __attribute__ ((__const__));
 
 
 
-extern _Float64 truncf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__)); extern _Float64 __truncf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64 truncf64 (_Float64 __x) throw () __attribute__ ((__const__)); extern _Float64 __truncf64 (_Float64 __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float64 remquof64 (_Float64 __x, _Float64 __y, int *__quo) noexcept (true); extern _Float64 __remquof64 (_Float64 __x, _Float64 __y, int *__quo) noexcept (true);
+extern _Float64 remquof64 (_Float64 __x, _Float64 __y, int *__quo) throw (); extern _Float64 __remquof64 (_Float64 __x, _Float64 __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrintf64 (_Float64 __x) noexcept (true); extern long int __lrintf64 (_Float64 __x) noexcept (true);
+extern long int lrintf64 (_Float64 __x) throw (); extern long int __lrintf64 (_Float64 __x) throw ();
 __extension__
-extern long long int llrintf64 (_Float64 __x) noexcept (true); extern long long int __llrintf64 (_Float64 __x) noexcept (true);
+extern long long int llrintf64 (_Float64 __x) throw (); extern long long int __llrintf64 (_Float64 __x) throw ();
 
 
 
-extern long int lroundf64 (_Float64 __x) noexcept (true); extern long int __lroundf64 (_Float64 __x) noexcept (true);
+extern long int lroundf64 (_Float64 __x) throw (); extern long int __lroundf64 (_Float64 __x) throw ();
 __extension__
-extern long long int llroundf64 (_Float64 __x) noexcept (true); extern long long int __llroundf64 (_Float64 __x) noexcept (true);
+extern long long int llroundf64 (_Float64 __x) throw (); extern long long int __llroundf64 (_Float64 __x) throw ();
 
 
 
-extern _Float64 fdimf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __fdimf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float64 fdimf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __fdimf64 (_Float64 __x, _Float64 __y) throw ();
 
 
+extern _Float64 fmaxf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __fmaxf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
-extern _Float64 fmaxf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fmaxf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float64 fminf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __fminf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
-extern _Float64 fminf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fminf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float64 fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) throw (); extern _Float64 __fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) throw ();
 
 
-extern _Float64 fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true); extern _Float64 __fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true);
 
 
+extern _Float64 roundevenf64 (_Float64 __x) throw () __attribute__ ((__const__)); extern _Float64 __roundevenf64 (_Float64 __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64 roundevenf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__)); extern _Float64 __roundevenf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfpf64 (_Float64 __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpf64 (_Float64 __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfpf64 (_Float64 __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpf64 (_Float64 __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpxf64 (_Float64 __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpxf64 (_Float64 __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpxf64 (_Float64 __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpxf64 (_Float64 __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
 
+extern _Float64 fmaxmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __fmaxmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalizef64 (_Float64 *__cx, const _Float64 *__x) noexcept (true);
+extern _Float64 fminmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __fminmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalizef64 (_Float64 *__cx, const _Float64 *__x) throw ();
 
 
 
 
-extern _Float64 fmaxmagf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fmaxmagf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminmagf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fminmagf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64 fmaximumf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fmaximumf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimumf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fminimumf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmaximum_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fmaximum_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimum_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fminimum_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmaximum_magf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fmaximum_magf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimum_magf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fminimum_magf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmaximum_mag_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fmaximum_mag_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimum_mag_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__)); extern _Float64 __fminimum_mag_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf64 (const _Float64 *__x, const _Float64 *__y) noexcept (true)
+extern int totalorderf64 (const _Float64 *__x, const _Float64 *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermagf64 (const _Float64 *__x, const _Float64 *__y) noexcept (true)
+extern int totalordermagf64 (const _Float64 *__x, const _Float64 *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern _Float64 getpayloadf64 (const _Float64 *__x) noexcept (true); extern _Float64 __getpayloadf64 (const _Float64 *__x) noexcept (true);
+extern _Float64 getpayloadf64 (const _Float64 *__x) throw (); extern _Float64 __getpayloadf64 (const _Float64 *__x) throw ();
 
 
-extern int setpayloadf64 (_Float64 *__x, _Float64 __payload) noexcept (true);
+extern int setpayloadf64 (_Float64 *__x, _Float64 __payload) throw ();
 
 
-extern int setpayloadsigf64 (_Float64 *__x, _Float64 __payload) noexcept (true);
-# 468 "/usr/include/math.h" 2 3 4
-# 501 "/usr/include/math.h" 3 4
+extern int setpayloadsigf64 (_Float64 *__x, _Float64 __payload) throw ();
+# 407 "/usr/include/math.h" 2 3 4
+# 440 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern _Float32x acosf32x (_Float32x __x) noexcept (true); extern _Float32x __acosf32x (_Float32x __x) noexcept (true);
+extern _Float32x acosf32x (_Float32x __x) throw (); extern _Float32x __acosf32x (_Float32x __x) throw ();
 
- extern _Float32x asinf32x (_Float32x __x) noexcept (true); extern _Float32x __asinf32x (_Float32x __x) noexcept (true);
+extern _Float32x asinf32x (_Float32x __x) throw (); extern _Float32x __asinf32x (_Float32x __x) throw ();
 
- extern _Float32x atanf32x (_Float32x __x) noexcept (true); extern _Float32x __atanf32x (_Float32x __x) noexcept (true);
+extern _Float32x atanf32x (_Float32x __x) throw (); extern _Float32x __atanf32x (_Float32x __x) throw ();
 
- extern _Float32x atan2f32x (_Float32x __y, _Float32x __x) noexcept (true); extern _Float32x __atan2f32x (_Float32x __y, _Float32x __x) noexcept (true);
+extern _Float32x atan2f32x (_Float32x __y, _Float32x __x) throw (); extern _Float32x __atan2f32x (_Float32x __y, _Float32x __x) throw ();
 
 
- extern _Float32x cosf32x (_Float32x __x) noexcept (true); extern _Float32x __cosf32x (_Float32x __x) noexcept (true);
+ extern _Float32x cosf32x (_Float32x __x) throw (); extern _Float32x __cosf32x (_Float32x __x) throw ();
 
- extern _Float32x sinf32x (_Float32x __x) noexcept (true); extern _Float32x __sinf32x (_Float32x __x) noexcept (true);
+ extern _Float32x sinf32x (_Float32x __x) throw (); extern _Float32x __sinf32x (_Float32x __x) throw ();
 
- extern _Float32x tanf32x (_Float32x __x) noexcept (true); extern _Float32x __tanf32x (_Float32x __x) noexcept (true);
+extern _Float32x tanf32x (_Float32x __x) throw (); extern _Float32x __tanf32x (_Float32x __x) throw ();
 
 
 
 
- extern _Float32x coshf32x (_Float32x __x) noexcept (true); extern _Float32x __coshf32x (_Float32x __x) noexcept (true);
+extern _Float32x coshf32x (_Float32x __x) throw (); extern _Float32x __coshf32x (_Float32x __x) throw ();
 
- extern _Float32x sinhf32x (_Float32x __x) noexcept (true); extern _Float32x __sinhf32x (_Float32x __x) noexcept (true);
+extern _Float32x sinhf32x (_Float32x __x) throw (); extern _Float32x __sinhf32x (_Float32x __x) throw ();
 
- extern _Float32x tanhf32x (_Float32x __x) noexcept (true); extern _Float32x __tanhf32x (_Float32x __x) noexcept (true);
+extern _Float32x tanhf32x (_Float32x __x) throw (); extern _Float32x __tanhf32x (_Float32x __x) throw ();
 
 
 
- extern void sincosf32x (_Float32x __x, _Float32x *__sinx, _Float32x *__cosx) noexcept (true); extern void __sincosf32x (_Float32x __x, _Float32x *__sinx, _Float32x *__cosx) noexcept (true);
+ extern void sincosf32x (_Float32x __x, _Float32x *__sinx, _Float32x *__cosx) throw (); extern void __sincosf32x (_Float32x __x, _Float32x *__sinx, _Float32x *__cosx) throw ();
 
 
 
 
 
- extern _Float32x acoshf32x (_Float32x __x) noexcept (true); extern _Float32x __acoshf32x (_Float32x __x) noexcept (true);
+extern _Float32x acoshf32x (_Float32x __x) throw (); extern _Float32x __acoshf32x (_Float32x __x) throw ();
 
- extern _Float32x asinhf32x (_Float32x __x) noexcept (true); extern _Float32x __asinhf32x (_Float32x __x) noexcept (true);
+extern _Float32x asinhf32x (_Float32x __x) throw (); extern _Float32x __asinhf32x (_Float32x __x) throw ();
 
- extern _Float32x atanhf32x (_Float32x __x) noexcept (true); extern _Float32x __atanhf32x (_Float32x __x) noexcept (true);
+extern _Float32x atanhf32x (_Float32x __x) throw (); extern _Float32x __atanhf32x (_Float32x __x) throw ();
 
 
 
 
 
- extern _Float32x expf32x (_Float32x __x) noexcept (true); extern _Float32x __expf32x (_Float32x __x) noexcept (true);
+ extern _Float32x expf32x (_Float32x __x) throw (); extern _Float32x __expf32x (_Float32x __x) throw ();
 
 
-extern _Float32x frexpf32x (_Float32x __x, int *__exponent) noexcept (true); extern _Float32x __frexpf32x (_Float32x __x, int *__exponent) noexcept (true);
+extern _Float32x frexpf32x (_Float32x __x, int *__exponent) throw (); extern _Float32x __frexpf32x (_Float32x __x, int *__exponent) throw ();
 
 
-extern _Float32x ldexpf32x (_Float32x __x, int __exponent) noexcept (true); extern _Float32x __ldexpf32x (_Float32x __x, int __exponent) noexcept (true);
+extern _Float32x ldexpf32x (_Float32x __x, int __exponent) throw (); extern _Float32x __ldexpf32x (_Float32x __x, int __exponent) throw ();
 
 
- extern _Float32x logf32x (_Float32x __x) noexcept (true); extern _Float32x __logf32x (_Float32x __x) noexcept (true);
+ extern _Float32x logf32x (_Float32x __x) throw (); extern _Float32x __logf32x (_Float32x __x) throw ();
 
 
- extern _Float32x log10f32x (_Float32x __x) noexcept (true); extern _Float32x __log10f32x (_Float32x __x) noexcept (true);
+extern _Float32x log10f32x (_Float32x __x) throw (); extern _Float32x __log10f32x (_Float32x __x) throw ();
 
 
-extern _Float32x modff32x (_Float32x __x, _Float32x *__iptr) noexcept (true); extern _Float32x __modff32x (_Float32x __x, _Float32x *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern _Float32x modff32x (_Float32x __x, _Float32x *__iptr) throw (); extern _Float32x __modff32x (_Float32x __x, _Float32x *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern _Float32x exp10f32x (_Float32x __x) noexcept (true); extern _Float32x __exp10f32x (_Float32x __x) noexcept (true);
+extern _Float32x exp10f32x (_Float32x __x) throw (); extern _Float32x __exp10f32x (_Float32x __x) throw ();
 
 
 
 
- extern _Float32x expm1f32x (_Float32x __x) noexcept (true); extern _Float32x __expm1f32x (_Float32x __x) noexcept (true);
+extern _Float32x expm1f32x (_Float32x __x) throw (); extern _Float32x __expm1f32x (_Float32x __x) throw ();
 
 
- extern _Float32x log1pf32x (_Float32x __x) noexcept (true); extern _Float32x __log1pf32x (_Float32x __x) noexcept (true);
+extern _Float32x log1pf32x (_Float32x __x) throw (); extern _Float32x __log1pf32x (_Float32x __x) throw ();
 
 
-extern _Float32x logbf32x (_Float32x __x) noexcept (true); extern _Float32x __logbf32x (_Float32x __x) noexcept (true);
+extern _Float32x logbf32x (_Float32x __x) throw (); extern _Float32x __logbf32x (_Float32x __x) throw ();
 
 
 
 
- extern _Float32x exp2f32x (_Float32x __x) noexcept (true); extern _Float32x __exp2f32x (_Float32x __x) noexcept (true);
+extern _Float32x exp2f32x (_Float32x __x) throw (); extern _Float32x __exp2f32x (_Float32x __x) throw ();
 
 
- extern _Float32x log2f32x (_Float32x __x) noexcept (true); extern _Float32x __log2f32x (_Float32x __x) noexcept (true);
+extern _Float32x log2f32x (_Float32x __x) throw (); extern _Float32x __log2f32x (_Float32x __x) throw ();
 
 
 
 
 
 
- extern _Float32x powf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __powf32x (_Float32x __x, _Float32x __y) noexcept (true);
+ extern _Float32x powf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __powf32x (_Float32x __x, _Float32x __y) throw ();
 
 
-extern _Float32x sqrtf32x (_Float32x __x) noexcept (true); extern _Float32x __sqrtf32x (_Float32x __x) noexcept (true);
+extern _Float32x sqrtf32x (_Float32x __x) throw (); extern _Float32x __sqrtf32x (_Float32x __x) throw ();
 
 
 
- extern _Float32x hypotf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __hypotf32x (_Float32x __x, _Float32x __y) noexcept (true);
+extern _Float32x hypotf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __hypotf32x (_Float32x __x, _Float32x __y) throw ();
 
 
 
 
- extern _Float32x cbrtf32x (_Float32x __x) noexcept (true); extern _Float32x __cbrtf32x (_Float32x __x) noexcept (true);
+extern _Float32x cbrtf32x (_Float32x __x) throw (); extern _Float32x __cbrtf32x (_Float32x __x) throw ();
 
 
 
 
 
 
-extern _Float32x ceilf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__)); extern _Float32x __ceilf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32x ceilf32x (_Float32x __x) throw () __attribute__ ((__const__)); extern _Float32x __ceilf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32x fabsf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fabsf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32x fabsf32x (_Float32x __x) throw () __attribute__ ((__const__)); extern _Float32x __fabsf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32x floorf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__)); extern _Float32x __floorf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32x floorf32x (_Float32x __x) throw () __attribute__ ((__const__)); extern _Float32x __floorf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32x fmodf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __fmodf32x (_Float32x __x, _Float32x __y) noexcept (true);
-# 198 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float32x copysignf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __copysignf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
+extern _Float32x fmodf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __fmodf32x (_Float32x __x, _Float32x __y) throw ();
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32x copysignf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __copysignf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float32x nanf32x (const char *__tagb) noexcept (true); extern _Float32x __nanf32x (const char *__tagb) noexcept (true);
-# 220 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float32x j0f32x (_Float32x) noexcept (true); extern _Float32x __j0f32x (_Float32x) noexcept (true);
-extern _Float32x j1f32x (_Float32x) noexcept (true); extern _Float32x __j1f32x (_Float32x) noexcept (true);
-extern _Float32x jnf32x (int, _Float32x) noexcept (true); extern _Float32x __jnf32x (int, _Float32x) noexcept (true);
-extern _Float32x y0f32x (_Float32x) noexcept (true); extern _Float32x __y0f32x (_Float32x) noexcept (true);
-extern _Float32x y1f32x (_Float32x) noexcept (true); extern _Float32x __y1f32x (_Float32x) noexcept (true);
-extern _Float32x ynf32x (int, _Float32x) noexcept (true); extern _Float32x __ynf32x (int, _Float32x) noexcept (true);
+extern _Float32x nanf32x (const char *__tagb) throw (); extern _Float32x __nanf32x (const char *__tagb) throw ();
+# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32x j0f32x (_Float32x) throw (); extern _Float32x __j0f32x (_Float32x) throw ();
+extern _Float32x j1f32x (_Float32x) throw (); extern _Float32x __j1f32x (_Float32x) throw ();
+extern _Float32x jnf32x (int, _Float32x) throw (); extern _Float32x __jnf32x (int, _Float32x) throw ();
+extern _Float32x y0f32x (_Float32x) throw (); extern _Float32x __y0f32x (_Float32x) throw ();
+extern _Float32x y1f32x (_Float32x) throw (); extern _Float32x __y1f32x (_Float32x) throw ();
+extern _Float32x ynf32x (int, _Float32x) throw (); extern _Float32x __ynf32x (int, _Float32x) throw ();
 
 
 
 
 
- extern _Float32x erff32x (_Float32x) noexcept (true); extern _Float32x __erff32x (_Float32x) noexcept (true);
- extern _Float32x erfcf32x (_Float32x) noexcept (true); extern _Float32x __erfcf32x (_Float32x) noexcept (true);
-extern _Float32x lgammaf32x (_Float32x) noexcept (true); extern _Float32x __lgammaf32x (_Float32x) noexcept (true);
+extern _Float32x erff32x (_Float32x) throw (); extern _Float32x __erff32x (_Float32x) throw ();
+extern _Float32x erfcf32x (_Float32x) throw (); extern _Float32x __erfcf32x (_Float32x) throw ();
+extern _Float32x lgammaf32x (_Float32x) throw (); extern _Float32x __lgammaf32x (_Float32x) throw ();
 
 
 
 
-extern _Float32x tgammaf32x (_Float32x) noexcept (true); extern _Float32x __tgammaf32x (_Float32x) noexcept (true);
-# 252 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float32x lgammaf32x_r (_Float32x, int *__signgamp) noexcept (true); extern _Float32x __lgammaf32x_r (_Float32x, int *__signgamp) noexcept (true);
+extern _Float32x tgammaf32x (_Float32x) throw (); extern _Float32x __tgammaf32x (_Float32x) throw ();
+# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32x lgammaf32x_r (_Float32x, int *__signgamp) throw (); extern _Float32x __lgammaf32x_r (_Float32x, int *__signgamp) throw ();
 
 
 
 
 
 
-extern _Float32x rintf32x (_Float32x __x) noexcept (true); extern _Float32x __rintf32x (_Float32x __x) noexcept (true);
+extern _Float32x rintf32x (_Float32x __x) throw (); extern _Float32x __rintf32x (_Float32x __x) throw ();
 
 
-extern _Float32x nextafterf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __nextafterf32x (_Float32x __x, _Float32x __y) noexcept (true);
+extern _Float32x nextafterf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __nextafterf32x (_Float32x __x, _Float32x __y) throw ();
 
 
 
 
 
 
-extern _Float32x nextdownf32x (_Float32x __x) noexcept (true); extern _Float32x __nextdownf32x (_Float32x __x) noexcept (true);
+extern _Float32x nextdownf32x (_Float32x __x) throw (); extern _Float32x __nextdownf32x (_Float32x __x) throw ();
 
-extern _Float32x nextupf32x (_Float32x __x) noexcept (true); extern _Float32x __nextupf32x (_Float32x __x) noexcept (true);
+extern _Float32x nextupf32x (_Float32x __x) throw (); extern _Float32x __nextupf32x (_Float32x __x) throw ();
 
 
 
-extern _Float32x remainderf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __remainderf32x (_Float32x __x, _Float32x __y) noexcept (true);
+extern _Float32x remainderf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __remainderf32x (_Float32x __x, _Float32x __y) throw ();
 
 
 
-extern _Float32x scalbnf32x (_Float32x __x, int __n) noexcept (true); extern _Float32x __scalbnf32x (_Float32x __x, int __n) noexcept (true);
+extern _Float32x scalbnf32x (_Float32x __x, int __n) throw (); extern _Float32x __scalbnf32x (_Float32x __x, int __n) throw ();
 
 
 
-extern int ilogbf32x (_Float32x __x) noexcept (true); extern int __ilogbf32x (_Float32x __x) noexcept (true);
+extern int ilogbf32x (_Float32x __x) throw (); extern int __ilogbf32x (_Float32x __x) throw ();
 
 
 
 
-extern long int llogbf32x (_Float32x __x) noexcept (true); extern long int __llogbf32x (_Float32x __x) noexcept (true);
+extern long int llogbf32x (_Float32x __x) throw (); extern long int __llogbf32x (_Float32x __x) throw ();
 
 
 
 
-extern _Float32x scalblnf32x (_Float32x __x, long int __n) noexcept (true); extern _Float32x __scalblnf32x (_Float32x __x, long int __n) noexcept (true);
+extern _Float32x scalblnf32x (_Float32x __x, long int __n) throw (); extern _Float32x __scalblnf32x (_Float32x __x, long int __n) throw ();
 
 
 
-extern _Float32x nearbyintf32x (_Float32x __x) noexcept (true); extern _Float32x __nearbyintf32x (_Float32x __x) noexcept (true);
+extern _Float32x nearbyintf32x (_Float32x __x) throw (); extern _Float32x __nearbyintf32x (_Float32x __x) throw ();
 
 
 
-extern _Float32x roundf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__)); extern _Float32x __roundf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32x roundf32x (_Float32x __x) throw () __attribute__ ((__const__)); extern _Float32x __roundf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
 
-extern _Float32x truncf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__)); extern _Float32x __truncf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float32x truncf32x (_Float32x __x) throw () __attribute__ ((__const__)); extern _Float32x __truncf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float32x remquof32x (_Float32x __x, _Float32x __y, int *__quo) noexcept (true); extern _Float32x __remquof32x (_Float32x __x, _Float32x __y, int *__quo) noexcept (true);
+extern _Float32x remquof32x (_Float32x __x, _Float32x __y, int *__quo) throw (); extern _Float32x __remquof32x (_Float32x __x, _Float32x __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrintf32x (_Float32x __x) noexcept (true); extern long int __lrintf32x (_Float32x __x) noexcept (true);
+extern long int lrintf32x (_Float32x __x) throw (); extern long int __lrintf32x (_Float32x __x) throw ();
 __extension__
-extern long long int llrintf32x (_Float32x __x) noexcept (true); extern long long int __llrintf32x (_Float32x __x) noexcept (true);
+extern long long int llrintf32x (_Float32x __x) throw (); extern long long int __llrintf32x (_Float32x __x) throw ();
 
 
 
-extern long int lroundf32x (_Float32x __x) noexcept (true); extern long int __lroundf32x (_Float32x __x) noexcept (true);
+extern long int lroundf32x (_Float32x __x) throw (); extern long int __lroundf32x (_Float32x __x) throw ();
 __extension__
-extern long long int llroundf32x (_Float32x __x) noexcept (true); extern long long int __llroundf32x (_Float32x __x) noexcept (true);
+extern long long int llroundf32x (_Float32x __x) throw (); extern long long int __llroundf32x (_Float32x __x) throw ();
 
 
 
-extern _Float32x fdimf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __fdimf32x (_Float32x __x, _Float32x __y) noexcept (true);
+extern _Float32x fdimf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __fdimf32x (_Float32x __x, _Float32x __y) throw ();
 
 
+extern _Float32x fmaxf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __fmaxf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
-extern _Float32x fmaxf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fmaxf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float32x fminf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __fminf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
-extern _Float32x fminf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fminf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float32x fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) throw (); extern _Float32x __fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) throw ();
 
 
-extern _Float32x fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) noexcept (true); extern _Float32x __fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) noexcept (true);
 
 
+extern _Float32x roundevenf32x (_Float32x __x) throw () __attribute__ ((__const__)); extern _Float32x __roundevenf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float32x roundevenf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__)); extern _Float32x __roundevenf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfpf32x (_Float32x __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpf32x (_Float32x __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfpf32x (_Float32x __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpf32x (_Float32x __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpxf32x (_Float32x __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpxf32x (_Float32x __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpxf32x (_Float32x __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpxf32x (_Float32x __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
 
+extern _Float32x fmaxmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __fmaxmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalizef32x (_Float32x *__cx, const _Float32x *__x) noexcept (true);
+extern _Float32x fminmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __fminmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalizef32x (_Float32x *__cx, const _Float32x *__x) throw ();
 
 
 
 
-extern _Float32x fmaxmagf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fmaxmagf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminmagf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fminmagf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32x fmaximumf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fmaximumf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimumf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fminimumf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmaximum_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fmaximum_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimum_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fminimum_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmaximum_magf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fmaximum_magf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimum_magf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fminimum_magf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmaximum_mag_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fmaximum_mag_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimum_mag_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__)); extern _Float32x __fminimum_mag_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf32x (const _Float32x *__x, const _Float32x *__y) noexcept (true)
+extern int totalorderf32x (const _Float32x *__x, const _Float32x *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermagf32x (const _Float32x *__x, const _Float32x *__y) noexcept (true)
+extern int totalordermagf32x (const _Float32x *__x, const _Float32x *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern _Float32x getpayloadf32x (const _Float32x *__x) noexcept (true); extern _Float32x __getpayloadf32x (const _Float32x *__x) noexcept (true);
+extern _Float32x getpayloadf32x (const _Float32x *__x) throw (); extern _Float32x __getpayloadf32x (const _Float32x *__x) throw ();
 
 
-extern int setpayloadf32x (_Float32x *__x, _Float32x __payload) noexcept (true);
+extern int setpayloadf32x (_Float32x *__x, _Float32x __payload) throw ();
 
 
-extern int setpayloadsigf32x (_Float32x *__x, _Float32x __payload) noexcept (true);
-# 502 "/usr/include/math.h" 2 3 4
-# 518 "/usr/include/math.h" 3 4
+extern int setpayloadsigf32x (_Float32x *__x, _Float32x __payload) throw ();
+# 441 "/usr/include/math.h" 2 3 4
+# 457 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
- extern _Float64x acosf64x (_Float64x __x) noexcept (true); extern _Float64x __acosf64x (_Float64x __x) noexcept (true);
+extern _Float64x acosf64x (_Float64x __x) throw (); extern _Float64x __acosf64x (_Float64x __x) throw ();
 
- extern _Float64x asinf64x (_Float64x __x) noexcept (true); extern _Float64x __asinf64x (_Float64x __x) noexcept (true);
+extern _Float64x asinf64x (_Float64x __x) throw (); extern _Float64x __asinf64x (_Float64x __x) throw ();
 
- extern _Float64x atanf64x (_Float64x __x) noexcept (true); extern _Float64x __atanf64x (_Float64x __x) noexcept (true);
+extern _Float64x atanf64x (_Float64x __x) throw (); extern _Float64x __atanf64x (_Float64x __x) throw ();
 
- extern _Float64x atan2f64x (_Float64x __y, _Float64x __x) noexcept (true); extern _Float64x __atan2f64x (_Float64x __y, _Float64x __x) noexcept (true);
+extern _Float64x atan2f64x (_Float64x __y, _Float64x __x) throw (); extern _Float64x __atan2f64x (_Float64x __y, _Float64x __x) throw ();
 
 
- extern _Float64x cosf64x (_Float64x __x) noexcept (true); extern _Float64x __cosf64x (_Float64x __x) noexcept (true);
+ extern _Float64x cosf64x (_Float64x __x) throw (); extern _Float64x __cosf64x (_Float64x __x) throw ();
 
- extern _Float64x sinf64x (_Float64x __x) noexcept (true); extern _Float64x __sinf64x (_Float64x __x) noexcept (true);
+ extern _Float64x sinf64x (_Float64x __x) throw (); extern _Float64x __sinf64x (_Float64x __x) throw ();
 
- extern _Float64x tanf64x (_Float64x __x) noexcept (true); extern _Float64x __tanf64x (_Float64x __x) noexcept (true);
+extern _Float64x tanf64x (_Float64x __x) throw (); extern _Float64x __tanf64x (_Float64x __x) throw ();
 
 
 
 
- extern _Float64x coshf64x (_Float64x __x) noexcept (true); extern _Float64x __coshf64x (_Float64x __x) noexcept (true);
+extern _Float64x coshf64x (_Float64x __x) throw (); extern _Float64x __coshf64x (_Float64x __x) throw ();
 
- extern _Float64x sinhf64x (_Float64x __x) noexcept (true); extern _Float64x __sinhf64x (_Float64x __x) noexcept (true);
+extern _Float64x sinhf64x (_Float64x __x) throw (); extern _Float64x __sinhf64x (_Float64x __x) throw ();
 
- extern _Float64x tanhf64x (_Float64x __x) noexcept (true); extern _Float64x __tanhf64x (_Float64x __x) noexcept (true);
+extern _Float64x tanhf64x (_Float64x __x) throw (); extern _Float64x __tanhf64x (_Float64x __x) throw ();
 
 
 
- extern void sincosf64x (_Float64x __x, _Float64x *__sinx, _Float64x *__cosx) noexcept (true); extern void __sincosf64x (_Float64x __x, _Float64x *__sinx, _Float64x *__cosx) noexcept (true);
+ extern void sincosf64x (_Float64x __x, _Float64x *__sinx, _Float64x *__cosx) throw (); extern void __sincosf64x (_Float64x __x, _Float64x *__sinx, _Float64x *__cosx) throw ();
 
 
 
 
 
- extern _Float64x acoshf64x (_Float64x __x) noexcept (true); extern _Float64x __acoshf64x (_Float64x __x) noexcept (true);
+extern _Float64x acoshf64x (_Float64x __x) throw (); extern _Float64x __acoshf64x (_Float64x __x) throw ();
 
- extern _Float64x asinhf64x (_Float64x __x) noexcept (true); extern _Float64x __asinhf64x (_Float64x __x) noexcept (true);
+extern _Float64x asinhf64x (_Float64x __x) throw (); extern _Float64x __asinhf64x (_Float64x __x) throw ();
 
- extern _Float64x atanhf64x (_Float64x __x) noexcept (true); extern _Float64x __atanhf64x (_Float64x __x) noexcept (true);
+extern _Float64x atanhf64x (_Float64x __x) throw (); extern _Float64x __atanhf64x (_Float64x __x) throw ();
 
 
 
 
 
- extern _Float64x expf64x (_Float64x __x) noexcept (true); extern _Float64x __expf64x (_Float64x __x) noexcept (true);
+ extern _Float64x expf64x (_Float64x __x) throw (); extern _Float64x __expf64x (_Float64x __x) throw ();
 
 
-extern _Float64x frexpf64x (_Float64x __x, int *__exponent) noexcept (true); extern _Float64x __frexpf64x (_Float64x __x, int *__exponent) noexcept (true);
+extern _Float64x frexpf64x (_Float64x __x, int *__exponent) throw (); extern _Float64x __frexpf64x (_Float64x __x, int *__exponent) throw ();
 
 
-extern _Float64x ldexpf64x (_Float64x __x, int __exponent) noexcept (true); extern _Float64x __ldexpf64x (_Float64x __x, int __exponent) noexcept (true);
+extern _Float64x ldexpf64x (_Float64x __x, int __exponent) throw (); extern _Float64x __ldexpf64x (_Float64x __x, int __exponent) throw ();
 
 
- extern _Float64x logf64x (_Float64x __x) noexcept (true); extern _Float64x __logf64x (_Float64x __x) noexcept (true);
+ extern _Float64x logf64x (_Float64x __x) throw (); extern _Float64x __logf64x (_Float64x __x) throw ();
 
 
- extern _Float64x log10f64x (_Float64x __x) noexcept (true); extern _Float64x __log10f64x (_Float64x __x) noexcept (true);
+extern _Float64x log10f64x (_Float64x __x) throw (); extern _Float64x __log10f64x (_Float64x __x) throw ();
 
 
-extern _Float64x modff64x (_Float64x __x, _Float64x *__iptr) noexcept (true); extern _Float64x __modff64x (_Float64x __x, _Float64x *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
+extern _Float64x modff64x (_Float64x __x, _Float64x *__iptr) throw (); extern _Float64x __modff64x (_Float64x __x, _Float64x *__iptr) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
- extern _Float64x exp10f64x (_Float64x __x) noexcept (true); extern _Float64x __exp10f64x (_Float64x __x) noexcept (true);
+extern _Float64x exp10f64x (_Float64x __x) throw (); extern _Float64x __exp10f64x (_Float64x __x) throw ();
 
 
 
 
- extern _Float64x expm1f64x (_Float64x __x) noexcept (true); extern _Float64x __expm1f64x (_Float64x __x) noexcept (true);
+extern _Float64x expm1f64x (_Float64x __x) throw (); extern _Float64x __expm1f64x (_Float64x __x) throw ();
 
 
- extern _Float64x log1pf64x (_Float64x __x) noexcept (true); extern _Float64x __log1pf64x (_Float64x __x) noexcept (true);
+extern _Float64x log1pf64x (_Float64x __x) throw (); extern _Float64x __log1pf64x (_Float64x __x) throw ();
 
 
-extern _Float64x logbf64x (_Float64x __x) noexcept (true); extern _Float64x __logbf64x (_Float64x __x) noexcept (true);
+extern _Float64x logbf64x (_Float64x __x) throw (); extern _Float64x __logbf64x (_Float64x __x) throw ();
 
 
 
 
- extern _Float64x exp2f64x (_Float64x __x) noexcept (true); extern _Float64x __exp2f64x (_Float64x __x) noexcept (true);
+extern _Float64x exp2f64x (_Float64x __x) throw (); extern _Float64x __exp2f64x (_Float64x __x) throw ();
 
 
- extern _Float64x log2f64x (_Float64x __x) noexcept (true); extern _Float64x __log2f64x (_Float64x __x) noexcept (true);
+extern _Float64x log2f64x (_Float64x __x) throw (); extern _Float64x __log2f64x (_Float64x __x) throw ();
 
 
 
 
 
 
- extern _Float64x powf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __powf64x (_Float64x __x, _Float64x __y) noexcept (true);
+ extern _Float64x powf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __powf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float64x sqrtf64x (_Float64x __x) noexcept (true); extern _Float64x __sqrtf64x (_Float64x __x) noexcept (true);
+extern _Float64x sqrtf64x (_Float64x __x) throw (); extern _Float64x __sqrtf64x (_Float64x __x) throw ();
 
 
 
- extern _Float64x hypotf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __hypotf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float64x hypotf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __hypotf64x (_Float64x __x, _Float64x __y) throw ();
 
 
 
 
- extern _Float64x cbrtf64x (_Float64x __x) noexcept (true); extern _Float64x __cbrtf64x (_Float64x __x) noexcept (true);
+extern _Float64x cbrtf64x (_Float64x __x) throw (); extern _Float64x __cbrtf64x (_Float64x __x) throw ();
 
 
 
 
 
 
-extern _Float64x ceilf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__)); extern _Float64x __ceilf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64x ceilf64x (_Float64x __x) throw () __attribute__ ((__const__)); extern _Float64x __ceilf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64x fabsf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fabsf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64x fabsf64x (_Float64x __x) throw () __attribute__ ((__const__)); extern _Float64x __fabsf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64x floorf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__)); extern _Float64x __floorf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64x floorf64x (_Float64x __x) throw () __attribute__ ((__const__)); extern _Float64x __floorf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64x fmodf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __fmodf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 198 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float64x copysignf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __copysignf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
+extern _Float64x fmodf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __fmodf64x (_Float64x __x, _Float64x __y) throw ();
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64x copysignf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __copysignf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float64x nanf64x (const char *__tagb) noexcept (true); extern _Float64x __nanf64x (const char *__tagb) noexcept (true);
-# 220 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float64x j0f64x (_Float64x) noexcept (true); extern _Float64x __j0f64x (_Float64x) noexcept (true);
-extern _Float64x j1f64x (_Float64x) noexcept (true); extern _Float64x __j1f64x (_Float64x) noexcept (true);
-extern _Float64x jnf64x (int, _Float64x) noexcept (true); extern _Float64x __jnf64x (int, _Float64x) noexcept (true);
-extern _Float64x y0f64x (_Float64x) noexcept (true); extern _Float64x __y0f64x (_Float64x) noexcept (true);
-extern _Float64x y1f64x (_Float64x) noexcept (true); extern _Float64x __y1f64x (_Float64x) noexcept (true);
-extern _Float64x ynf64x (int, _Float64x) noexcept (true); extern _Float64x __ynf64x (int, _Float64x) noexcept (true);
+extern _Float64x nanf64x (const char *__tagb) throw (); extern _Float64x __nanf64x (const char *__tagb) throw ();
+# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64x j0f64x (_Float64x) throw (); extern _Float64x __j0f64x (_Float64x) throw ();
+extern _Float64x j1f64x (_Float64x) throw (); extern _Float64x __j1f64x (_Float64x) throw ();
+extern _Float64x jnf64x (int, _Float64x) throw (); extern _Float64x __jnf64x (int, _Float64x) throw ();
+extern _Float64x y0f64x (_Float64x) throw (); extern _Float64x __y0f64x (_Float64x) throw ();
+extern _Float64x y1f64x (_Float64x) throw (); extern _Float64x __y1f64x (_Float64x) throw ();
+extern _Float64x ynf64x (int, _Float64x) throw (); extern _Float64x __ynf64x (int, _Float64x) throw ();
 
 
 
 
 
- extern _Float64x erff64x (_Float64x) noexcept (true); extern _Float64x __erff64x (_Float64x) noexcept (true);
- extern _Float64x erfcf64x (_Float64x) noexcept (true); extern _Float64x __erfcf64x (_Float64x) noexcept (true);
-extern _Float64x lgammaf64x (_Float64x) noexcept (true); extern _Float64x __lgammaf64x (_Float64x) noexcept (true);
+extern _Float64x erff64x (_Float64x) throw (); extern _Float64x __erff64x (_Float64x) throw ();
+extern _Float64x erfcf64x (_Float64x) throw (); extern _Float64x __erfcf64x (_Float64x) throw ();
+extern _Float64x lgammaf64x (_Float64x) throw (); extern _Float64x __lgammaf64x (_Float64x) throw ();
 
 
 
 
-extern _Float64x tgammaf64x (_Float64x) noexcept (true); extern _Float64x __tgammaf64x (_Float64x) noexcept (true);
-# 252 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern _Float64x lgammaf64x_r (_Float64x, int *__signgamp) noexcept (true); extern _Float64x __lgammaf64x_r (_Float64x, int *__signgamp) noexcept (true);
+extern _Float64x tgammaf64x (_Float64x) throw (); extern _Float64x __tgammaf64x (_Float64x) throw ();
+# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64x lgammaf64x_r (_Float64x, int *__signgamp) throw (); extern _Float64x __lgammaf64x_r (_Float64x, int *__signgamp) throw ();
 
 
 
 
 
 
-extern _Float64x rintf64x (_Float64x __x) noexcept (true); extern _Float64x __rintf64x (_Float64x __x) noexcept (true);
+extern _Float64x rintf64x (_Float64x __x) throw (); extern _Float64x __rintf64x (_Float64x __x) throw ();
 
 
-extern _Float64x nextafterf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __nextafterf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float64x nextafterf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __nextafterf64x (_Float64x __x, _Float64x __y) throw ();
 
 
 
 
 
 
-extern _Float64x nextdownf64x (_Float64x __x) noexcept (true); extern _Float64x __nextdownf64x (_Float64x __x) noexcept (true);
+extern _Float64x nextdownf64x (_Float64x __x) throw (); extern _Float64x __nextdownf64x (_Float64x __x) throw ();
 
-extern _Float64x nextupf64x (_Float64x __x) noexcept (true); extern _Float64x __nextupf64x (_Float64x __x) noexcept (true);
+extern _Float64x nextupf64x (_Float64x __x) throw (); extern _Float64x __nextupf64x (_Float64x __x) throw ();
 
 
 
-extern _Float64x remainderf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __remainderf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float64x remainderf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __remainderf64x (_Float64x __x, _Float64x __y) throw ();
 
 
 
-extern _Float64x scalbnf64x (_Float64x __x, int __n) noexcept (true); extern _Float64x __scalbnf64x (_Float64x __x, int __n) noexcept (true);
+extern _Float64x scalbnf64x (_Float64x __x, int __n) throw (); extern _Float64x __scalbnf64x (_Float64x __x, int __n) throw ();
 
 
 
-extern int ilogbf64x (_Float64x __x) noexcept (true); extern int __ilogbf64x (_Float64x __x) noexcept (true);
+extern int ilogbf64x (_Float64x __x) throw (); extern int __ilogbf64x (_Float64x __x) throw ();
 
 
 
 
-extern long int llogbf64x (_Float64x __x) noexcept (true); extern long int __llogbf64x (_Float64x __x) noexcept (true);
+extern long int llogbf64x (_Float64x __x) throw (); extern long int __llogbf64x (_Float64x __x) throw ();
 
 
 
 
-extern _Float64x scalblnf64x (_Float64x __x, long int __n) noexcept (true); extern _Float64x __scalblnf64x (_Float64x __x, long int __n) noexcept (true);
+extern _Float64x scalblnf64x (_Float64x __x, long int __n) throw (); extern _Float64x __scalblnf64x (_Float64x __x, long int __n) throw ();
 
 
 
-extern _Float64x nearbyintf64x (_Float64x __x) noexcept (true); extern _Float64x __nearbyintf64x (_Float64x __x) noexcept (true);
+extern _Float64x nearbyintf64x (_Float64x __x) throw (); extern _Float64x __nearbyintf64x (_Float64x __x) throw ();
 
 
 
-extern _Float64x roundf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__)); extern _Float64x __roundf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64x roundf64x (_Float64x __x) throw () __attribute__ ((__const__)); extern _Float64x __roundf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
 
-extern _Float64x truncf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__)); extern _Float64x __truncf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
+extern _Float64x truncf64x (_Float64x __x) throw () __attribute__ ((__const__)); extern _Float64x __truncf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float64x remquof64x (_Float64x __x, _Float64x __y, int *__quo) noexcept (true); extern _Float64x __remquof64x (_Float64x __x, _Float64x __y, int *__quo) noexcept (true);
+extern _Float64x remquof64x (_Float64x __x, _Float64x __y, int *__quo) throw (); extern _Float64x __remquof64x (_Float64x __x, _Float64x __y, int *__quo) throw ();
 
 
 
 
 
 
-extern long int lrintf64x (_Float64x __x) noexcept (true); extern long int __lrintf64x (_Float64x __x) noexcept (true);
+extern long int lrintf64x (_Float64x __x) throw (); extern long int __lrintf64x (_Float64x __x) throw ();
 __extension__
-extern long long int llrintf64x (_Float64x __x) noexcept (true); extern long long int __llrintf64x (_Float64x __x) noexcept (true);
+extern long long int llrintf64x (_Float64x __x) throw (); extern long long int __llrintf64x (_Float64x __x) throw ();
 
 
 
-extern long int lroundf64x (_Float64x __x) noexcept (true); extern long int __lroundf64x (_Float64x __x) noexcept (true);
+extern long int lroundf64x (_Float64x __x) throw (); extern long int __lroundf64x (_Float64x __x) throw ();
 __extension__
-extern long long int llroundf64x (_Float64x __x) noexcept (true); extern long long int __llroundf64x (_Float64x __x) noexcept (true);
+extern long long int llroundf64x (_Float64x __x) throw (); extern long long int __llroundf64x (_Float64x __x) throw ();
 
 
 
-extern _Float64x fdimf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __fdimf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float64x fdimf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __fdimf64x (_Float64x __x, _Float64x __y) throw ();
 
 
+extern _Float64x fmaxf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __fmaxf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
-extern _Float64x fmaxf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fmaxf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float64x fminf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __fminf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
-extern _Float64x fminf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fminf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
 
+extern _Float64x fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) throw (); extern _Float64x __fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) throw ();
 
 
-extern _Float64x fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true); extern _Float64x __fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
 
 
+extern _Float64x roundevenf64x (_Float64x __x) throw () __attribute__ ((__const__)); extern _Float64x __roundevenf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
-extern _Float64x roundevenf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__)); extern _Float64x __roundevenf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
 
+extern __intmax_t fromfpf64x (_Float64x __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpf64x (_Float64x __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
 
 
+extern __uintmax_t ufromfpf64x (_Float64x __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpf64x (_Float64x __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __intmax_t fromfpxf64x (_Float64x __x, int __round, unsigned int __width) throw (); extern __intmax_t __fromfpxf64x (_Float64x __x, int __round, unsigned int __width) throw ();
 
 
-extern __intmax_t fromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern __intmax_t __fromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
 
 
 
+extern __uintmax_t ufromfpxf64x (_Float64x __x, int __round, unsigned int __width) throw (); extern __uintmax_t __ufromfpxf64x (_Float64x __x, int __round, unsigned int __width) throw ();
 
 
-extern __uintmax_t ufromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern __uintmax_t __ufromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
 
+extern _Float64x fmaxmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __fmaxmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
-extern int canonicalizef64x (_Float64x *__cx, const _Float64x *__x) noexcept (true);
+extern _Float64x fminmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __fminmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
+extern int canonicalizef64x (_Float64x *__cx, const _Float64x *__x) throw ();
 
 
 
 
-extern _Float64x fmaxmagf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fmaxmagf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminmagf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fminmagf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64x fmaximumf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fmaximumf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimumf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fminimumf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmaximum_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fmaximum_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimum_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fminimum_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmaximum_magf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fmaximum_magf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimum_magf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fminimum_magf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmaximum_mag_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fmaximum_mag_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimum_mag_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__)); extern _Float64x __fminimum_mag_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf64x (const _Float64x *__x, const _Float64x *__y) noexcept (true)
+extern int totalorderf64x (const _Float64x *__x, const _Float64x *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern int totalordermagf64x (const _Float64x *__x, const _Float64x *__y) noexcept (true)
+extern int totalordermagf64x (const _Float64x *__x, const _Float64x *__y) throw ()
 
      __attribute__ ((__pure__));
 
 
-extern _Float64x getpayloadf64x (const _Float64x *__x) noexcept (true); extern _Float64x __getpayloadf64x (const _Float64x *__x) noexcept (true);
+extern _Float64x getpayloadf64x (const _Float64x *__x) throw (); extern _Float64x __getpayloadf64x (const _Float64x *__x) throw ();
 
 
-extern int setpayloadf64x (_Float64x *__x, _Float64x __payload) noexcept (true);
+extern int setpayloadf64x (_Float64x *__x, _Float64x __payload) throw ();
 
 
-extern int setpayloadsigf64x (_Float64x *__x, _Float64x __payload) noexcept (true);
-# 519 "/usr/include/math.h" 2 3 4
-# 566 "/usr/include/math.h" 3 4
+extern int setpayloadsigf64x (_Float64x *__x, _Float64x __payload) throw ();
+# 458 "/usr/include/math.h" 2 3 4
+# 503 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern float fadd (double __x, double __y) noexcept (true);
+extern float fadd (double __x, double __y) throw ();
 
 
-extern float fdiv (double __x, double __y) noexcept (true);
+extern float fdiv (double __x, double __y) throw ();
 
 
-extern float ffma (double __x, double __y, double __z) noexcept (true);
+extern float fmul (double __x, double __y) throw ();
 
 
-extern float fmul (double __x, double __y) noexcept (true);
-
-
-extern float fsqrt (double __x) noexcept (true);
-
-
-extern float fsub (double __x, double __y) noexcept (true);
-# 567 "/usr/include/math.h" 2 3 4
-# 587 "/usr/include/math.h" 3 4
+extern float fsub (double __x, double __y) throw ();
+# 504 "/usr/include/math.h" 2 3 4
+# 517 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern float faddl (long double __x, long double __y) noexcept (true);
+extern float faddl (long double __x, long double __y) throw ();
 
 
-extern float fdivl (long double __x, long double __y) noexcept (true);
+extern float fdivl (long double __x, long double __y) throw ();
 
 
-extern float ffmal (long double __x, long double __y, long double __z) noexcept (true);
+extern float fmull (long double __x, long double __y) throw ();
 
 
-extern float fmull (long double __x, long double __y) noexcept (true);
+extern float fsubl (long double __x, long double __y) throw ();
+# 518 "/usr/include/math.h" 2 3 4
+# 537 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
+extern double daddl (long double __x, long double __y) throw ();
 
 
-extern float fsqrtl (long double __x) noexcept (true);
+extern double ddivl (long double __x, long double __y) throw ();
 
 
-extern float fsubl (long double __x, long double __y) noexcept (true);
-# 588 "/usr/include/math.h" 2 3 4
+extern double dmull (long double __x, long double __y) throw ();
+
+
+extern double dsubl (long double __x, long double __y) throw ();
+# 538 "/usr/include/math.h" 2 3 4
 # 616 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern double daddl (long double __x, long double __y) noexcept (true);
+extern _Float32 f32addf32x (_Float32x __x, _Float32x __y) throw ();
 
 
-extern double ddivl (long double __x, long double __y) noexcept (true);
+extern _Float32 f32divf32x (_Float32x __x, _Float32x __y) throw ();
 
 
-extern double dfmal (long double __x, long double __y, long double __z) noexcept (true);
+extern _Float32 f32mulf32x (_Float32x __x, _Float32x __y) throw ();
 
 
-extern double dmull (long double __x, long double __y) noexcept (true);
-
-
-extern double dsqrtl (long double __x) noexcept (true);
-
-
-extern double dsubl (long double __x, long double __y) noexcept (true);
+extern _Float32 f32subf32x (_Float32x __x, _Float32x __y) throw ();
 # 617 "/usr/include/math.h" 2 3 4
-# 697 "/usr/include/math.h" 3 4
+# 626 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf32x (_Float32x __x, _Float32x __y) noexcept (true);
+extern _Float32 f32addf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float32 f32divf32x (_Float32x __x, _Float32x __y) noexcept (true);
+extern _Float32 f32divf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float32 f32fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) noexcept (true);
+extern _Float32 f32mulf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float32 f32mulf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf32x (_Float32x __x) noexcept (true);
-
-
-extern _Float32 f32subf32x (_Float32x __x, _Float32x __y) noexcept (true);
-# 698 "/usr/include/math.h" 2 3 4
-# 707 "/usr/include/math.h" 3 4
+extern _Float32 f32subf64 (_Float64 __x, _Float64 __y) throw ();
+# 627 "/usr/include/math.h" 2 3 4
+# 636 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float32 f32addf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32 f32divf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float32 f32divf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32 f32fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true);
+extern _Float32 f32mulf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32 f32mulf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float32 f32subf64 (_Float64 __x, _Float64 __y) noexcept (true);
-# 708 "/usr/include/math.h" 2 3 4
-# 717 "/usr/include/math.h" 3 4
+extern _Float32 f32subf64x (_Float64x __x, _Float64x __y) throw ();
+# 637 "/usr/include/math.h" 2 3 4
+# 666 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float32x f32xaddf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float32 f32divf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float32x f32xdivf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float32 f32fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
+extern _Float32x f32xmulf64 (_Float64 __x, _Float64 __y) throw ();
 
 
-extern _Float32 f32mulf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float32 f32subf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 718 "/usr/include/math.h" 2 3 4
-# 747 "/usr/include/math.h" 3 4
+extern _Float32x f32xsubf64 (_Float64 __x, _Float64 __y) throw ();
+# 667 "/usr/include/math.h" 2 3 4
+# 676 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern _Float32x f32xaddf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float32x f32xaddf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32x f32xdivf64 (_Float64 __x, _Float64 __y) noexcept (true);
+extern _Float32x f32xdivf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32x f32xfmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true);
+extern _Float32x f32xmulf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32x f32xmulf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32x f32xsqrtf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float32x f32xsubf64 (_Float64 __x, _Float64 __y) noexcept (true);
-# 748 "/usr/include/math.h" 2 3 4
-# 757 "/usr/include/math.h" 3 4
+extern _Float32x f32xsubf64x (_Float64x __x, _Float64x __y) throw ();
+# 677 "/usr/include/math.h" 2 3 4
+# 706 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
 # 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern _Float32x f32xaddf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float64 f64addf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32x f32xdivf64x (_Float64x __x, _Float64x __y) noexcept (true);
+extern _Float64 f64divf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32x f32xfmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
+extern _Float64 f64mulf64x (_Float64x __x, _Float64x __y) throw ();
 
 
-extern _Float32x f32xmulf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32x f32xsqrtf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float32x f32xsubf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 758 "/usr/include/math.h" 2 3 4
-# 787 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h" 3 4
-extern _Float64 f64addf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64 f64divf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64 f64fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
-
-
-extern _Float64 f64mulf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64 f64sqrtf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float64 f64subf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 788 "/usr/include/math.h" 2 3 4
-# 854 "/usr/include/math.h" 3 4
+extern _Float64 f64subf64x (_Float64x __x, _Float64x __y) throw ();
+# 707 "/usr/include/math.h" 2 3 4
+# 773 "/usr/include/math.h" 3 4
 extern int signgam;
-# 934 "/usr/include/math.h" 3 4
+# 853 "/usr/include/math.h" 3 4
 enum
   {
     FP_NAN =
@@ -3651,11 +3342,11 @@ enum
 
       4
   };
-# 1054 "/usr/include/math.h" 3 4
+# 973 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
 extern int __iscanonicall (long double __x)
-     noexcept (true) __attribute__ ((__const__));
+     throw () __attribute__ ((__const__));
 # 46 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
 extern "C++" {
 inline int iscanonical (float __val) { return ((void) (__typeof (__val)) (__val), 1); }
@@ -3665,8 +3356,8 @@ inline int iscanonical (long double __val) { return __iscanonicall (__val); }
 
 
 }
-# 1055 "/usr/include/math.h" 2 3 4
-# 1066 "/usr/include/math.h" 3 4
+# 974 "/usr/include/math.h" 2 3 4
+# 985 "/usr/include/math.h" 3 4
 extern "C++" {
 inline int issignaling (float __val) { return __issignalingf (__val); }
 inline int issignaling (double __val) { return __issignaling (__val); }
@@ -3685,9 +3376,9 @@ issignaling (long double __val)
 
 
 }
-# 1097 "/usr/include/math.h" 3 4
+# 1016 "/usr/include/math.h" 3 4
 extern "C++" {
-# 1128 "/usr/include/math.h" 3 4
+# 1047 "/usr/include/math.h" 3 4
 template <class __T> inline bool
 iszero (__T __val)
 {
@@ -3695,7 +3386,7 @@ iszero (__T __val)
 }
 
 }
-# 1363 "/usr/include/math.h" 3 4
+# 1278 "/usr/include/math.h" 3 4
 extern "C++" {
 template<typename> struct __iseqsig_type;
 
@@ -3726,7 +3417,7 @@ template<> struct __iseqsig_type<long double>
 
   }
 };
-# 1406 "/usr/include/math.h" 3 4
+# 1321 "/usr/include/math.h" 3 4
 template<typename _T1, typename _T2>
 inline int
 iseqsig (_T1 __x, _T2 __y) throw ()
@@ -3754,9 +3445,9 @@ iseqsig (_T1 __x, _T2 __y) throw ()
 
 
 # 1 "/usr/include/stdlib.h" 1 3 4
-# 26 "/usr/include/stdlib.h" 3 4
+# 25 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdlib.h" 2 3 4
+# 26 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -3765,7 +3456,7 @@ iseqsig (_T1 __x, _T2 __y) throw ()
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
 # 62 "/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
 typedef long unsigned int size_t;
-# 33 "/usr/include/stdlib.h" 2 3 4
+# 32 "/usr/include/stdlib.h" 2 3 4
 
 extern "C" {
 
@@ -3775,10 +3466,17 @@ extern "C" {
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 1 3 4
-# 41 "/usr/include/stdlib.h" 2 3 4
+# 52 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3 4
+typedef enum
+{
+  P_ALL,
+  P_PID,
+  P_PGID
+} idtype_t;
+# 40 "/usr/include/stdlib.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/waitstatus.h" 1 3 4
-# 42 "/usr/include/stdlib.h" 2 3 4
-# 59 "/usr/include/stdlib.h" 3 4
+# 41 "/usr/include/stdlib.h" 2 3 4
+# 58 "/usr/include/stdlib.h" 3 4
 typedef struct
   {
     int quot;
@@ -3802,79 +3500,79 @@ __extension__ typedef struct
     long long int quot;
     long long int rem;
   } lldiv_t;
-# 98 "/usr/include/stdlib.h" 3 4
-extern size_t __ctype_get_mb_cur_max (void) noexcept (true) ;
+# 97 "/usr/include/stdlib.h" 3 4
+extern size_t __ctype_get_mb_cur_max (void) throw () ;
 
 
 
 extern double atof (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 extern int atoi (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 extern long int atol (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
 __extension__ extern long long int atoll (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
 extern double strtod (const char *__restrict __nptr,
         char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern float strtof (const char *__restrict __nptr,
-       char **__restrict __endptr) noexcept (true) __attribute__ ((__nonnull__ (1)));
+       char **__restrict __endptr) throw () __attribute__ ((__nonnull__ (1)));
 
 extern long double strtold (const char *__restrict __nptr,
        char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 141 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 140 "/usr/include/stdlib.h" 3 4
 extern _Float32 strtof32 (const char *__restrict __nptr,
      char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern _Float64 strtof64 (const char *__restrict __nptr,
      char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 159 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 158 "/usr/include/stdlib.h" 3 4
 extern _Float32x strtof32x (const char *__restrict __nptr,
        char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern _Float64x strtof64x (const char *__restrict __nptr,
        char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 177 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 176 "/usr/include/stdlib.h" 3 4
 extern long int strtol (const char *__restrict __nptr,
    char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 extern unsigned long int strtoul (const char *__restrict __nptr,
       char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 __extension__
 extern long long int strtoq (const char *__restrict __nptr,
         char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 __extension__
 extern unsigned long long int strtouq (const char *__restrict __nptr,
            char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -3882,52 +3580,52 @@ extern unsigned long long int strtouq (const char *__restrict __nptr,
 __extension__
 extern long long int strtoll (const char *__restrict __nptr,
          char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 __extension__
 extern unsigned long long int strtoull (const char *__restrict __nptr,
      char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 
 extern int strfromd (char *__dest, size_t __size, const char *__format,
        double __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+     throw () __attribute__ ((__nonnull__ (3)));
 
 extern int strfromf (char *__dest, size_t __size, const char *__format,
        float __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+     throw () __attribute__ ((__nonnull__ (3)));
 
 extern int strfroml (char *__dest, size_t __size, const char *__format,
        long double __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 233 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (3)));
+# 232 "/usr/include/stdlib.h" 3 4
 extern int strfromf32 (char *__dest, size_t __size, const char * __format,
          _Float32 __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+     throw () __attribute__ ((__nonnull__ (3)));
 
 
 
 extern int strfromf64 (char *__dest, size_t __size, const char * __format,
          _Float64 __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 251 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (3)));
+# 250 "/usr/include/stdlib.h" 3 4
 extern int strfromf32x (char *__dest, size_t __size, const char * __format,
    _Float32x __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+     throw () __attribute__ ((__nonnull__ (3)));
 
 
 
 extern int strfromf64x (char *__dest, size_t __size, const char * __format,
    _Float64x __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 273 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (3)));
+# 272 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
 # 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
 struct __locale_struct
 {
 
@@ -3946,71 +3644,71 @@ typedef struct __locale_struct *__locale_t;
 # 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
 
 typedef __locale_t locale_t;
-# 274 "/usr/include/stdlib.h" 2 3 4
+# 273 "/usr/include/stdlib.h" 2 3 4
 
 extern long int strtol_l (const char *__restrict __nptr,
      char **__restrict __endptr, int __base,
-     locale_t __loc) noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
+     locale_t __loc) throw () __attribute__ ((__nonnull__ (1, 4)));
 
 extern unsigned long int strtoul_l (const char *__restrict __nptr,
         char **__restrict __endptr,
         int __base, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
+     throw () __attribute__ ((__nonnull__ (1, 4)));
 
 __extension__
 extern long long int strtoll_l (const char *__restrict __nptr,
     char **__restrict __endptr, int __base,
     locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
+     throw () __attribute__ ((__nonnull__ (1, 4)));
 
 __extension__
 extern unsigned long long int strtoull_l (const char *__restrict __nptr,
        char **__restrict __endptr,
        int __base, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
+     throw () __attribute__ ((__nonnull__ (1, 4)));
 
 extern double strtod_l (const char *__restrict __nptr,
    char **__restrict __endptr, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 extern float strtof_l (const char *__restrict __nptr,
          char **__restrict __endptr, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 extern long double strtold_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 317 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+# 316 "/usr/include/stdlib.h" 3 4
 extern _Float32 strtof32_l (const char *__restrict __nptr,
        char **__restrict __endptr,
        locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 
 extern _Float64 strtof64_l (const char *__restrict __nptr,
        char **__restrict __endptr,
        locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 338 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+# 337 "/usr/include/stdlib.h" 3 4
 extern _Float32x strtof32x_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 
 extern _Float64x strtof64x_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 386 "/usr/include/stdlib.h" 3 4
-extern char *l64a (long int __n) noexcept (true) ;
+     throw () __attribute__ ((__nonnull__ (1, 3)));
+# 385 "/usr/include/stdlib.h" 3 4
+extern char *l64a (long int __n) throw () ;
 
 
 extern long int a64l (const char *__s)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
@@ -4138,7 +3836,12 @@ typedef __clock_t clock_t;
 typedef __clockid_t clockid_t;
 # 129 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 3 4
+
+
+
+
+
+
 typedef __time_t time_t;
 # 130 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h" 1 3 4
@@ -4265,6 +3968,9 @@ __uint64_identity (__uint64_t __x)
 # 1 "/usr/include/x86_64-linux-gnu/sys/select.h" 1 3 4
 # 30 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/select.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/select.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 23 "/usr/include/x86_64-linux-gnu/bits/select.h" 2 3 4
 # 31 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 
 
@@ -4299,30 +4005,21 @@ typedef __sigset_t sigset_t;
 
 struct timeval
 {
-
-
-
-
   __time_t tv_sec;
   __suseconds_t tv_usec;
-
 };
 # 38 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
-# 11 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
 struct timespec
 {
-
-
-
   __time_t tv_sec;
 
 
 
-
   __syscall_slong_t tv_nsec;
-# 31 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+# 26 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
 };
 # 40 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
 # 49 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
@@ -4349,18 +4046,18 @@ typedef struct
 typedef __fd_mask fd_mask;
 # 91 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 extern "C" {
-# 102 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 101 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 extern int select (int __nfds, fd_set *__restrict __readfds,
      fd_set *__restrict __writefds,
      fd_set *__restrict __exceptfds,
      struct timeval *__restrict __timeout);
-# 127 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 113 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 extern int pselect (int __nfds, fd_set *__restrict __readfds,
       fd_set *__restrict __writefds,
       fd_set *__restrict __exceptfds,
       const struct timespec *__restrict __timeout,
       const __sigset_t *__restrict __sigmask);
-# 153 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
+# 126 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 }
 # 180 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
@@ -4404,19 +4101,6 @@ typedef __fsfilcnt64_t fsfilcnt64_t;
 # 22 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h" 2 3 4
 # 45 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h" 3 4
-typedef union
-{
-  __extension__ unsigned long long int __value64;
-  struct
-  {
-    unsigned int __low;
-    unsigned int __high;
-  } __value32;
-} __atomic_wide_counter;
-# 47 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
-
 
 
 
@@ -4430,7 +4114,7 @@ typedef struct __pthread_internal_slist
 {
   struct __pthread_internal_slist *__next;
 } __pthread_slist_t;
-# 76 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 74 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 1 3 4
 # 22 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
 struct __pthread_mutex_s
@@ -4450,8 +4134,8 @@ struct __pthread_mutex_s
   __pthread_list_t __list;
 # 53 "/usr/include/x86_64-linux-gnu/bits/struct_mutex.h" 3 4
 };
-# 77 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
-# 89 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
+# 75 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+# 87 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 1 3 4
 # 23 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
 struct __pthread_rwlock_arch_t
@@ -4479,29 +4163,37 @@ struct __pthread_rwlock_arch_t
   unsigned int __flags;
 # 55 "/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h" 3 4
 };
-# 90 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
+# 88 "/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h" 2 3 4
 
 
 
 
 struct __pthread_cond_s
 {
-  __atomic_wide_counter __wseq;
-  __atomic_wide_counter __g1_start;
+  __extension__ union
+  {
+    __extension__ unsigned long long int __wseq;
+    struct
+    {
+      unsigned int __low;
+      unsigned int __high;
+    } __wseq32;
+  };
+  __extension__ union
+  {
+    __extension__ unsigned long long int __g1_start;
+    struct
+    {
+      unsigned int __low;
+      unsigned int __high;
+    } __g1_start32;
+  };
   unsigned int __g_refs[2] ;
   unsigned int __g_size[2];
   unsigned int __g1_orig_size;
   unsigned int __wrefs;
   unsigned int __g_signals[2];
 };
-
-typedef unsigned int __tss_t;
-typedef unsigned long int __thrd_t;
-
-typedef struct
-{
-  int __data ;
-} __once_flag;
 # 24 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 2 3 4
 
 
@@ -4602,28 +4294,28 @@ typedef union
 
 
 }
-# 396 "/usr/include/stdlib.h" 2 3 4
+# 395 "/usr/include/stdlib.h" 2 3 4
 
 
 
 
 
 
-extern long int random (void) noexcept (true);
+extern long int random (void) throw ();
 
 
-extern void srandom (unsigned int __seed) noexcept (true);
+extern void srandom (unsigned int __seed) throw ();
 
 
 
 
 
 extern char *initstate (unsigned int __seed, char *__statebuf,
-   size_t __statelen) noexcept (true) __attribute__ ((__nonnull__ (2)));
+   size_t __statelen) throw () __attribute__ ((__nonnull__ (2)));
 
 
 
-extern char *setstate (char *__statebuf) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern char *setstate (char *__statebuf) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -4643,56 +4335,56 @@ struct random_data
   };
 
 extern int random_r (struct random_data *__restrict __buf,
-       int32_t *__restrict __result) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+       int32_t *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
 
 extern int srandom_r (unsigned int __seed, struct random_data *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+     throw () __attribute__ ((__nonnull__ (2)));
 
 extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
    size_t __statelen,
    struct random_data *__restrict __buf)
-     noexcept (true) __attribute__ ((__nonnull__ (2, 4)));
+     throw () __attribute__ ((__nonnull__ (2, 4)));
 
 extern int setstate_r (char *__restrict __statebuf,
          struct random_data *__restrict __buf)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 
 
-extern int rand (void) noexcept (true);
+extern int rand (void) throw ();
 
-extern void srand (unsigned int __seed) noexcept (true);
-
-
-
-extern int rand_r (unsigned int *__seed) noexcept (true);
+extern void srand (unsigned int __seed) throw ();
 
 
+
+extern int rand_r (unsigned int *__seed) throw ();
 
 
 
 
 
-extern double drand48 (void) noexcept (true);
-extern double erand48 (unsigned short int __xsubi[3]) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
-extern long int lrand48 (void) noexcept (true);
+extern double drand48 (void) throw ();
+extern double erand48 (unsigned short int __xsubi[3]) throw () __attribute__ ((__nonnull__ (1)));
+
+
+extern long int lrand48 (void) throw ();
 extern long int nrand48 (unsigned short int __xsubi[3])
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
-extern long int mrand48 (void) noexcept (true);
+extern long int mrand48 (void) throw ();
 extern long int jrand48 (unsigned short int __xsubi[3])
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
-extern void srand48 (long int __seedval) noexcept (true);
+extern void srand48 (long int __seedval) throw ();
 extern unsigned short int *seed48 (unsigned short int __seed16v[3])
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-extern void lcong48 (unsigned short int __param[7]) noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
+extern void lcong48 (unsigned short int __param[7]) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -4710,48 +4402,48 @@ struct drand48_data
 
 
 extern int drand48_r (struct drand48_data *__restrict __buffer,
-        double *__restrict __result) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+        double *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
 extern int erand48_r (unsigned short int __xsubi[3],
         struct drand48_data *__restrict __buffer,
-        double *__restrict __result) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+        double *__restrict __result) throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int lrand48_r (struct drand48_data *__restrict __buffer,
         long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 extern int nrand48_r (unsigned short int __xsubi[3],
         struct drand48_data *__restrict __buffer,
         long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int mrand48_r (struct drand48_data *__restrict __buffer,
         long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 extern int jrand48_r (unsigned short int __xsubi[3],
         struct drand48_data *__restrict __buffer,
         long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+     throw () __attribute__ ((__nonnull__ (2)));
 
 extern int seed48_r (unsigned short int __seed16v[3],
-       struct drand48_data *__buffer) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+       struct drand48_data *__buffer) throw () __attribute__ ((__nonnull__ (1, 2)));
 
 extern int lcong48_r (unsigned short int __param[7],
         struct drand48_data *__buffer)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 
-extern void *malloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
+extern void *malloc (size_t __size) throw () __attribute__ ((__malloc__))
                                          ;
 
 extern void *calloc (size_t __nmemb, size_t __size)
-     noexcept (true) __attribute__ ((__malloc__)) ;
+     throw () __attribute__ ((__malloc__)) ;
 
 
 
@@ -4759,10 +4451,7 @@ extern void *calloc (size_t __nmemb, size_t __size)
 
 
 extern void *realloc (void *__ptr, size_t __size)
-     noexcept (true) __attribute__ ((__warn_unused_result__)) ;
-
-
-extern void free (void *__ptr) noexcept (true);
+     throw () __attribute__ ((__warn_unused_result__)) ;
 
 
 
@@ -4771,14 +4460,12 @@ extern void free (void *__ptr) noexcept (true);
 
 
 extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-     noexcept (true) __attribute__ ((__warn_unused_result__))
+     throw () __attribute__ ((__warn_unused_result__))
+                                      ;
 
-                       ;
 
 
-extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-     noexcept (true) ;
-
+extern void free (void *__ptr) throw ();
 
 
 
@@ -4793,128 +4480,127 @@ extern "C" {
 
 
 
-extern void *alloca (size_t __size) noexcept (true);
+extern void *alloca (size_t __size) throw ();
 
 
 
 
 
 }
-# 575 "/usr/include/stdlib.h" 2 3 4
+# 569 "/usr/include/stdlib.h" 2 3 4
 
 
 
 
 
-extern void *valloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
+extern void *valloc (size_t __size) throw () __attribute__ ((__malloc__))
                                          ;
 
 
 
 
 extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__nonnull__ (1))) ;
 
 
 
 
 extern void *aligned_alloc (size_t __alignment, size_t __size)
-     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__alloc_align__ (1)))
-                                         ;
+     throw () __attribute__ ((__malloc__)) ;
 
 
 
-extern void abort (void) noexcept (true) __attribute__ ((__noreturn__));
+extern void abort (void) throw () __attribute__ ((__noreturn__));
 
 
 
-extern int atexit (void (*__func) (void)) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int atexit (void (*__func) (void)) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 
 extern "C++" int at_quick_exit (void (*__func) (void))
-     noexcept (true) __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
-# 617 "/usr/include/stdlib.h" 3 4
+     throw () __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
+# 610 "/usr/include/stdlib.h" 3 4
 extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 
 
-extern void exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
+extern void exit (int __status) throw () __attribute__ ((__noreturn__));
 
 
 
 
 
-extern void quick_exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
+extern void quick_exit (int __status) throw () __attribute__ ((__noreturn__));
 
 
 
 
 
-extern void _Exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
+extern void _Exit (int __status) throw () __attribute__ ((__noreturn__));
 
 
 
 
-extern char *getenv (const char *__name) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
+extern char *getenv (const char *__name) throw () __attribute__ ((__nonnull__ (1))) ;
 
 
 
 
 extern char *secure_getenv (const char *__name)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) ;
+     throw () __attribute__ ((__nonnull__ (1))) ;
 
 
 
 
 
 
-extern int putenv (char *__string) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int putenv (char *__string) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 
 
 extern int setenv (const char *__name, const char *__value, int __replace)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+     throw () __attribute__ ((__nonnull__ (2)));
 
 
-extern int unsetenv (const char *__name) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
+extern int unsetenv (const char *__name) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
-extern int clearenv (void) noexcept (true);
-# 682 "/usr/include/stdlib.h" 3 4
-extern char *mktemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 695 "/usr/include/stdlib.h" 3 4
+
+
+
+extern int clearenv (void) throw ();
+# 675 "/usr/include/stdlib.h" 3 4
+extern char *mktemp (char *__template) throw () __attribute__ ((__nonnull__ (1)));
+# 688 "/usr/include/stdlib.h" 3 4
 extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 705 "/usr/include/stdlib.h" 3 4
+# 698 "/usr/include/stdlib.h" 3 4
 extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 717 "/usr/include/stdlib.h" 3 4
+# 710 "/usr/include/stdlib.h" 3 4
 extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
-# 727 "/usr/include/stdlib.h" 3 4
+# 720 "/usr/include/stdlib.h" 3 4
 extern int mkstemps64 (char *__template, int __suffixlen)
      __attribute__ ((__nonnull__ (1))) ;
-# 738 "/usr/include/stdlib.h" 3 4
-extern char *mkdtemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-# 749 "/usr/include/stdlib.h" 3 4
+# 731 "/usr/include/stdlib.h" 3 4
+extern char *mkdtemp (char *__template) throw () __attribute__ ((__nonnull__ (1))) ;
+# 742 "/usr/include/stdlib.h" 3 4
 extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 759 "/usr/include/stdlib.h" 3 4
+# 752 "/usr/include/stdlib.h" 3 4
 extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 769 "/usr/include/stdlib.h" 3 4
+# 762 "/usr/include/stdlib.h" 3 4
 extern int mkostemps (char *__template, int __suffixlen, int __flags)
      __attribute__ ((__nonnull__ (1))) ;
-# 781 "/usr/include/stdlib.h" 3 4
+# 774 "/usr/include/stdlib.h" 3 4
 extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
      __attribute__ ((__nonnull__ (1))) ;
-# 791 "/usr/include/stdlib.h" 3 4
+# 784 "/usr/include/stdlib.h" 3 4
 extern int system (const char *__command) ;
 
 
@@ -4922,11 +4608,10 @@ extern int system (const char *__command) ;
 
 
 extern char *canonicalize_file_name (const char *__name)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__malloc__))
-                              ;
-# 808 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1))) ;
+# 800 "/usr/include/stdlib.h" 3 4
 extern char *realpath (const char *__restrict __name,
-         char *__restrict __resolved) noexcept (true) ;
+         char *__restrict __resolved) throw () ;
 
 
 
@@ -4965,12 +4650,12 @@ extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
 
 
 
-extern int abs (int __x) noexcept (true) __attribute__ ((__const__)) ;
-extern long int labs (long int __x) noexcept (true) __attribute__ ((__const__)) ;
+extern int abs (int __x) throw () __attribute__ ((__const__)) ;
+extern long int labs (long int __x) throw () __attribute__ ((__const__)) ;
 
 
 __extension__ extern long long int llabs (long long int __x)
-     noexcept (true) __attribute__ ((__const__)) ;
+     throw () __attribute__ ((__const__)) ;
 
 
 
@@ -4978,97 +4663,95 @@ __extension__ extern long long int llabs (long long int __x)
 
 
 extern div_t div (int __numer, int __denom)
-     noexcept (true) __attribute__ ((__const__)) ;
+     throw () __attribute__ ((__const__)) ;
 extern ldiv_t ldiv (long int __numer, long int __denom)
-     noexcept (true) __attribute__ ((__const__)) ;
+     throw () __attribute__ ((__const__)) ;
 
 
 __extension__ extern lldiv_t lldiv (long long int __numer,
         long long int __denom)
-     noexcept (true) __attribute__ ((__const__)) ;
-# 880 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__const__)) ;
+# 872 "/usr/include/stdlib.h" 3 4
 extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
+     int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
 
 
 
 
 extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
+     int *__restrict __sign) throw () __attribute__ ((__nonnull__ (3, 4))) ;
 
 
 
 
 extern char *gcvt (double __value, int __ndigit, char *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (3))) ;
+     throw () __attribute__ ((__nonnull__ (3))) ;
 
 
 
 
 extern char *qecvt (long double __value, int __ndigit,
       int *__restrict __decpt, int *__restrict __sign)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
+     throw () __attribute__ ((__nonnull__ (3, 4))) ;
 extern char *qfcvt (long double __value, int __ndigit,
       int *__restrict __decpt, int *__restrict __sign)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
+     throw () __attribute__ ((__nonnull__ (3, 4))) ;
 extern char *qgcvt (long double __value, int __ndigit, char *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (3))) ;
+     throw () __attribute__ ((__nonnull__ (3))) ;
 
 
 
 
 extern int ecvt_r (double __value, int __ndigit, int *__restrict __decpt,
      int *__restrict __sign, char *__restrict __buf,
-     size_t __len) noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
+     size_t __len) throw () __attribute__ ((__nonnull__ (3, 4, 5)));
 extern int fcvt_r (double __value, int __ndigit, int *__restrict __decpt,
      int *__restrict __sign, char *__restrict __buf,
-     size_t __len) noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
+     size_t __len) throw () __attribute__ ((__nonnull__ (3, 4, 5)));
 
 extern int qecvt_r (long double __value, int __ndigit,
       int *__restrict __decpt, int *__restrict __sign,
       char *__restrict __buf, size_t __len)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
+     throw () __attribute__ ((__nonnull__ (3, 4, 5)));
 extern int qfcvt_r (long double __value, int __ndigit,
       int *__restrict __decpt, int *__restrict __sign,
       char *__restrict __buf, size_t __len)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
+     throw () __attribute__ ((__nonnull__ (3, 4, 5)));
 
 
 
 
 
-extern int mblen (const char *__s, size_t __n) noexcept (true);
+extern int mblen (const char *__s, size_t __n) throw ();
 
 
 extern int mbtowc (wchar_t *__restrict __pwc,
-     const char *__restrict __s, size_t __n) noexcept (true);
+     const char *__restrict __s, size_t __n) throw ();
 
 
-extern int wctomb (char *__s, wchar_t __wchar) noexcept (true);
+extern int wctomb (char *__s, wchar_t __wchar) throw ();
 
 
 
 extern size_t mbstowcs (wchar_t *__restrict __pwcs,
-   const char *__restrict __s, size_t __n) noexcept (true)
-                                      ;
+   const char *__restrict __s, size_t __n) throw ();
 
 extern size_t wcstombs (char *__restrict __s,
    const wchar_t *__restrict __pwcs, size_t __n)
-     noexcept (true)
-
-                                    ;
+     throw ();
 
 
 
 
 
 
-extern int rpmatch (const char *__response) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-# 967 "/usr/include/stdlib.h" 3 4
+
+extern int rpmatch (const char *__response) throw () __attribute__ ((__nonnull__ (1))) ;
+# 957 "/usr/include/stdlib.h" 3 4
 extern int getsubopt (char **__restrict __optionp,
         char *const *__restrict __tokens,
         char **__restrict __valuep)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2, 3))) ;
+     throw () __attribute__ ((__nonnull__ (1, 2, 3))) ;
 
 
 
@@ -5084,16 +4767,16 @@ extern int posix_openpt (int __oflag) ;
 
 
 
-extern int grantpt (int __fd) noexcept (true);
+extern int grantpt (int __fd) throw ();
 
 
 
-extern int unlockpt (int __fd) noexcept (true);
+extern int unlockpt (int __fd) throw ();
 
 
 
 
-extern char *ptsname (int __fd) noexcept (true) ;
+extern char *ptsname (int __fd) throw () ;
 
 
 
@@ -5101,7 +4784,7 @@ extern char *ptsname (int __fd) noexcept (true) ;
 
 
 extern int ptsname_r (int __fd, char *__buf, size_t __buflen)
-     noexcept (true) __attribute__ ((__nonnull__ (2))) ;
+     throw () __attribute__ ((__nonnull__ (2)));
 
 
 extern int getpt (void);
@@ -5112,11 +4795,11 @@ extern int getpt (void);
 
 
 extern int getloadavg (double __loadavg[], int __nelem)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 1023 "/usr/include/stdlib.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 1013 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
-# 1024 "/usr/include/stdlib.h" 2 3 4
-# 1035 "/usr/include/stdlib.h" 3 4
+# 1014 "/usr/include/stdlib.h" 2 3 4
+# 1023 "/usr/include/stdlib.h" 3 4
 }
 # 39 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h" 2 3
 
@@ -6859,54 +6542,54 @@ struct tm;
 
 extern wchar_t *wcscpy (wchar_t *__restrict __dest,
    const wchar_t *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern wchar_t *wcsncpy (wchar_t *__restrict __dest,
     const wchar_t *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern wchar_t *wcscat (wchar_t *__restrict __dest,
    const wchar_t *__restrict __src)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 extern wchar_t *wcsncat (wchar_t *__restrict __dest,
     const wchar_t *__restrict __src, size_t __n)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int wcscmp (const wchar_t *__s1, const wchar_t *__s2)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
 
 extern int wcsncmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
 
 
 
-extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) noexcept (true);
+extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) throw ();
 
 
 extern int wcsncasecmp (const wchar_t *__s1, const wchar_t *__s2,
-   size_t __n) noexcept (true);
+   size_t __n) throw ();
 
 
 
 extern int wcscasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
-    locale_t __loc) noexcept (true);
+    locale_t __loc) throw ();
 
 extern int wcsncasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
-     size_t __n, locale_t __loc) noexcept (true);
+     size_t __n, locale_t __loc) throw ();
 
 
 
 
-extern int wcscoll (const wchar_t *__s1, const wchar_t *__s2) noexcept (true);
+extern int wcscoll (const wchar_t *__s1, const wchar_t *__s2) throw ();
 
 
 
 extern size_t wcsxfrm (wchar_t *__restrict __s1,
-         const wchar_t *__restrict __s2, size_t __n) noexcept (true);
+         const wchar_t *__restrict __s2, size_t __n) throw ();
 
 
 
@@ -6915,132 +6598,131 @@ extern size_t wcsxfrm (wchar_t *__restrict __s1,
 
 
 extern int wcscoll_l (const wchar_t *__s1, const wchar_t *__s2,
-        locale_t __loc) noexcept (true);
+        locale_t __loc) throw ();
 
 
 
 
 extern size_t wcsxfrm_l (wchar_t *__s1, const wchar_t *__s2,
-    size_t __n, locale_t __loc) noexcept (true);
+    size_t __n, locale_t __loc) throw ();
 
 
-extern wchar_t *wcsdup (const wchar_t *__s) noexcept (true)
-  __attribute__ ((__malloc__)) ;
-# 165 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcsdup (const wchar_t *__s) throw () __attribute__ ((__malloc__));
+# 164 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcschr (const wchar_t *__wcs, wchar_t __wc)
-     noexcept (true) __attribute__ ((__pure__));
-# 175 "/usr/include/wchar.h" 3 4
+     throw () __attribute__ ((__pure__));
+# 174 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcsrchr (const wchar_t *__wcs, wchar_t __wc)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 
 
 
 extern wchar_t *wcschrnul (const wchar_t *__s, wchar_t __wc)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 
 
 extern size_t wcscspn (const wchar_t *__wcs, const wchar_t *__reject)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 extern size_t wcsspn (const wchar_t *__wcs, const wchar_t *__accept)
-     noexcept (true) __attribute__ ((__pure__));
-# 202 "/usr/include/wchar.h" 3 4
+     throw () __attribute__ ((__pure__));
+# 201 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcspbrk (const wchar_t *__wcs, const wchar_t *__accept)
-     noexcept (true) __attribute__ ((__pure__));
-# 213 "/usr/include/wchar.h" 3 4
+     throw () __attribute__ ((__pure__));
+# 212 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcsstr (const wchar_t *__haystack, const wchar_t *__needle)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 
 extern wchar_t *wcstok (wchar_t *__restrict __s,
    const wchar_t *__restrict __delim,
-   wchar_t **__restrict __ptr) noexcept (true);
+   wchar_t **__restrict __ptr) throw ();
 
 
-extern size_t wcslen (const wchar_t *__s) noexcept (true) __attribute__ ((__pure__));
-# 234 "/usr/include/wchar.h" 3 4
+extern size_t wcslen (const wchar_t *__s) throw () __attribute__ ((__pure__));
+# 233 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 
 
 
 extern size_t wcsnlen (const wchar_t *__s, size_t __maxlen)
-     noexcept (true) __attribute__ ((__pure__));
-# 254 "/usr/include/wchar.h" 3 4
+     throw () __attribute__ ((__pure__));
+# 253 "/usr/include/wchar.h" 3 4
 extern wchar_t *wmemchr (const wchar_t *__s, wchar_t __c, size_t __n)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 
 extern int wmemcmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     noexcept (true) __attribute__ ((__pure__));
+     throw () __attribute__ ((__pure__));
 
 
 extern wchar_t *wmemcpy (wchar_t *__restrict __s1,
-    const wchar_t *__restrict __s2, size_t __n) noexcept (true);
+    const wchar_t *__restrict __s2, size_t __n) throw ();
 
 
 
 extern wchar_t *wmemmove (wchar_t *__s1, const wchar_t *__s2, size_t __n)
-     noexcept (true);
+     throw ();
 
 
-extern wchar_t *wmemset (wchar_t *__s, wchar_t __c, size_t __n) noexcept (true);
+extern wchar_t *wmemset (wchar_t *__s, wchar_t __c, size_t __n) throw ();
 
 
 
 
 extern wchar_t *wmempcpy (wchar_t *__restrict __s1,
      const wchar_t *__restrict __s2, size_t __n)
-     noexcept (true);
+     throw ();
 
 
 
 
 
-extern wint_t btowc (int __c) noexcept (true);
+extern wint_t btowc (int __c) throw ();
 
 
 
-extern int wctob (wint_t __c) noexcept (true);
+extern int wctob (wint_t __c) throw ();
 
 
 
-extern int mbsinit (const mbstate_t *__ps) noexcept (true) __attribute__ ((__pure__));
+extern int mbsinit (const mbstate_t *__ps) throw () __attribute__ ((__pure__));
 
 
 
 extern size_t mbrtowc (wchar_t *__restrict __pwc,
          const char *__restrict __s, size_t __n,
-         mbstate_t *__restrict __p) noexcept (true);
+         mbstate_t *__restrict __p) throw ();
 
 
 extern size_t wcrtomb (char *__restrict __s, wchar_t __wc,
-         mbstate_t *__restrict __ps) noexcept (true);
+         mbstate_t *__restrict __ps) throw ();
 
 
 extern size_t __mbrlen (const char *__restrict __s, size_t __n,
-   mbstate_t *__restrict __ps) noexcept (true);
+   mbstate_t *__restrict __ps) throw ();
 extern size_t mbrlen (const char *__restrict __s, size_t __n,
-        mbstate_t *__restrict __ps) noexcept (true);
-# 338 "/usr/include/wchar.h" 3 4
+        mbstate_t *__restrict __ps) throw ();
+# 337 "/usr/include/wchar.h" 3 4
 extern size_t mbsrtowcs (wchar_t *__restrict __dst,
     const char **__restrict __src, size_t __len,
-    mbstate_t *__restrict __ps) noexcept (true);
+    mbstate_t *__restrict __ps) throw ();
 
 
 
 extern size_t wcsrtombs (char *__restrict __dst,
     const wchar_t **__restrict __src, size_t __len,
-    mbstate_t *__restrict __ps) noexcept (true);
+    mbstate_t *__restrict __ps) throw ();
 
 
 
@@ -7048,64 +6730,64 @@ extern size_t wcsrtombs (char *__restrict __dst,
 
 extern size_t mbsnrtowcs (wchar_t *__restrict __dst,
      const char **__restrict __src, size_t __nmc,
-     size_t __len, mbstate_t *__restrict __ps) noexcept (true);
+     size_t __len, mbstate_t *__restrict __ps) throw ();
 
 
 
 extern size_t wcsnrtombs (char *__restrict __dst,
      const wchar_t **__restrict __src,
      size_t __nwc, size_t __len,
-     mbstate_t *__restrict __ps) noexcept (true);
+     mbstate_t *__restrict __ps) throw ();
 
 
 
 
 
 
-extern int wcwidth (wchar_t __c) noexcept (true);
+extern int wcwidth (wchar_t __c) throw ();
 
 
 
-extern int wcswidth (const wchar_t *__s, size_t __n) noexcept (true);
+extern int wcswidth (const wchar_t *__s, size_t __n) throw ();
 
 
 
 
 
 extern double wcstod (const wchar_t *__restrict __nptr,
-        wchar_t **__restrict __endptr) noexcept (true);
+        wchar_t **__restrict __endptr) throw ();
 
 
 
 extern float wcstof (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
+       wchar_t **__restrict __endptr) throw ();
 extern long double wcstold (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
-# 397 "/usr/include/wchar.h" 3 4
+       wchar_t **__restrict __endptr) throw ();
+# 396 "/usr/include/wchar.h" 3 4
 extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
-     wchar_t **__restrict __endptr) noexcept (true);
+     wchar_t **__restrict __endptr) throw ();
 
 
 
 extern _Float64 wcstof64 (const wchar_t *__restrict __nptr,
-     wchar_t **__restrict __endptr) noexcept (true);
-# 412 "/usr/include/wchar.h" 3 4
+     wchar_t **__restrict __endptr) throw ();
+# 411 "/usr/include/wchar.h" 3 4
 extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
+       wchar_t **__restrict __endptr) throw ();
 
 
 
 extern _Float64x wcstof64x (const wchar_t *__restrict __nptr,
-       wchar_t **__restrict __endptr) noexcept (true);
-# 429 "/usr/include/wchar.h" 3 4
+       wchar_t **__restrict __endptr) throw ();
+# 428 "/usr/include/wchar.h" 3 4
 extern long int wcstol (const wchar_t *__restrict __nptr,
-   wchar_t **__restrict __endptr, int __base) noexcept (true);
+   wchar_t **__restrict __endptr, int __base) throw ();
 
 
 
 extern unsigned long int wcstoul (const wchar_t *__restrict __nptr,
       wchar_t **__restrict __endptr, int __base)
-     noexcept (true);
+     throw ();
 
 
 
@@ -7113,14 +6795,14 @@ extern unsigned long int wcstoul (const wchar_t *__restrict __nptr,
 __extension__
 extern long long int wcstoll (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr, int __base)
-     noexcept (true);
+     throw ();
 
 
 
 __extension__
 extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr,
      wchar_t **__restrict __endptr,
-     int __base) noexcept (true);
+     int __base) throw ();
 
 
 
@@ -7129,14 +6811,14 @@ extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr,
 __extension__
 extern long long int wcstoq (const wchar_t *__restrict __nptr,
         wchar_t **__restrict __endptr, int __base)
-     noexcept (true);
+     throw ();
 
 
 
 __extension__
 extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
            wchar_t **__restrict __endptr,
-           int __base) noexcept (true);
+           int __base) throw ();
 
 
 
@@ -7145,72 +6827,71 @@ extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
 
 extern long int wcstol_l (const wchar_t *__restrict __nptr,
      wchar_t **__restrict __endptr, int __base,
-     locale_t __loc) noexcept (true);
+     locale_t __loc) throw ();
 
 extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr,
         wchar_t **__restrict __endptr,
-        int __base, locale_t __loc) noexcept (true);
+        int __base, locale_t __loc) throw ();
 
 __extension__
 extern long long int wcstoll_l (const wchar_t *__restrict __nptr,
     wchar_t **__restrict __endptr,
-    int __base, locale_t __loc) noexcept (true);
+    int __base, locale_t __loc) throw ();
 
 __extension__
 extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr,
        int __base, locale_t __loc)
-     noexcept (true);
+     throw ();
 
 extern double wcstod_l (const wchar_t *__restrict __nptr,
    wchar_t **__restrict __endptr, locale_t __loc)
-     noexcept (true);
+     throw ();
 
 extern float wcstof_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr, locale_t __loc)
-     noexcept (true);
+     throw ();
 
 extern long double wcstold_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr,
-         locale_t __loc) noexcept (true);
-# 512 "/usr/include/wchar.h" 3 4
+         locale_t __loc) throw ();
+# 511 "/usr/include/wchar.h" 3 4
 extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr,
-       locale_t __loc) noexcept (true);
+       locale_t __loc) throw ();
 
 
 
 extern _Float64 wcstof64_l (const wchar_t *__restrict __nptr,
        wchar_t **__restrict __endptr,
-       locale_t __loc) noexcept (true);
-# 530 "/usr/include/wchar.h" 3 4
+       locale_t __loc) throw ();
+# 529 "/usr/include/wchar.h" 3 4
 extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr,
-         locale_t __loc) noexcept (true);
+         locale_t __loc) throw ();
 
 
 
 extern _Float64x wcstof64x_l (const wchar_t *__restrict __nptr,
          wchar_t **__restrict __endptr,
-         locale_t __loc) noexcept (true);
-# 552 "/usr/include/wchar.h" 3 4
+         locale_t __loc) throw ();
+# 551 "/usr/include/wchar.h" 3 4
 extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
-   const wchar_t *__restrict __src) noexcept (true);
+   const wchar_t *__restrict __src) throw ();
 
 
 
 extern wchar_t *wcpncpy (wchar_t *__restrict __dest,
     const wchar_t *__restrict __src, size_t __n)
-     noexcept (true);
-# 581 "/usr/include/wchar.h" 3 4
-extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) noexcept (true)
-  __attribute__ ((__malloc__)) ;
+     throw ();
+# 567 "/usr/include/wchar.h" 3 4
+extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) throw ();
 
 
 
 
 
-extern int fwide (__FILE *__fp, int __mode) noexcept (true);
+extern int fwide (__FILE *__fp, int __mode) throw ();
 
 
 
@@ -7229,7 +6910,7 @@ extern int wprintf (const wchar_t *__restrict __format, ...)
 
 extern int swprintf (wchar_t *__restrict __s, size_t __n,
        const wchar_t *__restrict __format, ...)
-     noexcept (true) ;
+     throw () ;
 
 
 
@@ -7251,7 +6932,7 @@ extern int vwprintf (const wchar_t *__restrict __format,
 extern int vswprintf (wchar_t *__restrict __s, size_t __n,
         const wchar_t *__restrict __format,
         __gnuc_va_list __arg)
-     noexcept (true) ;
+     throw () ;
 
 
 
@@ -7270,8 +6951,13 @@ extern int wscanf (const wchar_t *__restrict __format, ...)
 
 extern int swscanf (const wchar_t *__restrict __s,
       const wchar_t *__restrict __format, ...)
-     noexcept (true) ;
-# 657 "/usr/include/wchar.h" 3 4
+     throw () ;
+
+
+
+
+
+
 extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_fwscanf")
 
 
@@ -7279,11 +6965,11 @@ extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __for
 extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_wscanf")
 
                                                           ;
-extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc99_swscanf")
+extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) throw () __asm__ ("" "__isoc99_swscanf")
 
 
                                                           ;
-# 688 "/usr/include/wchar.h" 3 4
+# 671 "/usr/include/wchar.h" 3 4
 extern int vfwscanf (__FILE *__restrict __s,
        const wchar_t *__restrict __format,
        __gnuc_va_list __arg)
@@ -7299,8 +6985,7 @@ extern int vwscanf (const wchar_t *__restrict __format,
 extern int vswscanf (const wchar_t *__restrict __s,
        const wchar_t *__restrict __format,
        __gnuc_va_list __arg)
-     noexcept (true) ;
-
+     throw () ;
 
 
 
@@ -7314,11 +6999,11 @@ extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format,
 extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vwscanf")
 
                                                           ;
-extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc99_vswscanf")
+extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) throw () __asm__ ("" "__isoc99_vswscanf")
 
 
                                                           ;
-# 744 "/usr/include/wchar.h" 3 4
+# 726 "/usr/include/wchar.h" 3 4
 extern wint_t fgetwc (__FILE *__stream);
 extern wint_t getwc (__FILE *__stream);
 
@@ -7364,7 +7049,7 @@ extern int fputws (const wchar_t *__restrict __ws,
 
 
 extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
-# 799 "/usr/include/wchar.h" 3 4
+# 781 "/usr/include/wchar.h" 3 4
 extern wint_t getwc_unlocked (__FILE *__stream);
 extern wint_t getwchar_unlocked (void);
 
@@ -7383,10 +7068,10 @@ extern wint_t fgetwc_unlocked (__FILE *__stream);
 
 
 extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
-# 825 "/usr/include/wchar.h" 3 4
+# 807 "/usr/include/wchar.h" 3 4
 extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
 extern wint_t putwchar_unlocked (wchar_t __wc);
-# 835 "/usr/include/wchar.h" 3 4
+# 817 "/usr/include/wchar.h" 3 4
 extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
      __FILE *__restrict __stream);
 
@@ -7406,7 +7091,7 @@ extern int fputws_unlocked (const wchar_t *__restrict __ws,
 
 extern size_t wcsftime (wchar_t *__restrict __s, size_t __maxsize,
    const wchar_t *__restrict __format,
-   const struct tm *__restrict __tp) noexcept (true);
+   const struct tm *__restrict __tp) throw ();
 
 
 
@@ -7414,8 +7099,8 @@ extern size_t wcsftime (wchar_t *__restrict __s, size_t __maxsize,
 extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
      const wchar_t *__restrict __format,
      const struct tm *__restrict __tp,
-     locale_t __loc) noexcept (true);
-# 875 "/usr/include/wchar.h" 3 4
+     locale_t __loc) throw ();
+# 856 "/usr/include/wchar.h" 3 4
 }
 # 45 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 2 3
 # 62 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cwchar" 3
@@ -15188,26 +14873,26 @@ struct lconv
 
 
 
-extern char *setlocale (int __category, const char *__locale) noexcept (true);
+extern char *setlocale (int __category, const char *__locale) throw ();
 
 
-extern struct lconv *localeconv (void) noexcept (true);
+extern struct lconv *localeconv (void) throw ();
 # 141 "/usr/include/locale.h" 3 4
 extern locale_t newlocale (int __category_mask, const char *__locale,
-      locale_t __base) noexcept (true);
+      locale_t __base) throw ();
 # 176 "/usr/include/locale.h" 3 4
-extern locale_t duplocale (locale_t __dataset) noexcept (true);
+extern locale_t duplocale (locale_t __dataset) throw ();
 
 
 
-extern void freelocale (locale_t __dataset) noexcept (true);
+extern void freelocale (locale_t __dataset) throw ();
 
 
 
 
 
 
-extern locale_t uselocale (locale_t __dataset) noexcept (true);
+extern locale_t uselocale (locale_t __dataset) throw ();
 
 
 
@@ -15319,79 +15004,79 @@ enum
 };
 # 79 "/usr/include/ctype.h" 3 4
 extern const unsigned short int **__ctype_b_loc (void)
-     noexcept (true) __attribute__ ((__const__));
+     throw () __attribute__ ((__const__));
 extern const __int32_t **__ctype_tolower_loc (void)
-     noexcept (true) __attribute__ ((__const__));
+     throw () __attribute__ ((__const__));
 extern const __int32_t **__ctype_toupper_loc (void)
-     noexcept (true) __attribute__ ((__const__));
+     throw () __attribute__ ((__const__));
 # 108 "/usr/include/ctype.h" 3 4
-extern int isalnum (int) noexcept (true);
-extern int isalpha (int) noexcept (true);
-extern int iscntrl (int) noexcept (true);
-extern int isdigit (int) noexcept (true);
-extern int islower (int) noexcept (true);
-extern int isgraph (int) noexcept (true);
-extern int isprint (int) noexcept (true);
-extern int ispunct (int) noexcept (true);
-extern int isspace (int) noexcept (true);
-extern int isupper (int) noexcept (true);
-extern int isxdigit (int) noexcept (true);
+extern int isalnum (int) throw ();
+extern int isalpha (int) throw ();
+extern int iscntrl (int) throw ();
+extern int isdigit (int) throw ();
+extern int islower (int) throw ();
+extern int isgraph (int) throw ();
+extern int isprint (int) throw ();
+extern int ispunct (int) throw ();
+extern int isspace (int) throw ();
+extern int isupper (int) throw ();
+extern int isxdigit (int) throw ();
 
 
 
-extern int tolower (int __c) noexcept (true);
+extern int tolower (int __c) throw ();
 
 
-extern int toupper (int __c) noexcept (true);
-
-
-
-
-extern int isblank (int) noexcept (true);
+extern int toupper (int __c) throw ();
 
 
 
 
-extern int isctype (int __c, int __mask) noexcept (true);
+extern int isblank (int) throw ();
+
+
+
+
+extern int isctype (int __c, int __mask) throw ();
 
 
 
 
 
 
-extern int isascii (int __c) noexcept (true);
+extern int isascii (int __c) throw ();
 
 
 
-extern int toascii (int __c) noexcept (true);
+extern int toascii (int __c) throw ();
 
 
 
-extern int _toupper (int) noexcept (true);
-extern int _tolower (int) noexcept (true);
+extern int _toupper (int) throw ();
+extern int _tolower (int) throw ();
 # 251 "/usr/include/ctype.h" 3 4
-extern int isalnum_l (int, locale_t) noexcept (true);
-extern int isalpha_l (int, locale_t) noexcept (true);
-extern int iscntrl_l (int, locale_t) noexcept (true);
-extern int isdigit_l (int, locale_t) noexcept (true);
-extern int islower_l (int, locale_t) noexcept (true);
-extern int isgraph_l (int, locale_t) noexcept (true);
-extern int isprint_l (int, locale_t) noexcept (true);
-extern int ispunct_l (int, locale_t) noexcept (true);
-extern int isspace_l (int, locale_t) noexcept (true);
-extern int isupper_l (int, locale_t) noexcept (true);
-extern int isxdigit_l (int, locale_t) noexcept (true);
+extern int isalnum_l (int, locale_t) throw ();
+extern int isalpha_l (int, locale_t) throw ();
+extern int iscntrl_l (int, locale_t) throw ();
+extern int isdigit_l (int, locale_t) throw ();
+extern int islower_l (int, locale_t) throw ();
+extern int isgraph_l (int, locale_t) throw ();
+extern int isprint_l (int, locale_t) throw ();
+extern int ispunct_l (int, locale_t) throw ();
+extern int isspace_l (int, locale_t) throw ();
+extern int isupper_l (int, locale_t) throw ();
+extern int isxdigit_l (int, locale_t) throw ();
 
-extern int isblank_l (int, locale_t) noexcept (true);
-
-
-
-extern int __tolower_l (int __c, locale_t __l) noexcept (true);
-extern int tolower_l (int __c, locale_t __l) noexcept (true);
+extern int isblank_l (int, locale_t) throw ();
 
 
-extern int __toupper_l (int __c, locale_t __l) noexcept (true);
-extern int toupper_l (int __c, locale_t __l) noexcept (true);
+
+extern int __tolower_l (int __c, locale_t __l) throw ();
+extern int tolower_l (int __c, locale_t __l) throw ();
+
+
+extern int __toupper_l (int __c, locale_t __l) throw ();
+extern int toupper_l (int __c, locale_t __l) throw ();
 # 327 "/usr/include/ctype.h" 3 4
 }
 # 43 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cctype" 2 3
@@ -15614,19 +15299,19 @@ extern "C" {
 
 
 extern int clone (int (*__fn) (void *__arg), void *__child_stack,
-    int __flags, void *__arg, ...) noexcept (true);
+    int __flags, void *__arg, ...) throw ();
 
 
-extern int unshare (int __flags) noexcept (true);
+extern int unshare (int __flags) throw ();
 
 
-extern int sched_getcpu (void) noexcept (true);
+extern int sched_getcpu (void) throw ();
 
 
-extern int getcpu (unsigned int *, unsigned int *) noexcept (true);
+extern int getcpu (unsigned int *, unsigned int *) throw ();
 
 
-extern int setns (int __fd, int __nstype) noexcept (true);
+extern int setns (int __fd, int __nstype) throw ();
 
 
 }
@@ -15648,9 +15333,9 @@ typedef struct
 extern "C" {
 
 extern int __sched_cpucount (size_t __setsize, const cpu_set_t *__setp)
-     noexcept (true);
-extern cpu_set_t *__sched_cpualloc (size_t __count) noexcept (true) ;
-extern void __sched_cpufree (cpu_set_t *__set) noexcept (true);
+     throw ();
+extern cpu_set_t *__sched_cpualloc (size_t __count) throw () ;
+extern void __sched_cpufree (cpu_set_t *__set) throw ();
 
 }
 # 45 "/usr/include/sched.h" 2 3 4
@@ -15664,37 +15349,36 @@ extern "C" {
 
 
 extern int sched_setparam (__pid_t __pid, const struct sched_param *__param)
-     noexcept (true);
+     throw ();
 
 
-extern int sched_getparam (__pid_t __pid, struct sched_param *__param) noexcept (true);
+extern int sched_getparam (__pid_t __pid, struct sched_param *__param) throw ();
 
 
 extern int sched_setscheduler (__pid_t __pid, int __policy,
-          const struct sched_param *__param) noexcept (true);
+          const struct sched_param *__param) throw ();
 
 
-extern int sched_getscheduler (__pid_t __pid) noexcept (true);
+extern int sched_getscheduler (__pid_t __pid) throw ();
 
 
-extern int sched_yield (void) noexcept (true);
+extern int sched_yield (void) throw ();
 
 
-extern int sched_get_priority_max (int __algorithm) noexcept (true);
+extern int sched_get_priority_max (int __algorithm) throw ();
 
 
-extern int sched_get_priority_min (int __algorithm) noexcept (true);
+extern int sched_get_priority_min (int __algorithm) throw ();
 
 
-
-extern int sched_rr_get_interval (__pid_t __pid, struct timespec *__t) noexcept (true);
-# 130 "/usr/include/sched.h" 3 4
+extern int sched_rr_get_interval (__pid_t __pid, struct timespec *__t) throw ();
+# 121 "/usr/include/sched.h" 3 4
 extern int sched_setaffinity (__pid_t __pid, size_t __cpusetsize,
-         const cpu_set_t *__cpuset) noexcept (true);
+         const cpu_set_t *__cpuset) throw ();
 
 
 extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
-         cpu_set_t *__cpuset) noexcept (true);
+         cpu_set_t *__cpuset) throw ();
 
 
 }
@@ -15712,7 +15396,6 @@ extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
 # 26 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
 struct timex
 {
-# 58 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
   unsigned int modes;
   __syscall_slong_t offset;
   __syscall_slong_t freq;
@@ -15739,15 +15422,14 @@ struct timex
   int :32; int :32; int :32; int :32;
   int :32; int :32; int :32; int :32;
   int :32; int :32; int :32;
-
 };
 # 74 "/usr/include/x86_64-linux-gnu/bits/time.h" 2 3 4
 
 extern "C" {
 
 
-extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) noexcept (true);
-# 90 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
+extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) throw ();
+
 }
 # 34 "/usr/include/time.h" 2 3 4
 
@@ -15811,29 +15493,32 @@ extern "C" {
 
 
 
-extern clock_t clock (void) noexcept (true);
+extern clock_t clock (void) throw ();
 
 
-
-extern time_t time (time_t *__timer) noexcept (true);
+extern time_t time (time_t *__timer) throw ();
 
 
 extern double difftime (time_t __time1, time_t __time0)
-     noexcept (true) __attribute__ ((__const__));
+     throw () __attribute__ ((__const__));
 
 
-extern time_t mktime (struct tm *__tp) noexcept (true);
-# 100 "/usr/include/time.h" 3 4
+extern time_t mktime (struct tm *__tp) throw ();
+
+
+
+
+
 extern size_t strftime (char *__restrict __s, size_t __maxsize,
    const char *__restrict __format,
-   const struct tm *__restrict __tp) noexcept (true);
+   const struct tm *__restrict __tp) throw ();
 
 
 
 
 extern char *strptime (const char *__restrict __s,
          const char *__restrict __fmt, struct tm *__tp)
-     noexcept (true);
+     throw ();
 
 
 
@@ -15843,47 +15528,58 @@ extern char *strptime (const char *__restrict __s,
 extern size_t strftime_l (char *__restrict __s, size_t __maxsize,
      const char *__restrict __format,
      const struct tm *__restrict __tp,
-     locale_t __loc) noexcept (true);
+     locale_t __loc) throw ();
 
 
 
 extern char *strptime_l (const char *__restrict __s,
     const char *__restrict __fmt, struct tm *__tp,
-    locale_t __loc) noexcept (true);
+    locale_t __loc) throw ();
 
 
 
 
 
-
-extern struct tm *gmtime (const time_t *__timer) noexcept (true);
-
+extern struct tm *gmtime (const time_t *__timer) throw ();
 
 
-extern struct tm *localtime (const time_t *__timer) noexcept (true);
-# 154 "/usr/include/time.h" 3 4
+
+extern struct tm *localtime (const time_t *__timer) throw ();
+
+
+
+
 extern struct tm *gmtime_r (const time_t *__restrict __timer,
-       struct tm *__restrict __tp) noexcept (true);
+       struct tm *__restrict __tp) throw ();
 
 
 
 extern struct tm *localtime_r (const time_t *__restrict __timer,
-          struct tm *__restrict __tp) noexcept (true);
-# 179 "/usr/include/time.h" 3 4
-extern char *asctime (const struct tm *__tp) noexcept (true);
+          struct tm *__restrict __tp) throw ();
 
 
 
-extern char *ctime (const time_t *__timer) noexcept (true);
-# 197 "/usr/include/time.h" 3 4
+
+extern char *asctime (const struct tm *__tp) throw ();
+
+
+extern char *ctime (const time_t *__timer) throw ();
+
+
+
+
+
+
 extern char *asctime_r (const struct tm *__restrict __tp,
-   char *__restrict __buf) noexcept (true);
-
+   char *__restrict __buf) throw ();
 
 
 extern char *ctime_r (const time_t *__restrict __timer,
-        char *__restrict __buf) noexcept (true);
-# 217 "/usr/include/time.h" 3 4
+        char *__restrict __buf) throw ();
+
+
+
+
 extern char *__tzname[2];
 extern int __daylight;
 extern long int __timezone;
@@ -15895,75 +15591,80 @@ extern char *tzname[2];
 
 
 
-extern void tzset (void) noexcept (true);
+extern void tzset (void) throw ();
 
 
 
 extern int daylight;
 extern long int timezone;
-# 249 "/usr/include/time.h" 3 4
-extern time_t timegm (struct tm *__tp) noexcept (true);
+# 190 "/usr/include/time.h" 3 4
+extern time_t timegm (struct tm *__tp) throw ();
 
-extern time_t timelocal (struct tm *__tp) noexcept (true);
-# 262 "/usr/include/time.h" 3 4
-extern int dysize (int __year) noexcept (true) __attribute__ ((__const__));
-# 272 "/usr/include/time.h" 3 4
+
+extern time_t timelocal (struct tm *__tp) throw ();
+
+
+extern int dysize (int __year) throw () __attribute__ ((__const__));
+# 205 "/usr/include/time.h" 3 4
 extern int nanosleep (const struct timespec *__requested_time,
         struct timespec *__remaining);
 
 
-extern int clock_getres (clockid_t __clock_id, struct timespec *__res) noexcept (true);
+
+extern int clock_getres (clockid_t __clock_id, struct timespec *__res) throw ();
 
 
-extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) noexcept (true);
+extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) throw ();
 
 
 extern int clock_settime (clockid_t __clock_id, const struct timespec *__tp)
-     noexcept (true);
-# 311 "/usr/include/time.h" 3 4
+     throw ();
+
+
+
+
+
+
 extern int clock_nanosleep (clockid_t __clock_id, int __flags,
        const struct timespec *__req,
        struct timespec *__rem);
-# 326 "/usr/include/time.h" 3 4
-extern int clock_getcpuclockid (pid_t __pid, clockid_t *__clock_id) noexcept (true);
+
+
+extern int clock_getcpuclockid (pid_t __pid, clockid_t *__clock_id) throw ();
 
 
 
 
 extern int timer_create (clockid_t __clock_id,
     struct sigevent *__restrict __evp,
-    timer_t *__restrict __timerid) noexcept (true);
+    timer_t *__restrict __timerid) throw ();
 
 
-extern int timer_delete (timer_t __timerid) noexcept (true);
-
+extern int timer_delete (timer_t __timerid) throw ();
 
 
 extern int timer_settime (timer_t __timerid, int __flags,
      const struct itimerspec *__restrict __value,
-     struct itimerspec *__restrict __ovalue) noexcept (true);
+     struct itimerspec *__restrict __ovalue) throw ();
 
 
 extern int timer_gettime (timer_t __timerid, struct itimerspec *__value)
-     noexcept (true);
-# 364 "/usr/include/time.h" 3 4
-extern int timer_getoverrun (timer_t __timerid) noexcept (true);
+     throw ();
 
+
+extern int timer_getoverrun (timer_t __timerid) throw ();
 
 
 
 
 
 extern int timespec_get (struct timespec *__ts, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 387 "/usr/include/time.h" 3 4
-extern int timespec_getres (struct timespec *__ts, int __base)
-     noexcept (true);
-# 413 "/usr/include/time.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 274 "/usr/include/time.h" 3 4
 extern int getdate_err;
-# 422 "/usr/include/time.h" 3 4
+# 283 "/usr/include/time.h" 3 4
 extern struct tm *getdate (const char *__string);
-# 436 "/usr/include/time.h" 3 4
+# 297 "/usr/include/time.h" 3 4
 extern int getdate_r (const char *__restrict __string,
         struct tm *__restrict __resbufp);
 
@@ -15986,27 +15687,6 @@ typedef long int __jmp_buf[8];
 # 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
 # 29 "/usr/include/pthread.h" 2 3 4
 
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h" 3 4
-struct __jmp_buf_tag
-  {
-
-
-
-
-    __jmp_buf __jmpbuf;
-    int __mask_was_saved;
-    __sigset_t __saved_mask;
-  };
-# 32 "/usr/include/pthread.h" 2 3 4
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h" 3 4
-extern "C" {
-extern long int __sysconf (int __name) noexcept (true);
-}
-# 34 "/usr/include/pthread.h" 2 3 4
 
 
 
@@ -16060,7 +15740,7 @@ enum
   PTHREAD_PRIO_INHERIT,
   PTHREAD_PRIO_PROTECT
 };
-# 104 "/usr/include/pthread.h" 3 4
+# 100 "/usr/include/pthread.h" 3 4
 enum
 {
   PTHREAD_RWLOCK_PREFER_READER_NP,
@@ -16068,7 +15748,7 @@ enum
   PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP,
   PTHREAD_RWLOCK_DEFAULT_NP = PTHREAD_RWLOCK_PREFER_READER_NP
 };
-# 124 "/usr/include/pthread.h" 3 4
+# 120 "/usr/include/pthread.h" 3 4
 enum
 {
   PTHREAD_INHERIT_SCHED,
@@ -16096,7 +15776,7 @@ enum
   PTHREAD_PROCESS_SHARED
 
 };
-# 159 "/usr/include/pthread.h" 3 4
+# 155 "/usr/include/pthread.h" 3 4
 struct _pthread_cleanup_buffer
 {
   void (*__routine) (void *);
@@ -16120,7 +15800,7 @@ enum
   PTHREAD_CANCEL_ASYNCHRONOUS
 
 };
-# 197 "/usr/include/pthread.h" 3 4
+# 193 "/usr/include/pthread.h" 3 4
 extern "C" {
 
 
@@ -16129,7 +15809,7 @@ extern "C" {
 extern int pthread_create (pthread_t *__restrict __newthread,
       const pthread_attr_t *__restrict __attr,
       void *(*__start_routine) (void *),
-      void *__restrict __arg) noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+      void *__restrict __arg) throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 
@@ -16148,24 +15828,35 @@ extern int pthread_join (pthread_t __th, void **__thread_return);
 
 
 
-extern int pthread_tryjoin_np (pthread_t __th, void **__thread_return) noexcept (true);
-# 233 "/usr/include/pthread.h" 3 4
+extern int pthread_tryjoin_np (pthread_t __th, void **__thread_return) throw ();
+
+
+
+
+
+
+
 extern int pthread_timedjoin_np (pthread_t __th, void **__thread_return,
      const struct timespec *__abstime);
-# 243 "/usr/include/pthread.h" 3 4
+# 238 "/usr/include/pthread.h" 3 4
 extern int pthread_clockjoin_np (pthread_t __th, void **__thread_return,
                                  clockid_t __clockid,
      const struct timespec *__abstime);
-# 269 "/usr/include/pthread.h" 3 4
-extern int pthread_detach (pthread_t __th) noexcept (true);
 
 
 
-extern pthread_t pthread_self (void) noexcept (true) __attribute__ ((__const__));
+
+
+
+extern int pthread_detach (pthread_t __th) throw ();
+
+
+
+extern pthread_t pthread_self (void) throw () __attribute__ ((__const__));
 
 
 extern int pthread_equal (pthread_t __thread1, pthread_t __thread2)
-  noexcept (true) __attribute__ ((__const__));
+  throw () __attribute__ ((__const__));
 
 
 
@@ -16173,77 +15864,77 @@ extern int pthread_equal (pthread_t __thread1, pthread_t __thread2)
 
 
 
-extern int pthread_attr_init (pthread_attr_t *__attr) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int pthread_attr_init (pthread_attr_t *__attr) throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_attr_destroy (pthread_attr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_attr_getdetachstate (const pthread_attr_t *__attr,
      int *__detachstate)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_setdetachstate (pthread_attr_t *__attr,
      int __detachstate)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_attr_getguardsize (const pthread_attr_t *__attr,
           size_t *__guardsize)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_setguardsize (pthread_attr_t *__attr,
           size_t __guardsize)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_attr_getschedparam (const pthread_attr_t *__restrict __attr,
            struct sched_param *__restrict __param)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_setschedparam (pthread_attr_t *__restrict __attr,
            const struct sched_param *__restrict
-           __param) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+           __param) throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_getschedpolicy (const pthread_attr_t *__restrict
      __attr, int *__restrict __policy)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_setschedpolicy (pthread_attr_t *__attr, int __policy)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_attr_getinheritsched (const pthread_attr_t *__restrict
       __attr, int *__restrict __inherit)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_setinheritsched (pthread_attr_t *__attr,
       int __inherit)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_attr_getscope (const pthread_attr_t *__restrict __attr,
       int *__restrict __scope)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_attr_setscope (pthread_attr_t *__attr, int __scope)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_attr_getstackaddr (const pthread_attr_t *__restrict
           __attr, void **__restrict __stackaddr)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__deprecated__));
+     throw () __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__deprecated__));
 
 
 
@@ -16251,32 +15942,32 @@ extern int pthread_attr_getstackaddr (const pthread_attr_t *__restrict
 
 extern int pthread_attr_setstackaddr (pthread_attr_t *__attr,
           void *__stackaddr)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__deprecated__));
+     throw () __attribute__ ((__nonnull__ (1))) __attribute__ ((__deprecated__));
 
 
 extern int pthread_attr_getstacksize (const pthread_attr_t *__restrict
           __attr, size_t *__restrict __stacksize)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 
 extern int pthread_attr_setstacksize (pthread_attr_t *__attr,
           size_t __stacksize)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_attr_getstack (const pthread_attr_t *__restrict __attr,
       void **__restrict __stackaddr,
       size_t *__restrict __stacksize)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 2, 3)));
 
 
 
 
 extern int pthread_attr_setstack (pthread_attr_t *__attr, void *__stackaddr,
-      size_t __stacksize) noexcept (true) __attribute__ ((__nonnull__ (1)));
+      size_t __stacksize) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -16285,43 +15976,29 @@ extern int pthread_attr_setstack (pthread_attr_t *__attr, void *__stackaddr,
 extern int pthread_attr_setaffinity_np (pthread_attr_t *__attr,
      size_t __cpusetsize,
      const cpu_set_t *__cpuset)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 
 extern int pthread_attr_getaffinity_np (const pthread_attr_t *__attr,
      size_t __cpusetsize,
      cpu_set_t *__cpuset)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 extern int pthread_getattr_default_np (pthread_attr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-extern int pthread_attr_setsigmask_np (pthread_attr_t *__attr,
-           const __sigset_t *sigmask);
-
-
-
-
-extern int pthread_attr_getsigmask_np (const pthread_attr_t *__attr,
-           __sigset_t *sigmask);
-
-
-
-
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_setattr_default_np (const pthread_attr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 
 extern int pthread_getattr_np (pthread_t __th, pthread_attr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+     throw () __attribute__ ((__nonnull__ (2)));
 
 
 
@@ -16331,57 +16008,61 @@ extern int pthread_getattr_np (pthread_t __th, pthread_attr_t *__attr)
 
 extern int pthread_setschedparam (pthread_t __target_thread, int __policy,
       const struct sched_param *__param)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+     throw () __attribute__ ((__nonnull__ (3)));
 
 
 extern int pthread_getschedparam (pthread_t __target_thread,
       int *__restrict __policy,
       struct sched_param *__restrict __param)
-     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+     throw () __attribute__ ((__nonnull__ (2, 3)));
 
 
 extern int pthread_setschedprio (pthread_t __target_thread, int __prio)
-     noexcept (true);
+     throw ();
 
 
 
 
 extern int pthread_getname_np (pthread_t __target_thread, char *__buf,
           size_t __buflen)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+     throw () __attribute__ ((__nonnull__ (2)));
 
 
 extern int pthread_setname_np (pthread_t __target_thread, const char *__name)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
+     throw () __attribute__ ((__nonnull__ (2)));
 
 
 
 
 
-extern int pthread_getconcurrency (void) noexcept (true);
+extern int pthread_getconcurrency (void) throw ();
 
 
-extern int pthread_setconcurrency (int __level) noexcept (true);
+extern int pthread_setconcurrency (int __level) throw ();
 
 
 
-extern int pthread_yield (void) noexcept (true);
 
-extern int pthread_yield (void) noexcept (true) __asm__ ("" "sched_yield")
-  __attribute__ ((__deprecated__ ("pthread_yield is deprecated, use sched_yield instead")));
-# 489 "/usr/include/pthread.h" 3 4
+
+
+
+extern int pthread_yield (void) throw ();
+
+
+
+
 extern int pthread_setaffinity_np (pthread_t __th, size_t __cpusetsize,
        const cpu_set_t *__cpuset)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+     throw () __attribute__ ((__nonnull__ (3)));
 
 
 extern int pthread_getaffinity_np (pthread_t __th, size_t __cpusetsize,
        cpu_set_t *__cpuset)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 509 "/usr/include/pthread.h" 3 4
+     throw () __attribute__ ((__nonnull__ (3)));
+# 470 "/usr/include/pthread.h" 3 4
 extern int pthread_once (pthread_once_t *__once_control,
     void (*__init_routine) (void)) __attribute__ ((__nonnull__ (1, 2)));
-# 521 "/usr/include/pthread.h" 3 4
+# 482 "/usr/include/pthread.h" 3 4
 extern int pthread_setcancelstate (int __state, int *__oldstate);
 
 
@@ -16399,18 +16080,16 @@ extern void pthread_testcancel (void);
 
 
 
-struct __cancel_jmp_buf_tag
-{
-  __jmp_buf __cancel_jmp_buf;
-  int __mask_was_saved;
-};
-
 typedef struct
 {
-  struct __cancel_jmp_buf_tag __cancel_jmp_buf[1];
+  struct
+  {
+    __jmp_buf __cancel_jmp_buf;
+    int __mask_was_saved;
+  } __cancel_jmp_buf[1];
   void *__pad[4];
 } __pthread_unwind_buf_t __attribute__ ((__aligned__));
-# 557 "/usr/include/pthread.h" 3 4
+# 516 "/usr/include/pthread.h" 3 4
 struct __pthread_cleanup_frame
 {
   void (*__cancel_routine) (void *);
@@ -16418,16 +16097,16 @@ struct __pthread_cleanup_frame
   int __do_it;
   int __cancel_type;
 };
-# 697 "/usr/include/pthread.h" 3 4
+# 656 "/usr/include/pthread.h" 3 4
 extern void __pthread_register_cancel (__pthread_unwind_buf_t *__buf)
                             ;
-# 709 "/usr/include/pthread.h" 3 4
+# 668 "/usr/include/pthread.h" 3 4
 extern void __pthread_unregister_cancel (__pthread_unwind_buf_t *__buf)
                          ;
-# 732 "/usr/include/pthread.h" 3 4
+# 691 "/usr/include/pthread.h" 3 4
 extern void __pthread_register_cancel_defer (__pthread_unwind_buf_t *__buf)
                             ;
-# 745 "/usr/include/pthread.h" 3 4
+# 704 "/usr/include/pthread.h" 3 4
 extern void __pthread_unregister_cancel_restore (__pthread_unwind_buf_t *__buf)
                          ;
 
@@ -16439,10 +16118,11 @@ extern void __pthread_unwind_next (__pthread_unwind_buf_t *__buf)
      __attribute__ ((__weak__))
 
      ;
-# 773 "/usr/include/pthread.h" 3 4
-extern int __sigsetjmp (struct __jmp_buf_tag __env[1],
-   int __savemask) noexcept (true);
 
+
+
+struct __jmp_buf_tag;
+extern int __sigsetjmp (struct __jmp_buf_tag *__env, int __savemask) throw ();
 
 
 
@@ -16450,223 +16130,222 @@ extern int __sigsetjmp (struct __jmp_buf_tag __env[1],
 
 extern int pthread_mutex_init (pthread_mutex_t *__mutex,
           const pthread_mutexattr_t *__mutexattr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_mutex_destroy (pthread_mutex_t *__mutex)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_mutex_trylock (pthread_mutex_t *__mutex)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_mutex_lock (pthread_mutex_t *__mutex)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_mutex_timedlock (pthread_mutex_t *__restrict __mutex,
         const struct timespec *__restrict
-        __abstime) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-# 817 "/usr/include/pthread.h" 3 4
+        __abstime) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+
 extern int pthread_mutex_clocklock (pthread_mutex_t *__restrict __mutex,
         clockid_t __clockid,
         const struct timespec *__restrict
-        __abstime) noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 835 "/usr/include/pthread.h" 3 4
+        __abstime) throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
 extern int pthread_mutex_unlock (pthread_mutex_t *__mutex)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_mutex_getprioceiling (const pthread_mutex_t *
       __restrict __mutex,
       int *__restrict __prioceiling)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 extern int pthread_mutex_setprioceiling (pthread_mutex_t *__restrict __mutex,
       int __prioceiling,
       int *__restrict __old_ceiling)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
+     throw () __attribute__ ((__nonnull__ (1, 3)));
 
 
 
 
 extern int pthread_mutex_consistent (pthread_mutex_t *__mutex)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
-
-extern int pthread_mutex_consistent_np (pthread_mutex_t *) noexcept (true) __asm__ ("" "pthread_mutex_consistent") __attribute__ ((__nonnull__ (1)))
-
-  __attribute__ ((__deprecated__ ("pthread_mutex_consistent_np is deprecated, use pthread_mutex_consistent")));
-# 874 "/usr/include/pthread.h" 3 4
+extern int pthread_mutex_consistent_np (pthread_mutex_t *__mutex)
+     throw () __attribute__ ((__nonnull__ (1)));
+# 789 "/usr/include/pthread.h" 3 4
 extern int pthread_mutexattr_init (pthread_mutexattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_mutexattr_destroy (pthread_mutexattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_mutexattr_getpshared (const pthread_mutexattr_t *
       __restrict __attr,
       int *__restrict __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_mutexattr_setpshared (pthread_mutexattr_t *__attr,
       int __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_mutexattr_gettype (const pthread_mutexattr_t *__restrict
           __attr, int *__restrict __kind)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 
 extern int pthread_mutexattr_settype (pthread_mutexattr_t *__attr, int __kind)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_mutexattr_getprotocol (const pthread_mutexattr_t *
        __restrict __attr,
        int *__restrict __protocol)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 extern int pthread_mutexattr_setprotocol (pthread_mutexattr_t *__attr,
        int __protocol)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_mutexattr_getprioceiling (const pthread_mutexattr_t *
           __restrict __attr,
           int *__restrict __prioceiling)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_mutexattr_setprioceiling (pthread_mutexattr_t *__attr,
           int __prioceiling)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_mutexattr_getrobust (const pthread_mutexattr_t *__attr,
      int *__robustness)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
-
-extern int pthread_mutexattr_getrobust_np (pthread_mutexattr_t *, int *) noexcept (true) __asm__ ("" "pthread_mutexattr_getrobust") __attribute__ ((__nonnull__ (1)))
-
-
-  __attribute__ ((__deprecated__ ("pthread_mutexattr_getrobust_np is deprecated, use pthread_mutexattr_getrobust")));
-
-
-
-
+extern int pthread_mutexattr_getrobust_np (const pthread_mutexattr_t *__attr,
+        int *__robustness)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 
 extern int pthread_mutexattr_setrobust (pthread_mutexattr_t *__attr,
      int __robustness)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
-
-extern int pthread_mutexattr_setrobust_np (pthread_mutexattr_t *, int) noexcept (true) __asm__ ("" "pthread_mutexattr_setrobust") __attribute__ ((__nonnull__ (1)))
-
-
-  __attribute__ ((__deprecated__ ("pthread_mutexattr_setrobust_np is deprecated, use pthread_mutexattr_setrobust")));
-# 967 "/usr/include/pthread.h" 3 4
+extern int pthread_mutexattr_setrobust_np (pthread_mutexattr_t *__attr,
+        int __robustness)
+     throw () __attribute__ ((__nonnull__ (1)));
+# 871 "/usr/include/pthread.h" 3 4
 extern int pthread_rwlock_init (pthread_rwlock_t *__restrict __rwlock,
     const pthread_rwlockattr_t *__restrict
-    __attr) noexcept (true) __attribute__ ((__nonnull__ (1)));
+    __attr) throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlock_destroy (pthread_rwlock_t *__rwlock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlock_rdlock (pthread_rwlock_t *__rwlock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlock_tryrdlock (pthread_rwlock_t *__rwlock)
-  noexcept (true) __attribute__ ((__nonnull__ (1)));
-
+  throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_rwlock_timedrdlock (pthread_rwlock_t *__restrict __rwlock,
            const struct timespec *__restrict
-           __abstime) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-# 1004 "/usr/include/pthread.h" 3 4
+           __abstime) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+
 extern int pthread_rwlock_clockrdlock (pthread_rwlock_t *__restrict __rwlock,
            clockid_t __clockid,
            const struct timespec *__restrict
-           __abstime) noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 1023 "/usr/include/pthread.h" 3 4
+           __abstime) throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
 extern int pthread_rwlock_wrlock (pthread_rwlock_t *__rwlock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlock_trywrlock (pthread_rwlock_t *__rwlock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_rwlock_timedwrlock (pthread_rwlock_t *__restrict __rwlock,
            const struct timespec *__restrict
-           __abstime) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-# 1051 "/usr/include/pthread.h" 3 4
+           __abstime) throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+
 extern int pthread_rwlock_clockwrlock (pthread_rwlock_t *__restrict __rwlock,
            clockid_t __clockid,
            const struct timespec *__restrict
-           __abstime) noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 1071 "/usr/include/pthread.h" 3 4
+           __abstime) throw () __attribute__ ((__nonnull__ (1, 3)));
+
+
+
 extern int pthread_rwlock_unlock (pthread_rwlock_t *__rwlock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 
 
 extern int pthread_rwlockattr_init (pthread_rwlockattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlockattr_destroy (pthread_rwlockattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlockattr_getpshared (const pthread_rwlockattr_t *
        __restrict __attr,
        int *__restrict __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_rwlockattr_setpshared (pthread_rwlockattr_t *__attr,
        int __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_rwlockattr_getkind_np (const pthread_rwlockattr_t *
        __restrict __attr,
        int *__restrict __pref)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_rwlockattr_setkind_np (pthread_rwlockattr_t *__attr,
-       int __pref) noexcept (true) __attribute__ ((__nonnull__ (1)));
+       int __pref) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -16676,19 +16355,19 @@ extern int pthread_rwlockattr_setkind_np (pthread_rwlockattr_t *__attr,
 
 extern int pthread_cond_init (pthread_cond_t *__restrict __cond,
          const pthread_condattr_t *__restrict __cond_attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_cond_destroy (pthread_cond_t *__cond)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_cond_signal (pthread_cond_t *__cond)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_cond_broadcast (pthread_cond_t *__cond)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -16698,65 +16377,69 @@ extern int pthread_cond_broadcast (pthread_cond_t *__cond)
 extern int pthread_cond_wait (pthread_cond_t *__restrict __cond,
          pthread_mutex_t *__restrict __mutex)
      __attribute__ ((__nonnull__ (1, 2)));
-# 1145 "/usr/include/pthread.h" 3 4
+# 997 "/usr/include/pthread.h" 3 4
 extern int pthread_cond_timedwait (pthread_cond_t *__restrict __cond,
        pthread_mutex_t *__restrict __mutex,
        const struct timespec *__restrict __abstime)
      __attribute__ ((__nonnull__ (1, 2, 3)));
-# 1171 "/usr/include/pthread.h" 3 4
+# 1010 "/usr/include/pthread.h" 3 4
 extern int pthread_cond_clockwait (pthread_cond_t *__restrict __cond,
        pthread_mutex_t *__restrict __mutex,
        __clockid_t __clock_id,
        const struct timespec *__restrict __abstime)
      __attribute__ ((__nonnull__ (1, 2, 4)));
-# 1194 "/usr/include/pthread.h" 3 4
+
+
+
+
+
 extern int pthread_condattr_init (pthread_condattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_condattr_destroy (pthread_condattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_condattr_getpshared (const pthread_condattr_t *
      __restrict __attr,
      int *__restrict __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_condattr_setpshared (pthread_condattr_t *__attr,
-     int __pshared) noexcept (true) __attribute__ ((__nonnull__ (1)));
+     int __pshared) throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_condattr_getclock (const pthread_condattr_t *
           __restrict __attr,
           __clockid_t *__restrict __clock_id)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_condattr_setclock (pthread_condattr_t *__attr,
           __clockid_t __clock_id)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 1230 "/usr/include/pthread.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 1056 "/usr/include/pthread.h" 3 4
 extern int pthread_spin_init (pthread_spinlock_t *__lock, int __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_spin_destroy (pthread_spinlock_t *__lock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_spin_lock (pthread_spinlock_t *__lock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_spin_trylock (pthread_spinlock_t *__lock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_spin_unlock (pthread_spinlock_t *__lock)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -16766,62 +16449,61 @@ extern int pthread_spin_unlock (pthread_spinlock_t *__lock)
 extern int pthread_barrier_init (pthread_barrier_t *__restrict __barrier,
      const pthread_barrierattr_t *__restrict
      __attr, unsigned int __count)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_barrier_destroy (pthread_barrier_t *__barrier)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_barrier_wait (pthread_barrier_t *__barrier)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 
 extern int pthread_barrierattr_init (pthread_barrierattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_barrierattr_destroy (pthread_barrierattr_t *__attr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
 extern int pthread_barrierattr_getpshared (const pthread_barrierattr_t *
         __restrict __attr,
         int *__restrict __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+     throw () __attribute__ ((__nonnull__ (1, 2)));
 
 
 extern int pthread_barrierattr_setpshared (pthread_barrierattr_t *__attr,
         int __pshared)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 1297 "/usr/include/pthread.h" 3 4
+     throw () __attribute__ ((__nonnull__ (1)));
+# 1123 "/usr/include/pthread.h" 3 4
 extern int pthread_key_create (pthread_key_t *__key,
           void (*__destr_function) (void *))
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+     throw () __attribute__ ((__nonnull__ (1)));
 
 
-extern int pthread_key_delete (pthread_key_t __key) noexcept (true);
+extern int pthread_key_delete (pthread_key_t __key) throw ();
 
 
-extern void *pthread_getspecific (pthread_key_t __key) noexcept (true);
+extern void *pthread_getspecific (pthread_key_t __key) throw ();
 
 
 extern int pthread_setspecific (pthread_key_t __key,
-    const void *__pointer)
-  noexcept (true) ;
+    const void *__pointer) throw () ;
 
 
 
 
 extern int pthread_getcpuclockid (pthread_t __thread_id,
       __clockid_t *__clock_id)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-# 1332 "/usr/include/pthread.h" 3 4
+     throw () __attribute__ ((__nonnull__ (2)));
+# 1157 "/usr/include/pthread.h" 3 4
 extern int pthread_atfork (void (*__prepare) (void),
       void (*__parent) (void),
-      void (*__child) (void)) noexcept (true);
-# 1346 "/usr/include/pthread.h" 3 4
+      void (*__child) (void)) throw ();
+# 1171 "/usr/include/pthread.h" 3 4
 }
 # 36 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 2 3
 # 47 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/gthr-default.h" 3
@@ -21792,7 +21474,9 @@ typedef __fpos64_t fpos64_t;
 # 133 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
 # 134 "/usr/include/stdio.h" 2 3 4
-# 143 "/usr/include/stdio.h" 3 4
+
+
+
 extern FILE *stdin;
 extern FILE *stdout;
 extern FILE *stderr;
@@ -21802,17 +21486,40 @@ extern FILE *stderr;
 
 
 
-extern int remove (const char *__filename) noexcept (true);
+extern int remove (const char *__filename) throw ();
 
-extern int rename (const char *__old, const char *__new) noexcept (true);
+extern int rename (const char *__old, const char *__new) throw ();
 
 
 
 extern int renameat (int __oldfd, const char *__old, int __newfd,
-       const char *__new) noexcept (true);
-# 170 "/usr/include/stdio.h" 3 4
+       const char *__new) throw ();
+# 164 "/usr/include/stdio.h" 3 4
 extern int renameat2 (int __oldfd, const char *__old, int __newfd,
-        const char *__new, unsigned int __flags) noexcept (true);
+        const char *__new, unsigned int __flags) throw ();
+
+
+
+
+
+
+
+extern FILE *tmpfile (void) ;
+# 183 "/usr/include/stdio.h" 3 4
+extern FILE *tmpfile64 (void) ;
+
+
+
+extern char *tmpnam (char *__s) throw () ;
+
+
+
+
+extern char *tmpnam_r (char *__s) throw () ;
+# 204 "/usr/include/stdio.h" 3 4
+extern char *tempnam (const char *__dir, const char *__pfx)
+     throw () __attribute__ ((__malloc__)) ;
+
 
 
 
@@ -21820,39 +21527,18 @@ extern int renameat2 (int __oldfd, const char *__old, int __newfd,
 
 
 extern int fclose (FILE *__stream);
-# 188 "/usr/include/stdio.h" 3 4
-extern FILE *tmpfile (void)
-  __attribute__ ((__malloc__)) ;
-# 200 "/usr/include/stdio.h" 3 4
-extern FILE *tmpfile64 (void)
-   __attribute__ ((__malloc__)) ;
-
-
-
-extern char *tmpnam (char[20]) noexcept (true) ;
-
-
-
-
-extern char *tmpnam_r (char __s[20]) noexcept (true) ;
-# 222 "/usr/include/stdio.h" 3 4
-extern char *tempnam (const char *__dir, const char *__pfx)
-   noexcept (true) __attribute__ ((__malloc__)) ;
-
-
 
 
 
 
 extern int fflush (FILE *__stream);
-# 239 "/usr/include/stdio.h" 3 4
+# 227 "/usr/include/stdio.h" 3 4
 extern int fflush_unlocked (FILE *__stream);
-# 249 "/usr/include/stdio.h" 3 4
+# 237 "/usr/include/stdio.h" 3 4
 extern int fcloseall (void);
-# 258 "/usr/include/stdio.h" 3 4
+# 246 "/usr/include/stdio.h" 3 4
 extern FILE *fopen (const char *__restrict __filename,
-      const char *__restrict __modes)
-  __attribute__ ((__malloc__)) ;
+      const char *__restrict __modes) ;
 
 
 
@@ -21860,10 +21546,9 @@ extern FILE *fopen (const char *__restrict __filename,
 extern FILE *freopen (const char *__restrict __filename,
         const char *__restrict __modes,
         FILE *__restrict __stream) ;
-# 283 "/usr/include/stdio.h" 3 4
+# 270 "/usr/include/stdio.h" 3 4
 extern FILE *fopen64 (const char *__restrict __filename,
-        const char *__restrict __modes)
-  __attribute__ ((__malloc__)) ;
+        const char *__restrict __modes) ;
 extern FILE *freopen64 (const char *__restrict __filename,
    const char *__restrict __modes,
    FILE *__restrict __stream) ;
@@ -21871,8 +21556,7 @@ extern FILE *freopen64 (const char *__restrict __filename,
 
 
 
-extern FILE *fdopen (int __fd, const char *__modes) noexcept (true)
-  __attribute__ ((__malloc__)) ;
+extern FILE *fdopen (int __fd, const char *__modes) throw () ;
 
 
 
@@ -21880,47 +21564,38 @@ extern FILE *fdopen (int __fd, const char *__modes) noexcept (true)
 
 extern FILE *fopencookie (void *__restrict __magic_cookie,
      const char *__restrict __modes,
-     cookie_io_functions_t __io_funcs) noexcept (true)
-  __attribute__ ((__malloc__)) ;
+     cookie_io_functions_t __io_funcs) throw () ;
 
 
 
 
 extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
-  noexcept (true) __attribute__ ((__malloc__)) ;
+  throw () ;
 
 
 
 
-extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) noexcept (true)
-  __attribute__ ((__malloc__)) ;
-
-
-
-
-
-extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) noexcept (true)
-  __attribute__ ((__malloc__)) ;
+extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) throw () ;
 
 
 
 
 
-extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) noexcept (true);
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) throw ();
 
 
 
 extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
-      int __modes, size_t __n) noexcept (true);
+      int __modes, size_t __n) throw ();
 
 
 
 
 extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
-         size_t __size) noexcept (true);
+         size_t __size) throw ();
 
 
-extern void setlinebuf (FILE *__stream) noexcept (true);
+extern void setlinebuf (FILE *__stream) throw ();
 
 
 
@@ -21937,7 +21612,7 @@ extern int fprintf (FILE *__restrict __stream,
 extern int printf (const char *__restrict __format, ...);
 
 extern int sprintf (char *__restrict __s,
-      const char *__restrict __format, ...) noexcept (true);
+      const char *__restrict __format, ...) throw ();
 
 
 
@@ -21952,17 +21627,17 @@ extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
 extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
 
 extern int vsprintf (char *__restrict __s, const char *__restrict __format,
-       __gnuc_va_list __arg) noexcept (true);
+       __gnuc_va_list __arg) throw ();
 
 
 
 extern int snprintf (char *__restrict __s, size_t __maxlen,
        const char *__restrict __format, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 3, 4)));
+     throw () __attribute__ ((__format__ (__printf__, 3, 4)));
 
 extern int vsnprintf (char *__restrict __s, size_t __maxlen,
         const char *__restrict __format, __gnuc_va_list __arg)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 3, 0)));
+     throw () __attribute__ ((__format__ (__printf__, 3, 0)));
 
 
 
@@ -21970,13 +21645,13 @@ extern int vsnprintf (char *__restrict __s, size_t __maxlen,
 
 extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
         __gnuc_va_list __arg)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 0))) ;
+     throw () __attribute__ ((__format__ (__printf__, 2, 0))) ;
 extern int __asprintf (char **__restrict __ptr,
          const char *__restrict __fmt, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3))) ;
+     throw () __attribute__ ((__format__ (__printf__, 2, 3))) ;
 extern int asprintf (char **__restrict __ptr,
        const char *__restrict __fmt, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3))) ;
+     throw () __attribute__ ((__format__ (__printf__, 2, 3))) ;
 
 
 
@@ -22002,15 +21677,20 @@ extern int fscanf (FILE *__restrict __stream,
 extern int scanf (const char *__restrict __format, ...) ;
 
 extern int sscanf (const char *__restrict __s,
-     const char *__restrict __format, ...) noexcept (true);
-# 434 "/usr/include/stdio.h" 3 4
+     const char *__restrict __format, ...) throw ();
+
+
+
+
+
+
 extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf") ;
 
 
 extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf") ;
 
-extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc99_sscanf");
-# 459 "/usr/include/stdio.h" 3 4
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) throw () __asm__ ("" "__isoc99_sscanf");
+# 432 "/usr/include/stdio.h" 3 4
 extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
       __gnuc_va_list __arg)
      __attribute__ ((__format__ (__scanf__, 2, 0))) ;
@@ -22025,8 +21705,7 @@ extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
 
 extern int vsscanf (const char *__restrict __s,
       const char *__restrict __format, __gnuc_va_list __arg)
-     noexcept (true) __attribute__ ((__format__ (__scanf__, 2, 0)));
-
+     throw () __attribute__ ((__format__ (__scanf__, 2, 0)));
 
 
 
@@ -22039,12 +21718,12 @@ extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnu
 extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
 
      __attribute__ ((__format__ (__scanf__, 1, 0))) ;
-extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc99_vsscanf")
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) throw () __asm__ ("" "__isoc99_vsscanf")
 
 
 
      __attribute__ ((__format__ (__scanf__, 2, 0)));
-# 513 "/usr/include/stdio.h" 3 4
+# 485 "/usr/include/stdio.h" 3 4
 extern int fgetc (FILE *__stream);
 extern int getc (FILE *__stream);
 
@@ -22061,9 +21740,9 @@ extern int getchar (void);
 
 extern int getc_unlocked (FILE *__stream);
 extern int getchar_unlocked (void);
-# 538 "/usr/include/stdio.h" 3 4
+# 510 "/usr/include/stdio.h" 3 4
 extern int fgetc_unlocked (FILE *__stream);
-# 549 "/usr/include/stdio.h" 3 4
+# 521 "/usr/include/stdio.h" 3 4
 extern int fputc (int __c, FILE *__stream);
 extern int putc (int __c, FILE *__stream);
 
@@ -22072,7 +21751,7 @@ extern int putc (int __c, FILE *__stream);
 
 
 extern int putchar (int __c);
-# 565 "/usr/include/stdio.h" 3 4
+# 537 "/usr/include/stdio.h" 3 4
 extern int fputc_unlocked (int __c, FILE *__stream);
 
 
@@ -22101,12 +21780,11 @@ extern int putw (int __w, FILE *__stream);
 
 
 extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
-                                                         ;
-# 615 "/usr/include/stdio.h" 3 4
+          ;
+# 587 "/usr/include/stdio.h" 3 4
 extern char *fgets_unlocked (char *__restrict __s, int __n,
-        FILE *__restrict __stream)
-                                                  ;
-# 632 "/usr/include/stdio.h" 3 4
+        FILE *__restrict __stream) ;
+# 603 "/usr/include/stdio.h" 3 4
 extern __ssize_t __getdelim (char **__restrict __lineptr,
                              size_t *__restrict __n, int __delimiter,
                              FILE *__restrict __stream) ;
@@ -22158,10 +21836,10 @@ extern size_t fread (void *__restrict __ptr, size_t __size,
 
 extern size_t fwrite (const void *__restrict __ptr, size_t __size,
         size_t __n, FILE *__restrict __s);
-# 691 "/usr/include/stdio.h" 3 4
+# 662 "/usr/include/stdio.h" 3 4
 extern int fputs_unlocked (const char *__restrict __s,
       FILE *__restrict __stream);
-# 702 "/usr/include/stdio.h" 3 4
+# 673 "/usr/include/stdio.h" 3 4
 extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
          size_t __n, FILE *__restrict __stream) ;
 extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
@@ -22184,21 +21862,21 @@ extern long int ftell (FILE *__stream) ;
 
 
 extern void rewind (FILE *__stream);
-# 736 "/usr/include/stdio.h" 3 4
+# 707 "/usr/include/stdio.h" 3 4
 extern int fseeko (FILE *__stream, __off_t __off, int __whence);
 
 
 
 
 extern __off_t ftello (FILE *__stream) ;
-# 760 "/usr/include/stdio.h" 3 4
+# 731 "/usr/include/stdio.h" 3 4
 extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos);
 
 
 
 
 extern int fsetpos (FILE *__stream, const fpos_t *__pos);
-# 779 "/usr/include/stdio.h" 3 4
+# 750 "/usr/include/stdio.h" 3 4
 extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence);
 extern __off64_t ftello64 (FILE *__stream) ;
 extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos);
@@ -22206,17 +21884,17 @@ extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos);
 
 
 
-extern void clearerr (FILE *__stream) noexcept (true);
+extern void clearerr (FILE *__stream) throw ();
 
-extern int feof (FILE *__stream) noexcept (true) ;
+extern int feof (FILE *__stream) throw () ;
 
-extern int ferror (FILE *__stream) noexcept (true) ;
+extern int ferror (FILE *__stream) throw () ;
 
 
 
-extern void clearerr_unlocked (FILE *__stream) noexcept (true);
-extern int feof_unlocked (FILE *__stream) noexcept (true) ;
-extern int ferror_unlocked (FILE *__stream) noexcept (true) ;
+extern void clearerr_unlocked (FILE *__stream) throw ();
+extern int feof_unlocked (FILE *__stream) throw () ;
+extern int ferror_unlocked (FILE *__stream) throw () ;
 
 
 
@@ -22229,36 +21907,47 @@ extern void perror (const char *__s);
 
 
 
-extern int fileno (FILE *__stream) noexcept (true) ;
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4
+# 26 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 3 4
+extern int sys_nerr;
+extern const char *const sys_errlist[];
+
+
+extern int _sys_nerr;
+extern const char *const _sys_errlist[];
+# 782 "/usr/include/stdio.h" 2 3 4
 
 
 
 
-extern int fileno_unlocked (FILE *__stream) noexcept (true) ;
-# 823 "/usr/include/stdio.h" 3 4
+extern int fileno (FILE *__stream) throw () ;
+
+
+
+
+extern int fileno_unlocked (FILE *__stream) throw () ;
+# 800 "/usr/include/stdio.h" 3 4
+extern FILE *popen (const char *__command, const char *__modes) ;
+
+
+
+
+
 extern int pclose (FILE *__stream);
 
 
 
 
 
-extern FILE *popen (const char *__command, const char *__modes)
-  __attribute__ ((__malloc__)) ;
+extern char *ctermid (char *__s) throw ();
 
 
 
 
 
-
-extern char *ctermid (char *__s) noexcept (true)
-                                     ;
-
-
-
-
-
-extern char *cuserid (char *__s)
-                                     ;
+extern char *cuserid (char *__s);
 
 
 
@@ -22268,11 +21957,11 @@ struct obstack;
 
 extern int obstack_printf (struct obstack *__restrict __obstack,
       const char *__restrict __format, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3)));
+     throw () __attribute__ ((__format__ (__printf__, 2, 3)));
 extern int obstack_vprintf (struct obstack *__restrict __obstack,
        const char *__restrict __format,
        __gnuc_va_list __args)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 0)));
+     throw () __attribute__ ((__format__ (__printf__, 2, 0)));
 
 
 
@@ -22280,18 +21969,18 @@ extern int obstack_vprintf (struct obstack *__restrict __obstack,
 
 
 
-extern void flockfile (FILE *__stream) noexcept (true);
+extern void flockfile (FILE *__stream) throw ();
 
 
 
-extern int ftrylockfile (FILE *__stream) noexcept (true) ;
+extern int ftrylockfile (FILE *__stream) throw () ;
 
 
-extern void funlockfile (FILE *__stream) noexcept (true);
-# 885 "/usr/include/stdio.h" 3 4
+extern void funlockfile (FILE *__stream) throw ();
+# 858 "/usr/include/stdio.h" 3 4
 extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
-# 902 "/usr/include/stdio.h" 3 4
+# 873 "/usr/include/stdio.h" 3 4
 }
 # 43 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdio" 2 3
 # 96 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdio" 3
@@ -22397,7 +22086,7 @@ namespace std
 extern "C" {
 
 
-extern int *__errno_location (void) noexcept (true) __attribute__ ((__const__));
+extern int *__errno_location (void) throw () __attribute__ ((__const__));
 
 
 
@@ -26788,74 +26477,74 @@ extern "C" {
 
 
 
-extern int iswalnum (wint_t __wc) noexcept (true);
+extern int iswalnum (wint_t __wc) throw ();
 
 
 
 
 
-extern int iswalpha (wint_t __wc) noexcept (true);
+extern int iswalpha (wint_t __wc) throw ();
 
 
-extern int iswcntrl (wint_t __wc) noexcept (true);
-
-
-
-extern int iswdigit (wint_t __wc) noexcept (true);
+extern int iswcntrl (wint_t __wc) throw ();
 
 
 
-extern int iswgraph (wint_t __wc) noexcept (true);
+extern int iswdigit (wint_t __wc) throw ();
 
 
 
-
-extern int iswlower (wint_t __wc) noexcept (true);
-
-
-extern int iswprint (wint_t __wc) noexcept (true);
+extern int iswgraph (wint_t __wc) throw ();
 
 
 
 
-extern int iswpunct (wint_t __wc) noexcept (true);
+extern int iswlower (wint_t __wc) throw ();
+
+
+extern int iswprint (wint_t __wc) throw ();
 
 
 
 
-extern int iswspace (wint_t __wc) noexcept (true);
+extern int iswpunct (wint_t __wc) throw ();
 
 
 
 
-extern int iswupper (wint_t __wc) noexcept (true);
+extern int iswspace (wint_t __wc) throw ();
 
 
 
 
-extern int iswxdigit (wint_t __wc) noexcept (true);
+extern int iswupper (wint_t __wc) throw ();
+
+
+
+
+extern int iswxdigit (wint_t __wc) throw ();
 
 
 
 
 
-extern int iswblank (wint_t __wc) noexcept (true);
+extern int iswblank (wint_t __wc) throw ();
 # 155 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3 4
-extern wctype_t wctype (const char *__property) noexcept (true);
+extern wctype_t wctype (const char *__property) throw ();
 
 
 
-extern int iswctype (wint_t __wc, wctype_t __desc) noexcept (true);
+extern int iswctype (wint_t __wc, wctype_t __desc) throw ();
 
 
 
 
 
 
-extern wint_t towlower (wint_t __wc) noexcept (true);
+extern wint_t towlower (wint_t __wc) throw ();
 
 
-extern wint_t towupper (wint_t __wc) noexcept (true);
+extern wint_t towupper (wint_t __wc) throw ();
 
 }
 # 39 "/usr/include/wctype.h" 2 3 4
@@ -26872,97 +26561,97 @@ typedef const __int32_t *wctrans_t;
 
 
 
-extern wctrans_t wctrans (const char *__property) noexcept (true);
+extern wctrans_t wctrans (const char *__property) throw ();
 
 
-extern wint_t towctrans (wint_t __wc, wctrans_t __desc) noexcept (true);
-
-
-
-
-
-
-
-extern int iswalnum_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern wint_t towctrans (wint_t __wc, wctrans_t __desc) throw ();
 
 
 
 
 
-extern int iswalpha_l (wint_t __wc, locale_t __locale) noexcept (true);
 
 
-extern int iswcntrl_l (wint_t __wc, locale_t __locale) noexcept (true);
-
-
-
-extern int iswdigit_l (wint_t __wc, locale_t __locale) noexcept (true);
-
-
-
-extern int iswgraph_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern int iswalnum_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
 
-extern int iswlower_l (wint_t __wc, locale_t __locale) noexcept (true);
+
+extern int iswalpha_l (wint_t __wc, locale_t __locale) throw ();
 
 
-extern int iswprint_l (wint_t __wc, locale_t __locale) noexcept (true);
-
-
-
-
-extern int iswpunct_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern int iswcntrl_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
-
-extern int iswspace_l (wint_t __wc, locale_t __locale) noexcept (true);
-
+extern int iswdigit_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
-extern int iswupper_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern int iswgraph_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
 
-extern int iswxdigit_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern int iswlower_l (wint_t __wc, locale_t __locale) throw ();
+
+
+extern int iswprint_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
 
-extern int iswblank_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern int iswpunct_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswspace_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswupper_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswxdigit_l (wint_t __wc, locale_t __locale) throw ();
+
+
+
+
+extern int iswblank_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
 extern wctype_t wctype_l (const char *__property, locale_t __locale)
-     noexcept (true);
+     throw ();
 
 
 
 extern int iswctype_l (wint_t __wc, wctype_t __desc, locale_t __locale)
-     noexcept (true);
+     throw ();
 
 
 
 
 
 
-extern wint_t towlower_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern wint_t towlower_l (wint_t __wc, locale_t __locale) throw ();
 
 
-extern wint_t towupper_l (wint_t __wc, locale_t __locale) noexcept (true);
+extern wint_t towupper_l (wint_t __wc, locale_t __locale) throw ();
 
 
 
 extern wctrans_t wctrans_l (const char *__property, locale_t __locale)
-     noexcept (true);
+     throw ();
 
 
 extern wint_t towctrans_l (wint_t __wc, wctrans_t __desc,
-      locale_t __locale) noexcept (true);
+      locale_t __locale) throw ();
 
 
 
@@ -35309,86 +34998,86 @@ inline namespace complex_literals {
 
 
 extern "C" {
-# 110 "/usr/include/complex.h" 3 4
+# 106 "/usr/include/complex.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
 # 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern double _Complex cacos (double _Complex __z) noexcept (true); extern double _Complex __cacos (double _Complex __z) noexcept (true);
+extern double _Complex cacos (double _Complex __z) throw (); extern double _Complex __cacos (double _Complex __z) throw ();
 
-extern double _Complex casin (double _Complex __z) noexcept (true); extern double _Complex __casin (double _Complex __z) noexcept (true);
+extern double _Complex casin (double _Complex __z) throw (); extern double _Complex __casin (double _Complex __z) throw ();
 
-extern double _Complex catan (double _Complex __z) noexcept (true); extern double _Complex __catan (double _Complex __z) noexcept (true);
-
-
-extern double _Complex ccos (double _Complex __z) noexcept (true); extern double _Complex __ccos (double _Complex __z) noexcept (true);
-
-extern double _Complex csin (double _Complex __z) noexcept (true); extern double _Complex __csin (double _Complex __z) noexcept (true);
-
-extern double _Complex ctan (double _Complex __z) noexcept (true); extern double _Complex __ctan (double _Complex __z) noexcept (true);
+extern double _Complex catan (double _Complex __z) throw (); extern double _Complex __catan (double _Complex __z) throw ();
 
 
+extern double _Complex ccos (double _Complex __z) throw (); extern double _Complex __ccos (double _Complex __z) throw ();
 
+extern double _Complex csin (double _Complex __z) throw (); extern double _Complex __csin (double _Complex __z) throw ();
 
-
-extern double _Complex cacosh (double _Complex __z) noexcept (true); extern double _Complex __cacosh (double _Complex __z) noexcept (true);
-
-extern double _Complex casinh (double _Complex __z) noexcept (true); extern double _Complex __casinh (double _Complex __z) noexcept (true);
-
-extern double _Complex catanh (double _Complex __z) noexcept (true); extern double _Complex __catanh (double _Complex __z) noexcept (true);
-
-
-extern double _Complex ccosh (double _Complex __z) noexcept (true); extern double _Complex __ccosh (double _Complex __z) noexcept (true);
-
-extern double _Complex csinh (double _Complex __z) noexcept (true); extern double _Complex __csinh (double _Complex __z) noexcept (true);
-
-extern double _Complex ctanh (double _Complex __z) noexcept (true); extern double _Complex __ctanh (double _Complex __z) noexcept (true);
+extern double _Complex ctan (double _Complex __z) throw (); extern double _Complex __ctan (double _Complex __z) throw ();
 
 
 
 
 
-extern double _Complex cexp (double _Complex __z) noexcept (true); extern double _Complex __cexp (double _Complex __z) noexcept (true);
+extern double _Complex cacosh (double _Complex __z) throw (); extern double _Complex __cacosh (double _Complex __z) throw ();
+
+extern double _Complex casinh (double _Complex __z) throw (); extern double _Complex __casinh (double _Complex __z) throw ();
+
+extern double _Complex catanh (double _Complex __z) throw (); extern double _Complex __catanh (double _Complex __z) throw ();
 
 
-extern double _Complex clog (double _Complex __z) noexcept (true); extern double _Complex __clog (double _Complex __z) noexcept (true);
+extern double _Complex ccosh (double _Complex __z) throw (); extern double _Complex __ccosh (double _Complex __z) throw ();
 
+extern double _Complex csinh (double _Complex __z) throw (); extern double _Complex __csinh (double _Complex __z) throw ();
 
-
-
-extern double _Complex clog10 (double _Complex __z) noexcept (true); extern double _Complex __clog10 (double _Complex __z) noexcept (true);
-
-
-
-
-
-extern double _Complex cpow (double _Complex __x, double _Complex __y) noexcept (true); extern double _Complex __cpow (double _Complex __x, double _Complex __y) noexcept (true);
-
-
-extern double _Complex csqrt (double _Complex __z) noexcept (true); extern double _Complex __csqrt (double _Complex __z) noexcept (true);
+extern double _Complex ctanh (double _Complex __z) throw (); extern double _Complex __ctanh (double _Complex __z) throw ();
 
 
 
 
 
-extern double cabs (double _Complex __z) noexcept (true); extern double __cabs (double _Complex __z) noexcept (true);
+extern double _Complex cexp (double _Complex __z) throw (); extern double _Complex __cexp (double _Complex __z) throw ();
 
 
-extern double carg (double _Complex __z) noexcept (true); extern double __carg (double _Complex __z) noexcept (true);
-
-
-extern double _Complex conj (double _Complex __z) noexcept (true); extern double _Complex __conj (double _Complex __z) noexcept (true);
-
-
-extern double _Complex cproj (double _Complex __z) noexcept (true); extern double _Complex __cproj (double _Complex __z) noexcept (true);
+extern double _Complex clog (double _Complex __z) throw (); extern double _Complex __clog (double _Complex __z) throw ();
 
 
 
 
+extern double _Complex clog10 (double _Complex __z) throw (); extern double _Complex __clog10 (double _Complex __z) throw ();
 
-extern double cimag (double _Complex __z) noexcept (true); extern double __cimag (double _Complex __z) noexcept (true);
 
 
-extern double creal (double _Complex __z) noexcept (true); extern double __creal (double _Complex __z) noexcept (true);
-# 111 "/usr/include/complex.h" 2 3 4
+
+
+extern double _Complex cpow (double _Complex __x, double _Complex __y) throw (); extern double _Complex __cpow (double _Complex __x, double _Complex __y) throw ();
+
+
+extern double _Complex csqrt (double _Complex __z) throw (); extern double _Complex __csqrt (double _Complex __z) throw ();
+
+
+
+
+
+extern double cabs (double _Complex __z) throw (); extern double __cabs (double _Complex __z) throw ();
+
+
+extern double carg (double _Complex __z) throw (); extern double __carg (double _Complex __z) throw ();
+
+
+extern double _Complex conj (double _Complex __z) throw (); extern double _Complex __conj (double _Complex __z) throw ();
+
+
+extern double _Complex cproj (double _Complex __z) throw (); extern double _Complex __cproj (double _Complex __z) throw ();
+
+
+
+
+
+extern double cimag (double _Complex __z) throw (); extern double __cimag (double _Complex __z) throw ();
+
+
+extern double creal (double _Complex __z) throw (); extern double __creal (double _Complex __z) throw ();
+# 107 "/usr/include/complex.h" 2 3 4
 
 
 
@@ -35397,488 +35086,488 @@ extern double creal (double _Complex __z) noexcept (true); extern double __creal
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
 # 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern float _Complex cacosf (float _Complex __z) noexcept (true); extern float _Complex __cacosf (float _Complex __z) noexcept (true);
+extern float _Complex cacosf (float _Complex __z) throw (); extern float _Complex __cacosf (float _Complex __z) throw ();
 
-extern float _Complex casinf (float _Complex __z) noexcept (true); extern float _Complex __casinf (float _Complex __z) noexcept (true);
+extern float _Complex casinf (float _Complex __z) throw (); extern float _Complex __casinf (float _Complex __z) throw ();
 
-extern float _Complex catanf (float _Complex __z) noexcept (true); extern float _Complex __catanf (float _Complex __z) noexcept (true);
-
-
-extern float _Complex ccosf (float _Complex __z) noexcept (true); extern float _Complex __ccosf (float _Complex __z) noexcept (true);
-
-extern float _Complex csinf (float _Complex __z) noexcept (true); extern float _Complex __csinf (float _Complex __z) noexcept (true);
-
-extern float _Complex ctanf (float _Complex __z) noexcept (true); extern float _Complex __ctanf (float _Complex __z) noexcept (true);
+extern float _Complex catanf (float _Complex __z) throw (); extern float _Complex __catanf (float _Complex __z) throw ();
 
 
+extern float _Complex ccosf (float _Complex __z) throw (); extern float _Complex __ccosf (float _Complex __z) throw ();
 
+extern float _Complex csinf (float _Complex __z) throw (); extern float _Complex __csinf (float _Complex __z) throw ();
 
-
-extern float _Complex cacoshf (float _Complex __z) noexcept (true); extern float _Complex __cacoshf (float _Complex __z) noexcept (true);
-
-extern float _Complex casinhf (float _Complex __z) noexcept (true); extern float _Complex __casinhf (float _Complex __z) noexcept (true);
-
-extern float _Complex catanhf (float _Complex __z) noexcept (true); extern float _Complex __catanhf (float _Complex __z) noexcept (true);
-
-
-extern float _Complex ccoshf (float _Complex __z) noexcept (true); extern float _Complex __ccoshf (float _Complex __z) noexcept (true);
-
-extern float _Complex csinhf (float _Complex __z) noexcept (true); extern float _Complex __csinhf (float _Complex __z) noexcept (true);
-
-extern float _Complex ctanhf (float _Complex __z) noexcept (true); extern float _Complex __ctanhf (float _Complex __z) noexcept (true);
+extern float _Complex ctanf (float _Complex __z) throw (); extern float _Complex __ctanf (float _Complex __z) throw ();
 
 
 
 
 
-extern float _Complex cexpf (float _Complex __z) noexcept (true); extern float _Complex __cexpf (float _Complex __z) noexcept (true);
+extern float _Complex cacoshf (float _Complex __z) throw (); extern float _Complex __cacoshf (float _Complex __z) throw ();
+
+extern float _Complex casinhf (float _Complex __z) throw (); extern float _Complex __casinhf (float _Complex __z) throw ();
+
+extern float _Complex catanhf (float _Complex __z) throw (); extern float _Complex __catanhf (float _Complex __z) throw ();
 
 
-extern float _Complex clogf (float _Complex __z) noexcept (true); extern float _Complex __clogf (float _Complex __z) noexcept (true);
+extern float _Complex ccoshf (float _Complex __z) throw (); extern float _Complex __ccoshf (float _Complex __z) throw ();
 
+extern float _Complex csinhf (float _Complex __z) throw (); extern float _Complex __csinhf (float _Complex __z) throw ();
 
-
-
-extern float _Complex clog10f (float _Complex __z) noexcept (true); extern float _Complex __clog10f (float _Complex __z) noexcept (true);
-
-
-
-
-
-extern float _Complex cpowf (float _Complex __x, float _Complex __y) noexcept (true); extern float _Complex __cpowf (float _Complex __x, float _Complex __y) noexcept (true);
-
-
-extern float _Complex csqrtf (float _Complex __z) noexcept (true); extern float _Complex __csqrtf (float _Complex __z) noexcept (true);
+extern float _Complex ctanhf (float _Complex __z) throw (); extern float _Complex __ctanhf (float _Complex __z) throw ();
 
 
 
 
 
-extern float cabsf (float _Complex __z) noexcept (true); extern float __cabsf (float _Complex __z) noexcept (true);
+extern float _Complex cexpf (float _Complex __z) throw (); extern float _Complex __cexpf (float _Complex __z) throw ();
 
 
-extern float cargf (float _Complex __z) noexcept (true); extern float __cargf (float _Complex __z) noexcept (true);
-
-
-extern float _Complex conjf (float _Complex __z) noexcept (true); extern float _Complex __conjf (float _Complex __z) noexcept (true);
-
-
-extern float _Complex cprojf (float _Complex __z) noexcept (true); extern float _Complex __cprojf (float _Complex __z) noexcept (true);
+extern float _Complex clogf (float _Complex __z) throw (); extern float _Complex __clogf (float _Complex __z) throw ();
 
 
 
 
+extern float _Complex clog10f (float _Complex __z) throw (); extern float _Complex __clog10f (float _Complex __z) throw ();
 
-extern float cimagf (float _Complex __z) noexcept (true); extern float __cimagf (float _Complex __z) noexcept (true);
 
 
-extern float crealf (float _Complex __z) noexcept (true); extern float __crealf (float _Complex __z) noexcept (true);
-# 118 "/usr/include/complex.h" 2 3 4
-# 143 "/usr/include/complex.h" 3 4
+
+
+extern float _Complex cpowf (float _Complex __x, float _Complex __y) throw (); extern float _Complex __cpowf (float _Complex __x, float _Complex __y) throw ();
+
+
+extern float _Complex csqrtf (float _Complex __z) throw (); extern float _Complex __csqrtf (float _Complex __z) throw ();
+
+
+
+
+
+extern float cabsf (float _Complex __z) throw (); extern float __cabsf (float _Complex __z) throw ();
+
+
+extern float cargf (float _Complex __z) throw (); extern float __cargf (float _Complex __z) throw ();
+
+
+extern float _Complex conjf (float _Complex __z) throw (); extern float _Complex __conjf (float _Complex __z) throw ();
+
+
+extern float _Complex cprojf (float _Complex __z) throw (); extern float _Complex __cprojf (float _Complex __z) throw ();
+
+
+
+
+
+extern float cimagf (float _Complex __z) throw (); extern float __cimagf (float _Complex __z) throw ();
+
+
+extern float crealf (float _Complex __z) throw (); extern float __crealf (float _Complex __z) throw ();
+# 114 "/usr/include/complex.h" 2 3 4
+# 129 "/usr/include/complex.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
 # 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern long double _Complex cacosl (long double _Complex __z) noexcept (true); extern long double _Complex __cacosl (long double _Complex __z) noexcept (true);
+extern long double _Complex cacosl (long double _Complex __z) throw (); extern long double _Complex __cacosl (long double _Complex __z) throw ();
 
-extern long double _Complex casinl (long double _Complex __z) noexcept (true); extern long double _Complex __casinl (long double _Complex __z) noexcept (true);
+extern long double _Complex casinl (long double _Complex __z) throw (); extern long double _Complex __casinl (long double _Complex __z) throw ();
 
-extern long double _Complex catanl (long double _Complex __z) noexcept (true); extern long double _Complex __catanl (long double _Complex __z) noexcept (true);
-
-
-extern long double _Complex ccosl (long double _Complex __z) noexcept (true); extern long double _Complex __ccosl (long double _Complex __z) noexcept (true);
-
-extern long double _Complex csinl (long double _Complex __z) noexcept (true); extern long double _Complex __csinl (long double _Complex __z) noexcept (true);
-
-extern long double _Complex ctanl (long double _Complex __z) noexcept (true); extern long double _Complex __ctanl (long double _Complex __z) noexcept (true);
+extern long double _Complex catanl (long double _Complex __z) throw (); extern long double _Complex __catanl (long double _Complex __z) throw ();
 
 
+extern long double _Complex ccosl (long double _Complex __z) throw (); extern long double _Complex __ccosl (long double _Complex __z) throw ();
 
+extern long double _Complex csinl (long double _Complex __z) throw (); extern long double _Complex __csinl (long double _Complex __z) throw ();
 
-
-extern long double _Complex cacoshl (long double _Complex __z) noexcept (true); extern long double _Complex __cacoshl (long double _Complex __z) noexcept (true);
-
-extern long double _Complex casinhl (long double _Complex __z) noexcept (true); extern long double _Complex __casinhl (long double _Complex __z) noexcept (true);
-
-extern long double _Complex catanhl (long double _Complex __z) noexcept (true); extern long double _Complex __catanhl (long double _Complex __z) noexcept (true);
-
-
-extern long double _Complex ccoshl (long double _Complex __z) noexcept (true); extern long double _Complex __ccoshl (long double _Complex __z) noexcept (true);
-
-extern long double _Complex csinhl (long double _Complex __z) noexcept (true); extern long double _Complex __csinhl (long double _Complex __z) noexcept (true);
-
-extern long double _Complex ctanhl (long double _Complex __z) noexcept (true); extern long double _Complex __ctanhl (long double _Complex __z) noexcept (true);
+extern long double _Complex ctanl (long double _Complex __z) throw (); extern long double _Complex __ctanl (long double _Complex __z) throw ();
 
 
 
 
 
-extern long double _Complex cexpl (long double _Complex __z) noexcept (true); extern long double _Complex __cexpl (long double _Complex __z) noexcept (true);
+extern long double _Complex cacoshl (long double _Complex __z) throw (); extern long double _Complex __cacoshl (long double _Complex __z) throw ();
+
+extern long double _Complex casinhl (long double _Complex __z) throw (); extern long double _Complex __casinhl (long double _Complex __z) throw ();
+
+extern long double _Complex catanhl (long double _Complex __z) throw (); extern long double _Complex __catanhl (long double _Complex __z) throw ();
 
 
-extern long double _Complex clogl (long double _Complex __z) noexcept (true); extern long double _Complex __clogl (long double _Complex __z) noexcept (true);
+extern long double _Complex ccoshl (long double _Complex __z) throw (); extern long double _Complex __ccoshl (long double _Complex __z) throw ();
 
+extern long double _Complex csinhl (long double _Complex __z) throw (); extern long double _Complex __csinhl (long double _Complex __z) throw ();
 
-
-
-extern long double _Complex clog10l (long double _Complex __z) noexcept (true); extern long double _Complex __clog10l (long double _Complex __z) noexcept (true);
-
-
-
-
-
-extern long double _Complex cpowl (long double _Complex __x, long double _Complex __y) noexcept (true); extern long double _Complex __cpowl (long double _Complex __x, long double _Complex __y) noexcept (true);
-
-
-extern long double _Complex csqrtl (long double _Complex __z) noexcept (true); extern long double _Complex __csqrtl (long double _Complex __z) noexcept (true);
+extern long double _Complex ctanhl (long double _Complex __z) throw (); extern long double _Complex __ctanhl (long double _Complex __z) throw ();
 
 
 
 
 
-extern long double cabsl (long double _Complex __z) noexcept (true); extern long double __cabsl (long double _Complex __z) noexcept (true);
+extern long double _Complex cexpl (long double _Complex __z) throw (); extern long double _Complex __cexpl (long double _Complex __z) throw ();
 
 
-extern long double cargl (long double _Complex __z) noexcept (true); extern long double __cargl (long double _Complex __z) noexcept (true);
-
-
-extern long double _Complex conjl (long double _Complex __z) noexcept (true); extern long double _Complex __conjl (long double _Complex __z) noexcept (true);
-
-
-extern long double _Complex cprojl (long double _Complex __z) noexcept (true); extern long double _Complex __cprojl (long double _Complex __z) noexcept (true);
+extern long double _Complex clogl (long double _Complex __z) throw (); extern long double _Complex __clogl (long double _Complex __z) throw ();
 
 
 
 
+extern long double _Complex clog10l (long double _Complex __z) throw (); extern long double _Complex __clog10l (long double _Complex __z) throw ();
 
-extern long double cimagl (long double _Complex __z) noexcept (true); extern long double __cimagl (long double _Complex __z) noexcept (true);
 
 
-extern long double creall (long double _Complex __z) noexcept (true); extern long double __creall (long double _Complex __z) noexcept (true);
-# 144 "/usr/include/complex.h" 2 3 4
-# 176 "/usr/include/complex.h" 3 4
+
+
+extern long double _Complex cpowl (long double _Complex __x, long double _Complex __y) throw (); extern long double _Complex __cpowl (long double _Complex __x, long double _Complex __y) throw ();
+
+
+extern long double _Complex csqrtl (long double _Complex __z) throw (); extern long double _Complex __csqrtl (long double _Complex __z) throw ();
+
+
+
+
+
+extern long double cabsl (long double _Complex __z) throw (); extern long double __cabsl (long double _Complex __z) throw ();
+
+
+extern long double cargl (long double _Complex __z) throw (); extern long double __cargl (long double _Complex __z) throw ();
+
+
+extern long double _Complex conjl (long double _Complex __z) throw (); extern long double _Complex __conjl (long double _Complex __z) throw ();
+
+
+extern long double _Complex cprojl (long double _Complex __z) throw (); extern long double _Complex __cprojl (long double _Complex __z) throw ();
+
+
+
+
+
+extern long double cimagl (long double _Complex __z) throw (); extern long double __cimagl (long double _Complex __z) throw ();
+
+
+extern long double creall (long double _Complex __z) throw (); extern long double __creall (long double _Complex __z) throw ();
+# 130 "/usr/include/complex.h" 2 3 4
+# 152 "/usr/include/complex.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
 # 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern _Complex float cacosf32 (_Complex float __z) noexcept (true); extern _Complex float __cacosf32 (_Complex float __z) noexcept (true);
+extern _Complex float cacosf32 (_Complex float __z) throw (); extern _Complex float __cacosf32 (_Complex float __z) throw ();
 
-extern _Complex float casinf32 (_Complex float __z) noexcept (true); extern _Complex float __casinf32 (_Complex float __z) noexcept (true);
+extern _Complex float casinf32 (_Complex float __z) throw (); extern _Complex float __casinf32 (_Complex float __z) throw ();
 
-extern _Complex float catanf32 (_Complex float __z) noexcept (true); extern _Complex float __catanf32 (_Complex float __z) noexcept (true);
-
-
-extern _Complex float ccosf32 (_Complex float __z) noexcept (true); extern _Complex float __ccosf32 (_Complex float __z) noexcept (true);
-
-extern _Complex float csinf32 (_Complex float __z) noexcept (true); extern _Complex float __csinf32 (_Complex float __z) noexcept (true);
-
-extern _Complex float ctanf32 (_Complex float __z) noexcept (true); extern _Complex float __ctanf32 (_Complex float __z) noexcept (true);
+extern _Complex float catanf32 (_Complex float __z) throw (); extern _Complex float __catanf32 (_Complex float __z) throw ();
 
 
+extern _Complex float ccosf32 (_Complex float __z) throw (); extern _Complex float __ccosf32 (_Complex float __z) throw ();
 
+extern _Complex float csinf32 (_Complex float __z) throw (); extern _Complex float __csinf32 (_Complex float __z) throw ();
 
-
-extern _Complex float cacoshf32 (_Complex float __z) noexcept (true); extern _Complex float __cacoshf32 (_Complex float __z) noexcept (true);
-
-extern _Complex float casinhf32 (_Complex float __z) noexcept (true); extern _Complex float __casinhf32 (_Complex float __z) noexcept (true);
-
-extern _Complex float catanhf32 (_Complex float __z) noexcept (true); extern _Complex float __catanhf32 (_Complex float __z) noexcept (true);
-
-
-extern _Complex float ccoshf32 (_Complex float __z) noexcept (true); extern _Complex float __ccoshf32 (_Complex float __z) noexcept (true);
-
-extern _Complex float csinhf32 (_Complex float __z) noexcept (true); extern _Complex float __csinhf32 (_Complex float __z) noexcept (true);
-
-extern _Complex float ctanhf32 (_Complex float __z) noexcept (true); extern _Complex float __ctanhf32 (_Complex float __z) noexcept (true);
+extern _Complex float ctanf32 (_Complex float __z) throw (); extern _Complex float __ctanf32 (_Complex float __z) throw ();
 
 
 
 
 
-extern _Complex float cexpf32 (_Complex float __z) noexcept (true); extern _Complex float __cexpf32 (_Complex float __z) noexcept (true);
+extern _Complex float cacoshf32 (_Complex float __z) throw (); extern _Complex float __cacoshf32 (_Complex float __z) throw ();
+
+extern _Complex float casinhf32 (_Complex float __z) throw (); extern _Complex float __casinhf32 (_Complex float __z) throw ();
+
+extern _Complex float catanhf32 (_Complex float __z) throw (); extern _Complex float __catanhf32 (_Complex float __z) throw ();
 
 
-extern _Complex float clogf32 (_Complex float __z) noexcept (true); extern _Complex float __clogf32 (_Complex float __z) noexcept (true);
+extern _Complex float ccoshf32 (_Complex float __z) throw (); extern _Complex float __ccoshf32 (_Complex float __z) throw ();
 
+extern _Complex float csinhf32 (_Complex float __z) throw (); extern _Complex float __csinhf32 (_Complex float __z) throw ();
 
-
-
-extern _Complex float clog10f32 (_Complex float __z) noexcept (true); extern _Complex float __clog10f32 (_Complex float __z) noexcept (true);
-
-
-
-
-
-extern _Complex float cpowf32 (_Complex float __x, _Complex float __y) noexcept (true); extern _Complex float __cpowf32 (_Complex float __x, _Complex float __y) noexcept (true);
-
-
-extern _Complex float csqrtf32 (_Complex float __z) noexcept (true); extern _Complex float __csqrtf32 (_Complex float __z) noexcept (true);
+extern _Complex float ctanhf32 (_Complex float __z) throw (); extern _Complex float __ctanhf32 (_Complex float __z) throw ();
 
 
 
 
 
-extern _Float32 cabsf32 (_Complex float __z) noexcept (true); extern _Float32 __cabsf32 (_Complex float __z) noexcept (true);
+extern _Complex float cexpf32 (_Complex float __z) throw (); extern _Complex float __cexpf32 (_Complex float __z) throw ();
 
 
-extern _Float32 cargf32 (_Complex float __z) noexcept (true); extern _Float32 __cargf32 (_Complex float __z) noexcept (true);
-
-
-extern _Complex float conjf32 (_Complex float __z) noexcept (true); extern _Complex float __conjf32 (_Complex float __z) noexcept (true);
-
-
-extern _Complex float cprojf32 (_Complex float __z) noexcept (true); extern _Complex float __cprojf32 (_Complex float __z) noexcept (true);
+extern _Complex float clogf32 (_Complex float __z) throw (); extern _Complex float __clogf32 (_Complex float __z) throw ();
 
 
 
 
+extern _Complex float clog10f32 (_Complex float __z) throw (); extern _Complex float __clog10f32 (_Complex float __z) throw ();
 
-extern _Float32 cimagf32 (_Complex float __z) noexcept (true); extern _Float32 __cimagf32 (_Complex float __z) noexcept (true);
 
 
-extern _Float32 crealf32 (_Complex float __z) noexcept (true); extern _Float32 __crealf32 (_Complex float __z) noexcept (true);
-# 177 "/usr/include/complex.h" 2 3 4
+
+
+extern _Complex float cpowf32 (_Complex float __x, _Complex float __y) throw (); extern _Complex float __cpowf32 (_Complex float __x, _Complex float __y) throw ();
+
+
+extern _Complex float csqrtf32 (_Complex float __z) throw (); extern _Complex float __csqrtf32 (_Complex float __z) throw ();
+
+
+
+
+
+extern _Float32 cabsf32 (_Complex float __z) throw (); extern _Float32 __cabsf32 (_Complex float __z) throw ();
+
+
+extern _Float32 cargf32 (_Complex float __z) throw (); extern _Float32 __cargf32 (_Complex float __z) throw ();
+
+
+extern _Complex float conjf32 (_Complex float __z) throw (); extern _Complex float __conjf32 (_Complex float __z) throw ();
+
+
+extern _Complex float cprojf32 (_Complex float __z) throw (); extern _Complex float __cprojf32 (_Complex float __z) throw ();
+
+
+
+
+
+extern _Float32 cimagf32 (_Complex float __z) throw (); extern _Float32 __cimagf32 (_Complex float __z) throw ();
+
+
+extern _Float32 crealf32 (_Complex float __z) throw (); extern _Float32 __crealf32 (_Complex float __z) throw ();
+# 153 "/usr/include/complex.h" 2 3 4
+# 164 "/usr/include/complex.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
+# 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern _Complex double cacosf64 (_Complex double __z) throw (); extern _Complex double __cacosf64 (_Complex double __z) throw ();
+
+extern _Complex double casinf64 (_Complex double __z) throw (); extern _Complex double __casinf64 (_Complex double __z) throw ();
+
+extern _Complex double catanf64 (_Complex double __z) throw (); extern _Complex double __catanf64 (_Complex double __z) throw ();
+
+
+extern _Complex double ccosf64 (_Complex double __z) throw (); extern _Complex double __ccosf64 (_Complex double __z) throw ();
+
+extern _Complex double csinf64 (_Complex double __z) throw (); extern _Complex double __csinf64 (_Complex double __z) throw ();
+
+extern _Complex double ctanf64 (_Complex double __z) throw (); extern _Complex double __ctanf64 (_Complex double __z) throw ();
+
+
+
+
+
+extern _Complex double cacoshf64 (_Complex double __z) throw (); extern _Complex double __cacoshf64 (_Complex double __z) throw ();
+
+extern _Complex double casinhf64 (_Complex double __z) throw (); extern _Complex double __casinhf64 (_Complex double __z) throw ();
+
+extern _Complex double catanhf64 (_Complex double __z) throw (); extern _Complex double __catanhf64 (_Complex double __z) throw ();
+
+
+extern _Complex double ccoshf64 (_Complex double __z) throw (); extern _Complex double __ccoshf64 (_Complex double __z) throw ();
+
+extern _Complex double csinhf64 (_Complex double __z) throw (); extern _Complex double __csinhf64 (_Complex double __z) throw ();
+
+extern _Complex double ctanhf64 (_Complex double __z) throw (); extern _Complex double __ctanhf64 (_Complex double __z) throw ();
+
+
+
+
+
+extern _Complex double cexpf64 (_Complex double __z) throw (); extern _Complex double __cexpf64 (_Complex double __z) throw ();
+
+
+extern _Complex double clogf64 (_Complex double __z) throw (); extern _Complex double __clogf64 (_Complex double __z) throw ();
+
+
+
+
+extern _Complex double clog10f64 (_Complex double __z) throw (); extern _Complex double __clog10f64 (_Complex double __z) throw ();
+
+
+
+
+
+extern _Complex double cpowf64 (_Complex double __x, _Complex double __y) throw (); extern _Complex double __cpowf64 (_Complex double __x, _Complex double __y) throw ();
+
+
+extern _Complex double csqrtf64 (_Complex double __z) throw (); extern _Complex double __csqrtf64 (_Complex double __z) throw ();
+
+
+
+
+
+extern _Float64 cabsf64 (_Complex double __z) throw (); extern _Float64 __cabsf64 (_Complex double __z) throw ();
+
+
+extern _Float64 cargf64 (_Complex double __z) throw (); extern _Float64 __cargf64 (_Complex double __z) throw ();
+
+
+extern _Complex double conjf64 (_Complex double __z) throw (); extern _Complex double __conjf64 (_Complex double __z) throw ();
+
+
+extern _Complex double cprojf64 (_Complex double __z) throw (); extern _Complex double __cprojf64 (_Complex double __z) throw ();
+
+
+
+
+
+extern _Float64 cimagf64 (_Complex double __z) throw (); extern _Float64 __cimagf64 (_Complex double __z) throw ();
+
+
+extern _Float64 crealf64 (_Complex double __z) throw (); extern _Float64 __crealf64 (_Complex double __z) throw ();
+# 165 "/usr/include/complex.h" 2 3 4
 # 188 "/usr/include/complex.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
 # 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern _Complex double cacosf64 (_Complex double __z) noexcept (true); extern _Complex double __cacosf64 (_Complex double __z) noexcept (true);
+extern _Complex double cacosf32x (_Complex double __z) throw (); extern _Complex double __cacosf32x (_Complex double __z) throw ();
 
-extern _Complex double casinf64 (_Complex double __z) noexcept (true); extern _Complex double __casinf64 (_Complex double __z) noexcept (true);
+extern _Complex double casinf32x (_Complex double __z) throw (); extern _Complex double __casinf32x (_Complex double __z) throw ();
 
-extern _Complex double catanf64 (_Complex double __z) noexcept (true); extern _Complex double __catanf64 (_Complex double __z) noexcept (true);
-
-
-extern _Complex double ccosf64 (_Complex double __z) noexcept (true); extern _Complex double __ccosf64 (_Complex double __z) noexcept (true);
-
-extern _Complex double csinf64 (_Complex double __z) noexcept (true); extern _Complex double __csinf64 (_Complex double __z) noexcept (true);
-
-extern _Complex double ctanf64 (_Complex double __z) noexcept (true); extern _Complex double __ctanf64 (_Complex double __z) noexcept (true);
+extern _Complex double catanf32x (_Complex double __z) throw (); extern _Complex double __catanf32x (_Complex double __z) throw ();
 
 
+extern _Complex double ccosf32x (_Complex double __z) throw (); extern _Complex double __ccosf32x (_Complex double __z) throw ();
 
+extern _Complex double csinf32x (_Complex double __z) throw (); extern _Complex double __csinf32x (_Complex double __z) throw ();
 
-
-extern _Complex double cacoshf64 (_Complex double __z) noexcept (true); extern _Complex double __cacoshf64 (_Complex double __z) noexcept (true);
-
-extern _Complex double casinhf64 (_Complex double __z) noexcept (true); extern _Complex double __casinhf64 (_Complex double __z) noexcept (true);
-
-extern _Complex double catanhf64 (_Complex double __z) noexcept (true); extern _Complex double __catanhf64 (_Complex double __z) noexcept (true);
-
-
-extern _Complex double ccoshf64 (_Complex double __z) noexcept (true); extern _Complex double __ccoshf64 (_Complex double __z) noexcept (true);
-
-extern _Complex double csinhf64 (_Complex double __z) noexcept (true); extern _Complex double __csinhf64 (_Complex double __z) noexcept (true);
-
-extern _Complex double ctanhf64 (_Complex double __z) noexcept (true); extern _Complex double __ctanhf64 (_Complex double __z) noexcept (true);
+extern _Complex double ctanf32x (_Complex double __z) throw (); extern _Complex double __ctanf32x (_Complex double __z) throw ();
 
 
 
 
 
-extern _Complex double cexpf64 (_Complex double __z) noexcept (true); extern _Complex double __cexpf64 (_Complex double __z) noexcept (true);
+extern _Complex double cacoshf32x (_Complex double __z) throw (); extern _Complex double __cacoshf32x (_Complex double __z) throw ();
+
+extern _Complex double casinhf32x (_Complex double __z) throw (); extern _Complex double __casinhf32x (_Complex double __z) throw ();
+
+extern _Complex double catanhf32x (_Complex double __z) throw (); extern _Complex double __catanhf32x (_Complex double __z) throw ();
 
 
-extern _Complex double clogf64 (_Complex double __z) noexcept (true); extern _Complex double __clogf64 (_Complex double __z) noexcept (true);
+extern _Complex double ccoshf32x (_Complex double __z) throw (); extern _Complex double __ccoshf32x (_Complex double __z) throw ();
 
+extern _Complex double csinhf32x (_Complex double __z) throw (); extern _Complex double __csinhf32x (_Complex double __z) throw ();
 
-
-
-extern _Complex double clog10f64 (_Complex double __z) noexcept (true); extern _Complex double __clog10f64 (_Complex double __z) noexcept (true);
-
-
-
-
-
-extern _Complex double cpowf64 (_Complex double __x, _Complex double __y) noexcept (true); extern _Complex double __cpowf64 (_Complex double __x, _Complex double __y) noexcept (true);
-
-
-extern _Complex double csqrtf64 (_Complex double __z) noexcept (true); extern _Complex double __csqrtf64 (_Complex double __z) noexcept (true);
+extern _Complex double ctanhf32x (_Complex double __z) throw (); extern _Complex double __ctanhf32x (_Complex double __z) throw ();
 
 
 
 
 
-extern _Float64 cabsf64 (_Complex double __z) noexcept (true); extern _Float64 __cabsf64 (_Complex double __z) noexcept (true);
+extern _Complex double cexpf32x (_Complex double __z) throw (); extern _Complex double __cexpf32x (_Complex double __z) throw ();
 
 
-extern _Float64 cargf64 (_Complex double __z) noexcept (true); extern _Float64 __cargf64 (_Complex double __z) noexcept (true);
-
-
-extern _Complex double conjf64 (_Complex double __z) noexcept (true); extern _Complex double __conjf64 (_Complex double __z) noexcept (true);
-
-
-extern _Complex double cprojf64 (_Complex double __z) noexcept (true); extern _Complex double __cprojf64 (_Complex double __z) noexcept (true);
+extern _Complex double clogf32x (_Complex double __z) throw (); extern _Complex double __clogf32x (_Complex double __z) throw ();
 
 
 
 
+extern _Complex double clog10f32x (_Complex double __z) throw (); extern _Complex double __clog10f32x (_Complex double __z) throw ();
 
-extern _Float64 cimagf64 (_Complex double __z) noexcept (true); extern _Float64 __cimagf64 (_Complex double __z) noexcept (true);
 
 
-extern _Float64 crealf64 (_Complex double __z) noexcept (true); extern _Float64 __crealf64 (_Complex double __z) noexcept (true);
+
+
+extern _Complex double cpowf32x (_Complex double __x, _Complex double __y) throw (); extern _Complex double __cpowf32x (_Complex double __x, _Complex double __y) throw ();
+
+
+extern _Complex double csqrtf32x (_Complex double __z) throw (); extern _Complex double __csqrtf32x (_Complex double __z) throw ();
+
+
+
+
+
+extern _Float32x cabsf32x (_Complex double __z) throw (); extern _Float32x __cabsf32x (_Complex double __z) throw ();
+
+
+extern _Float32x cargf32x (_Complex double __z) throw (); extern _Float32x __cargf32x (_Complex double __z) throw ();
+
+
+extern _Complex double conjf32x (_Complex double __z) throw (); extern _Complex double __conjf32x (_Complex double __z) throw ();
+
+
+extern _Complex double cprojf32x (_Complex double __z) throw (); extern _Complex double __cprojf32x (_Complex double __z) throw ();
+
+
+
+
+
+extern _Float32x cimagf32x (_Complex double __z) throw (); extern _Float32x __cimagf32x (_Complex double __z) throw ();
+
+
+extern _Float32x crealf32x (_Complex double __z) throw (); extern _Float32x __crealf32x (_Complex double __z) throw ();
 # 189 "/usr/include/complex.h" 2 3 4
-# 212 "/usr/include/complex.h" 3 4
+# 200 "/usr/include/complex.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
 # 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern _Complex double cacosf32x (_Complex double __z) noexcept (true); extern _Complex double __cacosf32x (_Complex double __z) noexcept (true);
+extern _Complex long double cacosf64x (_Complex long double __z) throw (); extern _Complex long double __cacosf64x (_Complex long double __z) throw ();
 
-extern _Complex double casinf32x (_Complex double __z) noexcept (true); extern _Complex double __casinf32x (_Complex double __z) noexcept (true);
+extern _Complex long double casinf64x (_Complex long double __z) throw (); extern _Complex long double __casinf64x (_Complex long double __z) throw ();
 
-extern _Complex double catanf32x (_Complex double __z) noexcept (true); extern _Complex double __catanf32x (_Complex double __z) noexcept (true);
+extern _Complex long double catanf64x (_Complex long double __z) throw (); extern _Complex long double __catanf64x (_Complex long double __z) throw ();
 
 
-extern _Complex double ccosf32x (_Complex double __z) noexcept (true); extern _Complex double __ccosf32x (_Complex double __z) noexcept (true);
+extern _Complex long double ccosf64x (_Complex long double __z) throw (); extern _Complex long double __ccosf64x (_Complex long double __z) throw ();
 
-extern _Complex double csinf32x (_Complex double __z) noexcept (true); extern _Complex double __csinf32x (_Complex double __z) noexcept (true);
+extern _Complex long double csinf64x (_Complex long double __z) throw (); extern _Complex long double __csinf64x (_Complex long double __z) throw ();
 
-extern _Complex double ctanf32x (_Complex double __z) noexcept (true); extern _Complex double __ctanf32x (_Complex double __z) noexcept (true);
+extern _Complex long double ctanf64x (_Complex long double __z) throw (); extern _Complex long double __ctanf64x (_Complex long double __z) throw ();
 
 
 
 
 
-extern _Complex double cacoshf32x (_Complex double __z) noexcept (true); extern _Complex double __cacoshf32x (_Complex double __z) noexcept (true);
+extern _Complex long double cacoshf64x (_Complex long double __z) throw (); extern _Complex long double __cacoshf64x (_Complex long double __z) throw ();
 
-extern _Complex double casinhf32x (_Complex double __z) noexcept (true); extern _Complex double __casinhf32x (_Complex double __z) noexcept (true);
+extern _Complex long double casinhf64x (_Complex long double __z) throw (); extern _Complex long double __casinhf64x (_Complex long double __z) throw ();
 
-extern _Complex double catanhf32x (_Complex double __z) noexcept (true); extern _Complex double __catanhf32x (_Complex double __z) noexcept (true);
+extern _Complex long double catanhf64x (_Complex long double __z) throw (); extern _Complex long double __catanhf64x (_Complex long double __z) throw ();
 
 
-extern _Complex double ccoshf32x (_Complex double __z) noexcept (true); extern _Complex double __ccoshf32x (_Complex double __z) noexcept (true);
+extern _Complex long double ccoshf64x (_Complex long double __z) throw (); extern _Complex long double __ccoshf64x (_Complex long double __z) throw ();
 
-extern _Complex double csinhf32x (_Complex double __z) noexcept (true); extern _Complex double __csinhf32x (_Complex double __z) noexcept (true);
+extern _Complex long double csinhf64x (_Complex long double __z) throw (); extern _Complex long double __csinhf64x (_Complex long double __z) throw ();
 
-extern _Complex double ctanhf32x (_Complex double __z) noexcept (true); extern _Complex double __ctanhf32x (_Complex double __z) noexcept (true);
+extern _Complex long double ctanhf64x (_Complex long double __z) throw (); extern _Complex long double __ctanhf64x (_Complex long double __z) throw ();
 
 
 
 
 
-extern _Complex double cexpf32x (_Complex double __z) noexcept (true); extern _Complex double __cexpf32x (_Complex double __z) noexcept (true);
+extern _Complex long double cexpf64x (_Complex long double __z) throw (); extern _Complex long double __cexpf64x (_Complex long double __z) throw ();
 
 
-extern _Complex double clogf32x (_Complex double __z) noexcept (true); extern _Complex double __clogf32x (_Complex double __z) noexcept (true);
+extern _Complex long double clogf64x (_Complex long double __z) throw (); extern _Complex long double __clogf64x (_Complex long double __z) throw ();
 
 
 
 
-extern _Complex double clog10f32x (_Complex double __z) noexcept (true); extern _Complex double __clog10f32x (_Complex double __z) noexcept (true);
+extern _Complex long double clog10f64x (_Complex long double __z) throw (); extern _Complex long double __clog10f64x (_Complex long double __z) throw ();
 
 
 
 
 
-extern _Complex double cpowf32x (_Complex double __x, _Complex double __y) noexcept (true); extern _Complex double __cpowf32x (_Complex double __x, _Complex double __y) noexcept (true);
+extern _Complex long double cpowf64x (_Complex long double __x, _Complex long double __y) throw (); extern _Complex long double __cpowf64x (_Complex long double __x, _Complex long double __y) throw ();
 
 
-extern _Complex double csqrtf32x (_Complex double __z) noexcept (true); extern _Complex double __csqrtf32x (_Complex double __z) noexcept (true);
+extern _Complex long double csqrtf64x (_Complex long double __z) throw (); extern _Complex long double __csqrtf64x (_Complex long double __z) throw ();
 
 
 
 
 
-extern _Float32x cabsf32x (_Complex double __z) noexcept (true); extern _Float32x __cabsf32x (_Complex double __z) noexcept (true);
+extern _Float64x cabsf64x (_Complex long double __z) throw (); extern _Float64x __cabsf64x (_Complex long double __z) throw ();
 
 
-extern _Float32x cargf32x (_Complex double __z) noexcept (true); extern _Float32x __cargf32x (_Complex double __z) noexcept (true);
+extern _Float64x cargf64x (_Complex long double __z) throw (); extern _Float64x __cargf64x (_Complex long double __z) throw ();
 
 
-extern _Complex double conjf32x (_Complex double __z) noexcept (true); extern _Complex double __conjf32x (_Complex double __z) noexcept (true);
+extern _Complex long double conjf64x (_Complex long double __z) throw (); extern _Complex long double __conjf64x (_Complex long double __z) throw ();
 
 
-extern _Complex double cprojf32x (_Complex double __z) noexcept (true); extern _Complex double __cprojf32x (_Complex double __z) noexcept (true);
+extern _Complex long double cprojf64x (_Complex long double __z) throw (); extern _Complex long double __cprojf64x (_Complex long double __z) throw ();
 
 
 
 
 
-extern _Float32x cimagf32x (_Complex double __z) noexcept (true); extern _Float32x __cimagf32x (_Complex double __z) noexcept (true);
+extern _Float64x cimagf64x (_Complex long double __z) throw (); extern _Float64x __cimagf64x (_Complex long double __z) throw ();
 
 
-extern _Float32x crealf32x (_Complex double __z) noexcept (true); extern _Float32x __crealf32x (_Complex double __z) noexcept (true);
-# 213 "/usr/include/complex.h" 2 3 4
-# 224 "/usr/include/complex.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
-# 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
-extern _Complex long double cacosf64x (_Complex long double __z) noexcept (true); extern _Complex long double __cacosf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double casinf64x (_Complex long double __z) noexcept (true); extern _Complex long double __casinf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double catanf64x (_Complex long double __z) noexcept (true); extern _Complex long double __catanf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Complex long double ccosf64x (_Complex long double __z) noexcept (true); extern _Complex long double __ccosf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double csinf64x (_Complex long double __z) noexcept (true); extern _Complex long double __csinf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double ctanf64x (_Complex long double __z) noexcept (true); extern _Complex long double __ctanf64x (_Complex long double __z) noexcept (true);
-
-
-
-
-
-extern _Complex long double cacoshf64x (_Complex long double __z) noexcept (true); extern _Complex long double __cacoshf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double casinhf64x (_Complex long double __z) noexcept (true); extern _Complex long double __casinhf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double catanhf64x (_Complex long double __z) noexcept (true); extern _Complex long double __catanhf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Complex long double ccoshf64x (_Complex long double __z) noexcept (true); extern _Complex long double __ccoshf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double csinhf64x (_Complex long double __z) noexcept (true); extern _Complex long double __csinhf64x (_Complex long double __z) noexcept (true);
-
-extern _Complex long double ctanhf64x (_Complex long double __z) noexcept (true); extern _Complex long double __ctanhf64x (_Complex long double __z) noexcept (true);
-
-
-
-
-
-extern _Complex long double cexpf64x (_Complex long double __z) noexcept (true); extern _Complex long double __cexpf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Complex long double clogf64x (_Complex long double __z) noexcept (true); extern _Complex long double __clogf64x (_Complex long double __z) noexcept (true);
-
-
-
-
-extern _Complex long double clog10f64x (_Complex long double __z) noexcept (true); extern _Complex long double __clog10f64x (_Complex long double __z) noexcept (true);
-
-
-
-
-
-extern _Complex long double cpowf64x (_Complex long double __x, _Complex long double __y) noexcept (true); extern _Complex long double __cpowf64x (_Complex long double __x, _Complex long double __y) noexcept (true);
-
-
-extern _Complex long double csqrtf64x (_Complex long double __z) noexcept (true); extern _Complex long double __csqrtf64x (_Complex long double __z) noexcept (true);
-
-
-
-
-
-extern _Float64x cabsf64x (_Complex long double __z) noexcept (true); extern _Float64x __cabsf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Float64x cargf64x (_Complex long double __z) noexcept (true); extern _Float64x __cargf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Complex long double conjf64x (_Complex long double __z) noexcept (true); extern _Complex long double __conjf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Complex long double cprojf64x (_Complex long double __z) noexcept (true); extern _Complex long double __cprojf64x (_Complex long double __z) noexcept (true);
-
-
-
-
-
-extern _Float64x cimagf64x (_Complex long double __z) noexcept (true); extern _Float64x __cimagf64x (_Complex long double __z) noexcept (true);
-
-
-extern _Float64x crealf64x (_Complex long double __z) noexcept (true); extern _Float64x __crealf64x (_Complex long double __z) noexcept (true);
-# 225 "/usr/include/complex.h" 2 3 4
-# 247 "/usr/include/complex.h" 3 4
+extern _Float64x crealf64x (_Complex long double __z) throw (); extern _Float64x __crealf64x (_Complex long double __z) throw ();
+# 201 "/usr/include/complex.h" 2 3 4
+# 222 "/usr/include/complex.h" 3 4
 }
 # 39 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/complex.h" 2 3
-# 10 "/home/franz/workspace/hls_component/fbi.cpp" 2
-# 1 "/home/franz/workspace/hls_component/fbi.h" 1
+# 10 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp" 2
+# 1 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.h" 1
 
 extern "C" {
 
@@ -35889,7 +35578,7 @@ extern "C" {
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ccomplex" 1 3
 # 30 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ccomplex" 3
 # 33 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/complex.h" 2 3
-# 6 "/home/franz/workspace/hls_component/fbi.h" 2
+# 6 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.h" 2
 
 
 
@@ -35900,7 +35589,7 @@ __attribute__((sdx_kernel("fbi", 0))) void fbi(double *pos_tx, size_t sig_len, i
 
 
 }
-# 11 "/home/franz/workspace/hls_component/fbi.cpp" 2
+# 11 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/math.h" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/math.h" 3
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 1 3
@@ -35981,9 +35670,9 @@ using std::scalbln;
 using std::scalbn;
 using std::tgamma;
 using std::trunc;
-# 12 "/home/franz/workspace/hls_component/fbi.cpp" 2
+# 12 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/float.h" 1 3
-# 13 "/home/franz/workspace/hls_component/fbi.cpp" 2
+# 13 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/stdlib.h" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/stdlib.h" 3
 # 1 "/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdlib" 1 3
@@ -36034,7 +35723,7 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 14 "/home/franz/workspace/hls_component/fbi.cpp" 2
+# 14 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp" 2
 
 
     inline int map_neg_idx(int i, int N) {
@@ -36048,7 +35737,7 @@ using std::wctomb;
     {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=fbi
-# 24 "/home/franz/workspace/hls_component/fbi.cpp"
+# 24 "/home/ubuntu/Desktop/dsp_recon/hls_component/fbi.cpp"
 
 
 

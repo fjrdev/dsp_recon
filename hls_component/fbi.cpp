@@ -11,6 +11,7 @@ extern "C" {
     #include <math.h>
     #include <float.h>
     #include <stdlib.h>
+    #include <string.h>
 
     // helper functions
     inline int map_neg_idx(int i, int N) {
@@ -32,8 +33,8 @@ extern "C" {
         auto fft_im_cols = res_v / 2 + 1;
         int chunk_size_u = res_u/phase_res_u;
         int chunk_size_v = res_v/phase_res_v;
-        auto rfft_cols = (sig_len / 2 + 1);
-        auto rfft_rows = num_rx;
+        //const int rfft_cols = (sig_len / 2 + 1);
+        //const int rfft_rows = num_rx;
 
         // reconstruct image with chunk granularity
         for(int c_idx_u = 0; c_idx_u < 1; c_idx_u++) {
@@ -58,8 +59,8 @@ extern "C" {
                     const auto diff_len = sqrt(center_tx_diff[0]*center_tx_diff[0] + center_tx_diff[1]*center_tx_diff[1]);
                     double n[2] = {static_cast<double>(center_tx_diff[0]/diff_len), static_cast<double>(center_tx_diff[1]/diff_len)};
 
-                    auto rfft_cols = (sig_len / 2 + 1);
-                    auto rfft_rows = num_rx;
+                    int rfft_cols = (sig_len / 2 + 1);
+                    int rfft_rows = num_rx;
 
                     //const complexf ii(0, 1);
                     //const complexf ii = CMPLXF32(0.0, 1.0); // C-style init
@@ -85,7 +86,7 @@ extern "C" {
                             double g_omega = omega * (t1 - t0);
 
                             bool is_active = (kz > 0) && (g_omega < (double)sig_len / 2) && (k0>0.0);
-                            std::complex<double> val;
+                            std::complex<double> val, tmp_mul,tmp;
 
                             // if current pixel contributes to reflected signal
                             if (is_active) {
@@ -108,7 +109,12 @@ extern "C" {
                                 val += fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_incr * rfft_cols + iomega+1) ] * a *b ;
 
                                 double phase_shift = kz_pr * (Z0 - v_len/2) + kx_pr * (-u_len/2) - k0*tx_position[0]*n[0];
-                                val *= std::exp(ii * ((double)2.0 * pi * phase_shift));
+
+                                tmp_mul = {(float) (ii.real() * ((pi * phase_shift) * 2.0)) , (float) (ii.imag() * ((pi * phase_shift) * 2.0)) };
+                                tmp = { (float) (exp(tmp_mul.real()) * cos(tmp_mul.imag())) , (float) (exp(tmp_mul.real()) * sin(tmp_mul.imag())) };
+                                val = { (float) (val.real() * tmp.real() - val.imag() * tmp.imag()), (float) (val.real() * tmp.imag() + val.imag() * tmp.real()) };
+
+                                //val *= exp(ii * ((double)2.0 * pi * phase_shift));
 
                             } else {
                                 val = 0.0;
@@ -117,7 +123,8 @@ extern "C" {
                             fft_im[iu * fft_im_cols + iv] += val;
                         }
 
-                        for (int iu = res_u / 2; iu < res_u; iu++) { // negative frequencies
+                        const int start = res_u / 2;
+                        for (int iu = start; iu < res_u; iu++) { // negative frequencies
 
                             double kx_pr = (double) (iu - (int) res_u) / (res_u * dx);
                             double kz_pr = (double) iv / (res_v * dz);
@@ -134,7 +141,7 @@ extern "C" {
                             double g_omega = omega * (t1 - t0);
 
                             bool is_active = (kz > 0) && (g_omega < sig_len ) && (k0 > 0.0);
-                            std::complex<double> val;
+                            std::complex<double> val, tmp_mul, tmp;
 
                             // if current pixel contributes to reflected signal
                             if (is_active) {
@@ -151,13 +158,19 @@ extern "C" {
                                 double a_ = 1.0-a;
                                 double b_ = 1.0-b;
 
+                                // TODO: compute index beforehand
                                 val =  fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_     * rfft_cols + iomega)  ] * a_*b_;
                                 val += fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_incr * rfft_cols + iomega)  ] * a *b_;
                                 val += fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_     * rfft_cols + iomega+1 )] * a_*b ;
                                 val += fft_data[i_tx * (rfft_cols * rfft_rows) + (ikx_incr * rfft_cols + iomega+1 )] * a *b ;
 
                                 double phase_shift = kz_pr * (Z0 - v_len/2) + kx_pr * (-u_len/2) - k0*tx_position[0]*n[0];
-                                val *= std::exp(ii * ((double)2.0 * pi * phase_shift));
+
+                                tmp_mul = {(float) (ii.real() * ((pi * phase_shift) * 2.0)) , (float) (ii.imag() * ((pi * phase_shift) * 2.0)) };
+                                tmp = { (float) (exp(tmp_mul.real()) * cos(tmp_mul.imag())) , (float) (exp(tmp_mul.real()) * sin(tmp_mul.imag())) };
+                                val = { (float) (val.real() * tmp.real() - val.imag() * tmp.imag()), (float) (val.real() * tmp.imag() + val.imag() * tmp.real()) };
+
+                                //val *= exp(ii * ((double)2.0 * pi * phase_shift));
 
                             } else {
                                 val = 0.0;

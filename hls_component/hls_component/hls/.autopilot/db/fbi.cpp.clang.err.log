@@ -1,0 +1,3 @@
+clang: warning: -lcnpy: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lz: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-L/cnpy/build/libcnpy.so' [-Wunused-command-line-argument]

@@ -1,5 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../fbi_test.cpp in debug mode
    Compiling ../../../../fbi.cpp in debug mode
    Generating csim.exe
 RMSE: 1.08597e-16

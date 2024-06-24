@@ -1,17 +1,294 @@
 {
   "0": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "add.cpp",
-    "fileloc": 4,
-    "instructions": 22,
+    "basicblocks": 49,
+    "calls": "11 24 12 12 11 24 11 24 12 12 11 24",
+    "file": "fbi.cpp",
+    "fileloc": 21,
+    "instructions": 665,
     "loads": {
-      "T": 3
+      "L": 28,
+      "T": 16
     },
-    "name": "mac",
+    "name": "fbi",
     "stores": {
-      "T": 1
+      "L": 20
     },
-    "total_instructions": 22
+    "total_instructions": 27459
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_asin_acos.h",
+    "fileloc": 143,
+    "instructions": 3,
+    "name": "generic_acos<double>",
+    "total_instructions": 5889
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "4 19",
+    "file": "hls_nan.h",
+    "fileloc": 10,
+    "instructions": 35,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_nan<double>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 430
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "17",
+    "file": "floordouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "floor",
+    "total_instructions": 2847
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "fbi.cpp",
+    "fileloc": 16,
+    "instructions": 5,
+    "name": "map_neg_idx",
+    "total_instructions": 5
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 541,
+    "instructions": 4,
+    "name": "__signbit",
+    "total_instructions": 9
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 532,
+    "instructions": 24,
+    "name": "mantissa",
+    "total_instructions": 193
+  },
+  "15": {
+    "basicblocks": 16,
+    "calls": "18 14 3 3 13 13",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 133,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2183
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "25",
+    "file": "x_hls_utils.h",
+    "fileloc": 523,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_double",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 314
+  },
+  "17": {
+    "basicblocks": 12,
+    "calls": "20 18 13 5 13 25 22 19",
+    "file": "hls_floor.h",
+    "fileloc": 13,
+    "instructions": 103,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_floor<double>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 2845
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 58,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 350
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "16",
+    "file": "x_hls_utils.h",
+    "fileloc": 538,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 316
+  },
+  "2": {
+    "basicblocks": 24,
+    "calls": "18 10 10 10 21",
+    "file": "hls_asin_acos.h",
+    "fileloc": 84,
+    "instructions": 96,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_asin<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 5886
+  },
+  "20": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 49,
+    "instructions": 19,
+    "name": "init_mask_table<double>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  },
+  "21": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "hls_cordic_apfixed.h",
+    "fileloc": 136,
+    "instructions": 324,
+    "loads": {
+      "L": 13
+    },
+    "name": "doublecordic_apfixed<86, 3, 0, 64>",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 3417
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 493,
+    "instructions": 43,
+    "name": "fp_struct",
+    "total_instructions": 320
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, double>",
+    "total_instructions": 2185
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i32",
+    "total_instructions": 2187
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 504,
+    "instructions": 33,
+    "name": "data",
+    "total_instructions": 296
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 514,
+    "instructions": 8,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 483,
+    "instructions": 7,
+    "name": "fp_struct",
+    "total_instructions": 28
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "18 18 19",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1034
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "hls_cordic_apfixed.pp.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 2435
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "acosdouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "acos",
+    "total_instructions": 5893
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "hls_asinacos_double.cpp",
+    "fileloc": 41,
+    "instructions": 2,
+    "name": "acos",
+    "total_instructions": 5891
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_cordic_apfixed.cpp",
+    "fileloc": 41,
+    "instructions": 129,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 2433
   }
 }
